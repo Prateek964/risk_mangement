@@ -1,0 +1,17 @@
+---
+layout: table_wrappers
+---
+
+<!DOCTYPE html>
+<html>
+  {% include slides_head.html %}
+  <body>
+    {{ content }}
+    <script>
+      Reveal.initialize({
+        hash: true,
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      })
+    </script>
+  </body>
+</html>

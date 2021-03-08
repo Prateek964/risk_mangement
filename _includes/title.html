@@ -1,0 +1,33 @@
+<div>
+  {% if site.logo %}
+  <div class="site-logo"></div>
+  {% else %} {{ site.title }} {% endif %}
+</div>
+
+<!--
+<div class="demo" style="margin-left: 2px"></div>
+
+<div style="font-size: x-small; font-weight: bold">
+  Progress: {{page.nav_order | times:2.5 | round}}%
+</div>
+
+<script>
+  $('.demo').createWaterBall({
+   targetRange:{{page.nav_order | times:2.5 | round }},
+   cvs_config:{width:50, height:50},
+   textColorRange:['#65187a'],
+   circle_line_color:['#fe3702','#ffa200','#4ed752'],
+   wave_config:{
+     sX:0,
+     sY:220 / 2,
+     waveWidth:0.015,
+     waveHeight:5,
+     axisLength:220,
+     speed:0.06,
+     xOffset:0
+   },
+
+   });
+</script>
+
+-->
