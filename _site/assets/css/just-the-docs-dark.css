@@ -6282,6 +6282,25 @@ figure.highlight {
 .site-nav {
   margin-bottom: 20px; }
 
+.test_nav {
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  position: -webkit-sticky;
+  background-color: #FFFFFF;
+  position: sticky;
+  padding: 3px;
+  top: 3.8rem;
+  border-radius: 10px 10px; }
+
+.main-header {
+  position: sticky;
+  z-index: 1;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0; }
+
 .theory {
   border: 3px #8366B3;
   background-color: #F0F8FF;
@@ -6296,7 +6315,7 @@ figure.highlight {
   border-radius: 40px 15px;
   margin-bottom: 20px;
   padding: 20px;
-  box-shadow: 5px 5px #89ff89; }
+  box-shadow: 5px 5px #9CBA7F; }
 
 .subtheory {
   border: 3px #FCE883;
