@@ -1,10 +1,10 @@
 ---
 layout: default
 title: a. SAS
-parent: Credit Risk
+parent: 1. Credit Risk
 grand_parent: Interview Prep
 nav_order: 1
-permalink: /interview_prep/1_maths/a_sas
+permalink: /interview_prep/1_credit_risk/a_sas
 nav_img: "/assets/images/paper.svg"
 nav_alt: "Study"
 previous: "/interview_prep/1_credit_risk"

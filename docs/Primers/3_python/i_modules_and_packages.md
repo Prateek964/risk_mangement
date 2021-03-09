@@ -1,7 +1,7 @@
 ---
 layout: default
 title: i. Modules and Packages
-parent: 2. Python
+parent: 3. Python
 grand_parent: Primers
 nav_order: 9
 permalink: /primers/3_python/i_modules_and_packages

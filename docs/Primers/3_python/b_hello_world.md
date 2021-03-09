@@ -1,7 +1,7 @@
 ---
 layout: default
 title: b. Hello World
-parent: 2. Python
+parent: 3. Python
 grand_parent: Primers
 nav_order: 2
 permalink: /primers/3_python/a_intro

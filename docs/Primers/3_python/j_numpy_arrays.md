@@ -1,7 +1,7 @@
 ---
 layout: default
 title: j. Numpy Arrays
-parent: 2. Python
+parent: 3. Python
 grand_parent: Primers
 nav_order: 10
 permalink: /primers/3_python/j_numpy_arrays

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: l. Conclusion
-parent: 2. Python
+parent: 3. Python
 grand_parent: Primers
 nav_order: 12
 permalink: /primers/3_python/l_conclusion

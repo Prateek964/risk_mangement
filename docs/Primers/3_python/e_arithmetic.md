@@ -1,7 +1,7 @@
 ---
 layout: default
 title: e. Arithmetic
-parent: 2. Python
+parent: 3. Python
 grand_parent: Primers
 nav_order: 5
 permalink: /primers/3_python/a_intro

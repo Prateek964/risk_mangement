@@ -4,7 +4,7 @@ title: a. Python
 parent: 2. Market Risk
 grand_parent: Interview Prep
 nav_order: 1
-permalink: /interview_prep/2_finance/a_python
+permalink: /interview_prep/2_market_risk/a_python
 nav_img: "/assets/images/paper.svg"
 nav_alt: "Study"
 previous: "/interview_prep/2_market_risk/"

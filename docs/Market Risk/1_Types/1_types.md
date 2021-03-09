@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Types
+title: 1. Types
 parent: Market Risk
 has_children: true
 nav_order: 1

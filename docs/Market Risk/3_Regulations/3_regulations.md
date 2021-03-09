@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Regulations
+title: 3. Regulations
 parent: Market Risk
 has_children: true
 nav_order: 3
