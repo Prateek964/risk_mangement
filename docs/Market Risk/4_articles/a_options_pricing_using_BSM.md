@@ -1,7 +1,7 @@
 ---
 layout: default
 title: a. Options Pricing using BSM
-parent: 1. Types
+parent: 4. Articles
 grand_parent: Market Risk
 nav_order: 1
 permalink: /market_risk/4_articles_/a_options_pricing_using_BSM
