@@ -94,11 +94,11 @@ $$
 $$
 
 $\mathrm{T}$ =time to maturity, assuming 365 days per year  
-$\mathrm{S}_{0}=$ asset price  
-$\mathrm{K}$ =exercise price  
+$\mathrm{S}_{0}=$ asset price    
+$\mathrm{K}$ =exercise price    
 $\mathrm{R}_{\mathrm{f}}^{\mathrm{c}}=$ continuously compounded risk-free rate  
-$\sigma=$ volatility of continuously compounded returns on the stock  
-$\mathrm{N}\left(\mathrm{d}_{\mathrm{i}}\right)=$ cumulative distribution function for a standardized normal distribution variable
+$\sigma=$ volatility of continuously compounded returns on the stock   
+$\mathrm{N}\left(\mathrm{d}_{\mathrm{i}}\right)=$ cumulative distribution function for a standardized normal  distribution variable
 
 </div>
 
