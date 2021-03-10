@@ -60,8 +60,8 @@ The model primarily has 5 inputs including:
 ### Pricing of Call Option using the BSM model 
 
 The price of a call options is given by: 
-s
-$C=S_{t} N\left(d_{1}\right)-K e^{-r t} N\left(d_{2}\right)$  
+
+$$C=S_{t} N\left(d_{1}\right)-K e^{-r t} N\left(d_{2}\right)$$  
 where:  
 $d_{1}=\frac{\ln \frac{S_{t}}{K}+\left(r+\frac{\sigma_{z}^{2}}{2}\right) t}{\sigma_{s} \sqrt{t}}$  
 and  
@@ -80,12 +80,14 @@ $N=$ A normal distribution
 
 ### Pricing of Put Option using the BSM model 
 
-The price of a put option is given by:
+The price of a put option is given by:  
 
 $$
 \mathrm{P}_{0}=\mathrm{Ke}^{\mathrm{rT}} \times \mathrm{N}\left(-\mathrm{d}_{2}\right)-\mathrm{S}_{0} \times \mathrm{N}\left(-\mathrm{d}_{1}\right)
-$$
+$$ 
+
 Where:
+
 $$
 \begin{array}{l}
 \mathrm{d}_{1}=\frac{\ln \left(\frac{\mathrm{S}_{0}}{\mathrm{~K}}\right)+\left[\mathrm{r}+\left(\frac{\sigma^{2}}{2}\right)\right] \mathrm{T}}{\sigma \sqrt{\mathrm{T}}} \\
@@ -94,9 +96,9 @@ $$
 $$
 
 $\mathrm{T}$ =time to maturity, assuming 365 days per year  
-$\mathrm{S}_{0}=$ asset price    
-$\mathrm{K}$ =exercise price    
-$\mathrm{R}_{\mathrm{f}}^{\mathrm{c}}=$ continuously compounded risk-free rate  
+$S_0$= asset price    
+$K$ =exercise price    
+${R_f}^c=$ continuously compounded risk-free rate  
 $\sigma=$ volatility of continuously compounded returns on the stock   
 $\mathrm{N}\left(\mathrm{d}_{\mathrm{i}}\right)=$ cumulative distribution function for a standardized normal  distribution variable
 
