@@ -96,7 +96,7 @@ clip("intro", f'''
   <div class="ititle h" id="it1">FRM Part 1</div>
   <div class="isub h" id="it2">{esc(Q["book"])}</div>
   <div class="ichap h" id="it4">{esc(Q["chapter"])}</div>
-  <div class="ichip h" id="it3">QUESTION {Q["number"]}</div>'''),
+  <div class="ichip h" id="it3">PRACTICE QUESTION</div>'''),
 clip("question", f'''
   <div class="qlabel h" id="ql">THE QUESTION</div>
   <div class="qcard h" id="qcard"><p>{stem}</p></div>'''),

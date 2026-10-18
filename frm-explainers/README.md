@@ -5,7 +5,7 @@ Foundations of Risk Management*, branded with the Risk Hub logo. Built with the
 open-source [HyperFrames](https://github.com/heygen-com/hyperframes) framework and
 narrated with ElevenLabs.
 
-Each video runs: cover (FRM Part 1 · Book · Chapter · Question N) → question → options → "pause & pick" countdown → answer
+Each video runs: cover (FRM Part 1 · Book · Chapter · Practice Question) → question → options → "pause & pick" countdown → answer
 reveal with a concept graphic → why each wrong option is wrong → key takeaway →
 "Follow Risk Hub" end card. Captions are synced word by word, with sound effects on every reveal.
 
