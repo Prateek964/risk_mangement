@@ -5,9 +5,13 @@ Foundations of Risk Management*, branded with the Risk Hub logo. Built with the
 open-source [HyperFrames](https://github.com/heygen-com/hyperframes) framework and
 narrated with ElevenLabs.
 
-Each video runs: intro → question → options → "pause & pick" countdown → answer
+Each video runs: cover (FRM Part 1 · Book · Chapter · Question N) → question → options → "pause & pick" countdown → answer
 reveal with a concept graphic → why each wrong option is wrong → key takeaway →
-"Follow Risk Hub" end card. Captions are synced word by word.
+"Follow Risk Hub" end card. Captions are synced word by word, with sound effects on every reveal.
+
+Narration sections may contain ElevenLabs audio tags such as `[warmly]` or `[pause]`;
+they are ignored when matching the transcript. Use `answer_at`, `option_at` and
+`cover_at` in the question JSON when the narration doesn't use the default phrasing.
 
 ## Layout
 
@@ -17,7 +21,9 @@ reveal with a concept graphic → why each wrong option is wrong → key takeawa
 | `audio/qNNN-takeN.mp3` | ElevenLabs narration takes. |
 | `tools/scribe_to_timing.py` | Turns an ElevenLabs Scribe word list into `build/qNNN-timing.json` (exact word timings). |
 | `tools/align.py` | Fallback timing: aligns the script to the audio's pauses when no transcript is available. |
-| `tools/build.py`, `tools/style.css` | The template. Generates `qNNN/index.html` from the question JSON + timing. |
+| `tools/build.py`, `tools/style.css` | The template. Generates `qNNN/index.html` from the question JSON + timing, and `build/qNNN-sfx.json` (sound-effect cues). |
+| `sfx/*.mp3`, `tools/mix.py` | ElevenLabs sound effects (sting, whoosh, pop, tick, correct, wrong) and the mixer that lays them under the narration. |
+| `questions/q001-conversational.json` | Conversational re-script of Q1 for the 'TrevorT' voice, ready to generate once ElevenLabs credits are available. |
 | `qNNN/` | HyperFrames project for one video (assets: logo, fonts, GSAP, voiceover). |
 | `output/riskhub-frm-qNNN.mp4` | Finished video. |
 
@@ -38,8 +44,8 @@ reveal with a concept graphic → why each wrong option is wrong → key takeawa
    ```bash
    npx hyperframes@0.8.146 init qNNN --example blank --resolution portrait --non-interactive
    mkdir -p qNNN/assets && cp -r q090/assets/{fonts,gsap.min.js,grain.png,riskhub-logo.png} qNNN/assets/
-   cp audio/qNNN-take1.mp3 qNNN/assets/voiceover.mp3
    python3 tools/build.py questions/qNNN.json build/qNNN-timing.json qNNN
+   python3 tools/mix.py questions/qNNN.json build/qNNN-sfx.json qNNN/assets/voiceover.mp3
    cd qNNN && npx hyperframes@0.8.146 lint && npx hyperframes@0.8.146 render -q high -o ../build/qNNN-master.mp4
    ```
 5. Re-encode for sharing:

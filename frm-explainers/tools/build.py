@@ -93,10 +93,10 @@ tk = "".join(f'<div class="tk h" id="tk{i}"><span class="tn">{i + 1}</span>{esc(
 scenes = [
 clip("intro", f'''
   <div class="ilogo" id="ilogo"><img src="assets/riskhub-logo.png" alt="Risk Hub"/></div>
-  <div class="ititle h" id="it1">FRM Part I</div>
-  <div class="isub h" id="it2">Book 1 · Foundations of Risk Management</div>
-  <div class="ichip h" id="it3">PRACTICE QUESTION {Q["number"]}</div>
-  <div class="isrc h" id="it4">{esc(Q["source"])} &nbsp;·&nbsp; {esc(Q["chapter"])}</div>'''),
+  <div class="ititle h" id="it1">FRM Part 1</div>
+  <div class="isub h" id="it2">{esc(Q["book"])}</div>
+  <div class="ichap h" id="it4">{esc(Q["chapter"])}</div>
+  <div class="ichip h" id="it3">QUESTION {Q["number"]}</div>'''),
 clip("question", f'''
   <div class="qlabel h" id="ql">THE QUESTION</div>
   <div class="qcard h" id="qcard"><p>{stem}</p></div>'''),
@@ -127,23 +127,25 @@ clip("takeaway", f'''
 steps = ["QUESTION", "OPTIONS", "ANSWER", "WHY NOT"]
 header = f'''<div class="hdr h" id="hdr">
     <img class="hlogo" src="assets/riskhub-logo.png" alt="Risk Hub"/>
-    <div class="htx"><div class="h1">FRM PART I · BOOK 1</div><div class="h2">Foundations of Risk Management</div></div>
+    <div class="htx"><div class="h1">FRM PART 1 · BOOK 1 · CH {Q["chapter_number"]}</div><div class="h2">Foundations of Risk Management</div></div>
     <div class="hq">Q{Q["number"]}</div>
   </div>
   <div class="steps h" id="steps">{"".join(f'<div class="st" id="st{i}">{s}</div>' for i, s in enumerate(steps))}<div class="sbar" id="sbar"></div></div>'''
 
 TT = {
     "q": S["question"], "o": S["options"], "p": S["pause"], "a": S["answer"], "w": S["wrong"], "t": S["takeaway"],
-    "ansD": T(f"answer is {ans}.", "answer", end=True) - 0.5,
+    "ansD": T(Q.get("answer_at", f"answer is {ans}."), "answer", end=True) - 0.3,
     "hi": T(ap["high"]["at"], "answer"), "lo": T(ap["low"]["at"], "answer"),
     "chips": [T(c["at"], "answer") for c in ap["low"]["chips"]],
-    "opts": [T(f"Option {l}.", "options") for l in letters],
+    "opts": [T(Q.get("option_at", {}).get(l, f"Option {l}."), "options") for l in letters],
     "hls": [T(h["at"], "question") for h in Q.get("stem_highlights", [])],
     "wr": [T(Q["wrong"][l]["at"], "wrong") for l in wrong],
     "defn": T(defn["at"], "wrong") if defn else None,
     "tk": [T(t["at"], "takeaway") for t in Q["takeaway"]],
     "follow": T("Follow Risk Hub", "takeaway"),
     "pauseEnd": S["answer"],
+    "cov": [max(0.5, T(p, "intro") - 0.1 + i * 0.35 * (i > 0 and p == Q.get("cover_at", [None] * 4)[i - 1]))
+            for i, p in enumerate(Q.get("cover_at", ["FRM Part", "Book 1,", "Chapter 1,", f"Question {Q['number']}."]))],
 }
 
 JS = f"""
@@ -176,7 +178,7 @@ out('#hdr', T.follow - 0.2); out('#steps', T.follow - 0.2);
 
 // intro
 tl.fromTo('#ilogo', {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.6)' }}, 0.05);
-inn('#it1', 0.7); inn('#it2', 1.9); inn('#it3', 3.1, {{ from: {{ scale: 0.8, y: 0 }} }}); inn('#it4', 3.6);
+inn('#it1', T.cov[0]); inn('#it2', T.cov[1]); inn('#it4', T.cov[2]); inn('#it3', T.cov[3], {{ from: {{ scale: 0.8, y: 0 }} }});
 
 // question
 inn('#ql', T.q + 0.1); inn('#qcard', T.q + 0.25, {{}}, 0.7);
@@ -259,4 +261,18 @@ page = f"""<!doctype html>
 </html>
 """
 open(f"{PROJ}/index.html", "w").write(page)
+
+# ---------------------------------------------------------------- sound effects
+cd_step = (TT["pauseEnd"] - TT["p"] - 0.6) / 3
+cues = [("sting", 0.05, -11)]
+cues += [("whoosh", SC[k][0], -10) for k in ["question", "options", "answer", "wrong", "takeaway"]]
+cues += [("pop", t - 0.1, -12) for t in TT["opts"]]
+cues += [("tick", TT["p"] + 0.3 + i * cd_step, -8) for i in range(3)]
+cues += [("correct", TT["ansD"], -6)]
+cues += [("pop", t - 0.05, -14) for t in TT["chips"]]
+cues += [("wrong", t - 0.15, -9) for t in TT["wr"]]
+cues += [("pop", t - 0.1, -12) for t in TT["tk"]]
+cues += [("sting", TT["follow"], -11)]
+cues = sorted((round(max(t, 0), 3), n, g) for n, t, g in cues)
+json.dump([{"t": t, "sfx": n, "gain_db": g} for t, n, g in cues], open(sys.argv[2].replace("-timing.json", "-sfx.json"), "w"), indent=1)
 print("scenes", SC, "captions", len(chunks))

@@ -1,0 +1,122 @@
+[
+ {
+  "t": 0.05,
+  "sfx": "sting",
+  "gain_db": -11
+ },
+ {
+  "t": 6.64,
+  "sfx": "whoosh",
+  "gain_db": -10
+ },
+ {
+  "t": 24.06,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 24.16,
+  "sfx": "whoosh",
+  "gain_db": -10
+ },
+ {
+  "t": 30.86,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 39.02,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 46.46,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 55.66,
+  "sfx": "tick",
+  "gain_db": -8
+ },
+ {
+  "t": 56.9,
+  "sfx": "tick",
+  "gain_db": -8
+ },
+ {
+  "t": 58.14,
+  "sfx": "tick",
+  "gain_db": -8
+ },
+ {
+  "t": 61.66,
+  "sfx": "correct",
+  "gain_db": -6
+ },
+ {
+  "t": 62.28,
+  "sfx": "whoosh",
+  "gain_db": -10
+ },
+ {
+  "t": 70.67,
+  "sfx": "pop",
+  "gain_db": -14
+ },
+ {
+  "t": 71.47,
+  "sfx": "pop",
+  "gain_db": -14
+ },
+ {
+  "t": 72.67,
+  "sfx": "pop",
+  "gain_db": -14
+ },
+ {
+  "t": 78.72,
+  "sfx": "whoosh",
+  "gain_db": -10
+ },
+ {
+  "t": 81.05,
+  "sfx": "wrong",
+  "gain_db": -9
+ },
+ {
+  "t": 95.37,
+  "sfx": "wrong",
+  "gain_db": -9
+ },
+ {
+  "t": 103.77,
+  "sfx": "wrong",
+  "gain_db": -9
+ },
+ {
+  "t": 110.4,
+  "sfx": "whoosh",
+  "gain_db": -10
+ },
+ {
+  "t": 111.66,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 113.18,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 115.1,
+  "sfx": "pop",
+  "gain_db": -12
+ },
+ {
+  "t": 118.72,
+  "sfx": "sting",
+  "gain_db": -11
+ }
+]

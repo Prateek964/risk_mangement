@@ -14,7 +14,7 @@ words = [w for w in raw if w.get("type", "word") == "word" and not re.fullmatch(
 def norm(w): return re.sub(r"[^a-z0-9]", "", w.lower())
 out, k = [], 0
 for sec in Q["sections"]:
-    for tok in sec["text"].split():
+    for tok in re.sub(r"\[[^\]]*\]", " ", sec["text"]).split():
         w = words[k]
         if norm(w["text"]) != norm(tok):
             sys.exit(f"mismatch at word {k}: transcript {w['text']!r} vs script {tok!r} (section {sec['id']})")
