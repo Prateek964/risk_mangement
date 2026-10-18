@@ -1,3 +1,5 @@
 wall-street-1929/output/wall-street-crash-1929.mp4
 wall-street-1929/output/wall-street-crash-1929-hq-share.mp4
 frm-explainers/build/*.mp4
+frm-explainers/build/work-*/
+frm-explainers/build/.*hf-transaction*/
