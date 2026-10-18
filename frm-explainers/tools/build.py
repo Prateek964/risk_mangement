@@ -84,6 +84,9 @@ def opt_card(l, cls="opt", idp="op"):
             f'<div class="ot">{esc(Q["options"][l])}</div></div>')
 
 ap = Q["answer_points"]
+def meter(col, default):
+    w = col.get("meter", default)
+    return f'<div class="meter"><i style="width:{w}%"></i></div>' if w is not None else '<div class="mgap"></div>'
 chips = "".join(f'<div class="chip h" id="chip{i}">{esc(c["text"])}</div>' for i, c in enumerate(ap["low"]["chips"]))
 rows = "".join(f'''<div class="wrow h" id="w{l}"><div class="lt bad"><span>{l}</span></div>
   <div class="wtx"><div class="wopt">{esc(Q["options"][l])}</div><div class="wwhy h" id="wy{l}">{esc(Q["wrong"][l]["reason"])}</div></div></div>''' for l in wrong)
@@ -110,8 +113,8 @@ clip("answer", f'''
   <div class="apanel h" id="ap">
     <div class="aptitle">{esc(ap["title"])}</div>
     <div class="cols">
-      <div class="col hi h" id="colhi"><div class="cl">{esc(ap["high"]["label"])}</div><div class="meter"><i style="width:88%"></i></div><div class="ct">{esc(ap["high"]["text"])}</div></div>
-      <div class="col lo h" id="collo"><div class="cl">{esc(ap["low"]["label"])}</div><div class="meter"><i style="width:28%"></i></div><div class="chips">{chips}</div></div>
+      <div class="col hi h" id="colhi"><div class="cl">{esc(ap["high"]["label"])}</div>{meter(ap["high"], 88)}<div class="ct">{esc(ap["high"]["text"])}</div></div>
+      <div class="col lo h" id="collo"><div class="cl">{esc(ap["low"]["label"])}</div>{meter(ap["low"], 28)}<div class="chips">{chips}</div></div>
     </div>
   </div>'''),
 clip("wrong", f'''
@@ -217,7 +220,7 @@ WRONG.forEach((l, i) => {{
   inn('#wy' + l, T.wr[i] + 0.5, {{ from: {{ y: 14 }} }}, 0.5);
   tl.fromTo('#w' + l + ' .wopt', {{ textDecorationColor: 'rgba(229,72,77,0)' }}, {{ textDecorationColor: 'rgba(229,72,77,1)', duration: 0.45, ease: 'none' }}, T.wr[i] + 0.3);
 }});
-if (T.defn !== null) {{ inn('#defn', T.defn, {{ from: {{ scale: 0.9, y: 30 }} }}); out('#defn', T.wr[1] - 0.2, 0.3); }}
+if (T.defn !== null) {{ inn('#defn', T.defn, {{ from: {{ scale: 0.9, y: 30 }} }}); const nx = T.wr.find(t => t > T.defn); if (nx !== undefined) out('#defn', nx - 0.2, 0.3); }}
 
 // takeaway
 inn('#tl', T.t + 0.05);

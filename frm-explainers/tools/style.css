@@ -72,6 +72,7 @@ body { font-family:'Inter', sans-serif; color:#fff; }
 .cl { font:900 26px/1 'Inter'; letter-spacing:3px; }
 .col.hi .cl { color:#6BE0A2; } .col.lo .cl { color:var(--gold); }
 .meter { height:18px; border-radius:9px; background:rgba(255,255,255,.15); margin:26px 0 30px; overflow:hidden; }
+.mgap { height:26px; }
 .meter i { display:block; height:100%; border-radius:9px; }
 .col.hi .meter i { background:var(--green); } .col.lo .meter i { background:var(--gold); }
 .ct { font:800 44px/1.2 'Inter'; }

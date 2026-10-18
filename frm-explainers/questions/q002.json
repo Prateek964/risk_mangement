@@ -1,0 +1,56 @@
+{
+  "id": "q002",
+  "number": 2,
+  "source": "GARP Mock 2023 · Part 2 · Q21",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. The Building Blocks of Risk Management",
+  "audio": "audio/q002-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 1,", "another practice question."],
+  "stem": "A junior analyst at a bank is asked to provide suggestions on potential metrics the bank can use in its capital management program. The analyst prepares a presentation discussing the advantages and disadvantages of the RAROC metric. Which of the following statements is most appropriate for the analyst to include in the presentation?",
+  "stem_short": "Which statement about RAROC belongs in the presentation?",
+  "stem_highlights": [
+    {"text": "capital management program", "at": "capital management program."},
+    {"text": "advantages and disadvantages", "at": "pros and cons"},
+    {"text": "RAROC metric", "at": "RAROC..."}
+  ],
+  "options": {
+    "A": "RAROC will make it easier to compare the profitability of business divisions that require different levels of capital.",
+    "B": "RAROC allows the firm to benchmark its performance against operating targets set by industry peers.",
+    "C": "RAROC is an effective forward-looking tool to model potential extreme losses during stress scenarios.",
+    "D": "An activity is adding value to the bank’s shareholders if its cost of equity capital is higher than its RAROC."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "RAROC puts every business line on the same scale",
+    "high": {"label": "THE FORMULA", "text": "Risk-adjusted return ÷ economic capital", "at": "You take the risk-adjusted return", "meter": null},
+    "low": {"label": "SO YOU CAN COMPARE", "chips": [
+      {"text": "A small desk", "at": "small desk"},
+      {"text": "A big lending unit", "at": "big lending unit"},
+      {"text": "Apples to apples", "at": "apples to apples."}
+    ], "at": "So a small desk", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "Not a peer benchmark — it tests units against your own cost of equity.", "at": "B is wrong."},
+    "C": {"reason": "Built on expected returns — stress losses need scenario analysis.", "at": "C is wrong too."},
+    "D": {"reason": "Backwards — value is added when RAROC beats the cost of equity.", "at": "And D has it backwards."}
+  },
+  "takeaway": [
+    {"text": "Compares units with different capital", "at": "RAROC compares business lines"},
+    {"text": "Adds value only if RAROC > cost of equity", "at": "A business adds value"},
+    {"text": "Not a peer benchmark or stress test", "at": "And it's not"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 1, The Building Blocks of Risk Management. Let's do another practice question."},
+    {"id": "question", "text": "So, a junior analyst at a bank is asked to suggest metrics for the bank's capital management program. The analyst puts together a presentation on the pros and cons of RAROC... that's risk-adjusted return on capital. Which statement belongs in that presentation?"},
+    {"id": "options", "text": "Option A. RAROC will make it easier to compare the profitability of business divisions that require different levels of capital. Option B. RAROC allows the firm to benchmark its performance against operating targets set by industry peers. Option C. RAROC is an effective forward-looking tool to model potential extreme losses during stress scenarios. And option D. An activity is adding value to the bank's shareholders if its cost of equity capital is higher than its RAROC."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. Different business lines need very different amounts of economic capital, and RAROC puts them all on the same footing. You take the risk-adjusted return and divide it by the economic capital it uses. So a small desk and a big lending unit can finally be compared apples to apples."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. RAROC isn't a peer benchmark. It tells you whether your own business units earn more than your cost of equity capital. C is wrong too. RAROC is built on expected returns. It doesn't model extreme losses in a stress scenario... for that, you'd use tools like scenario analysis. And D has it backwards. An activity adds value when its RAROC is higher than the cost of equity capital, not lower."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. RAROC compares business lines that use different amounts of capital. A business adds value only when its RAROC beats its cost of equity. And it's not a peer benchmark or a stress test. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["raroc", "risk-adjusted return on capital", "capital management program", "pros and cons", "a!", "economic capital", "same footing", "small desk", "big lending unit", "apples to apples", "peer benchmark", "cost of equity capital", "cost of equity", "expected returns", "scenario analysis", "backwards", "risk hub"]
+}

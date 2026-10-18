@@ -82,6 +82,7 @@ body { font-family:'Inter', sans-serif; color:#fff; }
 .cl { font:900 26px/1 'Inter'; letter-spacing:3px; }
 .col.hi .cl { color:#6BE0A2; } .col.lo .cl { color:var(--gold); }
 .meter { height:18px; border-radius:9px; background:rgba(255,255,255,.15); margin:26px 0 30px; overflow:hidden; }
+.mgap { height:26px; }
 .meter i { display:block; height:100%; border-radius:9px; }
 .col.hi .meter i { background:var(--green); } .col.lo .meter i { background:var(--gold); }
 .ct { font:800 44px/1.2 'Inter'; }
@@ -229,7 +230,7 @@ WRONG.forEach((l, i) => {
   inn('#wy' + l, T.wr[i] + 0.5, { from: { y: 14 } }, 0.5);
   tl.fromTo('#w' + l + ' .wopt', { textDecorationColor: 'rgba(229,72,77,0)' }, { textDecorationColor: 'rgba(229,72,77,1)', duration: 0.45, ease: 'none' }, T.wr[i] + 0.3);
 });
-if (T.defn !== null) { inn('#defn', T.defn, { from: { scale: 0.9, y: 30 } }); out('#defn', T.wr[1] - 0.2, 0.3); }
+if (T.defn !== null) { inn('#defn', T.defn, { from: { scale: 0.9, y: 30 } }); const nx = T.wr.find(t => t > T.defn); if (nx !== undefined) out('#defn', nx - 0.2, 0.3); }
 
 // takeaway
 inn('#tl', T.t + 0.05);
