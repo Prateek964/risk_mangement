@@ -1,0 +1,135 @@
+{
+  "id": "q090",
+  "number": 90,
+  "source": "GARP Mock 2023 · Part 2 · Q99",
+  "chapter": "Ch 1 · The Building Blocks of Risk Management",
+  "audio": "audio/q090-take1.mp3",
+  "stem": "A risk manager at a local bank is discussing expected and unexpected loss with a risk analyst. Unexpected losses can sometimes result from unknown or uncertain risks, or risks that are difficult to quantify. Which statement is correct for the manager to make?",
+  "stem_short": "Which statement about unknown risks is correct?",
+  "stem_highlights": [
+    {
+      "text": "expected and unexpected loss",
+      "at": "expected and unexpected loss"
+    },
+    {
+      "text": "unknown or uncertain risks",
+      "at": "unknown or uncertain risks"
+    },
+    {
+      "text": "difficult to quantify",
+      "at": "hard to quantify"
+    }
+  ],
+  "options": {
+    "A": "Unknown risks may be estimated but are typically impossible to manage.",
+    "B": "Unknown risks may exist in various risk types but are typically minor and inconsequential.",
+    "C": "Risk managers should treat unknown risks in the same way as those risks that can be quantified.",
+    "D": "A risk manager’s confidence in the estimate of a risk measure should affect the application of that estimate in the decision-making process."
+  },
+  "answer": "D",
+  "answer_points": {
+    "title": "Confidence shapes how you use the number",
+    "high": {
+      "label": "HIGH CONFIDENCE",
+      "text": "Lean on the estimate",
+      "at": "When you trust the estimate"
+    },
+    "low": {
+      "label": "LOW CONFIDENCE",
+      "chips": [
+        {
+          "text": "Buffers",
+          "at": "buffers"
+        },
+        {
+          "text": "Stress tests",
+          "at": "stress tests"
+        },
+        {
+          "text": "Judgment",
+          "at": "judgment."
+        }
+      ],
+      "at": "When you don't"
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "Unknown risks can still be managed — e.g. by avoiding the activity.",
+      "at": "A is wrong."
+    },
+    "B": {
+      "reason": "Knightian uncertainties can be huge in severity.",
+      "at": "B is wrong."
+    },
+    "C": {
+      "reason": "Never treat an unmeasurable risk as a known quantity.",
+      "at": "C is wrong."
+    }
+  },
+  "definition": {
+    "term": "Knightian uncertainty",
+    "text": "Risk where you can’t even model a probability distribution of outcomes.",
+    "at": "Knightian uncertainty..."
+  },
+  "takeaway": [
+    {
+      "text": "Measure what you can",
+      "at": "Measure what you can,"
+    },
+    {
+      "text": "Respect what you can’t",
+      "at": "respect what you can't,"
+    },
+    {
+      "text": "Let confidence guide decisions",
+      "at": "and let your confidence"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "FRM Part One. Foundations of Risk Management. Let's solve this one together."
+    },
+    {
+      "id": "question",
+      "text": "A risk manager at a bank is discussing expected and unexpected loss. The manager points out that unexpected losses can come from unknown or uncertain risks... risks that are hard to quantify. Which statement should the manager make?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. Unknown risks may be estimated, but are typically impossible to manage. Option B. Unknown risks exist in various risk types, but are typically minor and inconsequential. Option C. Risk managers should treat unknown risks the same way as risks that can be quantified. Option D. A risk manager's confidence in a risk estimate should affect how that estimate is used in decision making."
+    },
+    {
+      "id": "pause",
+      "text": "Pause the video and pick your answer."
+    },
+    {
+      "id": "answer",
+      "text": "The correct answer is D. Every risk number comes with a level of confidence. When you trust the estimate, you can lean on it. When you don't, you add buffers, stress tests, and judgment. So your confidence in a risk measure should shape how you use it."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why are the others wrong? A is wrong. Some unknown risks are Knightian uncertainty... where you can't even model a probability distribution. But they can still be managed, for example by avoiding the activity altogether. B is wrong. Knightian uncertainties can be huge in severity, even when their frequency is impossible to measure. C is wrong. Never treat a risk you cannot measure as if it were a known quantity."
+    },
+    {
+      "id": "takeaway",
+      "text": "Key takeaway. Measure what you can, respect what you can't, and let your confidence guide your decisions. Follow Risk Hub for more FRM practice."
+    }
+  ],
+  "caption_keywords": [
+    "expected and unexpected loss",
+    "unknown or uncertain risks",
+    "hard to quantify",
+    "correct answer is d",
+    "confidence",
+    "buffers",
+    "stress tests",
+    "judgment",
+    "knightian uncertainty",
+    "knightian uncertainties",
+    "avoiding",
+    "huge in severity",
+    "known quantity",
+    "risk hub"
+  ]
+}
