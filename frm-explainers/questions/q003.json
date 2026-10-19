@@ -1,0 +1,55 @@
+{
+  "id": "q003",
+  "number": 3,
+  "source": "GARP Mock 2023 · Part 1 · Q18",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. The Building Blocks of Risk Management",
+  "audio": "audio/q003-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 1,", "another practice question."],
+  "stem": "A newly hired treasury risk analyst at a large bank has been assigned to the team responsible for managing the liquidity risk of the bank. The analyst is reviewing the tasks that will be required as part of this function. Which of the following is most likely part of the treasury risk analyst’s job duties?",
+  "stem_short": "Which task belongs to the treasury risk analyst?",
+  "stem_highlights": [
+    {"text": "treasury risk analyst", "at": "treasury risk analyst"},
+    {"text": "liquidity risk", "at": "liquidity risk."},
+    {"text": "job duties", "at": "duties?"}
+  ],
+  "options": {
+    "A": "Building VaR models",
+    "B": "Purchasing credit default swaps",
+    "C": "Implementing asset-liability management",
+    "D": "Estimating loss given default"
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "ALM keeps funding liquidity in check",
+    "high": {"label": "THE MISMATCH", "text": "Long-term loans funded by short-term deposits", "at": "A bank often funds", "meter": null},
+    "low": {"label": "ALM TOOLS", "chips": [
+      {"text": "Gap analysis", "at": "gap analysis"},
+      {"text": "Duration analysis", "at": "duration analysis"}
+    ], "at": "So the team uses", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "VaR models are built by model developers — and measure market risk.", "at": "A is wrong."},
+    "B": {"reason": "CDS hedge counterparty risk — a form of credit risk.", "at": "B is wrong too."},
+    "D": {"reason": "Loss given default quantifies credit risk, not liquidity.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Treasury = funding liquidity risk", "at": "Treasury handles"},
+    {"text": "Its main tool: asset-liability management", "at": "and its go-to tool"},
+    {"text": "VaR → market risk · CDS & LGD → credit risk", "at": "VaR is market risk,"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 1, The Building Blocks of Risk Management. Let's do another practice question."},
+    {"id": "question", "text": "So, a newly hired treasury risk analyst at a large bank joins the team that manages the bank's liquidity risk. And the analyst is going through the tasks that come with the job. Which of these is most likely part of the treasury risk analyst's duties?"},
+    {"id": "options", "text": "Option A. Building VaR models. Option B. Purchasing credit default swaps. Option C. Implementing asset-liability management. And option D. Estimating loss given default."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... C! [warmly] Here's why. Treasury looks after the bank's funding liquidity risk, and asset-liability management is the main tool for that. Think about it. A bank often funds long-term loans with short-term deposits. That maturity mismatch hurts if short-term rates rise faster than long-term rates. So the team uses gap analysis and duration analysis to keep it under control."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Building VaR models is a job for model developers, and VaR is mainly a market risk tool. B is wrong too. Credit default swaps hedge counterparty risk, which is a form of credit risk. And D? Same story. Estimating loss given default is about quantifying credit risk, not liquidity."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Treasury handles funding liquidity risk, and its go-to tool is asset-liability management. VaR is market risk, while credit default swaps and loss given default are about credit risk. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["treasury risk analyst", "liquidity risk", "funding liquidity risk", "c!", "asset-liability management", "maturity mismatch", "long-term loans", "short-term deposits", "gap analysis", "duration analysis", "market risk", "credit risk", "counterparty risk", "model developers", "risk hub"]
+}

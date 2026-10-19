@@ -1,0 +1,1682 @@
+{
+ "duration": 115.409,
+ "speech_start": 0.16,
+ "speech_end": 115.36,
+ "sections": [
+  {
+   "id": "intro",
+   "s": 0.16,
+   "e": 11.72
+  },
+  {
+   "id": "question",
+   "s": 12.24,
+   "e": 27.72
+  },
+  {
+   "id": "options",
+   "s": 28.0,
+   "e": 42.08
+  },
+  {
+   "id": "pause",
+   "s": 42.4,
+   "e": 45.04
+  },
+  {
+   "id": "answer",
+   "s": 47.44,
+   "e": 73.92
+  },
+  {
+   "id": "wrong",
+   "s": 74.24,
+   "e": 96.32
+  },
+  {
+   "id": "takeaway",
+   "s": 96.72,
+   "e": 115.36
+  }
+ ],
+ "words": [
+  {
+   "w": "Hey,",
+   "sec": "intro",
+   "s": 0.16,
+   "e": 0.52
+  },
+  {
+   "w": "welcome",
+   "sec": "intro",
+   "s": 0.64,
+   "e": 0.88
+  },
+  {
+   "w": "back",
+   "sec": "intro",
+   "s": 0.96,
+   "e": 1.12
+  },
+  {
+   "w": "to",
+   "sec": "intro",
+   "s": 1.16,
+   "e": 1.2
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 1.28,
+   "e": 1.52
+  },
+  {
+   "w": "Hub!",
+   "sec": "intro",
+   "s": 1.64,
+   "e": 2.12
+  },
+  {
+   "w": "FRM",
+   "sec": "intro",
+   "s": 2.48,
+   "e": 2.96
+  },
+  {
+   "w": "Part",
+   "sec": "intro",
+   "s": 3.2,
+   "e": 3.36
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 3.52,
+   "e": 3.84
+  },
+  {
+   "w": "Book",
+   "sec": "intro",
+   "s": 4.0,
+   "e": 4.16
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 4.24,
+   "e": 4.6
+  },
+  {
+   "w": "Foundations",
+   "sec": "intro",
+   "s": 4.72,
+   "e": 5.2
+  },
+  {
+   "w": "of",
+   "sec": "intro",
+   "s": 5.28,
+   "e": 5.32
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 5.36,
+   "e": 5.52
+  },
+  {
+   "w": "Management.",
+   "sec": "intro",
+   "s": 5.6,
+   "e": 6.28
+  },
+  {
+   "w": "Chapter",
+   "sec": "intro",
+   "s": 6.48,
+   "e": 6.8
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 6.88,
+   "e": 7.24
+  },
+  {
+   "w": "The",
+   "sec": "intro",
+   "s": 7.36,
+   "e": 7.44
+  },
+  {
+   "w": "Building",
+   "sec": "intro",
+   "s": 7.52,
+   "e": 7.84
+  },
+  {
+   "w": "Blocks",
+   "sec": "intro",
+   "s": 7.92,
+   "e": 8.24
+  },
+  {
+   "w": "of",
+   "sec": "intro",
+   "s": 8.28,
+   "e": 8.32
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 8.4,
+   "e": 8.56
+  },
+  {
+   "w": "Management.",
+   "sec": "intro",
+   "s": 8.64,
+   "e": 9.48
+  },
+  {
+   "w": "Let's",
+   "sec": "intro",
+   "s": 9.84,
+   "e": 10.0
+  },
+  {
+   "w": "do",
+   "sec": "intro",
+   "s": 10.04,
+   "e": 10.08
+  },
+  {
+   "w": "another",
+   "sec": "intro",
+   "s": 10.2,
+   "e": 10.32
+  },
+  {
+   "w": "practice",
+   "sec": "intro",
+   "s": 10.4,
+   "e": 10.72
+  },
+  {
+   "w": "question.",
+   "sec": "intro",
+   "s": 10.8,
+   "e": 11.72
+  },
+  {
+   "w": "So,",
+   "sec": "question",
+   "s": 12.24,
+   "e": 12.76
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 13.04,
+   "e": 13.12
+  },
+  {
+   "w": "newly",
+   "sec": "question",
+   "s": 13.2,
+   "e": 13.44
+  },
+  {
+   "w": "hired",
+   "sec": "question",
+   "s": 13.6,
+   "e": 13.92
+  },
+  {
+   "w": "treasury",
+   "sec": "question",
+   "s": 14.0,
+   "e": 14.32
+  },
+  {
+   "w": "risk",
+   "sec": "question",
+   "s": 14.48,
+   "e": 14.72
+  },
+  {
+   "w": "analyst",
+   "sec": "question",
+   "s": 14.8,
+   "e": 15.28
+  },
+  {
+   "w": "at",
+   "sec": "question",
+   "s": 15.32,
+   "e": 15.36
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 15.44,
+   "e": 15.52
+  },
+  {
+   "w": "large",
+   "sec": "question",
+   "s": 15.68,
+   "e": 15.84
+  },
+  {
+   "w": "bank",
+   "sec": "question",
+   "s": 15.92,
+   "e": 16.24
+  },
+  {
+   "w": "joins",
+   "sec": "question",
+   "s": 16.64,
+   "e": 16.88
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 16.96,
+   "e": 17.04
+  },
+  {
+   "w": "team",
+   "sec": "question",
+   "s": 17.12,
+   "e": 17.36
+  },
+  {
+   "w": "that",
+   "sec": "question",
+   "s": 17.44,
+   "e": 17.6
+  },
+  {
+   "w": "manages",
+   "sec": "question",
+   "s": 17.68,
+   "e": 18.0
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 18.08,
+   "e": 18.16
+  },
+  {
+   "w": "bank's",
+   "sec": "question",
+   "s": 18.24,
+   "e": 18.48
+  },
+  {
+   "w": "liquidity",
+   "sec": "question",
+   "s": 18.6,
+   "e": 18.96
+  },
+  {
+   "w": "risk.",
+   "sec": "question",
+   "s": 19.04,
+   "e": 19.56
+  },
+  {
+   "w": "And",
+   "sec": "question",
+   "s": 19.76,
+   "e": 19.84
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 19.88,
+   "e": 19.92
+  },
+  {
+   "w": "analyst",
+   "sec": "question",
+   "s": 20.0,
+   "e": 20.4
+  },
+  {
+   "w": "is",
+   "sec": "question",
+   "s": 20.48,
+   "e": 20.56
+  },
+  {
+   "w": "going",
+   "sec": "question",
+   "s": 20.64,
+   "e": 20.88
+  },
+  {
+   "w": "through",
+   "sec": "question",
+   "s": 20.96,
+   "e": 21.04
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 21.12,
+   "e": 21.2
+  },
+  {
+   "w": "tasks",
+   "sec": "question",
+   "s": 21.28,
+   "e": 21.68
+  },
+  {
+   "w": "that",
+   "sec": "question",
+   "s": 21.76,
+   "e": 21.84
+  },
+  {
+   "w": "come",
+   "sec": "question",
+   "s": 21.92,
+   "e": 22.08
+  },
+  {
+   "w": "with",
+   "sec": "question",
+   "s": 22.12,
+   "e": 22.16
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 22.24,
+   "e": 22.32
+  },
+  {
+   "w": "job.",
+   "sec": "question",
+   "s": 22.4,
+   "e": 23.04
+  },
+  {
+   "w": "Which",
+   "sec": "question",
+   "s": 23.36,
+   "e": 23.52
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 23.6,
+   "e": 23.76
+  },
+  {
+   "w": "these",
+   "sec": "question",
+   "s": 23.84,
+   "e": 24.16
+  },
+  {
+   "w": "is",
+   "sec": "question",
+   "s": 24.24,
+   "e": 24.32
+  },
+  {
+   "w": "most",
+   "sec": "question",
+   "s": 24.48,
+   "e": 24.72
+  },
+  {
+   "w": "likely",
+   "sec": "question",
+   "s": 24.8,
+   "e": 25.12
+  },
+  {
+   "w": "part",
+   "sec": "question",
+   "s": 25.2,
+   "e": 25.44
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 25.52,
+   "e": 25.6
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 25.64,
+   "e": 25.68
+  },
+  {
+   "w": "treasury",
+   "sec": "question",
+   "s": 25.76,
+   "e": 26.16
+  },
+  {
+   "w": "risk",
+   "sec": "question",
+   "s": 26.24,
+   "e": 26.4
+  },
+  {
+   "w": "analyst's",
+   "sec": "question",
+   "s": 26.56,
+   "e": 26.96
+  },
+  {
+   "w": "duties?",
+   "sec": "question",
+   "s": 27.04,
+   "e": 27.72
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 28.0,
+   "e": 28.24
+  },
+  {
+   "w": "A.",
+   "sec": "options",
+   "s": 28.4,
+   "e": 28.84
+  },
+  {
+   "w": "Building",
+   "sec": "options",
+   "s": 29.12,
+   "e": 29.44
+  },
+  {
+   "w": "VaR",
+   "sec": "options",
+   "s": 29.52,
+   "e": 30.0
+  },
+  {
+   "w": "models.",
+   "sec": "options",
+   "s": 30.08,
+   "e": 30.72
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 30.96,
+   "e": 31.2
+  },
+  {
+   "w": "B.",
+   "sec": "options",
+   "s": 31.36,
+   "e": 31.96
+  },
+  {
+   "w": "Purchasing",
+   "sec": "options",
+   "s": 32.24,
+   "e": 32.64
+  },
+  {
+   "w": "credit",
+   "sec": "options",
+   "s": 32.8,
+   "e": 32.96
+  },
+  {
+   "w": "default",
+   "sec": "options",
+   "s": 33.12,
+   "e": 33.52
+  },
+  {
+   "w": "swaps.",
+   "sec": "options",
+   "s": 33.6,
+   "e": 34.32
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 34.56,
+   "e": 34.8
+  },
+  {
+   "w": "C.",
+   "sec": "options",
+   "s": 35.12,
+   "e": 35.56
+  },
+  {
+   "w": "Implementing",
+   "sec": "options",
+   "s": 35.84,
+   "e": 36.32
+  },
+  {
+   "w": "asset-liability",
+   "sec": "options",
+   "s": 36.48,
+   "e": 37.36
+  },
+  {
+   "w": "management.",
+   "sec": "options",
+   "s": 37.44,
+   "e": 38.24
+  },
+  {
+   "w": "And",
+   "sec": "options",
+   "s": 38.48,
+   "e": 38.56
+  },
+  {
+   "w": "option",
+   "sec": "options",
+   "s": 38.64,
+   "e": 38.96
+  },
+  {
+   "w": "D.",
+   "sec": "options",
+   "s": 39.12,
+   "e": 39.64
+  },
+  {
+   "w": "Estimating",
+   "sec": "options",
+   "s": 39.92,
+   "e": 40.48
+  },
+  {
+   "w": "loss",
+   "sec": "options",
+   "s": 40.56,
+   "e": 40.88
+  },
+  {
+   "w": "given",
+   "sec": "options",
+   "s": 40.96,
+   "e": 41.2
+  },
+  {
+   "w": "default.",
+   "sec": "options",
+   "s": 41.28,
+   "e": 42.08
+  },
+  {
+   "w": "Okay,",
+   "sec": "pause",
+   "s": 42.4,
+   "e": 42.88
+  },
+  {
+   "w": "pause",
+   "sec": "pause",
+   "s": 43.12,
+   "e": 43.36
+  },
+  {
+   "w": "the",
+   "sec": "pause",
+   "s": 43.4,
+   "e": 43.44
+  },
+  {
+   "w": "video",
+   "sec": "pause",
+   "s": 43.52,
+   "e": 43.92
+  },
+  {
+   "w": "and",
+   "sec": "pause",
+   "s": 44.0,
+   "e": 44.08
+  },
+  {
+   "w": "lock",
+   "sec": "pause",
+   "s": 44.16,
+   "e": 44.32
+  },
+  {
+   "w": "in",
+   "sec": "pause",
+   "s": 44.36,
+   "e": 44.4
+  },
+  {
+   "w": "your",
+   "sec": "pause",
+   "s": 44.48,
+   "e": 44.56
+  },
+  {
+   "w": "answer.",
+   "sec": "pause",
+   "s": 44.64,
+   "e": 45.04
+  },
+  {
+   "w": "And",
+   "sec": "answer",
+   "s": 47.44,
+   "e": 47.52
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 47.56,
+   "e": 47.6
+  },
+  {
+   "w": "answer",
+   "sec": "answer",
+   "s": 47.68,
+   "e": 48.0
+  },
+  {
+   "w": "is...",
+   "sec": "answer",
+   "s": 48.16,
+   "e": 48.72
+  },
+  {
+   "w": "C!",
+   "sec": "answer",
+   "s": 49.04,
+   "e": 49.72
+  },
+  {
+   "w": "Here's",
+   "sec": "answer",
+   "s": 50.213,
+   "e": 50.32
+  },
+  {
+   "w": "why.",
+   "sec": "answer",
+   "s": 50.4,
+   "e": 51.0
+  },
+  {
+   "w": "Treasury",
+   "sec": "answer",
+   "s": 51.36,
+   "e": 51.92
+  },
+  {
+   "w": "looks",
+   "sec": "answer",
+   "s": 52.08,
+   "e": 52.24
+  },
+  {
+   "w": "after",
+   "sec": "answer",
+   "s": 52.32,
+   "e": 52.56
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 52.64,
+   "e": 52.72
+  },
+  {
+   "w": "bank's",
+   "sec": "answer",
+   "s": 52.84,
+   "e": 53.12
+  },
+  {
+   "w": "funding",
+   "sec": "answer",
+   "s": 53.2,
+   "e": 53.52
+  },
+  {
+   "w": "liquidity",
+   "sec": "answer",
+   "s": 53.6,
+   "e": 54.08
+  },
+  {
+   "w": "risk,",
+   "sec": "answer",
+   "s": 54.16,
+   "e": 54.76
+  },
+  {
+   "w": "and",
+   "sec": "answer",
+   "s": 54.96,
+   "e": 55.12
+  },
+  {
+   "w": "asset-liability",
+   "sec": "answer",
+   "s": 55.2,
+   "e": 56.16
+  },
+  {
+   "w": "management",
+   "sec": "answer",
+   "s": 56.24,
+   "e": 56.8
+  },
+  {
+   "w": "is",
+   "sec": "answer",
+   "s": 56.88,
+   "e": 56.96
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 57.04,
+   "e": 57.2
+  },
+  {
+   "w": "main",
+   "sec": "answer",
+   "s": 57.28,
+   "e": 57.6
+  },
+  {
+   "w": "tool",
+   "sec": "answer",
+   "s": 57.68,
+   "e": 57.92
+  },
+  {
+   "w": "for",
+   "sec": "answer",
+   "s": 58.0,
+   "e": 58.08
+  },
+  {
+   "w": "that.",
+   "sec": "answer",
+   "s": 58.16,
+   "e": 58.6
+  },
+  {
+   "w": "Think",
+   "sec": "answer",
+   "s": 58.8,
+   "e": 58.96
+  },
+  {
+   "w": "about",
+   "sec": "answer",
+   "s": 59.08,
+   "e": 59.2
+  },
+  {
+   "w": "it.",
+   "sec": "answer",
+   "s": 59.28,
+   "e": 59.56
+  },
+  {
+   "w": "A",
+   "sec": "answer",
+   "s": 59.76,
+   "e": 59.84
+  },
+  {
+   "w": "bank",
+   "sec": "answer",
+   "s": 59.92,
+   "e": 60.24
+  },
+  {
+   "w": "often",
+   "sec": "answer",
+   "s": 60.32,
+   "e": 60.64
+  },
+  {
+   "w": "funds",
+   "sec": "answer",
+   "s": 60.72,
+   "e": 60.96
+  },
+  {
+   "w": "long-term",
+   "sec": "answer",
+   "s": 61.04,
+   "e": 61.6
+  },
+  {
+   "w": "loans",
+   "sec": "answer",
+   "s": 61.68,
+   "e": 62.0
+  },
+  {
+   "w": "with",
+   "sec": "answer",
+   "s": 62.16,
+   "e": 62.24
+  },
+  {
+   "w": "short-term",
+   "sec": "answer",
+   "s": 62.32,
+   "e": 62.72
+  },
+  {
+   "w": "deposits.",
+   "sec": "answer",
+   "s": 62.8,
+   "e": 63.68
+  },
+  {
+   "w": "That",
+   "sec": "answer",
+   "s": 63.92,
+   "e": 64.0
+  },
+  {
+   "w": "maturity",
+   "sec": "answer",
+   "s": 64.08,
+   "e": 64.56
+  },
+  {
+   "w": "mismatch",
+   "sec": "answer",
+   "s": 64.64,
+   "e": 65.12
+  },
+  {
+   "w": "hurts",
+   "sec": "answer",
+   "s": 65.28,
+   "e": 65.68
+  },
+  {
+   "w": "if",
+   "sec": "answer",
+   "s": 65.84,
+   "e": 66.0
+  },
+  {
+   "w": "short-term",
+   "sec": "answer",
+   "s": 66.08,
+   "e": 66.56
+  },
+  {
+   "w": "rates",
+   "sec": "answer",
+   "s": 66.64,
+   "e": 66.88
+  },
+  {
+   "w": "rise",
+   "sec": "answer",
+   "s": 66.96,
+   "e": 67.28
+  },
+  {
+   "w": "faster",
+   "sec": "answer",
+   "s": 67.36,
+   "e": 67.76
+  },
+  {
+   "w": "than",
+   "sec": "answer",
+   "s": 67.84,
+   "e": 67.92
+  },
+  {
+   "w": "long-term",
+   "sec": "answer",
+   "s": 68.0,
+   "e": 68.56
+  },
+  {
+   "w": "rates.",
+   "sec": "answer",
+   "s": 68.64,
+   "e": 69.16
+  },
+  {
+   "w": "So",
+   "sec": "answer",
+   "s": 69.44,
+   "e": 69.52
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 69.6,
+   "e": 69.68
+  },
+  {
+   "w": "team",
+   "sec": "answer",
+   "s": 69.84,
+   "e": 70.0
+  },
+  {
+   "w": "uses",
+   "sec": "answer",
+   "s": 70.08,
+   "e": 70.32
+  },
+  {
+   "w": "gap",
+   "sec": "answer",
+   "s": 70.4,
+   "e": 70.56
+  },
+  {
+   "w": "analysis",
+   "sec": "answer",
+   "s": 70.64,
+   "e": 71.2
+  },
+  {
+   "w": "and",
+   "sec": "answer",
+   "s": 71.28,
+   "e": 71.36
+  },
+  {
+   "w": "duration",
+   "sec": "answer",
+   "s": 71.44,
+   "e": 71.84
+  },
+  {
+   "w": "analysis",
+   "sec": "answer",
+   "s": 71.92,
+   "e": 72.4
+  },
+  {
+   "w": "to",
+   "sec": "answer",
+   "s": 72.48,
+   "e": 72.56
+  },
+  {
+   "w": "keep",
+   "sec": "answer",
+   "s": 72.64,
+   "e": 72.8
+  },
+  {
+   "w": "it",
+   "sec": "answer",
+   "s": 72.84,
+   "e": 72.88
+  },
+  {
+   "w": "under",
+   "sec": "answer",
+   "s": 72.96,
+   "e": 73.04
+  },
+  {
+   "w": "control.",
+   "sec": "answer",
+   "s": 73.12,
+   "e": 73.92
+  },
+  {
+   "w": "Now,",
+   "sec": "wrong",
+   "s": 74.24,
+   "e": 74.36
+  },
+  {
+   "w": "why",
+   "sec": "wrong",
+   "s": 74.4,
+   "e": 74.56
+  },
+  {
+   "w": "not",
+   "sec": "wrong",
+   "s": 74.64,
+   "e": 74.72
+  },
+  {
+   "w": "the",
+   "sec": "wrong",
+   "s": 74.76,
+   "e": 74.8
+  },
+  {
+   "w": "others?",
+   "sec": "wrong",
+   "s": 74.88,
+   "e": 75.56
+  },
+  {
+   "w": "A",
+   "sec": "wrong",
+   "s": 75.92,
+   "e": 76.0
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 76.08,
+   "e": 76.16
+  },
+  {
+   "w": "wrong.",
+   "sec": "wrong",
+   "s": 76.24,
+   "e": 76.92
+  },
+  {
+   "w": "Building",
+   "sec": "wrong",
+   "s": 77.2,
+   "e": 77.52
+  },
+  {
+   "w": "VaR",
+   "sec": "wrong",
+   "s": 77.6,
+   "e": 78.08
+  },
+  {
+   "w": "models",
+   "sec": "wrong",
+   "s": 78.16,
+   "e": 78.48
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 78.56,
+   "e": 78.64
+  },
+  {
+   "w": "a",
+   "sec": "wrong",
+   "s": 78.72,
+   "e": 78.8
+  },
+  {
+   "w": "job",
+   "sec": "wrong",
+   "s": 78.88,
+   "e": 79.12
+  },
+  {
+   "w": "for",
+   "sec": "wrong",
+   "s": 79.2,
+   "e": 79.28
+  },
+  {
+   "w": "model",
+   "sec": "wrong",
+   "s": 79.36,
+   "e": 79.6
+  },
+  {
+   "w": "developers,",
+   "sec": "wrong",
+   "s": 79.68,
+   "e": 80.48
+  },
+  {
+   "w": "and",
+   "sec": "wrong",
+   "s": 80.64,
+   "e": 80.72
+  },
+  {
+   "w": "VaR",
+   "sec": "wrong",
+   "s": 80.88,
+   "e": 81.52
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 81.6,
+   "e": 81.68
+  },
+  {
+   "w": "mainly",
+   "sec": "wrong",
+   "s": 81.76,
+   "e": 82.0
+  },
+  {
+   "w": "a",
+   "sec": "wrong",
+   "s": 82.08,
+   "e": 82.16
+  },
+  {
+   "w": "market",
+   "sec": "wrong",
+   "s": 82.24,
+   "e": 82.56
+  },
+  {
+   "w": "risk",
+   "sec": "wrong",
+   "s": 82.68,
+   "e": 82.8
+  },
+  {
+   "w": "tool.",
+   "sec": "wrong",
+   "s": 82.88,
+   "e": 83.56
+  },
+  {
+   "w": "B",
+   "sec": "wrong",
+   "s": 83.92,
+   "e": 84.08
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 84.16,
+   "e": 84.24
+  },
+  {
+   "w": "wrong",
+   "sec": "wrong",
+   "s": 84.32,
+   "e": 84.56
+  },
+  {
+   "w": "too.",
+   "sec": "wrong",
+   "s": 84.64,
+   "e": 85.08
+  },
+  {
+   "w": "Credit",
+   "sec": "wrong",
+   "s": 85.28,
+   "e": 85.44
+  },
+  {
+   "w": "default",
+   "sec": "wrong",
+   "s": 85.52,
+   "e": 85.92
+  },
+  {
+   "w": "swaps",
+   "sec": "wrong",
+   "s": 86.0,
+   "e": 86.32
+  },
+  {
+   "w": "hedge",
+   "sec": "wrong",
+   "s": 86.4,
+   "e": 86.56
+  },
+  {
+   "w": "counterparty",
+   "sec": "wrong",
+   "s": 86.64,
+   "e": 87.2
+  },
+  {
+   "w": "risk,",
+   "sec": "wrong",
+   "s": 87.28,
+   "e": 87.56
+  },
+  {
+   "w": "which",
+   "sec": "wrong",
+   "s": 87.6,
+   "e": 87.68
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 87.76,
+   "e": 87.84
+  },
+  {
+   "w": "a",
+   "sec": "wrong",
+   "s": 87.92,
+   "e": 88.0
+  },
+  {
+   "w": "form",
+   "sec": "wrong",
+   "s": 88.08,
+   "e": 88.24
+  },
+  {
+   "w": "of",
+   "sec": "wrong",
+   "s": 88.32,
+   "e": 88.4
+  },
+  {
+   "w": "credit",
+   "sec": "wrong",
+   "s": 88.48,
+   "e": 88.72
+  },
+  {
+   "w": "risk.",
+   "sec": "wrong",
+   "s": 88.8,
+   "e": 89.36
+  },
+  {
+   "w": "And",
+   "sec": "wrong",
+   "s": 89.6,
+   "e": 89.76
+  },
+  {
+   "w": "D?",
+   "sec": "wrong",
+   "s": 89.84,
+   "e": 90.32
+  },
+  {
+   "w": "Same",
+   "sec": "wrong",
+   "s": 90.56,
+   "e": 90.72
+  },
+  {
+   "w": "story.",
+   "sec": "wrong",
+   "s": 90.8,
+   "e": 91.4
+  },
+  {
+   "w": "Estimating",
+   "sec": "wrong",
+   "s": 91.6,
+   "e": 92.08
+  },
+  {
+   "w": "loss",
+   "sec": "wrong",
+   "s": 92.16,
+   "e": 92.4
+  },
+  {
+   "w": "given",
+   "sec": "wrong",
+   "s": 92.48,
+   "e": 92.64
+  },
+  {
+   "w": "default",
+   "sec": "wrong",
+   "s": 92.72,
+   "e": 93.2
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 93.28,
+   "e": 93.36
+  },
+  {
+   "w": "about",
+   "sec": "wrong",
+   "s": 93.48,
+   "e": 93.6
+  },
+  {
+   "w": "quantifying",
+   "sec": "wrong",
+   "s": 93.68,
+   "e": 94.24
+  },
+  {
+   "w": "credit",
+   "sec": "wrong",
+   "s": 94.32,
+   "e": 94.56
+  },
+  {
+   "w": "risk,",
+   "sec": "wrong",
+   "s": 94.64,
+   "e": 95.08
+  },
+  {
+   "w": "not",
+   "sec": "wrong",
+   "s": 95.2,
+   "e": 95.36
+  },
+  {
+   "w": "liquidity.",
+   "sec": "wrong",
+   "s": 95.44,
+   "e": 96.32
+  },
+  {
+   "w": "So,",
+   "sec": "takeaway",
+   "s": 96.72,
+   "e": 97.0
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 97.04,
+   "e": 97.12
+  },
+  {
+   "w": "key",
+   "sec": "takeaway",
+   "s": 97.2,
+   "e": 97.36
+  },
+  {
+   "w": "takeaway.",
+   "sec": "takeaway",
+   "s": 97.44,
+   "e": 98.24
+  },
+  {
+   "w": "Treasury",
+   "sec": "takeaway",
+   "s": 98.56,
+   "e": 98.96
+  },
+  {
+   "w": "handles",
+   "sec": "takeaway",
+   "s": 99.04,
+   "e": 99.44
+  },
+  {
+   "w": "funding",
+   "sec": "takeaway",
+   "s": 99.52,
+   "e": 99.84
+  },
+  {
+   "w": "liquidity",
+   "sec": "takeaway",
+   "s": 99.92,
+   "e": 100.32
+  },
+  {
+   "w": "risk,",
+   "sec": "takeaway",
+   "s": 100.48,
+   "e": 100.92
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 101.04,
+   "e": 101.12
+  },
+  {
+   "w": "its",
+   "sec": "takeaway",
+   "s": 101.2,
+   "e": 101.28
+  },
+  {
+   "w": "go-to",
+   "sec": "takeaway",
+   "s": 101.36,
+   "e": 101.76
+  },
+  {
+   "w": "tool",
+   "sec": "takeaway",
+   "s": 101.84,
+   "e": 102.24
+  },
+  {
+   "w": "is",
+   "sec": "takeaway",
+   "s": 102.32,
+   "e": 102.48
+  },
+  {
+   "w": "asset-liability",
+   "sec": "takeaway",
+   "s": 102.56,
+   "e": 103.36
+  },
+  {
+   "w": "management.",
+   "sec": "takeaway",
+   "s": 103.52,
+   "e": 104.32
+  },
+  {
+   "w": "VaR",
+   "sec": "takeaway",
+   "s": 104.64,
+   "e": 105.2
+  },
+  {
+   "w": "is",
+   "sec": "takeaway",
+   "s": 105.28,
+   "e": 105.36
+  },
+  {
+   "w": "market",
+   "sec": "takeaway",
+   "s": 105.44,
+   "e": 105.76
+  },
+  {
+   "w": "risk,",
+   "sec": "takeaway",
+   "s": 105.84,
+   "e": 106.24
+  },
+  {
+   "w": "while",
+   "sec": "takeaway",
+   "s": 106.32,
+   "e": 106.48
+  },
+  {
+   "w": "credit",
+   "sec": "takeaway",
+   "s": 106.56,
+   "e": 106.8
+  },
+  {
+   "w": "default",
+   "sec": "takeaway",
+   "s": 106.88,
+   "e": 107.2
+  },
+  {
+   "w": "swaps",
+   "sec": "takeaway",
+   "s": 107.28,
+   "e": 107.68
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 107.76,
+   "e": 107.84
+  },
+  {
+   "w": "loss",
+   "sec": "takeaway",
+   "s": 107.92,
+   "e": 108.16
+  },
+  {
+   "w": "given",
+   "sec": "takeaway",
+   "s": 108.24,
+   "e": 108.48
+  },
+  {
+   "w": "default",
+   "sec": "takeaway",
+   "s": 108.76,
+   "e": 109.04
+  },
+  {
+   "w": "are",
+   "sec": "takeaway",
+   "s": 109.12,
+   "e": 109.2
+  },
+  {
+   "w": "about",
+   "sec": "takeaway",
+   "s": 109.28,
+   "e": 109.52
+  },
+  {
+   "w": "credit",
+   "sec": "takeaway",
+   "s": 109.6,
+   "e": 109.84
+  },
+  {
+   "w": "risk.",
+   "sec": "takeaway",
+   "s": 109.92,
+   "e": 110.6
+  },
+  {
+   "w": "If",
+   "sec": "takeaway",
+   "s": 110.88,
+   "e": 110.96
+  },
+  {
+   "w": "this",
+   "sec": "takeaway",
+   "s": 111.04,
+   "e": 111.2
+  },
+  {
+   "w": "helped,",
+   "sec": "takeaway",
+   "s": 111.32,
+   "e": 111.68
+  },
+  {
+   "w": "follow",
+   "sec": "takeaway",
+   "s": 111.84,
+   "e": 112.08
+  },
+  {
+   "w": "Risk",
+   "sec": "takeaway",
+   "s": 112.16,
+   "e": 112.32
+  },
+  {
+   "w": "Hub",
+   "sec": "takeaway",
+   "s": 112.4,
+   "e": 112.56
+  },
+  {
+   "w": "for",
+   "sec": "takeaway",
+   "s": 112.64,
+   "e": 112.72
+  },
+  {
+   "w": "more",
+   "sec": "takeaway",
+   "s": 112.8,
+   "e": 112.96
+  },
+  {
+   "w": "FRM",
+   "sec": "takeaway",
+   "s": 113.12,
+   "e": 113.44
+  },
+  {
+   "w": "practice.",
+   "sec": "takeaway",
+   "s": 113.52,
+   "e": 114.24
+  },
+  {
+   "w": "See",
+   "sec": "takeaway",
+   "s": 114.4,
+   "e": 114.48
+  },
+  {
+   "w": "you",
+   "sec": "takeaway",
+   "s": 114.52,
+   "e": 114.56
+  },
+  {
+   "w": "in",
+   "sec": "takeaway",
+   "s": 114.6,
+   "e": 114.64
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 114.72,
+   "e": 114.76
+  },
+  {
+   "w": "next",
+   "sec": "takeaway",
+   "s": 114.8,
+   "e": 115.04
+  },
+  {
+   "w": "one!",
+   "sec": "takeaway",
+   "s": 115.12,
+   "e": 115.36
+  }
+ ]
+}
