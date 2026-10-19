@@ -5,17 +5,17 @@
   "book": "Book 1. Foundations of Risk Management",
   "chapter_number": 1,
   "chapter": "Chapter 1. The Building Blocks of Risk Management",
-  "audio": "audio/q090-take1.mp3",
+  "audio": "audio/q001-take1.mp3",
   "voice": {
-    "id": "QngvLQR8bsLR5bzoa6Vv",
-    "name": "Michael - Expressive, Engaging and Warm",
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
     "model": "eleven_v4"
   },
   "cover_at": [
-    "FRM Part One.",
-    "Foundations of Risk",
-    "Foundations of Risk",
-    "Let's solve this"
+    "FRM Part 1,",
+    "Book 1,",
+    "Chapter 1,",
+    "a practice question."
   ],
   "stem": "A risk manager at a local bank is discussing expected and unexpected loss with a risk analyst. Unexpected losses can sometimes result from unknown or uncertain risks, or risks that are difficult to quantify. Which statement is correct for the manager to make?",
   "stem_short": "Which statement about unknown risks is correct?",
@@ -30,7 +30,7 @@
     },
     {
       "text": "difficult to quantify",
-      "at": "hard to quantify"
+      "at": "really hard to quantify"
     }
   ],
   "options": {
@@ -39,31 +39,38 @@
     "C": "Risk managers should treat unknown risks in the same way as those risks that can be quantified.",
     "D": "A risk manager’s confidence in the estimate of a risk measure should affect the application of that estimate in the decision-making process."
   },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
   "answer": "D",
+  "answer_at": "D!",
   "answer_points": {
     "title": "Confidence shapes how you use the number",
     "high": {
       "label": "HIGH CONFIDENCE",
       "text": "Lean on the estimate",
-      "at": "When you trust the estimate"
+      "at": "If you really trust"
     },
     "low": {
       "label": "LOW CONFIDENCE",
       "chips": [
         {
           "text": "Buffers",
-          "at": "buffers"
+          "at": "buffers,"
         },
         {
           "text": "Stress tests",
-          "at": "stress tests"
+          "at": "stress tests,"
         },
         {
           "text": "Judgment",
-          "at": "judgment."
+          "at": "use judgment."
         }
       ],
-      "at": "When you don't"
+      "at": "But if you don't?"
     }
   },
   "wrong": {
@@ -73,11 +80,11 @@
     },
     "B": {
       "reason": "Knightian uncertainties can be huge in severity.",
-      "at": "B is wrong."
+      "at": "B?"
     },
     "C": {
       "reason": "Never treat an unmeasurable risk as a known quantity.",
-      "at": "C is wrong."
+      "at": "And C is wrong"
     }
   },
   "definition": {
@@ -102,38 +109,38 @@
   "sections": [
     {
       "id": "intro",
-      "text": "FRM Part One. Foundations of Risk Management. Let's solve this one together."
+      "text": "[warmly] Hey, welcome to Risk Hub! This is FRM Part 1, Book 1, Foundations of Risk Management. Chapter 1, The Building Blocks of Risk Management. Let's solve a practice question."
     },
     {
       "id": "question",
-      "text": "A risk manager at a bank is discussing expected and unexpected loss. The manager points out that unexpected losses can come from unknown or uncertain risks... risks that are hard to quantify. Which statement should the manager make?"
+      "text": "So, here's the setup. A risk manager at a local bank is chatting with an analyst about expected and unexpected loss. And the manager points out that unexpected losses can come from unknown or uncertain risks... you know, the kind that are really hard to quantify. So, which statement should the manager make?"
     },
     {
       "id": "options",
-      "text": "Option A. Unknown risks may be estimated, but are typically impossible to manage. Option B. Unknown risks exist in various risk types, but are typically minor and inconsequential. Option C. Risk managers should treat unknown risks the same way as risks that can be quantified. Option D. A risk manager's confidence in a risk estimate should affect how that estimate is used in decision making."
+      "text": "Option A. Unknown risks may be estimated, but are typically impossible to manage. Option B. Unknown risks exist in various risk types, but they're typically minor and inconsequential. Option C. Risk managers should treat unknown risks the same way as risks that can be quantified. And option D. A risk manager's confidence in a risk estimate should affect how that estimate is used in decision making."
     },
     {
       "id": "pause",
-      "text": "Pause the video and pick your answer."
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
     },
     {
       "id": "answer",
-      "text": "The correct answer is D. Every risk number comes with a level of confidence. When you trust the estimate, you can lean on it. When you don't, you add buffers, stress tests, and judgment. So your confidence in a risk measure should shape how you use it."
+      "text": "[excited] And the answer is... D! [warmly] Here's the thing. Every risk number comes with some level of confidence. If you really trust the estimate, great, you can lean on it. But if you don't? Then you add buffers, you run stress tests, and you use judgment. So your confidence in a risk measure should shape how you actually use it."
     },
     {
       "id": "wrong",
-      "text": "Now, why are the others wrong? A is wrong. Some unknown risks are Knightian uncertainty... where you can't even model a probability distribution. But they can still be managed, for example by avoiding the activity altogether. B is wrong. Knightian uncertainties can be huge in severity, even when their frequency is impossible to measure. C is wrong. Never treat a risk you cannot measure as if it were a known quantity."
+      "text": "Now, why not the others? Let's go one by one. A is wrong. Some unknown risks fall under Knightian uncertainty... that's where you can't even model a probability distribution. But they can still be managed, for example, by just avoiding the activity altogether. B? [short pause] Also wrong. Knightian uncertainties can be huge in severity, even if you can't measure how often they happen. And C is wrong too. You should never treat a risk you can't measure as if it were a known quantity."
     },
     {
       "id": "takeaway",
-      "text": "Key takeaway. Measure what you can, respect what you can't, and let your confidence guide your decisions. Follow Risk Hub for more FRM practice."
+      "text": "[warmly] So, the key takeaway. Measure what you can, respect what you can't, and let your confidence guide your decisions. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
     }
   ],
   "caption_keywords": [
     "expected and unexpected loss",
     "unknown or uncertain risks",
-    "hard to quantify",
-    "correct answer is d",
+    "really hard to quantify",
+    "d!",
     "confidence",
     "buffers",
     "stress tests",

@@ -23,7 +23,7 @@ they are ignored when matching the transcript. Use `answer_at`, `option_at` and
 | `tools/align.py` | Fallback timing: aligns the script to the audio's pauses when no transcript is available. |
 | `tools/build.py`, `tools/style.css` | The template. Generates `qNNN/index.html` from the question JSON + timing, and `build/qNNN-sfx.json` (sound-effect cues). |
 | `sfx/*.mp3`, `tools/mix.py` | ElevenLabs sound effects (sting, whoosh, pop, tick, correct, wrong) and the mixer that lays them under the narration. |
-| `questions/q001-conversational.json` | Conversational re-script of Q1 for the 'TrevorT' voice, ready to generate once ElevenLabs credits are available. |
+| `questions/q001-michael.json` | The earlier Q1 version narrated by the Michael voice (superseded). |
 | `qNNN/` | HyperFrames project for one video (assets: logo, fonts, GSAP, voiceover). |
 | `output/riskhub-frm-qNNN.mp4` | Finished video. |
 
