@@ -105,7 +105,7 @@ clip("question", f'''
   <div class="qlabel h" id="ql">THE QUESTION</div>
   <div class="qcard h" id="qcard"><p>{stem}</p></div>'''),
 clip("options", f'''
-  <div class="qshort h" id="qs"><span>Q{Q["number"]}</span>{esc(Q["stem_short"])}</div>
+  <div class="qshort h" id="qs">{esc(Q["stem_short"])}</div>
   <div class="pausebar h" id="pb"><span class="pi">❚❚</span> Pause &amp; pick your answer <span class="cd"><b id="cd3">3</b><b id="cd2">2</b><b id="cd1">1</b></span></div>
   <div class="opts">{"".join(opt_card(l) for l in letters)}</div>'''),
 clip("answer", f'''
@@ -132,7 +132,6 @@ steps = ["QUESTION", "OPTIONS", "ANSWER", "WHY NOT"]
 header = f'''<div class="hdr h" id="hdr">
     <img class="hlogo" src="assets/riskhub-logo.png" alt="Risk Hub"/>
     <div class="htx"><div class="h1">FRM PART 1 · BOOK 1 · CH {Q["chapter_number"]}</div><div class="h2">Foundations of Risk Management</div></div>
-    <div class="hq">Q{Q["number"]}</div>
   </div>
   <div class="steps h" id="steps">{"".join(f'<div class="st" id="st{i}">{s}</div>' for i, s in enumerate(steps))}<div class="sbar" id="sbar"></div></div>'''
 
@@ -240,7 +239,7 @@ page = f"""<!doctype html>
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=1080, height=1920" />
-<title>Risk Hub · FRM Q{Q["number"]}</title>
+<title>Risk Hub · FRM Practice Question</title>
 <script src="assets/gsap.min.js"></script>
 <style>
 @font-face{{font-family:'Inter';font-weight:100 900;font-display:block;src:url('assets/fonts/Inter.woff2') format('woff2');}}
