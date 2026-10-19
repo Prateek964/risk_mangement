@@ -9,7 +9,15 @@ import json, re, subprocess, sys
 Q = json.load(open(sys.argv[1]))
 raw = json.load(open(sys.argv[2]))
 raw = raw.get("words", raw) if isinstance(raw, dict) else raw
-words = [w for w in raw if w.get("type", "word") == "word" and not re.fullmatch(r"\[.*\]", w["text"].strip())]
+words, in_tag = [], False
+for w in raw:
+    if w.get("type", "word") != "word":
+        continue
+    t = w["text"].strip()
+    if in_tag or t.startswith("["):  # skip audio tags, including multi-word ones like "[long pause]"
+        in_tag = not t.endswith("]")
+        continue
+    words.append(w)
 
 def norm(w): return re.sub(r"[^a-z0-9]", "", w.lower())
 out, k = [], 0

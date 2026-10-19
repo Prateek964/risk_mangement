@@ -34,12 +34,13 @@ ans = Q["answer"]
 wrong = [l for l in letters if l != ans]
 
 # scene windows
+ANS_T = T(Q.get("answer_at", f"answer is {Q['answer']}."), "answer", end=True) - 0.3  # moment the answer is revealed
 def win(a, b): return (round(a, 3), round(b - a, 3))
 SC = {
     "intro": win(0, S["question"] + 0.4),
     "question": win(S["question"], S["options"] + 0.4),
-    "options": win(S["options"], S["answer"] + 3.2),
-    "answer": win(S["answer"] + 2.6, S["wrong"] + 0.4),
+    "options": win(S["options"], ANS_T + 3.0),
+    "answer": win(ANS_T + 2.4, S["wrong"] + 0.4),
     "wrong": win(S["wrong"], S["takeaway"] + 0.4),
     "takeaway": win(S["takeaway"], DUR),
 }
@@ -137,7 +138,7 @@ header = f'''<div class="hdr h" id="hdr">
 
 TT = {
     "q": S["question"], "o": S["options"], "p": S["pause"], "a": S["answer"], "w": S["wrong"], "t": S["takeaway"],
-    "ansD": T(Q.get("answer_at", f"answer is {ans}."), "answer", end=True) - 0.3,
+    "ansD": ANS_T,
     "hi": T(ap["high"]["at"], "answer"), "lo": T(ap["low"]["at"], "answer"),
     "chips": [T(c["at"], "answer") for c in ap["low"]["chips"]],
     "opts": [T(Q.get("option_at", {}).get(l, f"Option {l}."), "options") for l in letters],
