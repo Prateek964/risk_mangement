@@ -185,7 +185,7 @@ def s_hook(d, t, dur):
     # animated price chart
     x0, x1, y0, y1 = 80, W - 80, 700, 1250
     lo, hi = PRICE.min() * 0.97, PRICE.max() * 1.02
-    n = int(len(PRICE) * ease_in_out(prog(t, 0.2, 5.0)))
+    n = int(len(PRICE) * ease_in_out(prog(t, 0.1, 3.6)))
     pts = [(x0 + (x1 - x0) * i / (len(PRICE) - 1), y1 - (y1 - y0) * (PRICE[i] - lo) / (hi - lo))
            for i in range(n)]
     for gy in range(5):
@@ -204,8 +204,8 @@ def s_hook(d, t, dur):
         d.text((x1, y0 - 60), f"{val:,.2f}", font=font(46, "Bold"), fill=col, anchor="ra")
     text(d, (80, 400), "Markets move", font(104, "Bold", True), INK, p=prog(t, 0.2, 0.7))
     text(d, (80, 520), "every second.", font(104, "Bold", True), TEAL, p=prog(t, 0.6, 0.7))
-    text(d, (80, 1400), "So how much", font(92, "Bold", True), INK, p=prog(t, 3.6, 0.7))
-    text(d, (80, 1510), "could you lose?", font(92, "Bold", True), RED, p=prog(t, 4.0, 0.7))
+    text(d, (80, 1400), "So how much", font(92, "Bold", True), INK, p=prog(t, 2.5, 0.6))
+    text(d, (80, 1510), "could you lose?", font(92, "Bold", True), RED, p=prog(t, 3.0, 0.6))
 
 
 def s_title(d, t, dur):
@@ -386,24 +386,24 @@ def s_rates(d, t, dur):
                for i in range(n)]
         polyline(d, pts, mix(BG, cols[j % len(cols)], 0.85), 4)
     # long-run mean
-    pm = ease_out(prog(t, 4.2, 0.8))
+    pm = ease_out(prog(t, 4.0, 0.8))
     if pm > 0:
         ym = y1 - (y1 - y0) * (0.035 - rlo) / (rhi - rlo)
         xe = x0 + 60 + (x1 - x0 - 60) * pm
         for xs in np.arange(x0 + 60, xe, 34):
             d.line([(xs, ym), (min(xs + 18, xe), ym)], fill=INK, width=4)
         text(d, (x1, y0 - 70), "- -  long-run mean θ", font(32, "SemiBold"), INK, anchor="ra", p=pm, rise=10)
-    text(d, (80, 1400), "Short-rate models", font(40, "SemiBold"), MUTED, p=prog(t, 5.0, 0.6))
+    text(d, (80, 1400), "Short-rate models", font(40, "SemiBold"), MUTED, p=prog(t, 2.4, 0.6))
     models = [("Vasicek", TEAL), ("CIR", BLUE), ("Hull–White", VIOLET)]
     cw = (W - 160 - 2 * 24) / 3
     for i, (m, col) in enumerate(models):
-        p = ease_out(prog(t, 5.5 + i * 0.3, 0.6))
+        p = ease_out(prog(t, 2.8 + i * 0.6, 0.6))
         if p <= 0:
             continue
         cx, cy = 80 + i * (cw + 24), 1480 + (1 - p) * 40
         rrect(d, (cx, cy, cx + cw, cy + 150), 24, fade(CARD, p), outline=fade(col, p), width=3)
         d.text((cx + cw / 2, cy + 75), m, font=font(40, "Bold"), fill=fade(INK, p), anchor="mm")
-    text(d, (80, 1690), "Build, calibrate and stress the yield curve.", font(36), MUTED, p=prog(t, 7.4, 0.7))
+    text(d, (80, 1690), "Build, calibrate and stress the yield curve.", font(36), MUTED, p=prog(t, 5.0, 0.7))
 
 
 REGS = [
@@ -511,7 +511,10 @@ def s_instructors(d, t, dur):
     text(d, (80, 250), "LEARN FROM", font(34, "SemiBold"), TEAL, p=prog(t, 0.0, 0.6), rise=20)
     text(d, (80, 300), "Your instructors", font(84, "Bold", True), INK, p=prog(t, 0.12, 0.6))
     for i, (name, role, slug, creds, work, edu, col) in enumerate(INSTRUCTORS):
-        p = ease_out(prog(t, 0.6 + i * (dur * 0.42), 0.7))
+        delay = dur * 0.42
+        if INSTRUCTOR2_AT is not None:
+            delay = INSTRUCTOR2_AT - STARTS[SCENE_FNS.index(s_instructors)] - 0.6
+        p = ease_out(prog(t, 0.6 + i * delay, 0.7))
         if p <= 0:
             continue
         y = 480 + i * 650 + (1 - p) * 60
@@ -550,9 +553,12 @@ SCENE_FNS = [s_hook, s_title, s_types, s_var, s_pricing, s_rates, s_regs, s_outc
 VOICEOVER = "script/video/voiceover.mp3"
 TIMINGS = "script/video/voiceover_timings.json"
 STARTS = [0.0, 7.0, 13.0, 23.0, 36.0, 48.0, 58.0, 66.0, 73.0, 85.0]
+INSTRUCTOR2_AT = None  # absolute time the second instructor card appears
 if os.path.exists(TIMINGS):
     import json
-    STARTS = json.load(open(TIMINGS))["scene_starts"]
+    _tm = json.load(open(TIMINGS))
+    STARTS = _tm["scene_starts"]
+    INSTRUCTOR2_AT = _tm.get("instructor2_start")
 SCENES = [(STARTS[i], STARTS[i + 1] if i + 1 < len(STARTS) else DURATION, fn) for i, fn in enumerate(SCENE_FNS)]
 FADE = 0.4
 
