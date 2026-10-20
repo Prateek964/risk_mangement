@@ -1,0 +1,56 @@
+{
+  "id": "q004",
+  "number": 4,
+  "source": "GARP Mock 2023 · Part 2 · Q25",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 2,
+  "chapter": "Chapter 2. How Do Firms Manage Financial Risk?",
+  "audio": "audio/q004-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 2,", "a practice question."],
+  "stem": "The newly hired CFO of a publicly traded computer manufacturing company is assessing the concerns and motivations of different stakeholder groups. The CFO focuses on the perspectives of these stakeholders on the firm’s hedging strategies. Which of the following statements is correct?",
+  "stem_short": "Which statement about stakeholders and hedging is correct?",
+  "stem_highlights": [
+    {"text": "computer manufacturing company", "at": "computer maker"},
+    {"text": "different stakeholder groups", "at": "different stakeholders"},
+    {"text": "hedging strategies", "at": "hedging strategy."}
+  ],
+  "options": {
+    "A": "If the firm’s equity investors hold a well-diversified portfolio, they would typically prefer that the firm hedge risks specific to the computer industry.",
+    "B": "Debt investors would typically prefer that the company use hedging strategies to increase the stability of its revenue stream.",
+    "C": "Both equity and debt investors would typically prefer that the firm not hedge the foreign exchange risk of long-term contracts with international customers.",
+    "D": "Equity investors would typically not reward the firm for using hedging to reduce its tax exposure over a multi-year period."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Lenders want stability, not upside",
+    "high": {"label": "DEBT INVESTORS GET", "text": "Fixed interest + principal back", "at": "Debt investors get their", "meter": null},
+    "low": {"label": "SO THEY WANT", "chips": [
+      {"text": "Little upside", "at": "little or no upside"},
+      {"text": "Real downside", "at": "get hurt"},
+      {"text": "Stable revenue", "at": "nice and stable."}
+    ], "at": "They have little", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Diversified shareholders have already diversified away firm-specific risk.", "at": "A is wrong."},
+    "C": {"reason": "FX isn’t a core skill, and long contracts mean long exposure — hedge it.", "at": "C is wrong too."},
+    "D": {"reason": "Lower taxes mean higher after-tax earnings — shareholders like that.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Lenders favor hedging: stable cash flows", "at": "Debt investors favor hedging"},
+    {"text": "Diversified shareholders skip firm-specific hedges", "at": "Diversified shareholders don't"},
+    {"text": "Hedging non-core risks & taxes adds value", "at": "And hedging non-core risks"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 2, How Do Firms Manage Financial Risk? Let's do a practice question."},
+    {"id": "question", "text": "So, the newly hired CFO of a publicly traded computer maker is sizing up how different stakeholders feel about the firm's hedging strategy. Which of these statements is correct?"},
+    {"id": "options", "text": "Option A. If the firm's equity investors hold a well-diversified portfolio, they'd typically prefer that the firm hedge risks specific to the computer industry. Option B. Debt investors would typically prefer that the company use hedging strategies to increase the stability of its revenue stream. Option C. Both equity and debt investors would typically prefer that the firm not hedge the foreign exchange risk of long-term contracts with international customers. And option D. Equity investors would typically not reward the firm for using hedging to reduce its tax exposure over a multi-year period."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. Think about what a lender actually gets. Debt investors get their interest and principal back, and that's it. They have little or no upside when revenue jumps, but they're the ones who get hurt if revenue crashes. So they'd love the firm to hedge and keep its revenue stream nice and stable."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Diversified equity investors have already diversified away most firm-specific risk in their own portfolios, so they'd rather the firm didn't spend money hedging it. C is wrong too. Foreign exchange isn't a core skill for a computer maker, and with long-term contracts, the exposure lasts for years. That's actually a strong case for hedging. And D? Also wrong. Hedging that reduces tax exposure boosts after-tax earnings, and equity investors would welcome that."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Debt investors favor hedging because they want stable cash flows. Diversified shareholders don't need firm-specific hedges. And hedging non-core risks, like foreign exchange, or cutting taxes, usually adds value. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["hedging strategy", "different stakeholders", "computer maker", "b!", "debt investors", "interest and principal", "little or no upside", "get hurt", "nice and stable", "firm-specific risk", "diversified", "foreign exchange", "core skill", "long-term contracts", "after-tax earnings", "tax exposure", "stable cash flows", "risk hub"]
+}
