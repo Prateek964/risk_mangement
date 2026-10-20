@@ -1,0 +1,57 @@
+{
+  "id": "q011",
+  "number": 11,
+  "source": "GARP Mock 2023 · Part 2 · Q86",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 4,
+  "chapter": "Chapter 4. Credit Risk Transfer Mechanisms",
+  "audio": "audio/q011-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 4,", "another practice question."],
+  "stem": "A risk analyst at a trading firm is evaluating different approaches to mitigate the risks of a portfolio. The analyst assesses the characteristics of credit spreads and focuses on credit spread risk. Which of the following statements is correct?",
+  "stem_short": "Which statement about credit spread risk is correct?",
+  "stem_highlights": [
+    {"text": "mitigate the risks of a portfolio", "at": "reduce the risks"},
+    {"text": "characteristics of credit spreads", "at": "how credit spreads behave,"},
+    {"text": "credit spread risk", "at": "focus on credit spread risk."}
+  ],
+  "options": {
+    "A": "The credit spread is equal to the difference between the actual rate of return of a risky financial instrument and the expected rate of return of that instrument.",
+    "B": "In a mature financial market, a portfolio’s market risk typically includes credit spread risk, interest rate risk, and model risk.",
+    "C": "Credit derivatives can help to price the credit spread risk for a wide variety of financial instruments that have credit risk exposure.",
+    "D": "Financial instruments that have credit spread risk are typically illiquid assets."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "Credit derivatives reveal the price of credit",
+    "high": {"label": "CREDIT DERIVATIVES", "text": "Market-traded, so they show what credit risk costs", "at": "Credit derivatives, like", "meter": null},
+    "low": {"label": "SO THEY HELP", "chips": [
+      {"text": "Price discovery", "at": "price discovery."},
+      {"text": "Measure spread risk", "at": "measure credit spread risk"},
+      {"text": "Even private loans", "at": "privately traded"}
+    ], "at": "That helps with", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Spread = extra yield over a same-maturity Treasury.", "at": "A is wrong."},
+    "B": {"reason": "Spread risk is credit risk; model risk is operational.", "at": "B is wrong too."},
+    "D": {"reason": "Many, like corporate bonds, are quite liquid.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Spread = yield over same-maturity Treasury", "at": "A credit spread is the yield"},
+    {"text": "Credit derivatives price spread risk", "at": "Credit derivatives help"},
+    {"text": "Spread risk is credit risk, not market risk", "at": "And credit spread risk belongs"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 4, Credit Risk Transfer Mechanisms. Let's do another practice question."},
+    {"id": "question", "text": "So, a risk analyst at a trading firm is looking at ways to reduce the risks in a portfolio. The analyst digs into how credit spreads behave, with a focus on credit spread risk. Which of these statements is correct?"},
+    {"id": "options", "text": "Option A. The credit spread equals the difference between a risky instrument's actual return and its expected return. Option B. In a mature financial market, a portfolio's market risk typically includes credit spread risk, interest rate risk, and model risk. Option C. Credit derivatives can help price credit spread risk for a wide range of instruments that carry credit risk. And option D. Instruments with credit spread risk are typically illiquid assets."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... C! [warmly] Here's why. Credit derivatives, like credit default swaps, trade in the market, so they show what investors charge for taking on credit risk. That helps with price discovery. It lets you measure credit spread risk across lots of instruments, even privately traded high-yield loans and whole loan portfolios."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. A credit spread is the extra yield on a risky instrument over a Treasury bond with the same maturity. It's not actual versus expected return. B is wrong too. In a mature market, credit spread risk sits under credit risk, not market risk. And model risk is an operational risk. And D? Also wrong. Lots of instruments with credit spread risk, like corporate bonds, are actually quite liquid."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. A credit spread is the yield over a same-maturity Treasury. Credit derivatives help price that spread risk across many instruments. And credit spread risk belongs to credit risk, not market risk. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["credit spread risk", "credit spread", "credit spreads", "credit derivatives", "credit default swaps", "price discovery", "high-yield loans", "treasury bond", "treasury", "credit risk", "market risk", "operational risk", "model risk", "corporate bonds", "liquid", "risk hub"]
+}
