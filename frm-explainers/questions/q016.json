@@ -1,0 +1,53 @@
+{
+  "id": "q016",
+  "number": 16,
+  "source": "GARP Mock 2023 · Part 2 · Q13",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q016-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "An investment analyst is calculating the beta of a portfolio of large-cap utility company stocks. The analyst determines that the correlation between the return of the portfolio and the return of its benchmark is 0.7, the volatility of portfolio returns is 6.5%, and the volatility of the benchmark returns is 5.0%. What is the beta of the portfolio with respect to its benchmark?",
+  "stem_short": "What is the beta of the portfolio?",
+  "stem_highlights": [
+    {"text": "return of its benchmark is 0.7", "at": "correlation between the portfolio"},
+    {"text": "volatility of portfolio returns is 6.5%", "at": "portfolio's volatility is 6.5"},
+    {"text": "volatility of the benchmark returns is 5.0%", "at": "benchmark's volatility is 5"},
+    {"text": "beta of the portfolio", "at": "beta of the portfolio"}
+  ],
+  "options": {"A": "−0.91", "B": "0.64", "C": "0.80", "D": "0.91"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Beta from correlation and volatilities",
+    "high": {"label": "BETA FORMULA", "text": "β = ρ × σp ÷ σm", "at": "Beta is correlation times", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "σp ÷ σm = 6.5 ÷ 5 = 1.3", "at": "which is 1.3."},
+      {"text": "× ρ of 0.7", "at": "Multiply by the correlation"},
+      {"text": "β = 0.91", "at": "beta is 0.91."}
+    ], "at": "The volatility ratio is", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Positive correlation means a positive beta — the sign is flipped.", "at": "A is wrong."},
+    "B": {"reason": "Multiplies by correlation twice: 0.7 × 0.91 ≈ 0.64.", "at": "B is wrong too."},
+    "C": {"reason": "Doesn’t come from the formula: 0.7 × 1.3 = 0.91.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "β = correlation × volatility ratio", "at": "Beta equals correlation"},
+    {"text": "More volatile than benchmark → β can exceed ρ", "at": "If the portfolio is more volatile"},
+    {"text": "Positive correlation → positive beta", "at": "And with a positive correlation,"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, an investment analyst is calculating the beta of a portfolio of large-cap utility stocks. The correlation between the portfolio and its benchmark is 0.7. The portfolio's volatility is 6.5 percent, and the benchmark's volatility is 5 percent. What's the beta of the portfolio relative to its benchmark?"},
+    {"id": "options", "text": "Option A, minus 0.91. Option B, 0.64. Option C, 0.80. And option D, 0.91."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. Beta is correlation times the portfolio's volatility, divided by the benchmark's volatility. The volatility ratio is 6.5 over 5, which is 1.3. Multiply by the correlation of 0.7, and beta is 0.91."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. The correlation is positive, so beta must be positive too. Minus 0.91 just flips the sign. B is wrong too. That's what you get if you multiply by the correlation twice. 0.7 times 0.91 is about 0.64. And C? It doesn't come from the formula at all. 0.7 times 1.3 is 0.91, not 0.80."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Beta equals correlation times the ratio of volatilities. If the portfolio is more volatile than the benchmark, beta can be bigger than the correlation. And with a positive correlation, beta is always positive. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["beta", "correlation", "volatility", "volatility ratio", "volatilities", "benchmark", "0.91", "positive", "risk hub"]
+}
