@@ -478,18 +478,82 @@ def s_cta(d, t, dur):
     text(d, (W / 2, 1400), "riskhub.org/courses/", font(42, "SemiBold"), INK, anchor="ma", p=prog(t, 1.4, 0.7))
     text(d, (W / 2, 1456), "market-risk-modeling", font(42, "SemiBold"), INK, anchor="ma", p=prog(t, 1.5, 0.7))
 
-
-SCENES = [
-    (0.0, 7.0, s_hook),
-    (7.0, 14.0, s_title),
-    (14.0, 26.0, s_types),
-    (26.0, 40.0, s_var),
-    (40.0, 54.0, s_pricing),
-    (54.0, 66.0, s_rates),
-    (66.0, 76.0, s_regs),
-    (76.0, 84.5, s_outcomes),
-    (84.5, 90.0, s_cta),
+INSTRUCTORS = [
+    ("Prateek Yadav", "CEO, RiskHub", "prateek-yadav", ["FRM", "CQF"],
+     "JP Morgan · EY · PwC", "IIT Kanpur", TEAL),
+    ("Sudhanshu Kanwar", "Instructor, RiskHub", "sudhanshu-kanwar", ["FRM", "CQF"],
+     "Goldman Sachs · HSBC", "IIM Ahmedabad", AMBER),
 ]
+PHOTO_DIR = "assets/images/instructors"
+_photo_cache = {}
+
+
+def avatar(slug, size):
+    """Circular headshot from PHOTO_DIR/<slug>.(jpg|png), or None if absent."""
+    if slug not in _photo_cache:
+        _photo_cache[slug] = None
+        for ext in ("jpg", "jpeg", "png", "webp"):
+            path = os.path.join(PHOTO_DIR, f"{slug}.{ext}")
+            if os.path.exists(path):
+                im = Image.open(path).convert("RGB")
+                side = min(im.size)
+                im = im.crop(((im.width - side) // 2, 0, (im.width + side) // 2, side))
+                im = im.resize((size, size), Image.LANCZOS)
+                mask = Image.new("L", (size * 4, size * 4), 0)
+                ImageDraw.Draw(mask).ellipse((0, 0, size * 4, size * 4), fill=255)
+                _photo_cache[slug] = (im, mask.resize((size, size), Image.LANCZOS))
+                break
+    return _photo_cache[slug]
+
+
+def s_instructors(d, t, dur):
+    img = d._image
+    text(d, (80, 250), "LEARN FROM", font(34, "SemiBold"), TEAL, p=prog(t, 0.0, 0.6), rise=20)
+    text(d, (80, 300), "Your instructors", font(84, "Bold", True), INK, p=prog(t, 0.12, 0.6))
+    for i, (name, role, slug, creds, work, edu, col) in enumerate(INSTRUCTORS):
+        p = ease_out(prog(t, 0.6 + i * (dur * 0.42), 0.7))
+        if p <= 0:
+            continue
+        y = 480 + i * 650 + (1 - p) * 60
+        rrect(d, (80, y, W - 80, y + 600), 36, fade(CARD, p), outline=fade(CARD_EDGE, p))
+        # avatar
+        size, ax, ay = 200, 130, y + 50
+        d.ellipse((ax - 8, ay - 8, ax + size + 8, ay + size + 8), fill=fade(col, p))
+        ph = avatar(slug, size)
+        if ph and p > 0.05:
+            face, mask = ph
+            img.paste(Image.blend(Image.new("RGB", face.size, BG), face, p), (int(ax), int(ay)), mask)
+        else:
+            d.ellipse((ax, ay, ax + size, ay + size), fill=fade((30, 44, 80), p))
+            initials = "".join(w[0] for w in name.split())
+            d.text((ax + size / 2, ay + size / 2), initials, font=font(84, "Bold", True),
+                   fill=fade(col, p), anchor="mm")
+        d.text((380, y + 80), name, font=font(54, "Bold"), fill=fade(INK, p))
+        d.text((380, y + 156), role, font=font(36, "Medium"), fill=fade(col, p))
+        cx = 380
+        for c in creds:
+            f = font(30, "Bold")
+            tw = d.textlength(c, font=f)
+            rrect(d, (cx, y + 214, cx + tw + 40, y + 266), 26, None, outline=fade(col, p), width=3)
+            d.text((cx + 20 + tw / 2, y + 240), c, font=f, fill=fade(INK, p), anchor="mm")
+            cx += tw + 56
+        for j, (label, val) in enumerate((("EXPERIENCE", work), ("EDUCATION", edu))):
+            ry = y + 320 + j * 130
+            d.line([(130, ry - 20), (W - 130, ry - 20)], fill=fade(CARD_EDGE, p), width=2)
+            d.text((130, ry), label, font=font(28, "SemiBold"), fill=fade(MUTED, p))
+            d.text((130, ry + 42), val, font=font(44, "SemiBold"), fill=fade(INK, p))
+
+
+SCENE_FNS = [s_hook, s_title, s_types, s_var, s_pricing, s_rates, s_regs, s_outcomes, s_instructors, s_cta]
+# Scene start times; overridden by the voiceover timings file when present so
+# each scene lines up with its narration paragraph.
+VOICEOVER = "script/video/voiceover.mp3"
+TIMINGS = "script/video/voiceover_timings.json"
+STARTS = [0.0, 7.0, 13.0, 23.0, 36.0, 48.0, 58.0, 66.0, 73.0, 85.0]
+if os.path.exists(TIMINGS):
+    import json
+    STARTS = json.load(open(TIMINGS))["scene_starts"]
+SCENES = [(STARTS[i], STARTS[i + 1] if i + 1 < len(STARTS) else DURATION, fn) for i, fn in enumerate(SCENE_FNS)]
 FADE = 0.4
 
 
@@ -547,6 +611,17 @@ def make_audio(path, sr=44100):
     # master fade in/out
     out *= np.clip(tt / 1.0, 0, 1) * np.clip((DURATION - tt) / 2.0, 0, 1)
     out /= np.max(np.abs(out)) / 0.6
+    if os.path.exists(VOICEOVER):
+        raw = subprocess.run(["ffmpeg", "-v", "error", "-i", VOICEOVER, "-f", "f32le", "-ac", "1", "-ar", str(sr), "-"],
+                             capture_output=True, check=True).stdout
+        vo = np.frombuffer(raw, dtype=np.float32)[:n]
+        vo = np.pad(vo, (0, n - len(vo)))
+        vo /= np.max(np.abs(vo)) + 1e-9
+        # duck music to ~30% while the narrator is speaking
+        env = np.convolve(np.abs(vo), np.ones(sr // 4) / (sr // 4), mode="same")
+        duck = 1 - 0.7 * np.clip(env / 0.05, 0, 1)
+        out = out * duck * 0.55 + vo * 0.9
+        out /= max(1.0, np.max(np.abs(out)) / 0.95)
     data = (out * 32767).astype(np.int16)
     stereo = np.column_stack([data, data]).ravel()
     with wave.open(path, "wb") as w:
