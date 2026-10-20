@@ -1,0 +1,56 @@
+{
+  "id": "q006",
+  "number": 6,
+  "source": "GARP Mock 2023 · Part 2 · Q89",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 2,
+  "chapter": "Chapter 2. How Do Firms Manage Financial Risk?",
+  "audio": "audio/q006-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 2,", "another practice question."],
+  "stem": "A risk manager at a trading firm is assessing the strategies proposed by an analyst to hedge several positions in the firm’s trading portfolio. The risk manager notes that the analyst recommends the use of exchange-based derivatives to hedge most of the positions. Which of the following is an advantage of using exchange-based derivatives for hedging?",
+  "stem_short": "What’s an advantage of exchange-based derivatives for hedging?",
+  "stem_highlights": [
+    {"text": "hedge several positions", "at": "hedge several positions"},
+    {"text": "exchange-based derivatives to hedge", "at": "exchange-based derivatives for most"},
+    {"text": "an advantage", "at": "an advantage"}
+  ],
+  "options": {
+    "A": "Exchange-based derivatives can be traded without incurring transaction costs.",
+    "B": "Exchange-based derivatives offer flexibility in terms of customizing the hedging instrument to match the position that the firm wants to hedge.",
+    "C": "Exchange-based derivatives are typically more effective in reducing basis risk in a hedging transaction compared to bilateral OTC derivatives.",
+    "D": "Exchange-based derivatives can minimize counterparty credit risk through the use of netting and margin requirements."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Exchanges shrink counterparty risk",
+    "high": {"label": "HOW IT WORKS", "text": "Margin + netting through the exchange", "at": "On an exchange,", "meter": null},
+    "low": {"label": "THE RESULT", "chips": [
+      {"text": "Margin posted", "at": "Everyone posts margin,"},
+      {"text": "Positions netted", "at": "positions are netted"},
+      {"text": "Low credit risk", "at": "keep counterparty credit risk"}
+    ], "at": "Everyone posts margin,", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Low transaction costs — but never zero.", "at": "A is wrong."},
+    "B": {"reason": "Standardized contracts are hard to customize.", "at": "B is wrong too."},
+    "C": {"reason": "Mismatches create basis risk — tailored OTC deals reduce it better.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Margin + netting → low counterparty risk", "at": "Exchange-traded derivatives cut"},
+    {"text": "Liquid and cheap to trade — not free", "at": "and they're liquid"},
+    {"text": "Trade-off: standardization → basis risk", "at": "The trade-off"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 2, How Do Firms Manage Financial Risk? Let's do another practice question."},
+    {"id": "question", "text": "So, a risk manager at a trading firm is reviewing an analyst's plan to hedge several positions in the trading portfolio. The analyst wants to use exchange-based derivatives for most of them. Which of these is an advantage of using exchange-based derivatives for hedging?"},
+    {"id": "options", "text": "Option A. Exchange-based derivatives can be traded without incurring transaction costs. Option B. They offer flexibility in customizing the hedging instrument to match the position the firm wants to hedge. Option C. They're typically more effective at reducing basis risk than bilateral OTC derivatives. And option D. They can minimize counterparty credit risk through netting and margin requirements."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. On an exchange, trades go through a clearinghouse. Everyone posts margin, and positions are netted against each other. So if someone can't pay, the margin is there to cover it. That's how exchange-traded derivatives keep counterparty credit risk to a minimum."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Exchange-traded derivatives are cheap to trade, but transaction costs are never zero. B is wrong too. Standardized contracts are hard to customize. The contract might not match your exact risk, your timing, or your location. And C? Also wrong. Those mismatches actually create basis risk. A tailored, bilateral OTC deal is better at reducing it."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Exchange-traded derivatives cut counterparty risk through margin and netting, and they're liquid and cheap to trade. The trade-off is that standardized contracts can leave you with basis risk. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["exchange-based derivatives", "exchange-traded derivatives", "an advantage", "d!", "clearinghouse", "posts margin", "netted", "margin", "netting", "counterparty credit risk", "counterparty risk", "transaction costs", "never zero", "standardized contracts", "basis risk", "bilateral otc", "risk hub"]
+}

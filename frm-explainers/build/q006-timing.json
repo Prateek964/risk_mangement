@@ -1,0 +1,1832 @@
+{
+ "duration": 119.171,
+ "speech_start": 0.08,
+ "speech_end": 119.2,
+ "sections": [
+  {
+   "id": "intro",
+   "s": 0.08,
+   "e": 12.56
+  },
+  {
+   "id": "question",
+   "s": 12.68,
+   "e": 27.84
+  },
+  {
+   "id": "options",
+   "s": 28.0,
+   "e": 52.44
+  },
+  {
+   "id": "pause",
+   "s": 52.48,
+   "e": 57.2
+  },
+  {
+   "id": "answer",
+   "s": 57.68,
+   "e": 76.0
+  },
+  {
+   "id": "wrong",
+   "s": 76.2,
+   "e": 101.92
+  },
+  {
+   "id": "takeaway",
+   "s": 102.4,
+   "e": 119.2
+  }
+ ],
+ "words": [
+  {
+   "w": "Hey,",
+   "sec": "intro",
+   "s": 0.08,
+   "e": 0.72
+  },
+  {
+   "w": "welcome",
+   "sec": "intro",
+   "s": 0.8,
+   "e": 1.12
+  },
+  {
+   "w": "back",
+   "sec": "intro",
+   "s": 1.2,
+   "e": 1.28
+  },
+  {
+   "w": "to",
+   "sec": "intro",
+   "s": 1.36,
+   "e": 1.44
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 1.52,
+   "e": 1.76
+  },
+  {
+   "w": "Hub!",
+   "sec": "intro",
+   "s": 1.92,
+   "e": 2.48
+  },
+  {
+   "w": "FRM",
+   "sec": "intro",
+   "s": 2.56,
+   "e": 3.28
+  },
+  {
+   "w": "Part",
+   "sec": "intro",
+   "s": 3.36,
+   "e": 3.52
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 3.68,
+   "e": 4.16
+  },
+  {
+   "w": "Book",
+   "sec": "intro",
+   "s": 4.24,
+   "e": 4.32
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 4.4,
+   "e": 4.88
+  },
+  {
+   "w": "Foundations",
+   "sec": "intro",
+   "s": 5.04,
+   "e": 5.6
+  },
+  {
+   "w": "of",
+   "sec": "intro",
+   "s": 5.68,
+   "e": 5.76
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 5.84,
+   "e": 6.08
+  },
+  {
+   "w": "Management.",
+   "sec": "intro",
+   "s": 6.16,
+   "e": 7.12
+  },
+  {
+   "w": "Chapter",
+   "sec": "intro",
+   "s": 7.28,
+   "e": 7.44
+  },
+  {
+   "w": "2,",
+   "sec": "intro",
+   "s": 7.52,
+   "e": 8.16
+  },
+  {
+   "w": "How",
+   "sec": "intro",
+   "s": 8.24,
+   "e": 8.32
+  },
+  {
+   "w": "Do",
+   "sec": "intro",
+   "s": 8.4,
+   "e": 8.48
+  },
+  {
+   "w": "Firms",
+   "sec": "intro",
+   "s": 8.56,
+   "e": 8.88
+  },
+  {
+   "w": "Manage",
+   "sec": "intro",
+   "s": 8.96,
+   "e": 9.28
+  },
+  {
+   "w": "Financial",
+   "sec": "intro",
+   "s": 9.36,
+   "e": 9.76
+  },
+  {
+   "w": "Risk?",
+   "sec": "intro",
+   "s": 9.84,
+   "e": 10.64
+  },
+  {
+   "w": "Let's",
+   "sec": "intro",
+   "s": 10.72,
+   "e": 10.88
+  },
+  {
+   "w": "do",
+   "sec": "intro",
+   "s": 10.92,
+   "e": 10.96
+  },
+  {
+   "w": "another",
+   "sec": "intro",
+   "s": 11.12,
+   "e": 11.28
+  },
+  {
+   "w": "practice",
+   "sec": "intro",
+   "s": 11.48,
+   "e": 11.68
+  },
+  {
+   "w": "question.",
+   "sec": "intro",
+   "s": 11.88,
+   "e": 12.56
+  },
+  {
+   "w": "So,",
+   "sec": "question",
+   "s": 12.68,
+   "e": 13.12
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 13.2,
+   "e": 13.28
+  },
+  {
+   "w": "risk",
+   "sec": "question",
+   "s": 13.4,
+   "e": 13.52
+  },
+  {
+   "w": "manager",
+   "sec": "question",
+   "s": 13.6,
+   "e": 14.0
+  },
+  {
+   "w": "at",
+   "sec": "question",
+   "s": 14.08,
+   "e": 14.12
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 14.16,
+   "e": 14.24
+  },
+  {
+   "w": "trading",
+   "sec": "question",
+   "s": 14.32,
+   "e": 14.64
+  },
+  {
+   "w": "firm",
+   "sec": "question",
+   "s": 14.72,
+   "e": 14.96
+  },
+  {
+   "w": "is",
+   "sec": "question",
+   "s": 15.04,
+   "e": 15.12
+  },
+  {
+   "w": "reviewing",
+   "sec": "question",
+   "s": 15.2,
+   "e": 15.6
+  },
+  {
+   "w": "an",
+   "sec": "question",
+   "s": 15.68,
+   "e": 15.76
+  },
+  {
+   "w": "analyst's",
+   "sec": "question",
+   "s": 15.84,
+   "e": 16.32
+  },
+  {
+   "w": "plan",
+   "sec": "question",
+   "s": 16.48,
+   "e": 16.64
+  },
+  {
+   "w": "to",
+   "sec": "question",
+   "s": 16.72,
+   "e": 16.8
+  },
+  {
+   "w": "hedge",
+   "sec": "question",
+   "s": 16.88,
+   "e": 17.2
+  },
+  {
+   "w": "several",
+   "sec": "question",
+   "s": 17.28,
+   "e": 17.52
+  },
+  {
+   "w": "positions",
+   "sec": "question",
+   "s": 17.8,
+   "e": 18.08
+  },
+  {
+   "w": "in",
+   "sec": "question",
+   "s": 18.12,
+   "e": 18.16
+  },
+  {
+   "w": "the",
+   "sec": "question",
+   "s": 18.24,
+   "e": 18.32
+  },
+  {
+   "w": "trading",
+   "sec": "question",
+   "s": 18.36,
+   "e": 18.64
+  },
+  {
+   "w": "portfolio.",
+   "sec": "question",
+   "s": 19.16,
+   "e": 19.733
+  },
+  {
+   "w": "The",
+   "sec": "question",
+   "s": 19.787,
+   "e": 19.84
+  },
+  {
+   "w": "analyst",
+   "sec": "question",
+   "s": 19.96,
+   "e": 20.24
+  },
+  {
+   "w": "wants",
+   "sec": "question",
+   "s": 20.32,
+   "e": 20.48
+  },
+  {
+   "w": "to",
+   "sec": "question",
+   "s": 20.56,
+   "e": 20.64
+  },
+  {
+   "w": "use",
+   "sec": "question",
+   "s": 20.72,
+   "e": 20.88
+  },
+  {
+   "w": "exchange-based",
+   "sec": "question",
+   "s": 21.16,
+   "e": 21.76
+  },
+  {
+   "w": "derivatives",
+   "sec": "question",
+   "s": 21.92,
+   "e": 22.32
+  },
+  {
+   "w": "for",
+   "sec": "question",
+   "s": 22.4,
+   "e": 22.56
+  },
+  {
+   "w": "most",
+   "sec": "question",
+   "s": 22.64,
+   "e": 22.72
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 22.8,
+   "e": 22.88
+  },
+  {
+   "w": "them.",
+   "sec": "question",
+   "s": 23.16,
+   "e": 23.48
+  },
+  {
+   "w": "Which",
+   "sec": "question",
+   "s": 23.52,
+   "e": 23.68
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 23.72,
+   "e": 23.76
+  },
+  {
+   "w": "these",
+   "sec": "question",
+   "s": 23.84,
+   "e": 24.08
+  },
+  {
+   "w": "is",
+   "sec": "question",
+   "s": 24.16,
+   "e": 24.24
+  },
+  {
+   "w": "an",
+   "sec": "question",
+   "s": 24.28,
+   "e": 24.32
+  },
+  {
+   "w": "advantage",
+   "sec": "question",
+   "s": 24.4,
+   "e": 24.96
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 25.04,
+   "e": 25.12
+  },
+  {
+   "w": "using",
+   "sec": "question",
+   "s": 25.2,
+   "e": 25.44
+  },
+  {
+   "w": "exchange-based",
+   "sec": "question",
+   "s": 25.68,
+   "e": 26.24
+  },
+  {
+   "w": "derivatives",
+   "sec": "question",
+   "s": 26.4,
+   "e": 26.8
+  },
+  {
+   "w": "for",
+   "sec": "question",
+   "s": 26.88,
+   "e": 26.96
+  },
+  {
+   "w": "hedging?",
+   "sec": "question",
+   "s": 27.04,
+   "e": 27.84
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 28.0,
+   "e": 28.16
+  },
+  {
+   "w": "A.",
+   "sec": "options",
+   "s": 28.32,
+   "e": 28.88
+  },
+  {
+   "w": "Exchange-based",
+   "sec": "options",
+   "s": 28.96,
+   "e": 29.68
+  },
+  {
+   "w": "derivatives",
+   "sec": "options",
+   "s": 29.84,
+   "e": 30.24
+  },
+  {
+   "w": "can",
+   "sec": "options",
+   "s": 30.32,
+   "e": 30.4
+  },
+  {
+   "w": "be",
+   "sec": "options",
+   "s": 30.48,
+   "e": 30.64
+  },
+  {
+   "w": "traded",
+   "sec": "options",
+   "s": 30.72,
+   "e": 31.04
+  },
+  {
+   "w": "without",
+   "sec": "options",
+   "s": 31.24,
+   "e": 31.44
+  },
+  {
+   "w": "incurring",
+   "sec": "options",
+   "s": 31.52,
+   "e": 31.92
+  },
+  {
+   "w": "transaction",
+   "sec": "options",
+   "s": 32.0,
+   "e": 32.56
+  },
+  {
+   "w": "costs.",
+   "sec": "options",
+   "s": 32.76,
+   "e": 33.44
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 33.52,
+   "e": 33.84
+  },
+  {
+   "w": "B.",
+   "sec": "options",
+   "s": 33.92,
+   "e": 34.48
+  },
+  {
+   "w": "They",
+   "sec": "options",
+   "s": 34.56,
+   "e": 34.64
+  },
+  {
+   "w": "offer",
+   "sec": "options",
+   "s": 34.72,
+   "e": 34.96
+  },
+  {
+   "w": "flexibility",
+   "sec": "options",
+   "s": 35.12,
+   "e": 35.68
+  },
+  {
+   "w": "in",
+   "sec": "options",
+   "s": 35.76,
+   "e": 35.92
+  },
+  {
+   "w": "customizing",
+   "sec": "options",
+   "s": 36.12,
+   "e": 36.56
+  },
+  {
+   "w": "the",
+   "sec": "options",
+   "s": 36.64,
+   "e": 36.72
+  },
+  {
+   "w": "hedging",
+   "sec": "options",
+   "s": 36.8,
+   "e": 37.04
+  },
+  {
+   "w": "instrument",
+   "sec": "options",
+   "s": 37.28,
+   "e": 37.52
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 37.6,
+   "e": 37.68
+  },
+  {
+   "w": "match",
+   "sec": "options",
+   "s": 37.76,
+   "e": 38.0
+  },
+  {
+   "w": "the",
+   "sec": "options",
+   "s": 38.04,
+   "e": 38.08
+  },
+  {
+   "w": "position",
+   "sec": "options",
+   "s": 38.16,
+   "e": 38.56
+  },
+  {
+   "w": "the",
+   "sec": "options",
+   "s": 38.64,
+   "e": 38.72
+  },
+  {
+   "w": "firm",
+   "sec": "options",
+   "s": 38.84,
+   "e": 38.96
+  },
+  {
+   "w": "wants",
+   "sec": "options",
+   "s": 39.04,
+   "e": 39.2
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 39.24,
+   "e": 39.28
+  },
+  {
+   "w": "hedge.",
+   "sec": "options",
+   "s": 39.36,
+   "e": 40.16
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 40.24,
+   "e": 40.56
+  },
+  {
+   "w": "C.",
+   "sec": "options",
+   "s": 40.64,
+   "e": 41.28
+  },
+  {
+   "w": "They're",
+   "sec": "options",
+   "s": 41.333,
+   "e": 41.44
+  },
+  {
+   "w": "typically",
+   "sec": "options",
+   "s": 41.68,
+   "e": 41.92
+  },
+  {
+   "w": "more",
+   "sec": "options",
+   "s": 42.0,
+   "e": 42.08
+  },
+  {
+   "w": "effective",
+   "sec": "options",
+   "s": 42.36,
+   "e": 42.64
+  },
+  {
+   "w": "at",
+   "sec": "options",
+   "s": 42.72,
+   "e": 42.8
+  },
+  {
+   "w": "reducing",
+   "sec": "options",
+   "s": 42.88,
+   "e": 43.36
+  },
+  {
+   "w": "basis",
+   "sec": "options",
+   "s": 43.56,
+   "e": 43.76
+  },
+  {
+   "w": "risk",
+   "sec": "options",
+   "s": 43.84,
+   "e": 44.08
+  },
+  {
+   "w": "than",
+   "sec": "options",
+   "s": 44.16,
+   "e": 44.32
+  },
+  {
+   "w": "bilateral",
+   "sec": "options",
+   "s": 44.4,
+   "e": 44.96
+  },
+  {
+   "w": "OTC",
+   "sec": "options",
+   "s": 45.04,
+   "e": 45.6
+  },
+  {
+   "w": "derivatives.",
+   "sec": "options",
+   "s": 45.72,
+   "e": 46.64
+  },
+  {
+   "w": "And",
+   "sec": "options",
+   "s": 46.8,
+   "e": 46.96
+  },
+  {
+   "w": "option",
+   "sec": "options",
+   "s": 47.04,
+   "e": 47.36
+  },
+  {
+   "w": "D.",
+   "sec": "options",
+   "s": 47.48,
+   "e": 48.0
+  },
+  {
+   "w": "They",
+   "sec": "options",
+   "s": 48.04,
+   "e": 48.08
+  },
+  {
+   "w": "can",
+   "sec": "options",
+   "s": 48.16,
+   "e": 48.32
+  },
+  {
+   "w": "minimize",
+   "sec": "options",
+   "s": 48.36,
+   "e": 48.8
+  },
+  {
+   "w": "counterparty",
+   "sec": "options",
+   "s": 48.96,
+   "e": 49.44
+  },
+  {
+   "w": "credit",
+   "sec": "options",
+   "s": 49.6,
+   "e": 49.76
+  },
+  {
+   "w": "risk",
+   "sec": "options",
+   "s": 49.84,
+   "e": 50.08
+  },
+  {
+   "w": "through",
+   "sec": "options",
+   "s": 50.16,
+   "e": 50.4
+  },
+  {
+   "w": "netting",
+   "sec": "options",
+   "s": 50.48,
+   "e": 50.8
+  },
+  {
+   "w": "and",
+   "sec": "options",
+   "s": 50.88,
+   "e": 50.96
+  },
+  {
+   "w": "margin",
+   "sec": "options",
+   "s": 51.12,
+   "e": 51.28
+  },
+  {
+   "w": "requirements.",
+   "sec": "options",
+   "s": 51.84,
+   "e": 52.44
+  },
+  {
+   "w": "Okay,",
+   "sec": "pause",
+   "s": 52.48,
+   "e": 53.0
+  },
+  {
+   "w": "pause",
+   "sec": "pause",
+   "s": 53.04,
+   "e": 53.28
+  },
+  {
+   "w": "the",
+   "sec": "pause",
+   "s": 53.32,
+   "e": 53.36
+  },
+  {
+   "w": "video",
+   "sec": "pause",
+   "s": 53.44,
+   "e": 53.84
+  },
+  {
+   "w": "and",
+   "sec": "pause",
+   "s": 53.96,
+   "e": 54.08
+  },
+  {
+   "w": "lock",
+   "sec": "pause",
+   "s": 54.2,
+   "e": 54.32
+  },
+  {
+   "w": "in",
+   "sec": "pause",
+   "s": 54.36,
+   "e": 54.4
+  },
+  {
+   "w": "your",
+   "sec": "pause",
+   "s": 54.48,
+   "e": 54.56
+  },
+  {
+   "w": "answer.",
+   "sec": "pause",
+   "s": 54.64,
+   "e": 57.2
+  },
+  {
+   "w": "And",
+   "sec": "answer",
+   "s": 57.68,
+   "e": 57.84
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 57.88,
+   "e": 57.92
+  },
+  {
+   "w": "answer",
+   "sec": "answer",
+   "s": 58.0,
+   "e": 58.32
+  },
+  {
+   "w": "is...",
+   "sec": "answer",
+   "s": 58.48,
+   "e": 59.2
+  },
+  {
+   "w": "D!",
+   "sec": "answer",
+   "s": 59.4,
+   "e": 60.08
+  },
+  {
+   "w": "Here's",
+   "sec": "answer",
+   "s": 60.16,
+   "e": 60.32
+  },
+  {
+   "w": "why.",
+   "sec": "answer",
+   "s": 60.4,
+   "e": 61.12
+  },
+  {
+   "w": "On",
+   "sec": "answer",
+   "s": 61.2,
+   "e": 61.28
+  },
+  {
+   "w": "an",
+   "sec": "answer",
+   "s": 61.32,
+   "e": 61.36
+  },
+  {
+   "w": "exchange,",
+   "sec": "answer",
+   "s": 61.44,
+   "e": 62.16
+  },
+  {
+   "w": "trades",
+   "sec": "answer",
+   "s": 62.24,
+   "e": 62.56
+  },
+  {
+   "w": "go",
+   "sec": "answer",
+   "s": 62.64,
+   "e": 62.72
+  },
+  {
+   "w": "through",
+   "sec": "answer",
+   "s": 62.8,
+   "e": 62.96
+  },
+  {
+   "w": "a",
+   "sec": "answer",
+   "s": 63.04,
+   "e": 63.12
+  },
+  {
+   "w": "clearinghouse.",
+   "sec": "answer",
+   "s": 63.2,
+   "e": 64.32
+  },
+  {
+   "w": "Everyone",
+   "sec": "answer",
+   "s": 64.4,
+   "e": 64.72
+  },
+  {
+   "w": "posts",
+   "sec": "answer",
+   "s": 64.8,
+   "e": 65.04
+  },
+  {
+   "w": "margin,",
+   "sec": "answer",
+   "s": 65.12,
+   "e": 65.6
+  },
+  {
+   "w": "and",
+   "sec": "answer",
+   "s": 65.64,
+   "e": 65.68
+  },
+  {
+   "w": "positions",
+   "sec": "answer",
+   "s": 65.76,
+   "e": 66.24
+  },
+  {
+   "w": "are",
+   "sec": "answer",
+   "s": 66.36,
+   "e": 66.48
+  },
+  {
+   "w": "netted",
+   "sec": "answer",
+   "s": 66.56,
+   "e": 66.8
+  },
+  {
+   "w": "against",
+   "sec": "answer",
+   "s": 66.96,
+   "e": 67.12
+  },
+  {
+   "w": "each",
+   "sec": "answer",
+   "s": 67.2,
+   "e": 67.28
+  },
+  {
+   "w": "other.",
+   "sec": "answer",
+   "s": 67.36,
+   "e": 68.0
+  },
+  {
+   "w": "So",
+   "sec": "answer",
+   "s": 68.12,
+   "e": 68.24
+  },
+  {
+   "w": "if",
+   "sec": "answer",
+   "s": 68.32,
+   "e": 68.4
+  },
+  {
+   "w": "someone",
+   "sec": "answer",
+   "s": 68.48,
+   "e": 68.72
+  },
+  {
+   "w": "can't",
+   "sec": "answer",
+   "s": 68.8,
+   "e": 69.04
+  },
+  {
+   "w": "pay,",
+   "sec": "answer",
+   "s": 69.32,
+   "e": 69.64
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 69.68,
+   "e": 69.76
+  },
+  {
+   "w": "margin",
+   "sec": "answer",
+   "s": 69.84,
+   "e": 70.16
+  },
+  {
+   "w": "is",
+   "sec": "answer",
+   "s": 70.24,
+   "e": 70.32
+  },
+  {
+   "w": "there",
+   "sec": "answer",
+   "s": 70.4,
+   "e": 70.48
+  },
+  {
+   "w": "to",
+   "sec": "answer",
+   "s": 70.56,
+   "e": 70.64
+  },
+  {
+   "w": "cover",
+   "sec": "answer",
+   "s": 70.76,
+   "e": 70.88
+  },
+  {
+   "w": "it.",
+   "sec": "answer",
+   "s": 70.96,
+   "e": 71.44
+  },
+  {
+   "w": "That's",
+   "sec": "answer",
+   "s": 71.52,
+   "e": 71.68
+  },
+  {
+   "w": "how",
+   "sec": "answer",
+   "s": 71.76,
+   "e": 71.84
+  },
+  {
+   "w": "exchange-traded",
+   "sec": "answer",
+   "s": 72.08,
+   "e": 72.64
+  },
+  {
+   "w": "derivatives",
+   "sec": "answer",
+   "s": 72.8,
+   "e": 73.28
+  },
+  {
+   "w": "keep",
+   "sec": "answer",
+   "s": 73.36,
+   "e": 73.52
+  },
+  {
+   "w": "counterparty",
+   "sec": "answer",
+   "s": 73.6,
+   "e": 74.16
+  },
+  {
+   "w": "credit",
+   "sec": "answer",
+   "s": 74.24,
+   "e": 74.48
+  },
+  {
+   "w": "risk",
+   "sec": "answer",
+   "s": 74.56,
+   "e": 74.8
+  },
+  {
+   "w": "to",
+   "sec": "answer",
+   "s": 74.88,
+   "e": 74.96
+  },
+  {
+   "w": "a",
+   "sec": "answer",
+   "s": 75.04,
+   "e": 75.12
+  },
+  {
+   "w": "minimum.",
+   "sec": "answer",
+   "s": 75.52,
+   "e": 76.0
+  },
+  {
+   "w": "Now,",
+   "sec": "wrong",
+   "s": 76.2,
+   "e": 76.453
+  },
+  {
+   "w": "why",
+   "sec": "wrong",
+   "s": 76.507,
+   "e": 76.56
+  },
+  {
+   "w": "not",
+   "sec": "wrong",
+   "s": 76.64,
+   "e": 76.72
+  },
+  {
+   "w": "the",
+   "sec": "wrong",
+   "s": 76.76,
+   "e": 76.8
+  },
+  {
+   "w": "others?",
+   "sec": "wrong",
+   "s": 76.88,
+   "e": 77.6
+  },
+  {
+   "w": "A",
+   "sec": "wrong",
+   "s": 77.76,
+   "e": 78.0
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 78.08,
+   "e": 78.16
+  },
+  {
+   "w": "wrong.",
+   "sec": "wrong",
+   "s": 78.24,
+   "e": 78.92
+  },
+  {
+   "w": "Exchange-traded",
+   "sec": "wrong",
+   "s": 78.96,
+   "e": 79.76
+  },
+  {
+   "w": "derivatives",
+   "sec": "wrong",
+   "s": 79.88,
+   "e": 80.32
+  },
+  {
+   "w": "are",
+   "sec": "wrong",
+   "s": 80.4,
+   "e": 80.48
+  },
+  {
+   "w": "cheap",
+   "sec": "wrong",
+   "s": 80.56,
+   "e": 80.72
+  },
+  {
+   "w": "to",
+   "sec": "wrong",
+   "s": 80.8,
+   "e": 80.88
+  },
+  {
+   "w": "trade,",
+   "sec": "wrong",
+   "s": 80.96,
+   "e": 81.48
+  },
+  {
+   "w": "but",
+   "sec": "wrong",
+   "s": 81.52,
+   "e": 81.68
+  },
+  {
+   "w": "transaction",
+   "sec": "wrong",
+   "s": 81.76,
+   "e": 82.32
+  },
+  {
+   "w": "costs",
+   "sec": "wrong",
+   "s": 82.48,
+   "e": 82.72
+  },
+  {
+   "w": "are",
+   "sec": "wrong",
+   "s": 82.84,
+   "e": 82.96
+  },
+  {
+   "w": "never",
+   "sec": "wrong",
+   "s": 83.12,
+   "e": 83.28
+  },
+  {
+   "w": "zero.",
+   "sec": "wrong",
+   "s": 83.36,
+   "e": 84.16
+  },
+  {
+   "w": "B",
+   "sec": "wrong",
+   "s": 84.24,
+   "e": 84.48
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 84.56,
+   "e": 84.64
+  },
+  {
+   "w": "wrong",
+   "sec": "wrong",
+   "s": 84.72,
+   "e": 84.96
+  },
+  {
+   "w": "too.",
+   "sec": "wrong",
+   "s": 85.04,
+   "e": 85.68
+  },
+  {
+   "w": "Standardized",
+   "sec": "wrong",
+   "s": 85.76,
+   "e": 86.24
+  },
+  {
+   "w": "contracts",
+   "sec": "wrong",
+   "s": 86.32,
+   "e": 86.8
+  },
+  {
+   "w": "are",
+   "sec": "wrong",
+   "s": 86.88,
+   "e": 87.04
+  },
+  {
+   "w": "hard",
+   "sec": "wrong",
+   "s": 87.12,
+   "e": 87.28
+  },
+  {
+   "w": "to",
+   "sec": "wrong",
+   "s": 87.36,
+   "e": 87.44
+  },
+  {
+   "w": "customize.",
+   "sec": "wrong",
+   "s": 87.52,
+   "e": 88.44
+  },
+  {
+   "w": "The",
+   "sec": "wrong",
+   "s": 88.48,
+   "e": 88.56
+  },
+  {
+   "w": "contract",
+   "sec": "wrong",
+   "s": 88.8,
+   "e": 89.04
+  },
+  {
+   "w": "might",
+   "sec": "wrong",
+   "s": 89.12,
+   "e": 89.28
+  },
+  {
+   "w": "not",
+   "sec": "wrong",
+   "s": 89.4,
+   "e": 89.52
+  },
+  {
+   "w": "match",
+   "sec": "wrong",
+   "s": 89.64,
+   "e": 89.76
+  },
+  {
+   "w": "your",
+   "sec": "wrong",
+   "s": 89.8,
+   "e": 89.84
+  },
+  {
+   "w": "exact",
+   "sec": "wrong",
+   "s": 89.92,
+   "e": 90.32
+  },
+  {
+   "w": "risk,",
+   "sec": "wrong",
+   "s": 90.4,
+   "e": 90.933
+  },
+  {
+   "w": "your",
+   "sec": "wrong",
+   "s": 90.987,
+   "e": 91.04
+  },
+  {
+   "w": "timing,",
+   "sec": "wrong",
+   "s": 91.12,
+   "e": 91.64
+  },
+  {
+   "w": "or",
+   "sec": "wrong",
+   "s": 91.68,
+   "e": 91.84
+  },
+  {
+   "w": "your",
+   "sec": "wrong",
+   "s": 91.88,
+   "e": 91.92
+  },
+  {
+   "w": "location.",
+   "sec": "wrong",
+   "s": 92.0,
+   "e": 92.92
+  },
+  {
+   "w": "And",
+   "sec": "wrong",
+   "s": 92.96,
+   "e": 93.12
+  },
+  {
+   "w": "C?",
+   "sec": "wrong",
+   "s": 93.44,
+   "e": 93.84
+  },
+  {
+   "w": "Also",
+   "sec": "wrong",
+   "s": 93.92,
+   "e": 94.16
+  },
+  {
+   "w": "wrong.",
+   "sec": "wrong",
+   "s": 94.24,
+   "e": 94.84
+  },
+  {
+   "w": "Those",
+   "sec": "wrong",
+   "s": 94.88,
+   "e": 95.04
+  },
+  {
+   "w": "mismatches",
+   "sec": "wrong",
+   "s": 95.12,
+   "e": 95.76
+  },
+  {
+   "w": "actually",
+   "sec": "wrong",
+   "s": 95.84,
+   "e": 96.24
+  },
+  {
+   "w": "create",
+   "sec": "wrong",
+   "s": 96.32,
+   "e": 96.8
+  },
+  {
+   "w": "basis",
+   "sec": "wrong",
+   "s": 96.96,
+   "e": 97.12
+  },
+  {
+   "w": "risk.",
+   "sec": "wrong",
+   "s": 97.2,
+   "e": 97.88
+  },
+  {
+   "w": "A",
+   "sec": "wrong",
+   "s": 97.92,
+   "e": 98.0
+  },
+  {
+   "w": "tailored,",
+   "sec": "wrong",
+   "s": 98.08,
+   "e": 98.587
+  },
+  {
+   "w": "bilateral",
+   "sec": "wrong",
+   "s": 98.613,
+   "e": 99.2
+  },
+  {
+   "w": "OTC",
+   "sec": "wrong",
+   "s": 99.28,
+   "e": 99.84
+  },
+  {
+   "w": "deal",
+   "sec": "wrong",
+   "s": 99.92,
+   "e": 100.16
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 100.24,
+   "e": 100.48
+  },
+  {
+   "w": "better",
+   "sec": "wrong",
+   "s": 100.6,
+   "e": 100.72
+  },
+  {
+   "w": "at",
+   "sec": "wrong",
+   "s": 100.8,
+   "e": 100.88
+  },
+  {
+   "w": "reducing",
+   "sec": "wrong",
+   "s": 100.92,
+   "e": 101.28
+  },
+  {
+   "w": "it.",
+   "sec": "wrong",
+   "s": 101.36,
+   "e": 101.92
+  },
+  {
+   "w": "So,",
+   "sec": "takeaway",
+   "s": 102.4,
+   "e": 102.533
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 102.587,
+   "e": 102.64
+  },
+  {
+   "w": "key",
+   "sec": "takeaway",
+   "s": 102.72,
+   "e": 102.88
+  },
+  {
+   "w": "takeaway.",
+   "sec": "takeaway",
+   "s": 102.96,
+   "e": 103.88
+  },
+  {
+   "w": "Exchange-traded",
+   "sec": "takeaway",
+   "s": 103.92,
+   "e": 104.72
+  },
+  {
+   "w": "derivatives",
+   "sec": "takeaway",
+   "s": 104.88,
+   "e": 105.36
+  },
+  {
+   "w": "cut",
+   "sec": "takeaway",
+   "s": 105.44,
+   "e": 105.6
+  },
+  {
+   "w": "counterparty",
+   "sec": "takeaway",
+   "s": 105.68,
+   "e": 106.24
+  },
+  {
+   "w": "risk",
+   "sec": "takeaway",
+   "s": 106.32,
+   "e": 106.56
+  },
+  {
+   "w": "through",
+   "sec": "takeaway",
+   "s": 106.68,
+   "e": 106.8
+  },
+  {
+   "w": "margin",
+   "sec": "takeaway",
+   "s": 107.0,
+   "e": 107.2
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 107.28,
+   "e": 107.44
+  },
+  {
+   "w": "netting,",
+   "sec": "takeaway",
+   "s": 107.52,
+   "e": 108.04
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 108.08,
+   "e": 108.32
+  },
+  {
+   "w": "they're",
+   "sec": "takeaway",
+   "s": 108.36,
+   "e": 108.56
+  },
+  {
+   "w": "liquid",
+   "sec": "takeaway",
+   "s": 108.76,
+   "e": 108.96
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 109.08,
+   "e": 109.2
+  },
+  {
+   "w": "cheap",
+   "sec": "takeaway",
+   "s": 109.32,
+   "e": 109.44
+  },
+  {
+   "w": "to",
+   "sec": "takeaway",
+   "s": 109.52,
+   "e": 109.6
+  },
+  {
+   "w": "trade.",
+   "sec": "takeaway",
+   "s": 109.96,
+   "e": 110.36
+  },
+  {
+   "w": "The",
+   "sec": "takeaway",
+   "s": 110.4,
+   "e": 110.48
+  },
+  {
+   "w": "trade-off",
+   "sec": "takeaway",
+   "s": 110.6,
+   "e": 111.04
+  },
+  {
+   "w": "is",
+   "sec": "takeaway",
+   "s": 111.08,
+   "e": 111.12
+  },
+  {
+   "w": "that",
+   "sec": "takeaway",
+   "s": 111.2,
+   "e": 111.36
+  },
+  {
+   "w": "standardized",
+   "sec": "takeaway",
+   "s": 111.44,
+   "e": 111.92
+  },
+  {
+   "w": "contracts",
+   "sec": "takeaway",
+   "s": 112.0,
+   "e": 112.56
+  },
+  {
+   "w": "can",
+   "sec": "takeaway",
+   "s": 112.64,
+   "e": 112.88
+  },
+  {
+   "w": "leave",
+   "sec": "takeaway",
+   "s": 112.96,
+   "e": 113.12
+  },
+  {
+   "w": "you",
+   "sec": "takeaway",
+   "s": 113.16,
+   "e": 113.2
+  },
+  {
+   "w": "with",
+   "sec": "takeaway",
+   "s": 113.28,
+   "e": 113.44
+  },
+  {
+   "w": "basis",
+   "sec": "takeaway",
+   "s": 113.6,
+   "e": 113.76
+  },
+  {
+   "w": "risk.",
+   "sec": "takeaway",
+   "s": 113.84,
+   "e": 114.6
+  },
+  {
+   "w": "If",
+   "sec": "takeaway",
+   "s": 114.64,
+   "e": 114.72
+  },
+  {
+   "w": "this",
+   "sec": "takeaway",
+   "s": 114.8,
+   "e": 114.88
+  },
+  {
+   "w": "helped,",
+   "sec": "takeaway",
+   "s": 114.96,
+   "e": 115.48
+  },
+  {
+   "w": "follow",
+   "sec": "takeaway",
+   "s": 115.52,
+   "e": 115.76
+  },
+  {
+   "w": "Risk",
+   "sec": "takeaway",
+   "s": 115.84,
+   "e": 116.0
+  },
+  {
+   "w": "Hub",
+   "sec": "takeaway",
+   "s": 116.08,
+   "e": 116.24
+  },
+  {
+   "w": "for",
+   "sec": "takeaway",
+   "s": 116.32,
+   "e": 116.48
+  },
+  {
+   "w": "more",
+   "sec": "takeaway",
+   "s": 116.6,
+   "e": 116.72
+  },
+  {
+   "w": "FRM",
+   "sec": "takeaway",
+   "s": 116.88,
+   "e": 117.28
+  },
+  {
+   "w": "practice.",
+   "sec": "takeaway",
+   "s": 117.72,
+   "e": 118.187
+  },
+  {
+   "w": "See",
+   "sec": "takeaway",
+   "s": 118.213,
+   "e": 118.24
+  },
+  {
+   "w": "you",
+   "sec": "takeaway",
+   "s": 118.32,
+   "e": 118.36
+  },
+  {
+   "w": "in",
+   "sec": "takeaway",
+   "s": 118.4,
+   "e": 118.44
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 118.48,
+   "e": 118.52
+  },
+  {
+   "w": "next",
+   "sec": "takeaway",
+   "s": 118.56,
+   "e": 118.72
+  },
+  {
+   "w": "one!",
+   "sec": "takeaway",
+   "s": 118.8,
+   "e": 119.2
+  }
+ ]
+}
