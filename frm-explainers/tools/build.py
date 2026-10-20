@@ -103,7 +103,7 @@ clip("intro", f'''
   <div class="ichip h" id="it3">PRACTICE QUESTION</div>'''),
 clip("question", f'''
   <div class="qlabel h" id="ql">THE QUESTION</div>
-  <div class="qcard h" id="qcard"{' style="padding:44px 48px"' if len(Q["stem"]) > 450 else ''}><p{' style="font-size:41px;line-height:1.38"' if len(Q["stem"]) > 450 else ''}>{stem}</p></div>'''),
+  <div class="qcard h" id="qcard"{' style="padding:44px 48px"' if len(Q["stem"]) > 380 else ''}><p{' style="font-size:41px;line-height:1.38"' if len(Q["stem"]) > 380 else ''}>{stem}</p></div>'''),
 clip("options", f'''
   <div class="qshort h" id="qs">{esc(Q["stem_short"])}</div>
   <div class="pausebar h" id="pb"><span class="pi">❚❚</span> Pause &amp; pick your answer <span class="cd"><b id="cd3">3</b><b id="cd2">2</b><b id="cd1">1</b></span></div>

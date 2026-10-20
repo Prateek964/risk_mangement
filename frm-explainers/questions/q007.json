@@ -1,0 +1,56 @@
+{
+  "id": "q007",
+  "number": 7,
+  "source": "GARP Mock 2023 · Part 1 · Q19",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 3,
+  "chapter": "Chapter 3. The Governance of Risk Management",
+  "audio": "audio/q007-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 3,", "a practice question."],
+  "stem": "A junior analyst has just started working for a national banking supervisor and is training for a position as a bank examiner. As part of the training program, the analyst is asked to explain how banking regulations evolved as a result of the 2007 – 2009 financial crisis to encourage better risk governance. Which of the following correctly describes an impact of regulations that were introduced as a result of the crisis?",
+  "stem_short": "Which post-crisis regulatory impact is correct?",
+  "stem_highlights": [
+    {"text": "bank examiner", "at": "bank examiner."},
+    {"text": "financial crisis", "at": "financial crisis"},
+    {"text": "better risk governance", "at": "better risk governance."}
+  ],
+  "options": {
+    "A": "Banks were required to securitize all the mortgages they originate in order to distribute risk across financial institutions.",
+    "B": "Banks were encouraged to establish an independent risk management function with access to the board of directors.",
+    "C": "Proprietary trading operations were merged with traditional banking operations to provide banks better governance over their trading desks.",
+    "D": "Derivatives were encouraged to be traded OTC rather than centrally cleared to provide greater transparency."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Independent risk, direct line to the board",
+    "high": {"label": "THE PROBLEM", "text": "Risk reported to the business it watched", "at": "When the risk function reports", "meter": null},
+    "low": {"label": "THE FIX", "chips": [
+      {"text": "Independent risk function", "at": "an independent risk function,"},
+      {"text": "Direct line to the board", "at": "a direct line to the board."},
+      {"text": "Board hears the risks", "at": "the board actually hears"}
+    ], "at": "So regulators pushed", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Securitization helped cause the crisis — it wasn’t encouraged.", "at": "A is wrong."},
+    "C": {"reason": "Opposite — the Volcker rule banned proprietary trading at banks.", "at": "C is wrong too."},
+    "D": {"reason": "Regulators pushed central clearing, not more OTC trading.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Make risk management independent", "at": "make risk management independent"},
+    {"text": "Give it a direct line to the board", "at": "give it a direct line"},
+    {"text": "Less prop trading, more central clearing", "at": "At the same time,"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 3, The Governance of Risk Management. Let's do a practice question."},
+    {"id": "question", "text": "So, a junior analyst just joined a national banking supervisor and is training to become a bank examiner. As part of the training, the analyst has to explain how banking regulations changed after the 2007 to 2009 financial crisis to encourage better risk governance. Which of these correctly describes an impact of those post-crisis regulations?"},
+    {"id": "options", "text": "Option A. Banks were required to securitize all the mortgages they originate, to distribute risk across financial institutions. Option B. Banks were encouraged to set up an independent risk management function with access to the board of directors. Option C. Proprietary trading was merged with traditional banking to give banks better governance over their trading desks. And option D. Derivatives were encouraged to trade OTC rather than being centrally cleared, to provide greater transparency."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. A key lesson from the crisis was that risk managers got overruled. When the risk function reports to the trading desk or the business it's supposed to watch, it can be silenced. So regulators pushed for an independent risk function, with a direct line to the board. That way, the board actually hears about risk issues."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Securitization was actually one of the causes of the crisis. Highly rated mortgage tranches collapsed together, so regulators didn't push for more of it. C is wrong too. It was the opposite. Rules like the Volcker rule banned banks from proprietary trading and pushed it out of banking. And D? Also wrong. Post-crisis rules encouraged central clearing of derivatives wherever possible, not more OTC trading."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. After the crisis, banks were pushed to make risk management independent and give it a direct line to the board. At the same time, rules limited proprietary trading and moved derivatives toward central clearing. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["bank examiner", "financial crisis", "better risk governance", "b!", "overruled", "silenced", "independent risk function", "direct line to the board", "risk issues", "securitization", "mortgage tranches", "volcker rule", "proprietary trading", "central clearing", "otc trading", "risk hub"]
+}
