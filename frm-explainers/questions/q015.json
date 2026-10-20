@@ -1,0 +1,53 @@
+{
+  "id": "q015",
+  "number": 15,
+  "source": "GARP Mock 2023 · Part 2 · Q3",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q015-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "another practice question."],
+  "stem": "An endowment fund manager is estimating the market risk of Alpha Industrial Fund. The fund has an expected annual return of 7.1% and volatility of 7.9% and is benchmarked against the Russell 2000 Index. The manager assumes that the expected annual return of the Russell 2000 Index is 7.8% with an annual volatility of 9.8%. According to the CAPM, if the risk-free rate is 3.2% per year, what is the beta of Alpha Industrial Fund?",
+  "stem_short": "What is the beta of Alpha Industrial Fund?",
+  "stem_highlights": [
+    {"text": "expected annual return of 7.1%", "at": "expected annual return of"},
+    {"text": "Russell 2000 Index is 7.8%", "at": "expected return of 7.8"},
+    {"text": "risk-free rate is 3.2% per year", "at": "risk-free rate of"},
+    {"text": "beta of Alpha Industrial Fund", "at": "beta of Alpha"}
+  ],
+  "options": {"A": "0.85", "B": "0.95", "C": "1.13", "D": "1.23"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Back out beta from the CAPM",
+    "high": {"label": "CAPM", "text": "7.1% = 3.2% + β × (7.8% − 3.2%)", "at": "So 7.1 equals", "meter": null},
+    "low": {"label": "SOLVE FOR BETA", "chips": [
+      {"text": "Excess return: 3.9%", "at": "excess return is 3.9"},
+      {"text": "Market premium: 4.6%", "at": "market premium is 4.6"},
+      {"text": "β = 3.9 ÷ 4.6 ≈ 0.85", "at": "beta is about 0.85."}
+    ], "at": "The fund's excess return", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "3.2% + 0.95 × 4.6% ≈ 7.57%, not 7.1%.", "at": "B is wrong."},
+    "C": {"reason": "Beta above 1 implies beating the market — this fund earns less.", "at": "C is wrong too."},
+    "D": {"reason": "Also above 1 — can’t fit a fund earning less than the market.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "No correlation? Back beta out of the CAPM", "at": "No correlation given?"},
+    {"text": "β = excess return ÷ market premium", "at": "Beta is the fund's"},
+    {"text": "Earns less than the market → β below 1", "at": "And a quick check:"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do another practice question."},
+    {"id": "question", "text": "So, an endowment fund manager is estimating the market risk of Alpha Industrial Fund. The fund has an expected annual return of 7.1 percent and volatility of 7.9 percent, and it's benchmarked against the Russell 2000. The manager assumes the Russell 2000 has an expected return of 7.8 percent and volatility of 9.8 percent. Using the CAPM, with a risk-free rate of 3.2 percent, what's the beta of Alpha Industrial Fund?"},
+    {"id": "options", "text": "Option A, 0.85. Option B, 0.95. Option C, 1.13. And option D, 1.23."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. We don't know the correlation between the fund and the index, so the volatilities won't help. Instead, we back out beta from the CAPM. So 7.1 equals 3.2, plus beta times 7.8 minus 3.2. The fund's excess return is 3.9 percent. The market premium is 4.6 percent. Divide 3.9 by 4.6, and beta is about 0.85."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. Plug in 0.95, and the CAPM gives 3.2 plus 0.95 times 4.6, which is about 7.57 percent, not 7.1. C is wrong too. A beta above 1 means the fund should earn more than the market. But the fund's expected return, 7.1 percent, is below the market's 7.8. And D? Same problem. It's also above 1, so it can't fit a fund that earns less than the market."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. No correlation given? Use the CAPM to back out beta. Beta is the fund's excess return divided by the market premium. And a quick check: if a fund earns less than the market, its beta should be below 1. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["capm", "beta", "risk-free rate", "market premium", "excess return", "correlation", "volatilities", "0.85", "alpha industrial fund", "russell 2000", "risk hub"]
+}
