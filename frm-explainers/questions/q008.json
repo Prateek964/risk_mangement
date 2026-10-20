@@ -1,0 +1,56 @@
+{
+  "id": "q008",
+  "number": 8,
+  "source": "GARP Mock 2023 · Part 2 · Q63",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 3,
+  "chapter": "Chapter 3. The Governance of Risk Management",
+  "audio": "audio/q008-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 3,", "another practice question."],
+  "stem": "National regulators in an emerging market country are developing guidelines for appropriate risk management responsibilities for different business functions at the country’s banks. A regulatory analyst is asked to prepare a report recommending best practices for the firm-wide risk management, audit, and operations functions. Which of the following should the analyst recommend as an appropriate responsibility of the audit function?",
+  "stem_short": "Which is an appropriate responsibility of the audit function?",
+  "stem_highlights": [
+    {"text": "risk management responsibilities", "at": "risk responsibilities"},
+    {"text": "firm-wide risk management, audit, and operations functions", "at": "firm-wide risk management,"},
+    {"text": "responsibility of the audit function", "at": "the audit function?"}
+  ],
+  "options": {
+    "A": "Analyzing correlation and volatility assumptions in a bank’s VaR models",
+    "B": "Implementing risk management policies related to stock-based compensation",
+    "C": "Monitoring risk exposures on a day-to-day basis for adherence to a bank’s concentration limits",
+    "D": "Processing confirmations and settlements for trades executed by a bank"
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Audit is the independent check",
+    "high": {"label": "AUDIT’S ROLE", "text": "Independent review — not day-to-day running", "at": "Audit is the independent check.", "meter": null},
+    "low": {"label": "SO AUDIT REVIEWS", "chips": [
+      {"text": "Model assumptions", "at": "whether the models make sense."},
+      {"text": "Volatility & correlation", "at": "volatility and correlation assumptions"},
+      {"text": "VaR models", "at": "behind a VaR model"}
+    ], "at": "Instead, it reviews", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "Senior management or the risk group sets these policies.", "at": "B is wrong."},
+    "C": {"reason": "Daily limit monitoring belongs to risk management.", "at": "C is wrong too."},
+    "D": {"reason": "Confirmations and settlements belong to operations.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Operations runs the trades", "at": "Operations runs the trades."},
+    {"text": "Risk management monitors limits", "at": "Risk management monitors"},
+    {"text": "Audit independently checks — even models", "at": "And audit independently"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 3, The Governance of Risk Management. Let's do another practice question."},
+    {"id": "question", "text": "So, regulators in an emerging market are writing guidelines on who should handle which risk responsibilities at the country's banks. An analyst has to recommend best practices for three functions: firm-wide risk management, audit, and operations. Which of these is an appropriate responsibility for the audit function?"},
+    {"id": "options", "text": "Option A. Analyzing correlation and volatility assumptions in a bank's VaR models. Option B. Implementing risk management policies related to stock-based compensation. Option C. Monitoring risk exposures day to day for adherence to the bank's concentration limits. And option D. Processing confirmations and settlements for trades the bank executes."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. Audit is the independent check. It doesn't run the day-to-day business. Instead, it reviews how things are done, including whether the models make sense. So digging into the volatility and correlation assumptions behind a VaR model is exactly the kind of review audit should do."},
+    {"id": "wrong", "text": "Now, why not the others? Each one belongs to a different team. B is wrong. Setting risk policies for stock-based compensation is a job for senior management or the risk management group. C is wrong too. Daily monitoring of exposures against concentration limits is the risk management function's job. And D? That's operations. Processing confirmations and settlements is back-office work."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Think of three lines of work. Operations runs the trades. Risk management monitors exposures and limits. And audit independently checks it all, including the models. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["audit function", "risk responsibilities", "a!", "independent check", "independently checks", "day-to-day business", "models make sense", "volatility and correlation assumptions", "var model", "senior management", "risk management group", "concentration limits", "risk management function's", "operations", "confirmations and settlements", "back-office", "risk hub"]
+}
