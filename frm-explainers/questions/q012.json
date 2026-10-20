@@ -1,0 +1,53 @@
+{
+  "id": "q012",
+  "number": 12,
+  "source": "GARP Mock 2022 · Q23",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q012-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "An investor is assessing the market risk of Andromeda Fund. The fund has an expected annual return of 6.8% and volatility of 7.0% and is benchmarked against the S&P 500 Index. The investor assumes the S&P 500 Index has an expected annual return of 7.2% and volatility of 8.2%. According to the CAPM, if the risk-free rate is 2.2% per year, what is the beta of Andromeda Fund?",
+  "stem_short": "What is the beta of Andromeda Fund?",
+  "stem_highlights": [
+    {"text": "expected annual return of 6.8%", "at": "expected annual return of"},
+    {"text": "expected annual return of 7.2%", "at": "expected return of 7.2"},
+    {"text": "risk-free rate is 2.2% per year", "at": "risk-free rate of"},
+    {"text": "beta of Andromeda Fund", "at": "beta of Andromeda"}
+  ],
+  "options": {"A": "0.92", "B": "0.95", "C": "1.13", "D": "1.23"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Back out beta from the CAPM",
+    "high": {"label": "CAPM", "text": "6.8% = 2.2% + β × (7.2% − 2.2%)", "at": "CAPM says", "meter": null},
+    "low": {"label": "SOLVE FOR BETA", "chips": [
+      {"text": "Excess return: 4.6%", "at": "excess return is 4.6"},
+      {"text": "Market premium: 5%", "at": "market premium is 5"},
+      {"text": "β = 4.6 ÷ 5 = 0.92", "at": "beta is 0.92."}
+    ], "at": "The fund's excess return", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "2.2% + 0.95 × 5% = 6.95%, not 6.8%.", "at": "B is wrong."},
+    "C": {"reason": "Beta above 1 implies beating the market — this fund earns less.", "at": "C is wrong too."},
+    "D": {"reason": "Also above 1 — can’t fit a fund earning less than the market.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "No correlation given? Back beta out of the CAPM", "at": "When correlation isn't given,"},
+    {"text": "β = excess return ÷ market premium", "at": "Beta equals the fund's"},
+    {"text": "Earns less than the market → β below 1", "at": "And if a fund earns less"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, an investor is checking the market risk of Andromeda Fund. The fund has an expected annual return of 6.8 percent and volatility of 7 percent, and it's benchmarked against the S&P 500. The investor assumes the S&P 500 has an expected return of 7.2 percent and volatility of 8.2 percent. Using the CAPM, with a risk-free rate of 2.2 percent, what's the beta of Andromeda Fund?"},
+    {"id": "options", "text": "Option A, 0.92. Option B, 0.95. Option C, 1.13. And option D, 1.23."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. We don't know the correlation between the fund and the index, so we can't use the volatilities. Instead, we back out beta from the CAPM. CAPM says the fund's return equals the risk-free rate plus beta times the market premium. So 6.8 equals 2.2, plus beta times 7.2 minus 2.2. The fund's excess return is 4.6 percent. The market premium is 5 percent. Divide 4.6 by 5, and beta is 0.92."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. Plug in 0.95, and the CAPM gives 2.2 plus 0.95 times 5, which is 6.95 percent, not 6.8. C is wrong too. A beta above 1 means the fund should earn more than the market. But the fund's expected return, 6.8 percent, is below the market's 7.2. And D? Same problem. It's also above 1, so it can't fit a fund that earns less than the market."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. When correlation isn't given, use the CAPM to back out beta. Beta equals the fund's excess return divided by the market premium. And if a fund earns less than the market, its beta should be below 1. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["capm", "beta", "risk-free rate", "market premium", "excess return", "correlation", "volatilities", "0.92", "andromeda fund", "risk hub"]
+}
