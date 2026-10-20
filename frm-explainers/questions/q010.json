@@ -1,0 +1,57 @@
+{
+  "id": "q010",
+  "number": 10,
+  "source": "GARP Mock 2023 · Part 1 · Q96",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 4,
+  "chapter": "Chapter 4. Credit Risk Transfer Mechanisms",
+  "audio": "audio/q010-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 4,", "a practice question."],
+  "stem": "A risk analyst at a growing bank is concerned about a loan exposure to a large manufacturing company which is losing significant market share in its industry. The analyst considers the use of different credit risk transfer mechanisms, including CDS, to manage this exposure. Which of the following statements correctly describes an appropriate benefit of using CDS in this situation?",
+  "stem_short": "What’s a real benefit of using CDS here?",
+  "stem_highlights": [
+    {"text": "losing significant market share", "at": "losing a lot of market share."},
+    {"text": "credit risk transfer mechanisms", "at": "credit risk transfer tools,"},
+    {"text": "benefit of using CDS", "at": "benefit of using CDS"}
+  ],
+  "options": {
+    "A": "CDS quantify the manufacturing company’s default risk and allow the bank to monitor changes in this risk on a real-time basis.",
+    "B": "CDS provide an agreement to periodically revalue the loan and transfer any net value change.",
+    "C": "CDS require the manufacturing company to pay back the loan in full at an earlier point in time.",
+    "D": "CDS allow the bank to offset its exposure to the company with loan exposures to other manufacturing companies."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "CDS spreads price default risk live",
+    "high": {"label": "CDS SPREAD", "text": "The market’s price of the company’s default risk", "at": "A credit default swap", "meter": null},
+    "low": {"label": "SO THE BANK GETS", "chips": [
+      {"text": "Default risk quantified", "at": "puts a number on"},
+      {"text": "Real-time updates", "at": "in real time."},
+      {"text": "Beats periodic ratings", "at": "only update now and then."}
+    ], "at": "puts a number on", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "That’s marking-to-market and margining.", "at": "B is wrong."},
+    "C": {"reason": "That’s a termination or put option.", "at": "C is wrong too."},
+    "D": {"reason": "CDS don’t offset against other borrowers’ loans.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "CDS spreads = live default-risk signal", "at": "CDS spreads give you"},
+    {"text": "Revaluing & collateral = mark-to-market", "at": "Periodic revaluing"},
+    {"text": "Early payback = termination / put", "at": "early payback"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 4, Credit Risk Transfer Mechanisms. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk analyst at a growing bank is worried about a loan to a big manufacturing company that's losing a lot of market share. The analyst is looking at credit risk transfer tools, including credit default swaps, or CDS, to manage this exposure. Which statement correctly describes a benefit of using CDS here?"},
+    {"id": "options", "text": "Option A. CDS quantify the company's default risk and let the bank monitor changes in that risk in real time. Option B. CDS provide an agreement to periodically revalue the loan and transfer any net change in value. Option C. CDS require the company to pay back the loan in full at an earlier date. And option D. CDS let the bank offset its exposure to this company with loans to other manufacturing companies."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. A credit default swap trades in the market, and its spread puts a number on how risky the company is. When the company's outlook gets worse, the spread widens, so the bank can track that default risk in real time. That's a big step up from credit ratings, which only update now and then."},
+    {"id": "wrong", "text": "Now, why not the others? Each one describes a different tool. B is wrong. Revaluing the loan and transferring the change in value is marking to market, or margining. C is wrong too. Forcing early repayment is a termination or put option. And D? Also wrong. CDS don't offset your exposure using loans to other companies. Netting works within the same counterparty, and that's not what this describes either."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. CDS spreads give you a live market signal of default risk. Periodic revaluing and collateral is marking to market. And early payback is a termination or put option. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["credit default swaps", "cds", "market share", "spread", "default risk", "real time", "credit ratings", "marking to market", "margining", "termination", "put option", "netting", "same counterparty", "risk hub"]
+}
