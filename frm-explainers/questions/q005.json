@@ -1,0 +1,56 @@
+{
+  "id": "q005",
+  "number": 5,
+  "source": "GARP Mock 2023 · Part 1 · Q23",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 2,
+  "chapter": "Chapter 2. How Do Firms Manage Financial Risk?",
+  "audio": "audio/q005-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 2,", "another practice question."],
+  "stem": "A start-up company is undergoing a series of operational changes. The company expects to receive a round of equity capital to finance its growth strategies. A risk manager at the company is evaluating the risk of the company as well as the company’s new capital structure. The manager notes that the company has decided to switch its business focus to riskier projects upon receiving the equity funding. Which of the following is most likely correct for the manager to conclude once the funding completes and the new projects are undertaken?",
+  "stem_short": "What happens to risk capacity and risk appetite?",
+  "stem_highlights": [
+    {"text": "round of equity capital", "at": "round of equity capital"},
+    {"text": "new capital structure", "at": "new capital structure."},
+    {"text": "riskier projects", "at": "riskier projects."}
+  ],
+  "options": {
+    "A": "The company’s risk capacity will decrease and its risk appetite will increase.",
+    "B": "The company’s risk capacity will increase and its risk appetite will decrease.",
+    "C": "Both the company’s risk capacity and risk appetite will remain the same.",
+    "D": "Both the company’s risk capacity and risk appetite will increase."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Two different questions — both answers go up",
+    "high": {"label": "RISK CAPACITY ↑", "text": "Risk you CAN take — grows with new equity", "at": "Risk capacity is", "meter": null},
+    "low": {"label": "RISK APPETITE ↑", "chips": [
+      {"text": "Willing to take", "at": "willing to take."},
+      {"text": "Riskier projects", "at": "Choosing riskier projects"},
+      {"text": "Appetite up", "at": "appetite has gone up"}
+    ], "at": "Risk appetite is", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Capacity doesn’t fall — new equity increases it.", "at": "A is wrong."},
+    "B": {"reason": "Appetite rises too — the firm chose riskier projects.", "at": "B is wrong too."},
+    "C": {"reason": "Nothing stays the same — both increase.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Capacity = what you can afford (capital)", "at": "Risk capacity is about"},
+    {"text": "Appetite = what you’re willing to take", "at": "Risk appetite is about"},
+    {"text": "More equity + riskier projects → both ↑", "at": "Raise equity"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 2, How Do Firms Manage Financial Risk? Let's do another practice question."},
+    {"id": "question", "text": "So, a start-up is going through some big operational changes. It's about to raise a round of equity capital to fund its growth. A risk manager is looking at the company's risk and its new capital structure. And once the money comes in, the company plans to switch its focus to riskier projects. What should the manager conclude once the funding closes and the new projects begin?"},
+    {"id": "options", "text": "Option A. The company's risk capacity will decrease, and its risk appetite will increase. Option B. Its risk capacity will increase, and its risk appetite will decrease. Option C. Both risk capacity and risk appetite will stay the same. And option D. Both risk capacity and risk appetite will increase."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. Risk capacity is how much risk the firm can afford to take, and it's driven by capital. New equity means more capital, so capacity goes up. Risk appetite is how much risk the firm is willing to take. Choosing riskier projects is a clear sign that appetite has gone up too. So both of them increase."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Appetite does go up, but capacity doesn't fall. More equity means more capacity. B is wrong too. Capacity rises, sure, but appetite rises as well, not down. And C? Also wrong. Nothing stays the same here. Both of them increase."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Risk capacity is about what you can afford, and it grows with capital. Risk appetite is about what you're willing to take, and it shows up in your strategy. Raise equity and chase riskier projects, and both go up. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["round of equity capital", "new capital structure", "riskier projects", "d!", "risk capacity", "risk appetite", "afford", "willing to take", "more capital", "capacity goes up", "appetite has gone up", "both of them increase", "both go up", "risk hub"]
+}
