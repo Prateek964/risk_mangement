@@ -128,6 +128,38 @@ clip("takeaway", f'''
   <div class="endc h" id="endc"><img src="assets/riskhub-logo.png" alt="Risk Hub"/><div class="e1">Follow Risk Hub</div><div class="e2">for more FRM practice</div></div>'''),
 ]
 
+# ---------------------------------------------------------------- host mascot (optional)
+HOST = bool(Q.get("host"))
+host_html, HM = "", {"mouth": [], "blinks": [], "brows": []}
+if HOST:
+    import random
+    svg = open(f"{ROOT}/mascot/riskhub-host.svg").read().replace(' style="display:none"', "")
+    svg = svg.replace('viewBox="0 0 600 720"', 'viewBox="115 95 370 370"').replace('<g id="mouth">', '<g id="mouth" data-m="closed">')
+    host_html = f'<div class="hostwrap h" id="host"><div class="hface">{svg}</div></div>'
+    smile = [(ANS_T - 0.05, ANS_T + 1.4), (WORDS[-1]["e"] + 0.1, DUR)]
+    ev = []
+    for i, w in enumerate(WORDS):
+        s0 = w["s"]
+        e0 = min(w["e"], s0 + max(0.14, 0.075 * len(norm(w["w"]))))
+        d = e0 - s0
+        n = max(1, round(d / 0.17))
+        for k in range(n):
+            t0 = s0 + k * d / n
+            st = "wide" if (k + i) % 2 == 0 and d / n > 0.12 else "small"
+            ev.append((t0, st))
+            if n > 1: ev.append((t0 + 0.65 * d / n, "small" if st == "wide" else "closed"))
+        nxt = WORDS[i + 1]["s"] if i + 1 < len(WORDS) else 1e9
+        if nxt - e0 > 0.08: ev.append((e0, "closed"))
+    ev = [(t, st) for t, st in ev if not any(a <= t < b for a, b in smile)]
+    ev += [(a, "smile") for a, b in smile] + [(b, "closed") for a, b in smile if b < DUR]
+    last = None
+    for t, st in sorted(ev):
+        if st != last: HM["mouth"].append([round(t, 3), st]); last = st
+    r, t = random.Random(9), 1.6
+    while t < DUR - 0.5:
+        HM["blinks"].append(round(t, 2)); t += r.uniform(2.6, 4.6)
+    HM["brows"] = [round(w["e"] - 0.2, 3) for w in WORDS if w["w"].endswith("?")] + [round(ANS_T, 3)]
+
 steps = ["QUESTION", "OPTIONS", "ANSWER", "WHY NOT"]
 header = f'''<div class="hdr h" id="hdr">
     <img class="hlogo" src="assets/riskhub-logo.png" alt="Risk Hub"/>
@@ -154,6 +186,7 @@ TT = {
 JS = f"""
 const T = {json.dumps(TT)};
 const SC = {json.dumps(SC)};
+const HOST = {json.dumps(HOST)}, HM = {json.dumps(HM)};
 const ANS = {json.dumps(ans)}, LET = {json.dumps(letters)}, WRONG = {json.dumps(wrong)};
 const tl = gsap.timeline({{ paused: true }});
 const EZ = 'power3.out';
@@ -180,7 +213,7 @@ stepAt.forEach((t, i) => {{
 out('#hdr', T.follow - 0.2); out('#steps', T.follow - 0.2);
 
 // intro
-tl.fromTo('#ilogo', {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.6)' }}, 0.05);
+tl.fromTo('#ilogo', {{ opacity: 0, scale: 0.6 }}, {{ opacity: 1, scale: 1, duration: 0.9, ease: 'back.out(1.6)' }}, HOST ? T.cov[0] - 0.1 : 0.05);
 inn('#it1', T.cov[0]); inn('#it2', T.cov[1]); inn('#it4', T.cov[2]); inn('#it3', T.cov[3], {{ from: {{ scale: 0.8, y: 0 }} }});
 
 // question
@@ -228,6 +261,19 @@ T.tk.forEach((t, i) => inn('#tk' + i, t - 0.1, {{ from: {{ x: -60, y: 0 }} }}, 0
 out('#tl', T.follow - 0.3); out('.tks', T.follow - 0.3);
 tl.fromTo('#endc', {{ opacity: 0, scale: 0.85 }}, {{ opacity: 1, scale: 1, duration: 0.8, ease: 'back.out(1.5)' }}, T.follow);
 
+// host mascot: greets on the cover, then talks from the corner bubble
+if (HOST) {{
+  tl.fromTo('#host', {{ x: -390, y: -1270, scale: 0.3, opacity: 0 }}, {{ x: -390, y: -1270, scale: 2, opacity: 1, duration: 0.8, ease: 'back.out(1.6)' }}, 0.05);
+  tl.to('#host', {{ x: 0, y: 0, scale: 1, duration: 0.8, ease: 'power3.inOut' }}, T.cov[0] - 0.5);
+  tl.to('#host', {{ scale: 1.18, duration: 0.25, yoyo: true, repeat: 1, ease: 'power2.out' }}, T.ansD);
+  tl.to('#host', {{ x: -390, y: -560, scale: 1.4, duration: 0.8, ease: 'power3.inOut' }}, T.follow);
+  tl.to('#host', {{ rotation: 8, duration: 0.18, yoyo: true, repeat: 3, ease: 'sine.inOut' }}, T.follow + 0.9);
+  HM.mouth.forEach(([t, m]) => tl.set('#mouth', {{ attr: {{ 'data-m': m }} }}, t));
+  HM.blinks.forEach(t => tl.to('#eyes', {{ scaleY: 0.08, svgOrigin: '300 302', duration: 0.07, yoyo: true, repeat: 1, ease: 'power1.in' }}, t));
+  HM.brows.forEach(t => tl.to('#brows', {{ y: -16, duration: 0.18, yoyo: true, repeat: 1, repeatDelay: 0.5, ease: 'power2.out' }}, t));
+  const sw = 1.7, n = Math.floor({DUR} / sw);
+  tl.fromTo('#head', {{ rotation: -1.6, svgOrigin: '300 470' }}, {{ rotation: 1.6, svgOrigin: '300 470', duration: sw, ease: 'sine.inOut', repeat: n - 1, yoyo: true }}, 0);
+}}
 {"".join(cap_js)}
 window.__timelines = window.__timelines || {{}};
 window.__timelines['main'] = tl;
@@ -253,6 +299,7 @@ page = f"""<!doctype html>
   <div class="gridwrap"><div id="bggrid"></div></div>
   {header}
 {chr(10).join(scenes)}
+  {host_html}
   <div class="caps">{"".join(cap_html)}</div>
   <div class="grainwrap"><div id="grain"></div></div>
   <audio id="vo" src="assets/voiceover.mp3" data-start="0" data-duration="{ADUR}" data-track-index="2" data-volume="1"></audio>

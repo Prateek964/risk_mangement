@@ -1,0 +1,57 @@
+{
+  "id": "q009",
+  "number": 9,
+  "source": "GARP Mock 2019 · Part 2 · Q18",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 3,
+  "chapter": "Chapter 3. The Governance of Risk Management",
+  "audio": "audio/q009-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 3,", "a practice question."],
+  "stem": "The board of directors of a diversified industrial firm has asked the risk management group to prepare a risk appetite for the organization. Which of the following activities should take place as part of the process of developing the company’s risk appetite?",
+  "stem_short": "Which activity is part of developing the risk appetite?",
+  "stem_highlights": [
+    {"text": "board of directors", "at": "the board of"},
+    {"text": "prepare a risk appetite", "at": "prepare a risk appetite"},
+    {"text": "developing the company’s risk appetite", "at": "developing the company's"}
+  ],
+  "options": {
+    "A": "Constructing a list of all risks to which the company could potentially be exposed",
+    "B": "Deciding the total amount of risk the company is willing to accept across the organization",
+    "C": "Determining the maximum amount of exposure to each specific risk factor the company is willing to maintain",
+    "D": "Communicating a risk governance strategy across the organization"
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Appetite is the firm-wide total",
+    "high": {"label": "RISK APPETITE", "text": "Total risk the whole firm will accept", "at": "Risk appetite is the big-picture", "meter": null},
+    "low": {"label": "SET BY THE BOARD", "chips": [
+      {"text": "Firm-wide", "at": "the whole firm"},
+      {"text": "To reach its goals", "at": "to reach its goals."},
+      {"text": "Limits built from it", "at": "everything else is built"}
+    ], "at": "The board sets", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "That’s the risk profile — a list of all exposures.", "at": "A is wrong."},
+    "C": {"reason": "That’s risk tolerance — a limit per risk factor.", "at": "C is wrong too."},
+    "D": {"reason": "That’s risk governance, not risk appetite.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Profile = which risks you have", "at": "Risk profile is"},
+    {"text": "Appetite = total risk you’ll accept", "at": "Risk appetite is how"},
+    {"text": "Tolerance = limit for each risk", "at": "Risk tolerance is"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 3, The Governance of Risk Management. Let's do a practice question."},
+    {"id": "question", "text": "So, the board of a diversified industrial firm has asked its risk management group to prepare a risk appetite for the company. Which of these activities should be part of developing the company's risk appetite?"},
+    {"id": "options", "text": "Option A. Building a list of all the risks the company could potentially be exposed to. Option B. Deciding the total amount of risk the company is willing to accept across the organization. Option C. Setting the maximum exposure the company is willing to keep to each specific risk factor. And option D. Communicating a risk governance strategy across the organization."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. Risk appetite is the big-picture number. It's the total amount of risk the whole firm is willing to take on to reach its goals. The board sets that overall level first, and everything else is built from it."},
+    {"id": "wrong", "text": "Now, why not the others? Each one is a related idea, but a different one. A is wrong. A list of every risk the company could face is its risk profile. C is wrong too. A limit for each specific risk factor is risk tolerance. That comes after the appetite is set. And D? Communicating a governance strategy is risk governance, not risk appetite."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Risk profile is what risks you have. Risk appetite is how much total risk you'll accept. Risk tolerance is the limit for each risk. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["risk appetite", "board", "b!", "big-picture", "total amount of risk", "whole firm", "overall level", "risk profile", "risk tolerance", "risk governance", "each specific risk factor", "risk hub"]
+}
