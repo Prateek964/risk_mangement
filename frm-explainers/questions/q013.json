@@ -1,0 +1,53 @@
+{
+  "id": "q013",
+  "number": 13,
+  "source": "GARP Mock 2023 · Part 1 · Q25",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q013-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "another practice question."],
+  "stem": "An analyst is evaluating the performance of a portfolio of Mexican equities benchmarked to the IPC Index. Portfolio: expected return 8.7%, volatility 12.0%. IPC: expected return 4.0%, volatility 8.7%. Risk-free rate 2.0%. Beta of the portfolio relative to the IPC: 1.4. What is the Sharpe ratio of this portfolio?",
+  "stem_short": "What is the Sharpe ratio of this portfolio?",
+  "stem_highlights": [
+    {"text": "expected return 8.7%", "at": "expected return of 8.7"},
+    {"text": "volatility 12.0%", "at": "volatility of 12"},
+    {"text": "Risk-free rate 2.0%", "at": "risk-free rate is 2"},
+    {"text": "Sharpe ratio", "at": "Sharpe ratio of"}
+  ],
+  "options": {"A": "0.036", "B": "0.047", "C": "0.389", "D": "0.558"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Sharpe = excess return ÷ total risk",
+    "high": {"label": "SHARPE RATIO", "text": "(E[Rp] − Rf) ÷ σp", "at": "The Sharpe ratio is", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "8.7% − 2% = 6.7%", "at": "8.7 minus 2"},
+      {"text": "÷ 12% volatility", "at": "Then divide by"},
+      {"text": "= 0.558", "at": "gives 0.558."}
+    ], "at": "Take the portfolio's", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Far too small for 6.7% excess return over 12% volatility.", "at": "A is wrong."},
+    "B": {"reason": "Close to Treynor (6.7% ÷ 1.4 ≈ 4.8%) — divides by beta, not volatility.", "at": "B is wrong too."},
+    "C": {"reason": "Subtracts the IPC return, not Rf: (8.7 − 4) ÷ 12 ≈ 0.39.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Sharpe divides by volatility (total risk)", "at": "Sharpe uses total risk,"},
+    {"text": "Treynor divides by beta", "at": "Treynor uses beta."},
+    {"text": "Subtract the risk-free rate, not the benchmark", "at": "And always subtract"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do another practice question."},
+    {"id": "question", "text": "So, an analyst is checking the performance of a portfolio of Mexican equities, benchmarked to the IPC Index. The portfolio has an expected return of 8.7 percent and volatility of 12 percent. The IPC has an expected return of 4 percent and volatility of 8.7 percent. The risk-free rate is 2 percent, and the portfolio's beta to the IPC is 1.4. What's the Sharpe ratio of this portfolio?"},
+    {"id": "options", "text": "Option A, 0.036. Option B, 0.047. Option C, 0.389. And option D, 0.558."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. The Sharpe ratio is excess return per unit of total risk. Take the portfolio's return minus the risk-free rate. 8.7 minus 2 is 6.7 percent. Then divide by the portfolio's own volatility, 12 percent. 6.7 over 12 gives 0.558. Notice we didn't need the beta, or anything about the IPC."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. It's far too small. 6.7 percent of excess return over 12 percent volatility is more than half, not a few hundredths. B is wrong too. That's close to the Treynor ratio, which divides by beta instead of volatility. 6.7 over 1.4 is about 4.8 percent. And C? That's what you get if you subtract the IPC's return instead of the risk-free rate. 8.7 minus 4, over 12, is about 0.39."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Sharpe uses total risk, so divide by volatility. Treynor uses beta. And always subtract the risk-free rate, not the benchmark's return. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["sharpe ratio", "treynor ratio", "volatility", "risk-free rate", "excess return", "total risk", "beta", "0.558", "ipc", "risk hub"]
+}
