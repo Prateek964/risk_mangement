@@ -1,0 +1,52 @@
+{
+  "id": "q014",
+  "number": 14,
+  "source": "GARP Mock 2023 · Part 2 · Q80",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q014-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "A risk analyst at an asset management company is assessing the past performance of an internally managed equity fund. Over the last year: Treynor performance index for the fund: 8.00%. Return of the market portfolio: 5.60%. Beta of the fund: 0.65. Risk-free rate: 1.75%. What is Jensen's alpha for the equity fund over the same period?",
+  "stem_short": "What is Jensen's alpha for the fund?",
+  "stem_highlights": [
+    {"text": "Treynor performance index for the fund: 8.00%", "at": "Treynor index of 8"},
+    {"text": "Beta of the fund: 0.65", "at": "beta was 0.65,"},
+    {"text": "Jensen's alpha", "at": "Jensen's alpha for"}
+  ],
+  "options": {"A": "2.40%", "B": "2.70%", "C": "3.69%", "D": "4.15%"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "From Treynor to Jensen's alpha",
+    "high": {"label": "JENSEN'S ALPHA", "text": "α = (Rp − Rf) − β × (Rm − Rf)", "at": "Jensen's alpha is that", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "Rp − Rf = 8% × 0.65 = 5.2%", "at": "which is 5.2"},
+      {"text": "0.65 × 3.85% ≈ 2.50%", "at": "Times 0.65,"},
+      {"text": "α ≈ 5.2% − 2.50% = 2.70%", "at": "So alpha is"}
+    ], "at": "The Treynor index is", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "8% − 5.6%: Treynor index minus the market return.", "at": "A is wrong."},
+    "C": {"reason": "(8% − 5.6%) ÷ 0.65 — the same shortcut, divided by beta.", "at": "C is wrong too."},
+    "D": {"reason": "1.75% + 2.4% — adds the risk-free rate to the shortcut.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Treynor × beta = excess return", "at": "The Treynor index is excess"},
+    {"text": "Subtract β × market premium", "at": "Then subtract beta"},
+    {"text": "What’s left is Jensen’s alpha", "at": "What's left is"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk analyst at an asset manager is reviewing last year's performance of an in-house equity fund. The fund had a Treynor index of 8 percent. The market returned 5.6 percent. The fund's beta was 0.65, and the risk-free rate was 1.75 percent. What's Jensen's alpha for the fund over the same period?"},
+    {"id": "options", "text": "Option A, 2.40 percent. Option B, 2.70 percent. Option C, 3.69 percent. And option D, 4.15 percent."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. The Treynor index is the fund's excess return divided by beta. So the excess return is 8 percent times 0.65, which is 5.2 percent. Jensen's alpha is that excess return minus what the CAPM says the fund should earn, beta times the market premium. The market premium is 5.6 minus 1.75, or 3.85 percent. Times 0.65, that's about 2.50 percent. So alpha is 5.2 minus 2.50, which is about 2.70 percent."},
+    {"id": "wrong", "text": "Now, why not the others? Each one is a shortcut that skips a step. A is wrong. That's just 8 minus 5.6, the Treynor index minus the market return. C is wrong too. That's the same 2.4 divided by beta. And D? That adds the risk-free rate to 2.4, giving 4.15 percent. None of them turn the Treynor index back into an excess return first."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. The Treynor index is excess return per unit of beta, so multiply by beta to get the excess return back. Then subtract beta times the market premium. What's left is Jensen's alpha. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["treynor index", "jensen's alpha", "beta", "market premium", "excess return", "risk-free rate", "capm", "2.70", "risk hub"]
+}
