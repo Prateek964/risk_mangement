@@ -985,9 +985,9 @@ def s_roadmap(d, img, t, dur):
     for part, (pname, pcol) in PARTS.items():
         p = ease_out(prog(t, cues[part - 1], 0.5))
         if p > 0:
-            lx, ly = 1060 + ((part - 1) % 2) * 400, 215 + ((part - 1) // 2) * 50
+            lx, ly = 960 + ((part - 1) % 2) * 450, 215 + ((part - 1) // 2) * 50
             d.ellipse((lx, ly - 11, lx + 22, ly + 11), fill=fade(pcol, p))
-            d.text((lx + 34, ly), pname, font=font(26, "SemiBold"), fill=fade(INK, p), anchor="lm")
+            d.text((lx + 34, ly), pname, font=font(24, "SemiBold"), fill=fade(INK, p), anchor="lm")
     cw, ch = 405, 140
     for i, (title, part, *_rest) in enumerate(MODULES):
         r, c = divmod(i, 4)
