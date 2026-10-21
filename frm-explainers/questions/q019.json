@@ -1,0 +1,53 @@
+{
+  "id": "q019",
+  "number": 19,
+  "source": "GARP Mock 2022 · Q94",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q019-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "another practice question."],
+  "stem": "A wealth manager is calculating the beta of a portfolio of large-cap industrial company stocks. The manager determines that the correlation between the return of the portfolio and the return of its benchmark is 0.8, the volatility of portfolio returns is 5%, and the volatility of the benchmark is 4%. What is the beta of the portfolio concerning its benchmark?",
+  "stem_short": "What is the beta of the portfolio?",
+  "stem_highlights": [
+    {"text": "return of its benchmark is 0.8", "at": "correlation between the portfolio"},
+    {"text": "volatility of portfolio returns is 5%", "at": "portfolio's volatility is 5"},
+    {"text": "volatility of the benchmark is 4%", "at": "benchmark's volatility is 4"},
+    {"text": "beta of the portfolio", "at": "beta of the portfolio"}
+  ],
+  "options": {"A": "−1.00", "B": "0.64", "C": "0.80", "D": "1.00"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Beta from correlation and volatilities",
+    "high": {"label": "BETA FORMULA", "text": "β = ρ × σp ÷ σm", "at": "Beta is the correlation", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "σp ÷ σm = 5 ÷ 4 = 1.25", "at": "which is 1.25."},
+      {"text": "× ρ of 0.8", "at": "Multiply by the correlation"},
+      {"text": "β = 1.00", "at": "beta is exactly 1."}
+    ], "at": "The volatility ratio is", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Positive correlation means a positive beta — the sign is flipped.", "at": "A is wrong."},
+    "B": {"reason": "That’s ρ² = 0.8 × 0.8 — the R-squared, not beta.", "at": "B is wrong too."},
+    "C": {"reason": "That’s just the correlation — it ignores the volatility ratio.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "β = correlation × volatility ratio", "at": "Beta is correlation times"},
+    {"text": "Don’t stop at ρ — or square it", "at": "Don't stop at the correlation,"},
+    {"text": "Positive correlation → positive beta", "at": "And a positive correlation"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do another practice question."},
+    {"id": "question", "text": "So, a wealth manager is calculating the beta of a portfolio of large-cap industrial stocks. The correlation between the portfolio and its benchmark is 0.8. The portfolio's volatility is 5 percent, and the benchmark's volatility is 4 percent. What's the beta of the portfolio relative to its benchmark?"},
+    {"id": "options", "text": "Option A, minus 1. Option B, 0.64. Option C, 0.80. And option D, 1."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. Beta is the correlation times the portfolio's volatility, divided by the benchmark's volatility. The volatility ratio is 5 over 4, which is 1.25. Multiply by the correlation of 0.8, and beta is exactly 1."},
+    {"id": "wrong", "text": "Now, why not the others? Each one is a classic slip. A is wrong. The correlation is positive, so beta has to be positive too. B is wrong too. 0.64 is the correlation squared, 0.8 times 0.8. That's the R-squared, not the beta. And C? That's just the correlation itself. It forgets to scale by the volatility ratio."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Beta is correlation times the ratio of volatilities. Don't stop at the correlation, and don't square it. And a positive correlation always means a positive beta. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["beta", "correlation", "volatility", "volatility ratio", "volatilities", "r-squared", "correlation squared", "benchmark", "positive", "risk hub"]
+}
