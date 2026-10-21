@@ -1,0 +1,53 @@
+{
+  "id": "q017",
+  "number": 17,
+  "source": "GARP Mock 2023 · Part 2 · Q1",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q017-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "another practice question."],
+  "stem": "An analyst is evaluating the performance of a portfolio of Singaporean equities benchmarked to the Straits Times Index (STI). Portfolio: expected return 7.6%, volatility 11.5%. STI: expected return 4.0%, volatility 8.7%. Risk-free rate 2.3%. Beta of the portfolio relative to the STI: 1.7. What is the Sharpe ratio of this portfolio?",
+  "stem_short": "What is the Sharpe ratio of this portfolio?",
+  "stem_highlights": [
+    {"text": "expected return 7.6%", "at": "expected return of 7.6"},
+    {"text": "volatility 11.5%", "at": "volatility of 11.5"},
+    {"text": "Risk-free rate 2.3%", "at": "risk-free rate is 2.3"},
+    {"text": "Sharpe ratio", "at": "Sharpe ratio of"}
+  ],
+  "options": {"A": "0.036", "B": "0.047", "C": "0.389", "D": "0.461"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "Sharpe = excess return ÷ total risk",
+    "high": {"label": "SHARPE RATIO", "text": "(E[Rp] − Rf) ÷ σp", "at": "The Sharpe ratio is", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "7.6% − 2.3% = 5.3%", "at": "Take 7.6 minus"},
+      {"text": "÷ 11.5% volatility", "at": "Then divide by"},
+      {"text": "= 0.461", "at": "gives 0.461."}
+    ], "at": "Take 7.6 minus", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Would need ~147% volatility (5.3 ÷ 0.036).", "at": "A is wrong."},
+    "B": {"reason": "Would need ~113% volatility (5.3 ÷ 0.047).", "at": "B is wrong too."},
+    "C": {"reason": "Would need only ~4.5% excess return (0.389 × 11.5).", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Sharpe = excess return ÷ own volatility", "at": "Sharpe equals excess"},
+    {"text": "Beta & benchmark are distractions here", "at": "Ignore the beta"},
+    {"text": "Work backward to rule out answers fast", "at": "And a quick backward check"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do another practice question."},
+    {"id": "question", "text": "So, an analyst is checking the performance of a portfolio of Singaporean equities, benchmarked to the Straits Times Index, or STI. The portfolio has an expected return of 7.6 percent and volatility of 11.5 percent. The STI has an expected return of 4 percent and volatility of 8.7 percent. The risk-free rate is 2.3 percent, and the portfolio's beta to the STI is 1.7. What's the Sharpe ratio of this portfolio?"},
+    {"id": "options", "text": "Option A, 0.036. Option B, 0.047. Option C, 0.389. And option D, 0.461."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. The Sharpe ratio is excess return per unit of total risk. Take 7.6 minus 2.3, which is 5.3 percent. Then divide by the portfolio's volatility, 11.5 percent. 5.3 over 11.5 gives 0.461. The beta and the STI numbers are just distractions."},
+    {"id": "wrong", "text": "Now, why not the others? A quick sanity check is to work backward. A is wrong. A Sharpe ratio of 0.036 would need volatility of about 147 percent. B is wrong too. 0.047 would need volatility of about 113 percent, and our portfolio's volatility is only 11.5. And C? 0.389 would need an excess return of only about 4.5 percent, but ours is 5.3."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Sharpe equals excess return over the portfolio's own volatility. Ignore the beta and the benchmark, they're there to distract you. And a quick backward check can rule out wrong answers fast. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["sharpe ratio", "volatility", "risk-free rate", "excess return", "total risk", "beta", "0.461", "sti", "distractions", "work backward", "risk hub"]
+}
