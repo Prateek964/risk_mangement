@@ -1,0 +1,56 @@
+{
+  "id": "q018",
+  "number": 18,
+  "source": "GARP Mock 2023 · Part 1 · Q93",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q018-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "Two risk analysts are attending a seminar on the topic of modern portfolio theory. One of the presentations in the seminar focuses on the efficient frontier, the capital market line, and the CAPM. Assuming the CAPM holds, which of the following observations is correct for the analysts to make?",
+  "stem_short": "Which observation about the CML and CAPM is correct?",
+  "stem_highlights": [
+    {"text": "efficient frontier, the capital market line, and the CAPM", "at": "efficient frontier, the capital"},
+    {"text": "Assuming the CAPM holds", "at": "Assuming the CAPM holds,"}
+  ],
+  "options": {
+    "A": "The capital market line always has a positive slope and its steepness depends on the market risk premium and the volatility of the market portfolio.",
+    "B": "The capital market line is the straight line connecting the risk-free asset with the zero-beta minimum variance portfolio.",
+    "C": "The portfolio of risky assets with the lowest standard deviation on the efficient frontier is typically held by the least risk averse investors.",
+    "D": "The efficient frontier indicates that different individuals hold different portfolios of risky assets based upon their forecasts for asset returns."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "The CML's slope is the market's Sharpe ratio",
+    "high": {"label": "CML SLOPE", "text": "(E[Rm] − Rf) ÷ σm", "at": "Its slope is", "meter": null},
+    "low": {"label": "SO THE CML", "chips": [
+      {"text": "Starts at the risk-free asset", "at": "runs from the risk-free asset"},
+      {"text": "Touches the market portfolio", "at": "the point where it just touches"},
+      {"text": "Slopes upward", "at": "the slope is positive,"}
+    ], "at": "The capital market line runs from", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "The CML runs to the market portfolio (beta = 1), not a zero-beta one.", "at": "B is wrong."},
+    "C": {"reason": "Everyone holds the market; cautious investors just add more risk-free.", "at": "C is wrong too."},
+    "D": {"reason": "CAPM assumes identical expectations — the same risky portfolio for all.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "CML: risk-free rate → market portfolio", "at": "runs from the risk-free rate"},
+    {"text": "Slope = market’s Sharpe ratio", "at": "Its slope is the market's"},
+    {"text": "Everyone holds the market + risk-free mix", "at": "And under the CAPM,"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, two risk analysts are at a seminar on modern portfolio theory. One talk covers the efficient frontier, the capital market line, and the CAPM. Assuming the CAPM holds, which of these observations is correct?"},
+    {"id": "options", "text": "Option A. The capital market line always has a positive slope, and its steepness depends on the market risk premium and the volatility of the market portfolio. Option B. The capital market line is the straight line connecting the risk-free asset with the zero-beta minimum variance portfolio. Option C. The portfolio of risky assets with the lowest standard deviation on the efficient frontier is typically held by the least risk-averse investors. And option D. The efficient frontier shows that different individuals hold different portfolios of risky assets, based on their own forecasts for asset returns."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. The capital market line runs from the risk-free asset to the market portfolio, the point where it just touches the efficient frontier. Its slope is the market risk premium divided by the market's volatility. That's the Sharpe ratio of the market. So as long as the market earns more than the risk-free rate, the slope is positive, and its steepness depends on exactly those two things."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. The capital market line connects the risk-free asset with the market portfolio, which has a beta of 1, not a zero-beta portfolio. C is wrong too. Under the CAPM, everyone holds the same risky portfolio, the market. Cautious investors just put more of their money in the risk-free asset. And D? Also wrong. The CAPM assumes everyone has the same expectations, so everyone holds the same risky portfolio."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. The capital market line runs from the risk-free rate through the market portfolio. Its slope is the market's Sharpe ratio. And under the CAPM, everyone holds the market, mixed with the risk-free asset to suit their risk appetite. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["capital market line", "efficient frontier", "capm", "market portfolio", "risk-free asset", "risk-free rate", "market risk premium", "sharpe ratio", "zero-beta", "same expectations", "risk appetite", "risk hub"]
+}
