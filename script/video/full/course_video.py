@@ -304,10 +304,50 @@ def v_matrix(d, img, box, t, dur):
                        fill=fade(INK, p), anchor="mm")
 
 
+def v_classes(d, img, box, t, dur):
+    x0, y0, x1, y1 = box
+    classes = [("Interest rate", BLUE), ("Equity", TEAL), ("Foreign exchange", AMBER), ("Commodity", RED)]
+    tw, th = (x1 - x0 - 30) / 2, 110
+    for i, (name, col) in enumerate(classes):
+        p = ease_out(prog(t, cue("m2", "four standard") + i * 0.5, 0.6))
+        if p <= 0:
+            continue
+        cx, cy = x0 + (i % 2) * (tw + 30), y0 + (i // 2) * (th + 24)
+        rrect(d, (cx, cy, cx + tw, cy + th), 20, fade(mix(CARD, col, 0.2), p), outline=fade(col, p), width=3)
+        d.text((cx + tw / 2, cy + th / 2), name, font=font(34, "Bold"), fill=fade(INK, p), anchor="mm")
+    y = y0 + 2 * (th + 24) + 20
+    x = x0
+    for k, (lab, col, phrase) in enumerate((("Credit spread", VIOLET, "credit spread risk"),
+                                            ("Volatility", VIOLET, "volatility risk"),
+                                            ("Basis", GREEN, "basis risk"),
+                                            ("Directional vs relative value", GREEN, "directional"))):
+        p = ease_out(prog(t, cue("m2", phrase), 0.6))
+        if p > 0:
+            x = chip(d, x, y, lab, col, p, font(24, "SemiBold")) + 12
+        if k == 1:
+            x, y = x0, y + 64
+    # multi-leg decomposition: a cross-currency swap split into its exposures
+    p = ease_out(prog(t, cue("m2", "decompose"), 0.8))
+    if p <= 0:
+        return
+    by = y1 - 120
+    rrect(d, (x0, by, x0 + 250, by + 90), 18, fade(CARD, p), outline=fade(INK, p), width=2)
+    d.text((x0 + 125, by + 45), "Cross-currency swap", font=font(22, "Bold"), fill=fade(INK, p), anchor="mm")
+    legs = [("USD rates", BLUE), ("EUR rates", BLUE), ("EUR/USD FX", AMBER)]
+    for i, (lab, col) in enumerate(legs):
+        pl = ease_out(prog(t, cue("m2", "decompose") + 0.4 + i * 0.3, 0.5))
+        if pl <= 0:
+            continue
+        lx, ly = x0 + 400, by - 70 + i * 80
+        d.line([(x0 + 250, by + 45), (lx, ly + 28)], fill=fade(col, pl), width=3)
+        rrect(d, (lx, ly, lx + 260, ly + 56), 16, fade(mix(CARD, col, 0.2), pl), outline=fade(col, pl), width=2)
+        d.text((lx + 130, ly + 28), lab, font=font(24, "SemiBold"), fill=fade(INK, pl), anchor="mm")
+
+
 def v_greeks(d, img, box, t, dur):
     x0, y0, x1, y1 = box
     items = [("Delta  Δ", 0.82, TEAL), ("Gamma  Γ", 0.35, BLUE), ("Vega  ν", -0.58, VIOLET),
-             ("PV01", -0.71, AMBER), ("Theta  Θ", -0.22, RED)]
+             ("PV01", -0.71, AMBER), ("Curvature", -0.22, RED)]
     mid = x0 + 300 + (x1 - x0 - 300) / 2
     half = (x1 - x0 - 300) / 2 - 20
     rh = (y1 - y0) / len(items)
@@ -336,13 +376,15 @@ def v_curve(d, img, box, t, dur):
         return [(x0 + (x1 - x0) * m / 30, y1 - (y1 - y0) * (c - 2.5) / 5) for m, c in zip(mats[:n], curve[:n])]
 
     polyline(d, pts(base, ease_in_out(prog(t, 0.6, 2.0))), TEAL, 6)
-    if t > cue("m4", "shock") - 0.5:
-        polyline(d, pts(par, ease_in_out(prog(t, cue("m4", "shock"), 1.5))), AMBER, 4)
-        polyline(d, pts(steep, ease_in_out(prog(t, cue("m4", "shock") + 1.0, 1.5))), VIOLET, 4)
-    for k, (lab, col, st) in enumerate((("Base curve", TEAL, 1.0), ("Parallel +80bp", AMBER, cue("m4", "shock")),
-                                        ("Steepener", VIOLET, cue("m4", "shock") + 1))):
+    shock = cue("m4", "duration and convexity")
+    twist = cue("m4", "key rate durations")
+    if t > shock - 0.5:
+        polyline(d, pts(par, ease_in_out(prog(t, shock, 1.5))), AMBER, 4)
+        polyline(d, pts(steep, ease_in_out(prog(t, twist, 1.5))), VIOLET, 4)
+    for k, (lab, col, st) in enumerate((("Base curve", TEAL, 1.0), ("Parallel +80bp", AMBER, shock),
+                                        ("Steepener", VIOLET, twist))):
         text(d, (x0 + 40, y0 + k * 40), "■ " + lab, font(24, "SemiBold"), col, p=prog(t, st, 0.5), rise=0)
-    p = ease_out(prog(t, cue("m4", "Vasicek"), 0.6))
+    p = ease_out(prog(t, cue("m4", "term structure models"), 0.6))
     x = x0 + 330
     for m in ("Vasicek", "CIR", "Hull–White"):
         x = chip(d, x, y0 - 6, m, BLUE, p, font(22, "SemiBold")) + 10
@@ -360,9 +402,9 @@ def v_smile(d, img, box, t, dur):
         polyline(d, pts, col, 5)
         text(d, (x1 - 20, y0 + j * 40), f"■ {lab} expiry", font(24, "SemiBold"), col, anchor="ra",
              p=prog(t, 0.8 + j, 0.5), rise=0)
-    p = ease_out(prog(t, cue("m5", "E-W-M-A"), 0.6))
+    p = ease_out(prog(t, cue("m5", "delta and gamma"), 0.6))
     x = x0 + 40
-    for m in ("BSM", "EWMA", "GARCH", "Greeks"):
+    for m in ("Delta", "Gamma", "Vega", "Theta", "Rho"):
         x = chip(d, x, y1 - 64, m, VIOLET, p, font(22, "SemiBold")) + 10
 
 
@@ -442,19 +484,49 @@ def v_mc(d, img, box, t, dur):
             col = RED if edges[i + 1] <= -9 else TEAL
             d.rectangle((xs_end + 30, yc - bh / 2 + 2, xs_end + 30 + w, yc + bh / 2 - 2), fill=col)
         text(d, (xs_end + 30, y0 - 10), "Simulated P&L", font(24, "SemiBold"), MUTED, p=ph, rise=0)
-    p = ease_out(prog(t, cue("m7", "Cholesky"), 0.6))
+    p = ease_out(prog(t, cue("m7", "variance reduction"), 0.6))
     x = x0
-    for m in ("Cholesky", "Stressed VaR", "Component VaR"):
+    for m in ("Variance reduction", "Non-linear portfolios"):
         x = chip(d, x, y1 - 10, m, VIOLET, p) + 12
 
 
 def v_es(d, img, box, t, dur):
     _hist(d, box, t, 0.6, show_var=True, show_es=True)
-    # captions sit in the left column, between the bullets and the "in practice" box
-    text(d, (120, 680), "VaR: where the tail starts", font(32, "SemiBold"), AMBER,
-         p=prog(t, cue("m8", "VaR tells"), 0.5), rise=0)
-    text(d, (120, 730), "ES: the average loss inside it", font(32, "SemiBold"), RED,
-         p=prog(t, cue("m8", "Expected shortfall tells"), 0.5), rise=0)
+    text(d, (box[0], box[3] + 50), "VaR: where the tail starts", font(26, "SemiBold"), AMBER,
+         p=prog(t, cue("m8", "coherent risk measures"), 0.5), rise=0)
+    text(d, (box[2], box[3] + 50), "ES: how bad it gets", font(26, "SemiBold"), RED, anchor="ra",
+         p=prog(t, cue("m8", "how bad the tail"), 0.5), rise=0)
+
+
+def v_reval(d, img, box, t, dur):
+    x0, y0, x1, y1 = box
+    axes(d, x0, y0, x1, y1, 1, "Yield change (bp)", "Bond P&L")
+    dy = np.linspace(-300, 300, 121)
+    D, C = 7.5, 80.0
+    full = 100 * ((1 + 0.05) ** 10 / (1 + 0.05 + dy / 10000) ** 10 - 1)
+    dur_only = -D * dy / 100
+    dur_conv = dur_only + 0.5 * C * (dy / 10000) ** 2 * 100
+
+    def pts(c, frac):
+        n = max(2, int(len(dy) * frac))
+        return [(x0 + (x1 - x0) * (a + 300) / 600, (y0 + y1) / 2 - (y1 - y0) * b / 70) for a, b in zip(dy[:n], c[:n])]
+
+    curves = [("Full revaluation", TEAL, full, "full revaluation"),
+              ("Duration only", AMBER, dur_only, "partial revaluation"),
+              ("Duration + convexity", VIOLET, dur_conv, "sensitivity-based")]
+    for j, (lab, col, c, phrase) in enumerate(curves):
+        st = cue("m9", phrase, 2 + j)
+        polyline(d, pts(c, ease_in_out(prog(t, st, 1.5))), col, 5)
+        text(d, (x1 - 10, y0 + j * 40), "■ " + lab, font(24, "SemiBold"), col, anchor="ra", p=prog(t, st, 0.5),
+             rise=0)
+    pe = ease_out(prog(t, cue("m9", "where the shortcut"), 0.8))
+    if pe > 0:
+        i = 116  # large rate rise: duration alone overstates the loss
+        xa, ya = pts(full, 1)[i]
+        _, yb = pts(dur_only, 1)[i]
+        d.line([(xa, ya), (xa, yb)], fill=fade(RED, pe), width=4)
+        d.text((xa - 16, (ya + yb) / 2), "approximation error", font=font(24, "SemiBold"), fill=fade(RED, pe),
+               anchor="rm")
 
 
 def v_pca(d, img, box, t, dur):
@@ -483,7 +555,7 @@ def v_beta(d, img, box, t, dur):
     for i in range(n):
         x, y = cx + BETA_X[i] * sx, cy - BETA_Y[i] * sy
         d.ellipse((x - 6, y - 6, x + 6, y + 6), fill=mix(BG, BLUE, 0.8))
-    pl = ease_in_out(prog(t, cue("m10", "estimate betas") if cue("m10", "estimate betas") else 3.0, 1.2))
+    pl = ease_in_out(prog(t, cue("m10", "beta, factor models", 3.0), 1.2))
     if pl > 0:
         xa, xb = -3.2, -3.2 + 6.4 * pl
         d.line([(cx + xa * sx, cy - 1.24 * xa * sy), (cx + xb * sx, cy - 1.24 * xb * sy)], fill=AMBER, width=6)
@@ -498,7 +570,7 @@ def v_fx(d, img, box, t, dur):
     bw = (x1 - x0) / len(ccys)
     sc = (y1 - y0) / 2 - 40
     d.line([(x0, mid), (x1, mid)], fill=AXIS, width=3)
-    ph = ease_out(prog(t, cue("m11", "design a hedge"), 1.0))
+    ph = ease_out(prog(t, cue("m11", "hedging strategies"), 1.0))
     for i, (c, v) in enumerate(ccys):
         p = ease_out(prog(t, 0.8 + i * 0.25, 0.8))
         cx = x0 + bw * i + bw / 2
@@ -537,7 +609,7 @@ def v_corr(d, img, box, t, dur):
     size = min(x1 - x0 - 140, y1 - y0 - 60)
     cs = size / n
     gx, gy = x0 + 130, y0 + 40
-    a = ease_in_out(prog(t, cue("m13", "break down"), 2.5))
+    a = ease_in_out(prog(t, cue("m13", "copulas"), 2.5))
     mat = CORR_NORMAL + (CORR_CRISIS - CORR_NORMAL) * a
     for i in range(n):
         for j in range(n):
@@ -551,7 +623,7 @@ def v_corr(d, img, box, t, dur):
                        fill=INK, anchor="mm")
         d.text((gx - 14, gy + i * cs + cs / 2), labels[i], font=font(22, "Medium"), fill=MUTED, anchor="rm")
         d.text((gx + i * cs + cs / 2, gy - 10), labels[i], font=font(20, "Medium"), fill=MUTED, anchor="md")
-    lab = "Calm market" if a < 0.5 else "Crisis: correlations converge"
+    lab = "Calm market" if a < 0.5 else "Stress: dependence rises in the tails"
     text(d, (gx, gy + size + 18), lab, font(26, "SemiBold"), AMBER if a < 0.5 else RED, p=1, rise=0)
 
 
@@ -635,60 +707,85 @@ def v_capital(d, img, box, t, dur):
         for j, line in enumerate(lab.split("\n")):
             text(d, (cx + cw / 2, base + 14 + j * 32), line, font(26, "Bold"), INK, anchor="ma",
                  p=prog(t, st, 0.5), rise=0)
-    p = ease_out(prog(t, cue("m16", "P and L attribution"), 0.6))
-    chip(d, x1 - 290, y0 - 20, "P&L attribution test", AMBER, p, font(22, "SemiBold"))
+    p = ease_out(prog(t, cue("m16", "risk governance"), 0.6))
+    chip(d, x1 - 290, y0 - 20, "Limits & reporting", AMBER, p, font(22, "SemiBold"))
 
 
 # ---------------------------------------------------------------- modules
 PARTS = {1: ("Foundations & risk factors", TEAL), 2: ("Modeling by asset class", BLUE),
          3: ("Measuring & aggregating risk", AMBER), 4: ("Testing, validation & governance", VIOLET)}
-MODULES = [
-    ("Foundations of Market Risk", 1, ["What market risk is", "P&L and its drivers", "Risk appetite & limits",
-                                       "Three lines of defense"], "Break down a desk's daily P&L and set limits", v_pnl),
-    ("Types and Classification of Market Risk Exposure", 1, ["Linear vs non-linear", "Directional vs relative value",
-                                                             "Trading book vs banking book"],
-     "Classify every position in a multi-asset book", v_matrix),
-    ("Risk Factors and Sensitivities", 1, ["Risk-factor mapping", "Delta, gamma, vega", "PV01 / DV01",
-                                           "Sensitivities vs full revaluation"],
-     "Build a sensitivity report and explain daily P&L", v_greeks),
-    ("Interest Rate Risk Modeling", 2, ["Yield-curve construction", "Duration & convexity", "Key-rate durations",
-                                        "Vasicek, CIR, Hull–White"], "Bootstrap a curve and shock it", v_curve),
-    ("Volatility and Options Risk", 2, ["Black–Scholes–Merton", "Volatility smile & surface", "EWMA & GARCH",
-                                        "Managing the Greeks"], "Calibrate a vol surface and hedge an options book",
-     v_smile),
-    ("Value at Risk (VaR): Parametric and Historical", 3, ["99% confidence, 1-day & 10-day", "Variance-covariance",
-                                                           "Historical simulation", "Assumptions & pitfalls"],
-     "Compute and compare VaR for a real portfolio", v_var),
-    ("Monte Carlo Simulations and Advanced VaR", 3, ["Correlated scenarios", "Filtered historical simulation",
-                                                     "Stressed VaR", "Component & incremental VaR"],
-     "Code a Monte Carlo VaR engine in Python", v_mc),
-    ("Expected Shortfall and Tail Risk", 3, ["ES at 97.5%", "Fat tails", "Coherent risk measures",
-                                             "Extreme value theory"], "Fit a tail distribution to real crashes", v_es),
-    ("Fixed Income Risk Modeling", 2, ["Curve shifts & twists", "Credit-spread risk", "PCA: level, slope, curvature"],
-     "Hedge a bond portfolio with PCA factors", v_pca),
-    ("Equity Risk Modeling", 2, ["Beta & factor exposures", "Systematic vs idiosyncratic", "Equity derivatives"],
-     "Estimate betas and build a factor model", v_beta),
-    ("Foreign Exchange Risk Modeling", 2, ["Spot, forwards & CIP", "FX options", "Transaction vs translation exposure"],
-     "Hedge a multinational's FX exposure", v_fx),
-    ("Commodity Risk Modeling", 2, ["Forward curves", "Contango & backwardation", "Seasonality & storage",
-                                    "Basis risk"], "Model oil & gas curves and a hedged position", v_commodity),
-    ("Correlation, Covariance and Portfolio Aggregation", 3, ["Covariance matrices", "Correlation breakdown in crises",
-                                                              "Diversification benefit", "Risk contribution"],
-     "Aggregate desk risk into one firm-wide number", v_corr),
-    ("Stress Testing and Scenario Analysis", 4, ["Historical: 2008, COVID-2020", "Hypothetical scenarios",
-                                                 "Reverse stress testing"],
-     "Design a stress program, from scenarios to board report", v_stress),
-    ("Backtesting and Model Validation", 4, ["Exceptions vs VaR", "Kupiec & Christoffersen tests",
-                                             "Basel traffic light", "Model risk governance"],
-     "Backtest a VaR model and write a validation report", v_backtest),
-    ("Regulatory Capital and Governance: Basel & FRTB", 4, ["Standardised approach", "Internal models approach",
-                                                            "ES capital & NMRF", "P&L attribution"],
-     "Compute capital under the standardised approach", v_capital),
+MODULES = [  # (title, part, the four lessons, narration phrase that introduces each lesson, visual)
+    ("Foundations of Market Risk", 1,
+     ["Defining and Measuring Market Risk", "Market Risk vs Other Financial Risks",
+      "The Trading Book, Banking Book, and Real-World Context", "Choosing and Testing a Market Risk Measure"],
+     ["defining market risk", "differs from credit", "trading book", "choose a market risk measure"], v_pnl),
+    ("Types and Classification of Market Risk Exposure", 1,
+     ["The Four Standard Market-Risk Classes", "Credit Spread Risk and Volatility Risk",
+      "Basis Risk and Directional vs Relative-Value Exposure", "Multi-Leg Exposure Decomposition"],
+     ["four standard", "credit spread risk", "basis risk", "decompose"], v_classes),
+    ("Risk Factors and Sensitivities", 1,
+     ["Foundations of Risk Factors", "Sensitivity: Meaning and Measurement",
+      "Curvature, Approximation Error, and Risk Factor Mapping", "FRTB Sensitivities, Common Confusions, and Review"],
+     ["foundations of risk factors", "what a sensitivity", "curvature", "sensitivities required under FRTB"], v_greeks),
+    ("Interest Rate Risk Modeling", 2,
+     ["Yield Curve Fundamentals", "Duration and Convexity", "Key Rate Duration and Curve Risk",
+      "Interest Rate Derivatives and Term Structure Models"],
+     ["yield curve fundamentals", "duration and convexity", "key rate durations", "interest rate derivatives"], v_curve),
+    ("Volatility and Options Risk (Greeks)", 2,
+     ["Option Pricing Foundations", "Delta, Gamma, and Price Sensitivity", "Vega, Theta, and Rho",
+      "Volatility Surfaces and Smile (Skew)"],
+     ["foundations of option pricing", "delta and gamma", "vega, theta", "volatility surfaces"], v_smile),
+    ("Value at Risk (VaR): Parametric and Historical", 3,
+     ["VaR Foundations and Definitions", "Parametric (Variance-Covariance) VaR", "Historical Simulation VaR",
+      "VaR Limitations and Method Comparison"],
+     ["VaR foundations", "parametric", "historical simulation", "limitations"], v_var),
+    ("Monte Carlo Simulations and Advanced VaR", 3,
+     ["Monte Carlo Simulation Foundations", "Monte Carlo VaR Implementation", "Variance Reduction Techniques",
+      "Simulation for Complex Portfolios"],
+     ["foundations of Monte Carlo", "implement Monte Carlo VaR", "variance reduction", "complex portfolios"], v_mc),
+    ("Expected Shortfall and Tail Risk", 3,
+     ["Beyond VaR: Coherent Risk Measures", "Expected Shortfall Fundamentals", "Extreme Value Theory",
+      "Fat Tails and Tail Dependence"],
+     ["coherent risk measures", "fundamentals of expected shortfall", "extreme value theory", "fat tails"], v_es),
+    ("Fixed Income Risk Modeling", 2,
+     ["Fixed Income Instruments and Risk Factors", "Full Revaluation VaR for Fixed Income Portfolios",
+      "Partial Revaluation and Sensitivity-Based VaR", "Comparing Partial and Full Revaluation in Practice"],
+     ["fixed income instruments", "full revaluation", "partial revaluation", "compare partial"], v_reval),
+    ("Equity Risk Modeling", 2,
+     ["Equity Risk Fundamentals", "Beta, Factor Models, and CAPM", "Equity Volatility and Correlation",
+      "Equity Derivatives Risk"],
+     ["fundamentals of equity risk", "beta, factor models", "volatility and correlation", "equity derivatives"], v_beta),
+    ("Foreign Exchange Risk Modeling", 2,
+     ["FX Market Fundamentals", "FX Exposure Types", "FX Hedging Strategies", "FX Derivatives and Cross-Currency Risk"],
+     ["how F-X markets work", "types of F-X exposure", "hedging strategies", "F-X derivatives"], v_fx),
+    ("Commodity Risk Modeling", 2,
+     ["Commodity Market Fundamentals", "Commodity Futures Curves and Basis", "Commodity Volatility and Seasonality",
+      "Commodity Derivatives Risk"],
+     ["commodity market fundamentals", "futures curves and basis", "volatility and seasonality",
+      "commodity derivatives"], v_commodity),
+    ("Correlation, Covariance and Portfolio Aggregation", 3,
+     ["Correlation and Covariance Fundamentals", "Covariance Matrix Estimation", "Portfolio VaR Aggregation",
+      "Copulas and Dependence Modeling"],
+     ["fundamentals of correlation", "estimate covariance", "Aggregate VaR", "copulas"], v_corr),
+    ("Stress Testing and Scenario Analysis", 4,
+     ["Stress Testing Fundamentals", "Historical Scenario Analysis", "Hypothetical and Reverse Stress Testing",
+      "Regulatory Stress Testing Frameworks"],
+     ["stress testing fundamentals", "historical scenarios", "hypothetical and reverse", "regulatory stress testing"],
+     v_stress),
+    ("Backtesting and Model Validation", 4,
+     ["Backtesting Fundamentals", "Backtesting Statistical Tests", "Model Validation Frameworks",
+      "Model Risk Management"],
+     ["backtesting fundamentals", "statistical tests", "model validation frameworks", "model risk management"],
+     v_backtest),
+    ("Regulatory Capital and Governance: Basel and FRTB", 4,
+     ["Basel Framework Evolution", "FRTB Standardized Approach", "FRTB Internal Models Approach",
+      "Risk Governance, Limits, and Reporting"],
+     ["Basel framework evolved", "standardised approach", "internal models approach", "risk governance"], v_capital),
 ]
 
 
 def make_module_scene(idx):
-    title, part, bullets, practice, visual = MODULES[idx]
+    title, part, lessons, cues, visual = MODULES[idx]
     sid = f"m{idx + 1}"
     pname, pcol = PARTS[part]
 
@@ -700,29 +797,30 @@ def make_module_scene(idx):
             chip(d, 120 + d.textlength(f"MODULE {idx + 1:02d} / 16", font=font(28, "SemiBold")) + 24, 144,
                  pname, pcol, pp, font(22, "SemiBold"))
         f = font(56, "Bold", True)
-        lines = wrap(d, title, f, 740)
+        lines = wrap(d, title, f, 790)
         for i, line in enumerate(lines):
             text(d, (120, 200 + i * 66), line, f, INK, p=prog(t, 0.15 + i * 0.1, 0.6))
         y = 200 + len(lines) * 66 + 30
         d.rectangle((120, y, 120 + 120 * ease_out(prog(t, 0.4, 0.6)), y + 6), fill=pcol)
-        y += 46
-        n = len(bullets)
-        span = max(1.5, cue(sid, "In practice", CLIP[sid] * 0.6) - 1.2)
-        for i, b in enumerate(bullets):
-            p = ease_out(prog(t, 0.9 + span * i / n, 0.6))
+        y += 36
+        starts = [cue(sid, c, LEAD + CLIP[sid] * (0.15 + 0.2 * i)) - 0.3 for i, c in enumerate(cues)]
+        lf = font(30, "SemiBold")
+        for i, lesson in enumerate(lessons):
+            p = ease_out(prog(t, starts[i], 0.6))
             if p <= 0:
                 continue
-            yy = y + i * 64 + (1 - p) * 20
-            d.ellipse((124, yy + 10, 142, yy + 28), fill=fade(pcol, p))
-            d.text((166, yy), b, font=font(34, "Medium"), fill=fade(INK, p))
-        # in practice box
-        pb = ease_out(prog(t, cue(sid, "In practice", CLIP[sid] * 0.6), 0.7))
-        if pb > 0:
-            by = 830 + (1 - pb) * 30
-            rrect(d, (120, by, 900, by + 150), 24, fade((26, 40, 74), pb), outline=fade(pcol, pb), width=3)
-            d.text((150, by + 22), "IN PRACTICE", font=font(22, "Bold"), fill=fade(pcol, pb))
-            for i, line in enumerate(wrap(d, practice, font(30, "SemiBold"), 720)[:2]):
-                d.text((150, by + 56 + i * 36), line, font=font(30, "SemiBold"), fill=fade(INK, pb))
+            # the lesson being narrated is highlighted; earlier ones stay visible but quieter
+            active = starts[i] <= t < (starts[i + 1] if i + 1 < len(starts) else dur)
+            yy = y + i * min(138, (1000 - y) / 4) + (1 - p) * 20
+            edge = pcol if active else CARD_EDGE
+            rrect(d, (120, yy, 900, yy + 122), 22, fade(mix(CARD, pcol, 0.14 if active else 0.0), p),
+                  outline=fade(edge, p), width=3 if active else 2)
+            d.ellipse((146, yy + 37, 194, yy + 85), fill=fade(pcol, p))
+            d.text((170, yy + 61), str(i + 1), font=font(28, "Black", True), fill=fade(BG, p), anchor="mm")
+            ls = wrap(d, lesson, lf, 660)[:2]
+            for j, line in enumerate(ls):
+                d.text((220, yy + 61 + (j - (len(ls) - 1) / 2) * 38), line, font=lf,
+                       fill=fade(INK if active else mix(INK, MUTED, 0.35), p), anchor="lm")
         # right visual
         pv = ease_out(prog(t, 0.3, 0.7))
         panel(d, (980, 150, 1840, 990), pv)
@@ -775,7 +873,7 @@ def s_glance(d, img, t, dur):
     for i, line in enumerate(["From the foundations of market risk to the", "models banks use every day."]):
         text(d, (120, 630 + i * 54), line, font(40), MUTED, p=prog(t, 1.0 + i * 0.15, 0.7))
     stats = [("16", "Modules", TEAL, cue("glance", "sixteen modules")),
-             ("4", "Capstone projects", AMBER, cue("glance", "capstone")),
+             ("2", "Capstone projects", AMBER, cue("glance", "capstone")),
              ("Python", "Hands-on labs", BLUE, cue("glance", "hands-on")),
              ("✓", "Certificate of Completion", GREEN, cue("glance", "Certificate"))]
     for i, (big, lab, col, st) in enumerate(stats):
@@ -885,36 +983,48 @@ def s_roadmap(d, img, t, dur):
             d.text((cx + 22, cy + 58 + j * 28), line, font=font(25, "SemiBold"), fill=fade(INK, base))
 
 
-CAPSTONES = [
-    ("VaR & ES Engine", "A multi-asset VaR and expected shortfall engine in Python: historical, parametric "
-                        "and Monte Carlo.", ["Python", "VaR", "ES"], TEAL, "VaR and expected shortfall engine"),
-    ("Interest Rate Risk Dashboard", "Curve bootstrapping, DV01 and key-rate durations, with rate-shock P&L.",
-     ["Yield curves", "KRD", "Dashboard"], BLUE, "interest rate risk dashboard"),
-    ("Trading Book Stress Test", "Historical and hypothetical scenarios plus a reverse stress test, written up "
-                                 "for senior management.", ["Scenarios", "Reverse stress"], AMBER, "Stress test"),
-    ("Backtesting & Validation Report", "Kupiec and Christoffersen tests, traffic-light zones and a full model "
-                                        "validation memo.", ["Backtesting", "Model risk"], VIOLET, "backtesting"),
+CAPSTONES = [  # (title, stages, narration phrase for each stage, colour)
+    ("Interest Rate Swap Pricing Model Validation",
+     ["The Swap, the Curves, and the Valuation Framework", "Independent Replication and Benchmarking",
+      "Testing the Model: Sensitivity, Stress and Outcomes", "Findings, Remediation and the Validation Decision"],
+     ["set out the swap", "replicate and benchmark", "test the model's sensitivities", "findings, remediation"], BLUE),
+    ("Historical VaR Model Validation",
+     ["The Portfolio, the Risk Factors and the VaR Engine", "Independent Replication of the VaR Calculation",
+      "Testing the Model: Backtesting, Stress and Attribution", "Findings, Capital Impact and the Validation Decision"],
+     ["document the portfolio", "replicate the VaR calculation", "test the model with backtesting",
+      "findings, the capital impact"], AMBER),
 ]
 
 
 def s_capstones(d, img, t, dur):
-    header(d, t, "APPLY EVERYTHING", "Capstone projects", col=AMBER)
-    cw, ch = 820, 260
-    for i, (title, desc, tags, col, phrase) in enumerate(CAPSTONES):
-        p = ease_out(prog(t, cue("capstones", phrase, 1 + i * 3) - 0.3, 0.8))
+    header(d, t, "APPLY EVERYTHING", "Two capstone projects", col=AMBER)
+    text(d, (1800, 210), "Each one a full, bank-style model validation", font(30, "Medium"), MUTED, anchor="ra",
+         p=prog(t, cue("capstones", "Each one"), 0.6), rise=10)
+    cw = 820
+    intro = [cue("capstones", "In the first"), cue("capstones", "In the second")]
+    for k, (title, stages, phrases, col) in enumerate(CAPSTONES):
+        p = ease_out(prog(t, intro[k] - 0.3, 0.8))
         if p <= 0:
             continue
-        r, c = divmod(i, 2)
-        cx, cy = 120 + c * (cw + 40), 380 + r * (ch + 30) + (1 - p) * 30
-        rrect(d, (cx, cy, cx + cw, cy + ch), 28, fade(CARD, p), outline=fade(col, p), width=3)
-        d.rounded_rectangle((cx + 32, cy + 32, cx + 104, cy + 104), radius=18, fill=fade(col, p))
-        d.text((cx + 68, cy + 68), str(i + 1), font=font(40, "Black", True), fill=fade(BG, p), anchor="mm")
-        d.text((cx + 130, cy + 40), title, font=font(38, "Bold"), fill=fade(INK, p))
-        for j, line in enumerate(wrap(d, desc, font(26), cw - 170)[:2]):
-            d.text((cx + 130, cy + 100 + j * 34), line, font=font(26), fill=fade(MUTED, p))
-        x = cx + 130
-        for tg in tags:
-            x = chip(d, x, cy + 186, tg, col, p, font(22, "SemiBold")) + 10
+        cx, cy = 120 + k * (cw + 40), 360 + (1 - p) * 30
+        rrect(d, (cx, cy, cx + cw, cy + 640), 30, fade(CARD, p), outline=fade(col, p), width=3)
+        d.text((cx + 40, cy + 34), f"CAPSTONE PROJECT {k + 1}", font=font(24, "Bold"), fill=fade(col, p))
+        for j, line in enumerate(wrap(d, title, font(40, "Bold"), cw - 80)[:2]):
+            d.text((cx + 40, cy + 74 + j * 48), line, font=font(40, "Bold"), fill=fade(INK, p))
+        for i, (stage, phrase) in enumerate(zip(stages, phrases)):
+            st = cue("capstones", phrase, intro[k] + 2 + i * 2.5) - 0.3
+            ps = ease_out(prog(t, st, 0.6))
+            if ps <= 0:
+                continue
+            sy = cy + 200 + i * 106 + (1 - ps) * 16
+            rrect(d, (cx + 30, sy, cx + cw - 30, sy + 92), 18, fade(mix(CARD, col, 0.12), ps),
+                  outline=fade(mix(CARD_EDGE, col, 0.6), ps), width=2)
+            d.ellipse((cx + 52, sy + 24, cx + 96, sy + 68), fill=fade(col, ps))
+            d.text((cx + 74, sy + 46), str(i + 1), font=font(26, "Black", True), fill=fade(BG, ps), anchor="mm")
+            ls = wrap(d, stage, font(28, "SemiBold"), cw - 170)[:2]
+            for j, line in enumerate(ls):
+                d.text((cx + 120, sy + 46 + (j - (len(ls) - 1) / 2) * 34), line, font=font(28, "SemiBold"),
+                       fill=fade(INK, ps), anchor="lm")
 
 
 def s_certificate(d, img, t, dur):
@@ -941,7 +1051,7 @@ def s_certificate(d, img, t, dur):
     d.line([(cx - 260, y0 + 312), (cx + 260, y0 + 312)], fill=fade(gold, p), width=2)
     d.text((cx, y0 + 330), "has successfully completed", font=font(24, "Italic"), fill=fade(ink, p), anchor="ma")
     d.text((cx, y0 + 370), "Market Risk Modeling", font=font(44, "Bold"), fill=fade(ink, p), anchor="ma")
-    d.text((cx, y0 + 428), "16 modules · capstone projects", font=font(24), fill=fade(ink, p), anchor="ma")
+    d.text((cx, y0 + 428), "16 modules · 2 capstone projects", font=font(24), fill=fade(ink, p), anchor="ma")
     for k, (nm, rl) in enumerate((("Prateek Yadav", "CEO, RiskHub"), ("Sudhanshu Kanwar", "Instructor, RiskHub"))):
         sx = x0 + 110 + k * 450
         d.text((sx + 140, y0 + 480), nm, font=font(30, "MediumItalic"), fill=fade(ink, p), anchor="ma")
@@ -994,7 +1104,7 @@ def s_careers(d, img, t, dur):
 def s_cta(d, img, t, dur):
     cx = W / 2
     text(d, (cx, 220), "MARKET RISK MODELING", font(104, "Black", True), INK, anchor="ma", p=prog(t, 0, 0.8))
-    text(d, (cx, 350), "16 modules · Capstone projects · Certificate of Completion", font(40, "SemiBold"), TEAL,
+    text(d, (cx, 350), "16 modules · 2 capstone projects · Certificate of Completion", font(40, "SemiBold"), TEAL,
          anchor="ma", p=prog(t, 0.4, 0.7))
     for i, inst in enumerate(INSTRUCTORS):
         p = ease_out(prog(t, 0.8 + i * 0.2, 0.7))

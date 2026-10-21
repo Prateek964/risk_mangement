@@ -17,71 +17,71 @@
   },
   {
     "id": "m1",
-    "text": "Module one, Foundations of Market Risk. What market risk really is, where it shows up in a profit and loss statement, and how firms control it, with risk appetite, limits, and the three lines of defense. In practice, you'll read a trading desk's daily P and L, break it down by source, and set limits that actually match the firm's appetite for risk. Everything that follows builds on this."
+    "text": "Module one, Foundations of Market Risk. You'll begin by defining market risk and how it's measured. Then you'll see how market risk differs from credit, liquidity, and operational risk. Next, you'll explore the trading book, the banking book, and real-world context. Finally, you'll learn how to choose a market risk measure, and how to test it."
   },
   {
     "id": "m2",
-    "text": "Module two, Types and Classification of Market Risk Exposure. Linear versus non-linear positions, directional versus relative-value trades, and the difference between the trading book and the banking book. In practice, you'll take a real multi-asset book, classify every position by its exposure type, and see why an option and a forward on the same asset need very different treatment."
+    "text": "Module two, Types and Classification of Market Risk Exposure. Start with the four standard market-risk classes: interest rate, equity, foreign exchange, and commodity. Then go further, into credit spread risk and volatility risk. You'll study basis risk, and the difference between directional and relative-value exposure. And you'll learn to decompose multi-leg trades into the individual exposures."
   },
   {
     "id": "m3",
-    "text": "Module three, Risk Factors and Sensitivities. You'll map positions to risk factors and measure how they respond, with delta, gamma, vega, and P-V-oh-one, and learn when sensitivities are enough and when you need full revaluation. In practice, you'll build a sensitivity report for a mixed portfolio of bonds, equities, and options, and use it to explain where today's P and L really came from."
+    "text": "Module three, Risk Factors and Sensitivities. First, the foundations of risk factors. Then, what a sensitivity really means, and how to measure it. You'll study curvature, approximation error, and how to map positions onto risk factors. And you'll finish with the sensitivities required under FRTB, and the most common points of confusion."
   },
   {
     "id": "m4",
-    "text": "Module four, Interest Rate Risk Modeling. Build yield curves, measure duration, convexity, and key-rate durations, and simulate future rates with short-rate models like Vasicek, C-I-R, and Hull-White. In practice, you'll bootstrap a curve from market quotes, shock it in parallel and non-parallel ways, and measure exactly how much a bond portfolio gains or loses."
+    "text": "Module four, Interest Rate Risk Modeling. Start with yield curve fundamentals. Then measure price risk with duration and convexity. Move on to key rate durations and curve risk. And finish with interest rate derivatives, and the term structure models used to price and simulate them."
   },
   {
     "id": "m5",
-    "text": "Module five, Volatility and Options Risk. Price options with Black-Scholes-Merton, read the volatility smile and surface, forecast volatility with E-W-M-A and GARCH, and manage the Greeks of an options book. In practice, you'll calibrate an implied volatility surface, compare forecasting models, and hedge an options position as volatility and the underlying move together."
+    "text": "Module five, Volatility and Options Risk, and the Greeks. Lay the foundations of option pricing. Then measure how an option's value reacts to the underlying with delta and gamma. Add vega, theta, and rho, for volatility, time, and interest rates. And finish with volatility surfaces, the smile, and skew."
   },
   {
     "id": "m6",
-    "text": "Module six, Value at Risk, Parametric and Historical. The loss you won't exceed on ninety-nine days out of a hundred. You'll compute it with the variance-covariance method and with historical simulation, and learn the assumptions behind each. In practice, you'll compute one-day and ten-day VaR for a real portfolio, compare both methods side by side, and see exactly where each one goes wrong."
+    "text": "Module six, Value at Risk, Parametric and Historical. Begin with VaR foundations and precise definitions: the loss you won't exceed on ninety-nine days out of a hundred. Then compute it with the parametric, variance-covariance method. Next, calculate it again using historical simulation. And close by examining VaR's limitations, and comparing the methods side by side."
   },
   {
     "id": "m7",
-    "text": "Module seven, Monte Carlo Simulation and Advanced VaR. Simulate thousands of correlated market scenarios, then go further with filtered historical simulation, stressed VaR, and component and incremental VaR. In practice, you'll code a Monte Carlo VaR engine in Python, using Cholesky decomposition to generate correlated paths, and find which positions drive the most risk."
+    "text": "Module seven, Monte Carlo Simulations and Advanced VaR. Learn the foundations of Monte Carlo simulation. Then implement Monte Carlo VaR, step by step, in Python. Make it faster and more accurate with variance reduction techniques. And apply simulation to complex portfolios, full of options and non-linear positions."
   },
   {
     "id": "m8",
-    "text": "Module eight, Expected Shortfall and Tail Risk. VaR tells you where the tail starts. Expected shortfall tells you how bad it gets. You'll study fat tails, coherent risk measures, and extreme value theory. In practice, you'll calculate expected shortfall at ninety-seven point five percent, the level regulators now use, and fit a tail distribution to real market crashes."
+    "text": "Module eight, Expected Shortfall and Tail Risk. Go beyond VaR with coherent risk measures, and see why VaR isn't one. Then learn the fundamentals of expected shortfall, the measure that tells you how bad the tail really gets. Study extreme value theory. And finish with fat tails and tail dependence, when assets crash together."
   },
   {
     "id": "m9",
-    "text": "Module nine, Fixed Income Risk Modeling. Model bond portfolios and their exposure to curve shifts, twists, and credit spreads, and use principal component analysis to find the factors that really drive the curve. In practice, you'll decompose a government bond curve into level, slope, and curvature, and use those factors to hedge a fixed income portfolio."
+    "text": "Module nine, Fixed Income Risk Modeling. Start with fixed income instruments and the risk factors that drive them. Then compute VaR for a bond portfolio using full revaluation. Next, use partial revaluation and sensitivity-based VaR. And finally, compare partial and full revaluation in practice: where the shortcut works, and where it breaks down."
   },
   {
     "id": "m10",
-    "text": "Module ten, Equity Risk Modeling. Measure beta and factor exposures, separate systematic from idiosyncratic risk, and model the risk of single stocks, indices, and equity derivatives. In practice, you'll estimate betas with regression, build a simple factor model, and measure how much of a portfolio's risk is diversifiable."
+    "text": "Module ten, Equity Risk Modeling. Cover the fundamentals of equity risk. Then measure systematic risk with beta, factor models, and the capital asset pricing model. Study equity volatility and correlation, and how both change when markets fall. And finish with the risk of equity derivatives."
   },
   {
     "id": "m11",
-    "text": "Module eleven, Foreign Exchange Risk Modeling. Spot, forwards, and covered interest parity, F-X options, and the difference between transaction and translation exposure. In practice, you'll measure the F-X exposure of a multinational balance sheet, price forwards and options, and design a hedge that matches the exposure."
+    "text": "Module eleven, Foreign Exchange Risk Modeling. Learn how F-X markets work. Then identify the different types of F-X exposure a firm carries: transaction, translation, and economic. Design F-X hedging strategies that match those exposures. And finish with F-X derivatives, and cross-currency risk across a global portfolio."
   },
   {
     "id": "m12",
-    "text": "Module twelve, Commodity Risk Modeling. Forward curves, contango and backwardation, seasonality, storage, and the basis risk that hedgers live with every day. In practice, you'll model crude oil and natural gas forward curves and measure the risk of a hedged commodity position as the curve changes shape."
+    "text": "Module twelve, Commodity Risk Modeling. Start with commodity market fundamentals: energy, metals, and agriculture. Then read futures curves and basis, including contango and backwardation. Model commodity volatility and seasonality, from winter gas spikes to harvest cycles. And finish with the risk of commodity derivatives."
   },
   {
     "id": "m13",
-    "text": "Module thirteen, Correlation, Covariance, and Portfolio Aggregation. Build covariance matrices, see why correlations break down in a crisis, and aggregate risk across desks, with diversification benefit and risk contribution. In practice, you'll estimate covariance matrices with exponential weighting, stress the correlations, and aggregate risk from several desks into one firm-wide number."
+    "text": "Module thirteen, Correlation, Covariance, and Portfolio Aggregation. Build the fundamentals of correlation and covariance. Then estimate covariance matrices that hold up in practice. Aggregate VaR across a portfolio, and measure the diversification benefit. And finish with copulas and dependence modeling, for when simple correlation isn't enough."
   },
   {
     "id": "m14",
-    "text": "Module fourteen, Stress Testing and Scenario Analysis. Replay the 2008 crisis and the 2020 COVID shock, design hypothetical scenarios, and run reverse stress tests to find what would break the portfolio. In practice, you'll design a full stress testing program, from scenario selection to the final report that goes to senior management and the board."
+    "text": "Module fourteen, Stress Testing and Scenario Analysis. Learn stress testing fundamentals. Then replay history with historical scenarios, like the 2008 crisis and the 2020 COVID shock. Design hypothetical and reverse stress tests to find what would break the portfolio. And finish with the regulatory stress testing frameworks that banks are required to follow."
   },
   {
     "id": "m15",
-    "text": "Module fifteen, Backtesting and Model Validation. Compare VaR against actual P and L, count exceptions, apply the Kupiec and Christoffersen tests and the Basel traffic-light approach, and learn how model risk is governed. In practice, you'll backtest a VaR model over several years of data, run the statistical tests, and write up your findings the way a validation team would."
+    "text": "Module fifteen, Backtesting and Model Validation. Start with backtesting fundamentals: comparing VaR against actual P and L, and counting exceptions. Then apply the statistical tests, like Kupiec, Christoffersen, and the Basel traffic light, that decide whether a model passes. Learn the model validation frameworks used by banks and regulators. And finish with model risk management."
   },
   {
     "id": "m16",
-    "text": "Module sixteen, Regulatory Capital and Governance. Basel and the Fundamental Review of the Trading Book: the standardised approach, the internal models approach, expected shortfall capital, P and L attribution, and the governance that ties it all together. In practice, you'll compute capital charges under the standardised approach and understand what a desk must prove to use internal models."
+    "text": "Module sixteen, Regulatory Capital and Governance, Basel and FRTB. Trace how the Basel framework evolved. Then work through the FRTB standardised approach, and the internal models approach, with its expected shortfall capital. And finish with risk governance, limits, and reporting: how it all comes together inside a bank."
   },
   {
     "id": "capstones",
-    "text": "Then you put it all to work in capstone projects. Build a multi-asset VaR and expected shortfall engine in Python. Create an interest rate risk dashboard with curve bootstrapping and key-rate durations. Stress test a trading book against historical and hypothetical scenarios. And write a full backtesting and model validation report, the way a bank's validation team would."
+    "text": "Then you put it all together in two capstone projects. Each one is a full model validation, done the way a bank's independent validation team would do it. In the first, you validate an interest rate swap pricing model. You'll set out the swap, the curves, and the valuation framework, independently replicate and benchmark the price, test the model's sensitivities and stress outcomes, and deliver your findings, remediation, and validation decision. In the second, you validate a historical VaR model. You'll document the portfolio, the risk factors, and the VaR engine, independently replicate the VaR calculation, test the model with backtesting, stress, and attribution, and deliver your findings, the capital impact, and the validation decision."
   },
   {
     "id": "certificate",
