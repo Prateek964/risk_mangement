@@ -31,6 +31,7 @@ VO_SRC = os.path.join(HERE, "vo")            # raw ElevenLabs clips, one per sce
 VO_DIR = os.path.join(HERE, "vo", "fit")     # trimmed + tempo-adjusted copies (generated)
 VO_TEMPO = 1.03
 PHOTO_DIR = os.path.join(ROOT, "assets/images/instructors")
+LOGO_PATH = os.path.join(ROOT, "assets/images/riskhub-logo.png")
 LEAD, TAIL = 0.35, 0.6  # silence before / after each narration clip
 
 # ---------------------------------------------------------------- palette
@@ -223,10 +224,30 @@ def norm_pdf(x):
 
 
 # ---------------------------------------------------------------- chrome
-def chrome(d, t, label):
-    d.rounded_rectangle((80, 52, 112, 84), radius=8, fill=TEAL)
-    d.line([(88, 76), (96, 66), (102, 71), (108, 60)], fill=BG, width=4, joint="curve")
-    d.text((126, 46), "RiskHub", font=font(34, "Bold"), fill=INK)
+_logos = {}
+
+
+def logo(size, radius=None):
+    """The RiskHub logo at `size` px with rounded corners, as (image, mask)."""
+    if size not in _logos:
+        im = Image.open(LOGO_PATH).convert("RGB").resize((size, size), Image.LANCZOS)
+        r = radius if radius is not None else size // 8
+        mask = Image.new("L", (size * 3, size * 3), 0)
+        ImageDraw.Draw(mask).rounded_rectangle((0, 0, size * 3, size * 3), radius=r * 3, fill=255)
+        _logos[size] = (im, mask.resize((size, size), Image.LANCZOS))
+    return _logos[size]
+
+
+def paste_logo(img, x, y, size, p=1.0):
+    im, mask = logo(size)
+    if p < 1:
+        im = Image.blend(Image.new("RGB", im.size, BG), im, clamp(p))
+    img.paste(im, (int(x), int(y)), mask)
+
+
+def chrome(img, d, t, label):
+    d.rounded_rectangle((77, 27, 147, 97), radius=11, outline=(70, 96, 150), width=2)
+    paste_logo(img, 80, 30, 64)
     d.text((W - 80, 52), label, font=font(24, "Medium"), fill=MUTED, anchor="ra")
     d.rounded_rectangle((0, H - 6, W, H), radius=0, fill=(24, 34, 62))
     d.rectangle((0, H - 6, W * t / DURATION, H), fill=TEAL)
@@ -1044,7 +1065,7 @@ def s_certificate(d, img, t, dur):
     d.rectangle((x0 + 18, y0 + 18, x1 - 18, y1 - 18), outline=fade(gold, p), width=4)
     d.rectangle((x0 + 30, y0 + 30, x1 - 30, y1 - 30), outline=fade(gold, p), width=1)
     cx = (x0 + x1) / 2
-    d.text((cx, y0 + 70), "RiskHub", font=font(34, "Bold"), fill=fade(ink, p), anchor="ma")
+    paste_logo(img, cx - 32, y0 + 44, 64, p)
     d.text((cx, y0 + 130), "CERTIFICATE OF COMPLETION", font=font(40, "Black", True), fill=fade(gold, p), anchor="ma")
     d.text((cx, y0 + 200), "This certifies that", font=font(24, "Italic"), fill=fade(ink, p), anchor="ma")
     d.text((cx, y0 + 240), "Your Name", font=font(56, "BoldItalic"), fill=fade(ink, p), anchor="ma")
@@ -1103,8 +1124,11 @@ def s_careers(d, img, t, dur):
 
 def s_cta(d, img, t, dur):
     cx = W / 2
-    text(d, (cx, 220), "MARKET RISK MODELING", font(104, "Black", True), INK, anchor="ma", p=prog(t, 0, 0.8))
-    text(d, (cx, 350), "16 modules · 2 capstone projects · Certificate of Completion", font(40, "SemiBold"), TEAL,
+    pl = ease_out(prog(t, 0, 0.6))
+    if pl > 0:
+        paste_logo(img, cx - 60, 110 + (1 - pl) * 20, 120, pl)
+    text(d, (cx, 260), "MARKET RISK MODELING", font(96, "Black", True), INK, anchor="ma", p=prog(t, 0, 0.8))
+    text(d, (cx, 380), "16 modules · 2 capstone projects · Certificate of Completion", font(40, "SemiBold"), TEAL,
          anchor="ma", p=prog(t, 0.4, 0.7))
     for i, inst in enumerate(INSTRUCTORS):
         p = ease_out(prog(t, 0.8 + i * 0.2, 0.7))
@@ -1155,7 +1179,7 @@ def render_frame(t, bg=None):
         img = Image.blend(bg, img, alpha)
         d = ImageDraw.Draw(img)
     label = LABELS.get(sid) or f"Module {int(sid[1:])} of 16"
-    chrome(d, t, label)
+    chrome(img, d, t, label)
     return img
 
 

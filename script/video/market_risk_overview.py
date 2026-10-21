@@ -170,11 +170,19 @@ def header(d, t, num, title, start=0.0):
         d.rectangle((80, 420, 80 + w, 428), fill=TEAL)
 
 
-def chrome(d, t):
+LOGO = None
+
+
+def chrome(img, d, t):
     # brand + progress bar shown on every frame
-    d.rounded_rectangle((80, 110, 112, 142), radius=8, fill=TEAL)
-    d.line([(88, 134), (96, 124), (102, 129), (108, 118)], fill=BG, width=4, joint="curve")
-    d.text((128, 104), "RiskHub", font=font(38, "Bold"), fill=INK)
+    global LOGO
+    if LOGO is None:
+        im = Image.open("assets/images/riskhub-logo.png").convert("RGB").resize((76, 76), Image.LANCZOS)
+        mask = Image.new("L", (228, 228), 0)
+        ImageDraw.Draw(mask).rounded_rectangle((0, 0, 228, 228), radius=30, fill=255)
+        LOGO = (im, mask.resize((76, 76), Image.LANCZOS))
+    d.rounded_rectangle((77, 85, 159, 167), radius=12, outline=(70, 96, 150), width=2)
+    img.paste(LOGO[0], (80, 88), LOGO[1])
     d.text((W - 80, 112), "Market Risk Modeling", font=font(28, "Medium"), fill=MUTED, anchor="ra")
     d.rounded_rectangle((80, 172, W - 80, 178), radius=3, fill=(33, 45, 78))
     d.rounded_rectangle((80, 172, 80 + (W - 160) * t / DURATION, 178), radius=3, fill=TEAL)
@@ -481,7 +489,7 @@ def s_cta(d, t, dur):
 INSTRUCTORS = [
     ("Prateek Yadav", "CEO, RiskHub", "prateek-yadav", ["FRM", "CQF"],
      "JP Morgan · EY · PwC", "IIT Kanpur", TEAL),
-    ("Sudhanshu Kanwar", "Instructor, RiskHub", "sudhanshu-kanwar", ["FRM", "CQF"],
+    ("Sudhanshu Kanwar", "Instructor, RiskHub", "sudhanshu-kanwar", ["FRM", "CFA", "CQF"],
      "Goldman Sachs · HSBC", "IIM Ahmedabad", AMBER),
 ]
 PHOTO_DIR = "assets/images/instructors"
@@ -576,7 +584,7 @@ def render_frame(bg, t):
                 img = Image.blend(bg, img, alpha)
                 d = ImageDraw.Draw(img)
             break
-    chrome(d, t)
+    chrome(img, d, t)
     return img
 
 
