@@ -1,0 +1,53 @@
+{
+  "id": "q020",
+  "number": 20,
+  "source": "GARP Mock 2023 · Part 1 · Q67",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q020-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "An investment performance analyst is calculating some performance measures on portfolio LCM. Portfolio LCM has an expected return of 9%, volatility of 21%, and a beta of 0.3. If the risk-free rate is 3%, what is the Treynor measure of portfolio LCM?",
+  "stem_short": "What is the Treynor measure of portfolio LCM?",
+  "stem_highlights": [
+    {"text": "expected return of 9%", "at": "expected return of 9"},
+    {"text": "beta of 0.3", "at": "beta of 0.3."},
+    {"text": "risk-free rate is 3%", "at": "risk-free rate is 3"},
+    {"text": "Treynor measure", "at": "Treynor measure of"}
+  ],
+  "options": {"A": "0.08", "B": "0.15", "C": "0.20", "D": "0.40"},
+  "option_at": {"A": "Option A,", "B": "Option B,", "C": "Option C,", "D": "option D,"},
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "Treynor = excess return ÷ beta",
+    "high": {"label": "TREYNOR MEASURE", "text": "(E[Rp] − Rf) ÷ β", "at": "The Treynor measure is", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "9% − 3% = 6%", "at": "9 minus 3"},
+      {"text": "÷ beta of 0.3", "at": "Divide by a beta"},
+      {"text": "= 0.20", "at": "or 0.20."}
+    ], "at": "9 minus 3", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Would mean only 2.4% excess return (0.08 × 0.3).", "at": "A is wrong."},
+    "B": {"reason": "Would mean only 4.5% excess return (0.15 × 0.3).", "at": "B is wrong too."},
+    "D": {"reason": "Adds Rf instead of subtracting: (9 + 3) ÷ 0.3 = 0.40.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Treynor: excess return ÷ beta", "at": "Treynor divides"},
+    {"text": "Sharpe: excess return ÷ volatility", "at": "Sharpe divides by"},
+    {"text": "Subtract the risk-free rate — never add it", "at": "And always subtract"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, a performance analyst is calculating some measures for portfolio LCM. The portfolio has an expected return of 9 percent, volatility of 21 percent, and a beta of 0.3. If the risk-free rate is 3 percent, what's the Treynor measure of portfolio LCM?"},
+    {"id": "options", "text": "Option A, 0.08. Option B, 0.15. Option C, 0.20. And option D, 0.40."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... C! [warmly] Here's why. The Treynor measure is excess return per unit of beta, that's systematic risk. 9 minus 3 is 6 percent. Divide by a beta of 0.3, and you get 20 percent, or 0.20. The 21 percent volatility is a distraction here. That's what you'd use for the Sharpe ratio."},
+    {"id": "wrong", "text": "Now, why not the others? Let's work backward. A is wrong. A Treynor of 0.08 would mean an excess return of only 2.4 percent. B is wrong too. 0.15 would mean an excess return of only 4.5 percent, and ours is 6. And D? That's what you get if you add the risk-free rate instead of subtracting it. 9 plus 3 is 12, and 12 over 0.3 gives 0.40."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Treynor divides excess return by beta. Sharpe divides by volatility. And always subtract the risk-free rate, never add it. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["treynor measure", "treynor", "sharpe ratio", "sharpe", "beta", "systematic risk", "excess return", "risk-free rate", "volatility", "0.20", "work backward", "risk hub"]
+}
