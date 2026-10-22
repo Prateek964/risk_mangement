@@ -1,0 +1,56 @@
+{
+  "id": "q025",
+  "number": 25,
+  "source": "GARP Mock 2023 · Part 1 · Q94",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 6,
+  "chapter": "Chapter 6. The Arbitrage Pricing Theory and Multifactor Models of Risk and Return",
+  "audio": "audio/q025-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 6,", "a practice question."],
+  "stem": "An analyst at a family endowment fund is studying the use of a factor analysis approach to hedge an investment portfolio. The analyst reviews the characteristics of factor analysis and best practices in implementing the approach. Which of the following statements is correct for the analyst to make?",
+  "stem_short": "Which statement about factor hedging is correct?",
+  "stem_highlights": [
+    {"text": "factor analysis approach to hedge", "at": "using factor analysis."},
+    {"text": "best practices", "at": "best practices."}
+  ],
+  "options": {
+    "A": "Factor betas can be used in the process of hedging idiosyncratic risk, but they cannot be used in hedging systematic risk.",
+    "B": "Choosing the frequency to adjust factor-based hedges requires making a decision that balances the hedging cost and the tracking error.",
+    "C": "Factor hedging performs well when linear factor models are used, but performs poorly when nonlinear factor models are used.",
+    "D": "While an investor can take positions in factors to construct a portfolio with a beta close to zero, the investor cannot theoretically construct a portfolio with a beta exactly equal to zero."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Hedge frequency is a trade-off",
+    "high": {"label": "THE KEY CHALLENGE", "text": "How often to adjust the hedge", "at": "How often you adjust", "meter": null},
+    "low": {"label": "THE TRADE-OFF", "chips": [
+      {"text": "Too rarely → tracking error", "at": "Adjust too rarely,"},
+      {"text": "Too often → trading costs drag", "at": "Adjust too often,"},
+      {"text": "Find the balance", "at": "find the balance."}
+    ], "at": "Adjust too rarely,", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Backward — factor betas are how you hedge systematic risk.", "at": "A is wrong."},
+    "C": {"reason": "Both can work; the real danger is model risk.", "at": "C is wrong too."},
+    "D": {"reason": "Zero beta is theoretically possible — offset every factor.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Factor betas hedge systematic risk", "at": "Factor betas let you"},
+    {"text": "Rebalancing: trading costs vs tracking error", "at": "Rebalancing frequency is"},
+    {"text": "Watch model risk, not model type", "at": "And the real danger"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 6, The Arbitrage Pricing Theory and Multifactor Models of Risk and Return. Let's do a practice question."},
+    {"id": "question", "text": "So, an analyst at a family endowment fund is studying how to hedge a portfolio using factor analysis. They review its characteristics, and the best practices. Which statement is correct?"},
+    {"id": "options", "text": "Option A. Factor betas can hedge idiosyncratic risk, but not systematic risk. Option B. Choosing how often to adjust factor-based hedges means balancing hedging cost against tracking error. Option C. Factor hedging works well with linear factor models, but poorly with nonlinear ones. And option D. You can build a portfolio with a beta close to zero, but theoretically never exactly zero."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. How often you adjust a hedge is a key challenge, and it's a trade-off. Adjust too rarely, and the hedge drifts away from the portfolio, so tracking error creeps in. Adjust too often, and trading costs pile up and drag down performance. So you have to find the balance."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. It's backward. Diversification takes care of idiosyncratic risk. Factor betas are exactly what you use to hedge systematic risk. C is wrong too. Linear and nonlinear models can both hedge well. The real danger is model risk, like a linear model that misses nonlinear relationships. And D? A zero-beta portfolio is theoretically possible. Just take opposite positions in every factor. In practice, rounding to whole contracts might leave a tiny bit of beta."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Factor betas let you hedge systematic risk. Rebalancing frequency is a trade-off between trading costs and tracking error. And the real danger is model risk, not the model type. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["tracking error", "trading costs", "systematic risk", "idiosyncratic risk", "model risk", "zero-beta", "trade-off", "risk hub"]
+}
