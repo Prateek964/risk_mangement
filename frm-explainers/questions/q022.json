@@ -1,0 +1,57 @@
+{
+  "id": "q022",
+  "number": 22,
+  "source": "GARP Mock 2023 · Part 1 · Q99",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q022-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "a practice question."],
+  "stem": "An analyst is comparing two commodity funds benchmarked to the Reuters/Jefferies-CRB Index, using the information ratio (IR) to see which achieved higher returns more efficiently. Fund 1: average excess return 0.073%, standard deviation 0.294%, tracking error 0.344%. Fund 2: average excess return 0.053%, standard deviation 0.237%, tracking error 0.341%. What is the information ratio for each fund, and what conclusion can be drawn?",
+  "stem_short": "What is each fund’s IR, and which did better?",
+  "stem_highlights": [
+    {"text": "information ratio (IR)", "at": "using the information ratio."},
+    {"text": "tracking error 0.344%", "at": "tracking error of 0.344"},
+    {"text": "tracking error 0.341%", "at": "tracking error of 0.341"}
+  ],
+  "options": {
+    "A": "IR for Fund 1 = 0.212, IR for Fund 2 = 0.155; Fund 1 performed better as it has a higher IR.",
+    "B": "IR for Fund 1 = 0.212, IR for Fund 2 = 0.155; Fund 2 performed better as it has a lower IR.",
+    "C": "IR for Fund 1 = 0.248, IR for Fund 2 = 0.224; Fund 1 performed better as it has a higher IR.",
+    "D": "IR for Fund 1 = 0.248, IR for Fund 2 = 0.224; Fund 2 performed better as it has a lower IR."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "IR = excess return ÷ tracking error",
+    "high": {"label": "INFORMATION RATIO", "text": "Excess return over benchmark ÷ tracking error", "at": "The information ratio is", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "Fund 1: 0.073 ÷ 0.344 = 0.212", "at": "For Fund 1,"},
+      {"text": "Fund 2: 0.053 ÷ 0.341 = 0.155", "at": "For Fund 2,"},
+      {"text": "Higher IR wins → Fund 1", "at": "higher is better."}
+    ], "at": "For Fund 1,", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "Right numbers, backward conclusion — higher IR is better.", "at": "B is wrong."},
+    "C": {"reason": "Divides by standard deviation, not tracking error.", "at": "C is wrong too."},
+    "D": {"reason": "Wrong denominator and a backward conclusion.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "IR = excess return ÷ tracking error", "at": "The information ratio is excess"},
+    {"text": "Tracking error ≠ total volatility", "at": "Don't confuse tracking"},
+    {"text": "Higher IR = more skillful manager", "at": "And a higher IR"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do a practice question."},
+    {"id": "question", "text": "So, an analyst is comparing two commodity funds that track the Reuters Jefferies CRB Index, using the information ratio. Fund 1 has an average excess return of 0.073 percent, a standard deviation of 0.294 percent, and a tracking error of 0.344 percent. Fund 2 has an average excess return of 0.053 percent, a standard deviation of 0.237 percent, and a tracking error of 0.341 percent. What's the information ratio for each fund, and what can we conclude?"},
+    {"id": "options", "text": "Option A. Fund 1's IR is 0.212 and Fund 2's is 0.155, so Fund 1 performed better, with a higher IR. Option B. The same IRs, but Fund 2 performed better, with a lower IR. Option C. Fund 1's IR is 0.248 and Fund 2's is 0.224, so Fund 1 performed better. And option D. The same 0.248 and 0.224, but Fund 2 performed better, with a lower IR."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. The information ratio is excess return over the benchmark, divided by tracking error. For Fund 1, 0.073 over 0.344 is 0.212. For Fund 2, 0.053 over 0.341 is 0.155. And with the information ratio, higher is better. It means more excess return for each unit of active risk."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. The numbers are right, but the conclusion is backward. A lower IR means less reward per unit of active risk. C is wrong too. 0.248 and 0.224 come from dividing by the standard deviation instead of the tracking error. And D? Wrong on both counts. Wrong denominator, and a backward conclusion."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. The information ratio is excess return divided by tracking error. Don't confuse tracking error with total volatility. And a higher IR means a more skillful manager. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["information ratio", "tracking error", "excess return", "standard deviation", "active risk", "higher is better", "0.212", "0.155", "risk hub"]
+}
