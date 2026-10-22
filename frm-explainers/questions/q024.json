@@ -1,0 +1,53 @@
+{
+  "id": "q024",
+  "number": 24,
+  "source": "GARP Mock 2023 · Part 1 · Q100",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 6,
+  "chapter": "Chapter 6. The Arbitrage Pricing Theory and Multifactor Models of Risk and Return",
+  "audio": "audio/q024-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 6,", "a practice question."],
+  "stem": "An analyst is estimating the sensitivity of Stock A's return to macroeconomic factors: industrial production beta = 1.30, interest rate beta = −0.75. Under baseline expectations, with industrial production growth of 3.0% and an interest rate of 1.5%, the expected return for Stock A is 5.0%. The research department forecasts industrial production growth of 4.2% and interest rates rising 25 bps to 1.75%. According to this forecast, what return of Stock A can be expected for next year?",
+  "stem_short": "What return can Stock A be expected to earn next year?",
+  "stem_highlights": [
+    {"text": "industrial production beta = 1.30", "at": "industrial production is 1.3,"},
+    {"text": "interest rate beta = −0.75", "at": "negative 0.75."},
+    {"text": "growth of 4.2%", "at": "growth of 4.2"},
+    {"text": "1.75%", "at": "to 1.75"}
+  ],
+  "options": {"A": "4.8%", "B": "6.4%", "C": "6.8%", "D": "7.8%"},
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Return = baseline + Σ β × surprise",
+    "high": {"label": "ONLY SURPRISES MATTER", "text": "The 5% baseline already prices in expected factor values", "at": "The baseline 5 percent", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "IP surprise: 4.2 − 3.0 = 1.2%", "at": "The industrial production surprise"},
+      {"text": "Rate surprise: 1.75 − 1.5 = 0.25%", "at": "The interest rate surprise"},
+      {"text": "5 + 1.56 − 0.19 = 6.37% ≈ 6.4%", "at": "That's 5 plus"}
+    ], "at": "The industrial production surprise", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Counts only the rate shock (5 − 0.19) and drops the IP boost.", "at": "A is wrong."},
+    "C": {"reason": "Ignores the negative rate beta: 5 + 1.56 + 0.19 ≈ 6.8%.", "at": "C is wrong too."},
+    "D": {"reason": "Too high — even ignoring the rate drag, IP adds only 1.56%.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Start from the baseline expected return", "at": "start from the baseline"},
+    {"text": "Use the surprise, not the level", "at": "Use the surprise,"},
+    {"text": "Watch the signs on your betas", "at": "And watch the signs"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 6, The Arbitrage Pricing Theory and Multifactor Models of Risk and Return. Let's do a practice question."},
+    {"id": "question", "text": "So, an analyst is estimating how stock A responds to macroeconomic factors. Its beta to industrial production is 1.3, and its beta to the interest rate is negative 0.75. Under baseline expectations, industrial production grows 3 percent, the interest rate is 1.5 percent, and stock A's expected return is 5 percent. Now, the research team forecasts industrial production growth of 4.2 percent, and rates rising 25 basis points to 1.75 percent. What return can we expect for stock A next year?"},
+    {"id": "options", "text": "Option A. 4.8 percent. Option B. 6.4 percent. Option C. 6.8 percent. And option D. 7.8 percent."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. The baseline 5 percent already prices in the expected values, so only the surprises matter. The industrial production surprise is 4.2 minus 3, or 1.2 percent. The interest rate surprise is 0.25 percent. So the return is 5, plus 1.3 times 1.2, minus 0.75 times 0.25. That's 5 plus 1.56, minus 0.19, which is 6.37 percent. Call it 6.4."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. 4.8 percent only counts the interest rate shock, and forgets the boost from industrial production. C is wrong too. 6.8 percent ignores the negative sign on the rate beta, so higher rates get added instead of subtracted. And D? 7.8 percent is just too high. Even ignoring the rate drag, the industrial production surprise only adds 1.56 percent."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. In a multifactor model, start from the baseline expected return, and add beta times each factor surprise. Use the surprise, not the level. And watch the signs on your betas. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["surprise", "baseline", "industrial production", "interest rate", "negative", "6.37", "6.4", "risk hub"]
+}
