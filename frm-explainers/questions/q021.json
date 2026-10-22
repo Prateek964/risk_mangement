@@ -1,0 +1,57 @@
+{
+  "id": "q021",
+  "number": 21,
+  "source": "GARP Mock 2023 · Part 1 · Q68",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 5,
+  "chapter": "Chapter 5. Modern Portfolio Theory and the CAPM",
+  "audio": "audio/q021-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 5,", "another practice question."],
+  "stem": "A risk consultant is advising a pension fund to revise its asset allocation approach to be more consistent with the theory of CAPM. The consultant prepares a list of the assumptions of CAPM to support the advice. Which of the following is an assumption of CAPM?",
+  "stem_short": "Which of these is an assumption of the CAPM?",
+  "stem_highlights": [
+    {"text": "pension fund", "at": "pension fund"},
+    {"text": "assumptions of CAPM", "at": "assumptions behind the CAPM"},
+    {"text": "an assumption of CAPM", "at": "an assumption of the CAPM?"}
+  ],
+  "options": {
+    "A": "There are transaction costs associated with buying and selling assets.",
+    "B": "An individual investor can affect the price of a stock by buying or selling that stock.",
+    "C": "Investors make their investment decisions by taking into account their income taxes.",
+    "D": "Investors have the same expectations regarding the expected returns and the variance of returns of all assets."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "The CAPM imagines a perfect, frictionless market",
+    "high": {"label": "SAME EXPECTATIONS", "text": "Everyone agrees on returns, variances and correlations", "at": "The CAPM assumes every investor", "meter": null},
+    "low": {"label": "AND ALSO", "chips": [
+      {"text": "No transaction costs", "at": "no transaction costs,"},
+      {"text": "No taxes", "at": "no taxes,"},
+      {"text": "Price takers", "at": "price takers."}
+    ], "at": "It also assumes", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "The CAPM assumes no transaction costs.", "at": "A is wrong."},
+    "B": {"reason": "Investors are price takers — no one moves prices alone.", "at": "B is wrong too."},
+    "C": {"reason": "The CAPM assumes no taxes or other frictions.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Identical expectations for all investors", "at": "everyone shares the same expectations."},
+    {"text": "No frictions: no costs, no taxes", "at": "There are no frictions,"},
+    {"text": "Everyone is a price taker", "at": "and nobody can move prices"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 5, Modern Portfolio Theory and the Capital Asset Pricing Model. Let's do another practice question."},
+    {"id": "question", "text": "So, a risk consultant is advising a pension fund to make its asset allocation more consistent with the CAPM. To back up the advice, the consultant lists the assumptions behind the CAPM. Which of these is an assumption of the CAPM?"},
+    {"id": "options", "text": "Option A. There are transaction costs when buying and selling assets. Option B. An individual investor can affect a stock's price by buying or selling it. Option C. Investors make their decisions taking their income taxes into account. And option D. Investors have the same expectations about the expected returns and the variance of returns of all assets."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. The CAPM assumes every investor has identical expectations about expected returns, variances, and correlations between all assets. It also assumes a perfect market, with no transaction costs, no taxes, and investors who are all price takers."},
+    {"id": "wrong", "text": "Now, why not the others? Each one describes the real world, not the CAPM world. A is wrong. The CAPM assumes there are no transaction costs. B is wrong too. Under the CAPM, no single investor can change market prices. And C? Also wrong. The CAPM assumes no taxes or other frictions."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. In the CAPM world, everyone shares the same expectations. There are no frictions, like costs or taxes. And nobody can move prices on their own. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["capm", "assumption", "assumptions", "identical expectations", "same expectations", "transaction costs", "taxes", "frictions", "price takers", "perfect market", "risk hub"]
+}
