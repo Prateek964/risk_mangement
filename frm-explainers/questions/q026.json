@@ -1,0 +1,56 @@
+{
+  "id": "q026",
+  "number": 26,
+  "source": "GARP Mock 2023 · Part 2 · Q58",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 7,
+  "chapter": "Chapter 7. Principles for Effective Data Aggregation and Risk Reporting",
+  "audio": "audio/q026-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 7,", "a practice question."],
+  "stem": "A newly hired risk manager at a local bank is implementing the Basel Committee principles for risk data aggregation and risk reporting. The manager is assessing the role of regulators and supervisors according to the Basel Committee principles. Which of the following statements is correct for the manager to make?",
+  "stem_short": "Which statement about regulators and supervisors is correct?",
+  "stem_highlights": [
+    {"text": "Basel Committee principles for risk data aggregation and risk reporting", "at": "implementing the Basel"},
+    {"text": "role of regulators and supervisors", "at": "role of regulators"}
+  ],
+  "options": {
+    "A": "Regulators have provided banks with clear and comprehensive actions to take in order to comply with the Basel principles in every aspect.",
+    "B": "Regulators view banks’ compliance with the Basel principles as a customized exercise that varies from bank to bank.",
+    "C": "Supervisors have the ability to recommend that banks take remedial actions to address any deficiencies, but they do not have the authority to mandate these actions.",
+    "D": "Supervisors should review and evaluate a bank’s compliance only on an as-needed basis when deficiencies are identified."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Compliance is bespoke",
+    "high": {"label": "BESPOKE STANDARDS", "text": "Each bank is held to its own standard", "at": "Compliance with the Basel principles", "meter": null},
+    "low": {"label": "WHY", "chips": [
+      {"text": "Size, complexity & risk profile differ", "at": "Banks differ"},
+      {"text": "Standard varies bank to bank", "at": "It varies from bank"},
+      {"text": "No one-size-fits-all checklist", "at": "There's no"}
+    ], "at": "Banks differ", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "No detailed rulebook exists — that's why compliance is tailored.", "at": "A is wrong."},
+    "C": {"reason": "Supervisors can mandate timely remedial action.", "at": "C is wrong too."},
+    "D": {"reason": "Reviews are periodic, not only when problems appear.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Basel risk-data compliance is bespoke", "at": "Basel compliance on risk data"},
+    {"text": "Supervisors can mandate fixes", "at": "Supervisors can mandate"},
+    {"text": "Reviews are periodic", "at": "And reviews are periodic"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 7, Principles for Effective Data Aggregation and Risk Reporting. Let's do a practice question."},
+    {"id": "question", "text": "So, a newly hired risk manager at a local bank is implementing the Basel Committee's principles for risk data aggregation and risk reporting. They're looking at the role of regulators and supervisors. Which statement is correct?"},
+    {"id": "options", "text": "Option A. Regulators have given banks clear, comprehensive actions to comply with every aspect of the principles. Option B. Regulators see compliance as a customized exercise that varies from bank to bank. Option C. Supervisors can recommend remedial actions for deficiencies, but can't mandate them. And option D. Supervisors should review a bank's compliance only as needed, when deficiencies are found."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. Compliance with the Basel principles is a judgment call. Banks differ in size, complexity, and risk profile, so the standard each bank is held to is bespoke. It varies from bank to bank. There's no one-size-fits-all checklist."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Regulators haven't handed out a clear, detailed rulebook. That's exactly why compliance is tailored. C is wrong too. Supervisors can do more than recommend. They should be able to mandate remedial action, and in a timely way. And D? Supervisors should review compliance periodically, not just when something goes wrong."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Basel compliance on risk data is bespoke, varying from bank to bank. Supervisors can mandate fixes, not just suggest them. And reviews are periodic, not only when problems show up. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["bespoke", "bank to bank", "mandate", "periodically", "periodic", "remedial action", "basel", "risk hub"]
+}
