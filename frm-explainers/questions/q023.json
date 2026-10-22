@@ -1,0 +1,56 @@
+{
+  "id": "q023",
+  "number": 23,
+  "source": "GARP Mock 2023 · Part 2 · Q94",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 6,
+  "chapter": "Chapter 6. The Arbitrage Pricing Theory and Multifactor Models of Risk and Return",
+  "audio": "audio/q023-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 6,", "a practice question."],
+  "stem": "A risk analyst at a bank is explaining to an intern the use of the Arbitrage Pricing Theory (APT) in estimating the expected return of a security, using this formula: Rᵢ = E(Rᵢ) + βᵢ₁[I₁ − E(I₁)] + … + βᵢₖ[Iₖ − E(Iₖ)] + eᵢ. Which of the following is a correct interpretation of βᵢₖ?",
+  "stem_short": "Which is a correct interpretation of βᵢₖ?",
+  "stem_highlights": [
+    {"text": "Arbitrage Pricing Theory (APT)", "at": "Arbitrage Pricing Theory to"},
+    {"text": "correct interpretation of βᵢₖ", "at": "correct interpretation"}
+  ],
+  "options": {
+    "A": "It is a coefficient measuring the effect of changes in the rate of return of security k on the expected value of factor I.",
+    "B": "It measures the difference between the observed and expected values of factor k.",
+    "C": "It measures the idiosyncratic random shock to the price of security i which has a mean of zero.",
+    "D": "It measures how the changes in the surprise factor k will affect the rate of return of security i."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "βᵢₖ = sensitivity to factor k surprises",
+    "high": {"label": "FACTOR BETA", "text": "How much security i's return moves per unit surprise in factor k", "at": "is a factor sensitivity.", "meter": null},
+    "low": {"label": "HOW IT WORKS", "chips": [
+      {"text": "Surprise = Iₖ − E(Iₖ)", "at": "when factor k surprises,"},
+      {"text": "One β per security, per factor", "at": "Each security has"},
+      {"text": "Big β → strong reaction", "at": "So a big beta"}
+    ], "at": "It tells you", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Backward — beta is the factor's effect on the security, not the reverse.", "at": "A is wrong."},
+    "B": {"reason": "That's the factor surprise itself, Iₖ − E(Iₖ), not the beta.", "at": "B is wrong too."},
+    "C": {"reason": "That's the error term eᵢ — firm-specific noise.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "βᵢₖ = sensitivity of security i to factor k", "at": "is the sensitivity of security"},
+    {"text": "Only factor surprises move returns", "at": "Only surprises"},
+    {"text": "eᵢ captures firm-specific noise", "at": "And the error term"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 6, The Arbitrage Pricing Theory and Multifactor Models of Risk and Return. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk analyst at a bank is explaining the Arbitrage Pricing Theory to an intern. In the formula, the return on security i equals its expected return, plus beta i 1 times the surprise in factor 1, and so on, up to beta i k times the surprise in factor k, plus an error term, e i. Which of the following is a correct interpretation of beta i k?"},
+    {"id": "options", "text": "Option A. It measures the effect of changes in the return of security k on the expected value of the factor. Option B. It measures the difference between the observed and expected values of factor k. Option C. It measures the idiosyncratic random shock to security i, which has a mean of zero. And option D. It measures how changes in the surprise in factor k affect the return of security i."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. Beta i k is a factor sensitivity. It tells you how much security i's return moves when factor k surprises, that is, when its observed value differs from what was expected. Each security has its own beta to each factor. So a big beta means the security reacts strongly to that factor's surprises."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. It's backward. Beta measures the factor's effect on the security, not the security's effect on the factor. B is wrong too. That's the factor surprise itself, the observed value minus the expected value. Not the beta. And C? That's the error term, e i. The firm-specific noise."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. In the APT, beta i k is the sensitivity of security i to factor k. Only surprises in the factors move returns. And the error term captures firm-specific noise. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["arbitrage pricing theory", "beta i k", "factor k", "surprise", "sensitivity", "error term", "idiosyncratic", "firm-specific", "risk hub"]
+}
