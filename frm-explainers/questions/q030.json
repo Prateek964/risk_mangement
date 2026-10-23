@@ -1,0 +1,56 @@
+{
+  "id": "q030",
+  "number": 30,
+  "source": "GARP Mock 2019 · Part 1 · Q22",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 9,
+  "chapter": "Chapter 9. Learning from Financial Disasters",
+  "audio": "audio/q030-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 9,", "a practice question."],
+  "stem": "The collapse of Long-Term Capital Management (LTCM) is a classic risk management case study. Which of the following statements about risk management at LTCM is correct?",
+  "stem_short": "Which statement about LTCM's risk management is correct?",
+  "stem_highlights": [
+    {"text": "Long-Term Capital Management (LTCM)", "at": "Long-Term Capital Management"},
+    {"text": "risk management at LTCM", "at": "risk management at LTCM"}
+  ],
+  "options": {
+    "A": "LTCM’s traders did not respond quickly enough to changes in market volatility as there were significant barriers that blocked the flow of information.",
+    "B": "LTCM failed to account for the illiquidity of its largest positions in its risk calculations.",
+    "C": "LTCM’s use of high leverage is evidence of poor risk management.",
+    "D": "LTCM did not run any stress scenarios on its VaR model."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Illiquidity sank LTCM",
+    "high": {"label": "THE MISSING RISK", "text": "Liquidity risk of its biggest positions was understated", "at": "didn't properly account", "meter": null},
+    "low": {"label": "HOW IT UNFOLDED", "chips": [
+      {"text": "Dealers saw only part of the position", "at": "Dealers valuing its positions"},
+      {"text": "1998 Russian crisis hit", "at": "Russian debt crisis"},
+      {"text": "Creditors injected USD 3.65bn", "at": "3.65 billion"}
+    ], "at": "Dealers valuing its positions", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Blocked information flow wasn't LTCM's core failure — liquidity was.", "at": "A is wrong."},
+    "C": {"reason": "Leverage alone isn't proof of poor risk management.", "at": "C is wrong too."},
+    "D": {"reason": "LTCM did run stress tests — they missed liquidity.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Model liquidity risk of big positions", "at": "Always factor in"},
+    {"text": "Your size can move the market", "at": "Your own size"},
+    {"text": "Leverage magnifies the damage", "at": "And leverage"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 9, Learning from Financial Disasters. Let's do a practice question."},
+    {"id": "question", "text": "So, the collapse of Long-Term Capital Management, or LTCM, is a classic risk management case study. Which statement about risk management at LTCM is correct?"},
+    {"id": "options", "text": "Option A. LTCM's traders didn't react quickly to changes in volatility, because barriers blocked the flow of information. Option B. LTCM failed to account for the illiquidity of its largest positions in its risk calculations. Option C. LTCM's use of high leverage is evidence of poor risk management. And option D. LTCM didn't run any stress scenarios on its VaR model."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. LTCM didn't properly account for how illiquid its biggest positions were. Dealers valuing its positions only saw a small slice of the total, so liquidity risk was understated. When the Russian debt crisis hit in 1998, LTCM couldn't sell without crushing prices. Creditors had to step in with 3.65 billion dollars, and most other investors lost nearly everything."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Blocked information wasn't LTCM's core problem. Liquidity was. C is wrong too. High leverage on its own isn't proof of poor risk management. It's dangerous when the risks behind it are mismeasured. And D? LTCM did run stress tests. The trouble was they didn't capture how illiquid its positions would become."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Always factor in the liquidity risk of large positions. Your own size can move the market when you try to exit. And leverage magnifies every mistake. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["LTCM", "illiquid", "liquidity risk", "leverage", "stress tests", "Russian debt crisis", "3.65 billion", "risk hub"]
+}
