@@ -1,0 +1,56 @@
+{
+  "id": "q034",
+  "number": 34,
+  "source": "GARP Mock 2023 · Part 2 · Q69",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 10,
+  "chapter": "Chapter 10. Anatomy of the Great Financial Crisis",
+  "audio": "audio/q034-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 10,", "a practice question."],
+  "stem": "A risk manager at a financial institution is preparing a webinar on the great financial crisis of 2007–2009. The manager wants to describe several market events involving large financial institutions during the subprime mortgage crisis. Which of the following events happened during the peak of the subprime crisis?",
+  "stem_short": "Which event happened at the peak of the subprime crisis?",
+  "stem_highlights": [
+    {"text": "great financial crisis of 2007–2009", "at": "great financial crisis"},
+    {"text": "peak of the subprime crisis", "at": "peak of the subprime crisis"}
+  ],
+  "options": {
+    "A": "Fannie Mae and Freddie Mac were nationalized by the US government.",
+    "B": "Long-Term Capital Management (LTCM) was acquired by a consortium of banks after losing most of its capital.",
+    "C": "A large financial institution purchased part of Lehman Brothers and thereby prevented Lehman from being forced to file for bankruptcy.",
+    "D": "Citigroup was converted to a bank holding company and became regulated by the Federal Reserve."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Fall 2008: the crisis peaks",
+    "high": {"label": "THE EVENT", "text": "Fannie Mae and Freddie Mac taken over by the US government", "at": "The crisis peaked", "meter": null},
+    "low": {"label": "THE CASCADE", "chips": [
+      {"text": "Fannie & Freddie nationalized", "at": "were nationalized"},
+      {"text": "Lehman files for bankruptcy", "at": "Lehman Brothers collapsed"},
+      {"text": "Goldman & Morgan Stanley become BHCs", "at": "Goldman Sachs and Morgan Stanley"}
+    ], "at": "were nationalized", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "LTCM collapsed in 1998 — unrelated to subprime.", "at": "B is wrong."},
+    "C": {"reason": "No rescue came — Lehman filed for bankruptcy on Sept 15, 2008.", "at": "C is wrong too."},
+    "D": {"reason": "It was Goldman Sachs and Morgan Stanley, not Citigroup.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Crisis peaked in fall 2008", "at": "The crisis peaked in"},
+    {"text": "Fannie & Freddie nationalized; Lehman failed", "at": "Fannie and Freddie were"},
+    {"text": "LTCM was 1998 — a different crisis", "at": "And LTCM belongs"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 10, Anatomy of the Great Financial Crisis. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk manager is preparing a webinar on the great financial crisis of 2007 to 2009, describing events at large financial institutions. Which of these happened during the peak of the subprime crisis?"},
+    {"id": "options", "text": "Option A. Fannie Mae and Freddie Mac were nationalized by the US government. Option B. Long-Term Capital Management was acquired by a group of banks after losing most of its capital. Option C. A large institution bought part of Lehman Brothers, which saved Lehman from bankruptcy. And option D. Citigroup became a bank holding company regulated by the Federal Reserve."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. The crisis peaked in the fall of 2008, with a cascade of events. The two mortgage agencies, Fannie Mae and Freddie Mac, were nationalized. Days later, Lehman Brothers collapsed. And Goldman Sachs and Morgan Stanley became bank holding companies."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. LTCM collapsed in 1998. That had nothing to do with subprime. C is wrong too. Nobody saved Lehman. Rescue and sale attempts failed, and it filed for bankruptcy on September 15th, 2008. And D? It was Goldman Sachs and Morgan Stanley that became bank holding companies, not Citigroup."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. The crisis peaked in the fall of 2008. Fannie and Freddie were nationalized, and Lehman failed. And LTCM belongs to 1998, a completely different crisis. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["Fannie Mae", "Freddie Mac", "nationalized", "Lehman Brothers", "bankruptcy", "LTCM", "1998", "fall of 2008", "risk hub"]
+}
