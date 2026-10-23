@@ -1,0 +1,143 @@
+{
+  "id": "q035",
+  "number": 35,
+  "source": "GARP Mock 2023 · Part 2 · Q22",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 10,
+  "chapter": "Chapter 10. Anatomy of the Great Financial Crisis",
+  "audio": "audio/q035-take1.mp3",
+  "voice": {
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
+    "model": "eleven_v4"
+  },
+  "host": true,
+  "cover_at": [
+    "FRM Part 1,",
+    "Book 1,",
+    "Chapter 10,",
+    "a practice question."
+  ],
+  "stem": "A junior risk analyst is asked to summarize the developments leading up to the financial crisis of 2007–2009. As part of the summary, the analyst researches the role of subprime mortgages as a contributing factor to the crisis. Which of the following correctly describes a role or impact of these mortgages in the years leading up to the crisis?",
+  "stem_short": "Which describes the role of subprime mortgages?",
+  "stem_highlights": [
+    {
+      "text": "role of subprime mortgages",
+      "at": "role of subprime mortgages"
+    },
+    {
+      "text": "years leading up to the crisis",
+      "at": "years before the crisis"
+    }
+  ],
+  "options": {
+    "A": "Strict documentation requirements for new borrowers caused a real estate liquidity crisis due to a lack of qualified borrowers.",
+    "B": "Initial loan-to-value ratios steadily decreased for new subprime borrowers in the years leading up to the crisis.",
+    "C": "Most mortgage brokers were paid on the performance of the subprime loans they originated and had to repay large commissions.",
+    "D": "Rates on many subprime mortgages rose sharply after a short low-rate period, forcing some borrowers to default."
+  },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "The teaser-rate trap",
+    "high": {
+      "label": "PAYMENT SHOCK",
+      "text": "Low teaser rate, then a big jump after 2–3 years",
+      "at": "Many subprime mortgages",
+      "meter": null
+    },
+    "low": {
+      "label": "WHY BORROWERS DEFAULTED",
+      "chips": [
+        {
+          "text": "Easy loans, little documentation",
+          "at": "Borrowers got them easily"
+        },
+        {
+          "text": "Plan: refinance or sell in time",
+          "at": "refinance or sell"
+        },
+        {
+          "text": "Prices fell → stuck with big payments",
+          "at": "housing market weakened"
+        }
+      ],
+      "at": "Borrowers got them easily",
+      "meter": null
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "Documentation was lax — NINJA loans were common.",
+      "at": "A is wrong."
+    },
+    "B": {
+      "reason": "Loan-to-value ratios rose — many paid zero down.",
+      "at": "B is wrong too."
+    },
+    "C": {
+      "reason": "Brokers were paid on volume, not performance.",
+      "at": "And C?"
+    }
+  },
+  "takeaway": [
+    {
+      "text": "Teaser rates reset into payment shock",
+      "at": "Teaser rates reset"
+    },
+    {
+      "text": "Lax documentation, rising LTVs",
+      "at": "Lending standards"
+    },
+    {
+      "text": "Brokers paid on volume",
+      "at": "And brokers were paid"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 10, Anatomy of the Great Financial Crisis. Let's do a practice question."
+    },
+    {
+      "id": "question",
+      "text": "So, a junior risk analyst is summarizing what led up to the 2007 to 2009 financial crisis, and researching the role of subprime mortgages. Which statement correctly describes their role in the years before the crisis?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. Strict documentation requirements created a real estate liquidity crisis, because there weren't enough qualified borrowers. Option B. Initial loan-to-value ratios steadily decreased for new subprime borrowers. Option C. Most mortgage brokers were paid based on loan performance, and had to pay back large commissions. And option D. Rates on many subprime mortgages jumped after a short low-rate period, forcing some borrowers to default."
+    },
+    {
+      "id": "pause",
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
+    },
+    {
+      "id": "answer",
+      "text": "[excited] And the answer is... D! [warmly] Here's why. Many subprime mortgages were adjustable-rate loans with a very low teaser rate that jumped sharply after two or three years. Borrowers got them easily, often with no income or job documentation. That was fine if they could refinance or sell before the reset. But as the housing market weakened, many got stuck with payments they couldn't afford, and defaulted."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why not the others? A is wrong. Documentation was lax, not strict. So-called NINJA loans, no income, no job, no assets, were common. B is wrong too. Loan-to-value ratios rose. Down payment rules relaxed, and many first-time buyers paid zero down. And C? Brokers were paid on the volume of loans, not their performance. So they faced few consequences when loans failed."
+    },
+    {
+      "id": "takeaway",
+      "text": "[warmly] So, the key takeaway. Teaser rates reset into payment shock. Lending standards were loose, and loan-to-value ratios climbed. And brokers were paid on volume, not quality. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
+    }
+  ],
+  "caption_keywords": [
+    "teaser rate",
+    "default",
+    "NINJA",
+    "loan-to-value",
+    "zero down",
+    "volume",
+    "refinance",
+    "risk hub"
+  ]
+}
