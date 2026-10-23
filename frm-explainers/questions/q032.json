@@ -1,0 +1,56 @@
+{
+  "id": "q032",
+  "number": 32,
+  "source": "GARP Mock 2023 · Part 1 · Q24",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 9,
+  "chapter": "Chapter 9. Learning from Financial Disasters",
+  "audio": "audio/q032-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 9,", "a practice question."],
+  "stem": "A risk consultant is presenting to a group of junior risk managers on how risk management failures contributed to financial disasters. The consultant focuses on the lessons learned from examining historical financial disasters in the US and around the world. Which of the following correctly describes a lesson learned from the given case?",
+  "stem_short": "Which case is matched with the right lesson?",
+  "stem_highlights": [
+    {"text": "historical financial disasters", "at": "historical financial disasters"},
+    {"text": "lesson learned from the given case", "at": "correctly matches"}
+  ],
+  "options": {
+    "A": "The Orange County case emphasizes the importance of fully understanding complex derivative contracts before entering into them.",
+    "B": "The London Whale case emphasizes the importance of recognizing that correlations can increase sharply during a global financial crisis.",
+    "C": "The Northern Rock case emphasizes the importance of having a strong cybersecurity framework.",
+    "D": "The LTCM case emphasizes the importance of meeting regulatory capital requirements."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Orange County: know what you hold",
+    "high": {"label": "THE LESSON", "text": "Understand complex derivatives before you enter them", "at": "Orange County's treasurer", "meter": null},
+    "low": {"label": "WHAT HAPPENED", "chips": [
+      {"text": "Big bet on inverse floaters", "at": "inverse floating"},
+      {"text": "Rates rose → blow-up", "at": "When interest rates rose"},
+      {"text": "Citron didn't understand it", "at": "admitted"}
+    ], "at": "inverse floating", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "London Whale (2012) was about governance and limits, not crisis correlations.", "at": "B is wrong."},
+    "C": {"reason": "Northern Rock was a bank run on repo funding — cyber was SWIFT.", "at": "C is wrong too."},
+    "D": {"reason": "LTCM was correlations and stress testing; hedge funds had no capital rules.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Orange County: understand derivatives", "at": "Orange County teaches"},
+    {"text": "Northern Rock: funding liquidity", "at": "Northern Rock teaches"},
+    {"text": "London Whale: governance and limits", "at": "And the London Whale"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 9, Learning from Financial Disasters. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk consultant is teaching junior risk managers how risk management failures led to historical financial disasters. Which statement correctly matches a case with its lesson?"},
+    {"id": "options", "text": "Option A. Orange County shows the importance of fully understanding complex derivatives before entering into them. Option B. The London Whale shows that correlations can jump sharply during a global financial crisis. Option C. Northern Rock shows the importance of a strong cybersecurity framework. And option D. LTCM shows the importance of meeting regulatory capital requirements."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. Orange County's treasurer, Robert Citron, made a huge bet using inverse floating rate instruments that the county's board didn't fully understand. When interest rates rose, it blew up. Citron later admitted he didn't understand the position or its risk himself."},
+    {"id": "wrong", "text": "Now, why not the others? B is wrong. The London Whale happened in 2012, after the crisis. Its lessons were about governance, position limits, and VaR models. C is wrong too. Cybersecurity was the SWIFT case. Northern Rock was a bank run, driven by reliance on repo funding that dried up. And D? LTCM was about bad correlation modeling and weak stress testing. As a hedge fund, it wasn't even subject to capital requirements."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Orange County teaches you to understand complex derivatives before using them. Northern Rock teaches funding liquidity risk. And the London Whale teaches governance and risk limits. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["Orange County", "London Whale", "Northern Rock", "LTCM", "SWIFT", "derivatives", "repo", "governance", "risk hub"]
+}
