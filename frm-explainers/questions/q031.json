@@ -1,0 +1,56 @@
+{
+  "id": "q031",
+  "number": 31,
+  "source": "GARP Mock 2019 · Part 2 · Q96",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 9,
+  "chapter": "Chapter 9. Learning from Financial Disasters",
+  "audio": "audio/q031-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 9,", "a practice question."],
+  "stem": "A risk manager is researching why a firm experiences loss. The risk manager compiles a list of failures that should be attributed to other factors than risk management failure. Which of the following is correct for the risk manager to include on the list?",
+  "stem_short": "Which failure is NOT a risk management failure?",
+  "stem_highlights": [
+    {"text": "other factors than risk management failure", "at": "something other than"},
+    {"text": "include on the list", "at": "belongs on that list"}
+  ],
+  "options": {
+    "A": "Failure to use appropriate risk metrics",
+    "B": "Failure to minimize losses on credit portfolios",
+    "C": "Failure to communicate risk issues to top management",
+    "D": "Failure to correctly measure known risks"
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "Losses ≠ risk management failure",
+    "high": {"label": "THE KEY IDEA", "text": "Risk management isn't about avoiding all losses", "at": "isn't about avoiding", "meter": null},
+    "low": {"label": "CREDIT LOSSES CAN HAPPEN WHEN", "chips": [
+      {"text": "Rewards judged worth the risk", "at": "worth the risk"},
+      {"text": "Management ignored the advice", "at": "may have ignored"},
+      {"text": "Bad luck on a sound bet", "at": "a sound decision"}
+    ], "at": "worth the risk", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Wrong risk metrics is a classic risk management failure.", "at": "A is"},
+    "C": {"reason": "Not escalating risks to top management is a failure.", "at": "C,"},
+    "D": {"reason": "Mismeasuring known risks is a failure too.", "at": "And D,"}
+  },
+  "takeaway": [
+    {"text": "A loss isn't automatically a failure", "at": "A loss on its own"},
+    {"text": "Taking known, rewarded risk is fine", "at": "Taking known risks"},
+    {"text": "Failures: metrics, measuring, communicating", "at": "Real failures are"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 9, Learning from Financial Disasters. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk manager is researching why a firm loses money. They're listing failures that should be blamed on something other than risk management. Which of these belongs on that list?"},
+    {"id": "options", "text": "Option A. Failure to use appropriate risk metrics. Option B. Failure to minimize losses on credit portfolios. Option C. Failure to communicate risk issues to top management. And option D. Failure to correctly measure known risks."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... B! [warmly] Here's why. Risk management isn't about avoiding every loss. A firm can manage credit risk prudently and decide the rewards are worth the risk. Or management may have ignored its risk managers' advice. Either way, a credit loss can follow a sound decision. So it isn't necessarily a risk management failure."},
+    {"id": "wrong", "text": "Now, why not the others? A is a classic risk management failure. Using the wrong risk metrics means you can't see the risks you're taking. C, failing to communicate risks to top management, is a failure too. Leaders can't act on what they never hear. And D, mismeasuring known risks, is another core risk management failure."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. A loss on its own doesn't mean risk management failed. Taking known risks that are well rewarded is the job. Real failures are wrong metrics, mismeasured risks, and poor communication. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["risk management failure", "credit", "rewards", "risk metrics", "top management", "mismeasuring", "risk hub"]
+}

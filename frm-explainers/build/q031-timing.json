@@ -1,0 +1,1628 @@
+{
+ "duration": 105.718,
+ "speech_start": 0.08,
+ "speech_end": 105.76,
+ "sections": [
+  {
+   "id": "intro",
+   "s": 0.08,
+   "e": 12.4
+  },
+  {
+   "id": "question",
+   "s": 12.52,
+   "e": 23.28
+  },
+  {
+   "id": "options",
+   "s": 23.36,
+   "e": 40.24
+  },
+  {
+   "id": "pause",
+   "s": 40.72,
+   "e": 43.52
+  },
+  {
+   "id": "answer",
+   "s": 45.253,
+   "e": 66.88
+  },
+  {
+   "id": "wrong",
+   "s": 67.0,
+   "e": 87.12
+  },
+  {
+   "id": "takeaway",
+   "s": 87.2,
+   "e": 105.76
+  }
+ ],
+ "words": [
+  {
+   "w": "Hey,",
+   "sec": "intro",
+   "s": 0.08,
+   "e": 0.64
+  },
+  {
+   "w": "welcome",
+   "sec": "intro",
+   "s": 0.8,
+   "e": 0.96
+  },
+  {
+   "w": "back",
+   "sec": "intro",
+   "s": 1.04,
+   "e": 1.2
+  },
+  {
+   "w": "to",
+   "sec": "intro",
+   "s": 1.28,
+   "e": 1.36
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 1.48,
+   "e": 1.6
+  },
+  {
+   "w": "Hub!",
+   "sec": "intro",
+   "s": 1.68,
+   "e": 2.32
+  },
+  {
+   "w": "FRM",
+   "sec": "intro",
+   "s": 2.4,
+   "e": 2.96
+  },
+  {
+   "w": "Part",
+   "sec": "intro",
+   "s": 3.12,
+   "e": 3.28
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 3.44,
+   "e": 3.92
+  },
+  {
+   "w": "Book",
+   "sec": "intro",
+   "s": 4.04,
+   "e": 4.16
+  },
+  {
+   "w": "1,",
+   "sec": "intro",
+   "s": 4.24,
+   "e": 4.64
+  },
+  {
+   "w": "Foundations",
+   "sec": "intro",
+   "s": 4.72,
+   "e": 5.36
+  },
+  {
+   "w": "of",
+   "sec": "intro",
+   "s": 5.44,
+   "e": 5.6
+  },
+  {
+   "w": "Risk",
+   "sec": "intro",
+   "s": 5.68,
+   "e": 5.92
+  },
+  {
+   "w": "Management.",
+   "sec": "intro",
+   "s": 6.0,
+   "e": 6.96
+  },
+  {
+   "w": "Chapter",
+   "sec": "intro",
+   "s": 7.12,
+   "e": 7.28
+  },
+  {
+   "w": "9,",
+   "sec": "intro",
+   "s": 7.36,
+   "e": 8.0
+  },
+  {
+   "w": "Learning",
+   "sec": "intro",
+   "s": 8.16,
+   "e": 8.48
+  },
+  {
+   "w": "from",
+   "sec": "intro",
+   "s": 8.56,
+   "e": 8.64
+  },
+  {
+   "w": "Financial",
+   "sec": "intro",
+   "s": 8.8,
+   "e": 9.28
+  },
+  {
+   "w": "Disasters.",
+   "sec": "intro",
+   "s": 9.36,
+   "e": 10.56
+  },
+  {
+   "w": "Let's",
+   "sec": "intro",
+   "s": 10.64,
+   "e": 10.8
+  },
+  {
+   "w": "do",
+   "sec": "intro",
+   "s": 10.84,
+   "e": 10.88
+  },
+  {
+   "w": "a",
+   "sec": "intro",
+   "s": 10.92,
+   "e": 10.96
+  },
+  {
+   "w": "practice",
+   "sec": "intro",
+   "s": 11.04,
+   "e": 11.36
+  },
+  {
+   "w": "question.",
+   "sec": "intro",
+   "s": 11.44,
+   "e": 12.4
+  },
+  {
+   "w": "So,",
+   "sec": "question",
+   "s": 12.52,
+   "e": 12.96
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 13.0,
+   "e": 13.04
+  },
+  {
+   "w": "risk",
+   "sec": "question",
+   "s": 13.12,
+   "e": 13.36
+  },
+  {
+   "w": "manager",
+   "sec": "question",
+   "s": 13.6,
+   "e": 13.84
+  },
+  {
+   "w": "is",
+   "sec": "question",
+   "s": 13.92,
+   "e": 14.08
+  },
+  {
+   "w": "researching",
+   "sec": "question",
+   "s": 14.28,
+   "e": 14.64
+  },
+  {
+   "w": "why",
+   "sec": "question",
+   "s": 14.72,
+   "e": 14.88
+  },
+  {
+   "w": "a",
+   "sec": "question",
+   "s": 14.96,
+   "e": 15.12
+  },
+  {
+   "w": "firm",
+   "sec": "question",
+   "s": 15.24,
+   "e": 15.36
+  },
+  {
+   "w": "loses",
+   "sec": "question",
+   "s": 15.44,
+   "e": 15.76
+  },
+  {
+   "w": "money.",
+   "sec": "question",
+   "s": 15.84,
+   "e": 16.56
+  },
+  {
+   "w": "They're",
+   "sec": "question",
+   "s": 16.6,
+   "e": 16.72
+  },
+  {
+   "w": "listing",
+   "sec": "question",
+   "s": 16.92,
+   "e": 17.12
+  },
+  {
+   "w": "failures",
+   "sec": "question",
+   "s": 17.24,
+   "e": 17.6
+  },
+  {
+   "w": "that",
+   "sec": "question",
+   "s": 17.68,
+   "e": 17.76
+  },
+  {
+   "w": "should",
+   "sec": "question",
+   "s": 17.84,
+   "e": 18.0
+  },
+  {
+   "w": "be",
+   "sec": "question",
+   "s": 18.08,
+   "e": 18.16
+  },
+  {
+   "w": "blamed",
+   "sec": "question",
+   "s": 18.2,
+   "e": 18.48
+  },
+  {
+   "w": "on",
+   "sec": "question",
+   "s": 18.56,
+   "e": 18.64
+  },
+  {
+   "w": "something",
+   "sec": "question",
+   "s": 18.88,
+   "e": 19.12
+  },
+  {
+   "w": "other",
+   "sec": "question",
+   "s": 19.2,
+   "e": 19.44
+  },
+  {
+   "w": "than",
+   "sec": "question",
+   "s": 19.52,
+   "e": 19.6
+  },
+  {
+   "w": "risk",
+   "sec": "question",
+   "s": 19.72,
+   "e": 19.84
+  },
+  {
+   "w": "management.",
+   "sec": "question",
+   "s": 19.92,
+   "e": 20.88
+  },
+  {
+   "w": "Which",
+   "sec": "question",
+   "s": 20.96,
+   "e": 21.04
+  },
+  {
+   "w": "of",
+   "sec": "question",
+   "s": 21.12,
+   "e": 21.2
+  },
+  {
+   "w": "these",
+   "sec": "question",
+   "s": 21.28,
+   "e": 21.52
+  },
+  {
+   "w": "belongs",
+   "sec": "question",
+   "s": 21.6,
+   "e": 22.0
+  },
+  {
+   "w": "on",
+   "sec": "question",
+   "s": 22.08,
+   "e": 22.16
+  },
+  {
+   "w": "that",
+   "sec": "question",
+   "s": 22.24,
+   "e": 22.32
+  },
+  {
+   "w": "list?",
+   "sec": "question",
+   "s": 22.4,
+   "e": 23.28
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 23.36,
+   "e": 23.68
+  },
+  {
+   "w": "A.",
+   "sec": "options",
+   "s": 23.76,
+   "e": 24.4
+  },
+  {
+   "w": "Failure",
+   "sec": "options",
+   "s": 24.48,
+   "e": 24.88
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 24.96,
+   "e": 25.04
+  },
+  {
+   "w": "use",
+   "sec": "options",
+   "s": 25.2,
+   "e": 25.36
+  },
+  {
+   "w": "appropriate",
+   "sec": "options",
+   "s": 25.44,
+   "e": 26.0
+  },
+  {
+   "w": "risk",
+   "sec": "options",
+   "s": 26.08,
+   "e": 26.32
+  },
+  {
+   "w": "metrics.",
+   "sec": "options",
+   "s": 26.4,
+   "e": 27.36
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 27.52,
+   "e": 27.68
+  },
+  {
+   "w": "B.",
+   "sec": "options",
+   "s": 27.84,
+   "e": 28.32
+  },
+  {
+   "w": "Failure",
+   "sec": "options",
+   "s": 28.56,
+   "e": 28.88
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 29.04,
+   "e": 29.12
+  },
+  {
+   "w": "minimize",
+   "sec": "options",
+   "s": 29.2,
+   "e": 29.6
+  },
+  {
+   "w": "losses",
+   "sec": "options",
+   "s": 29.68,
+   "e": 30.08
+  },
+  {
+   "w": "on",
+   "sec": "options",
+   "s": 30.16,
+   "e": 30.24
+  },
+  {
+   "w": "credit",
+   "sec": "options",
+   "s": 30.32,
+   "e": 30.56
+  },
+  {
+   "w": "portfolios.",
+   "sec": "options",
+   "s": 30.64,
+   "e": 31.84
+  },
+  {
+   "w": "Option",
+   "sec": "options",
+   "s": 32.0,
+   "e": 32.16
+  },
+  {
+   "w": "C.",
+   "sec": "options",
+   "s": 32.32,
+   "e": 32.8
+  },
+  {
+   "w": "Failure",
+   "sec": "options",
+   "s": 33.04,
+   "e": 33.36
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 33.52,
+   "e": 33.56
+  },
+  {
+   "w": "communicate",
+   "sec": "options",
+   "s": 33.6,
+   "e": 34.16
+  },
+  {
+   "w": "risk",
+   "sec": "options",
+   "s": 34.24,
+   "e": 34.48
+  },
+  {
+   "w": "issues",
+   "sec": "options",
+   "s": 34.56,
+   "e": 34.88
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 34.92,
+   "e": 34.96
+  },
+  {
+   "w": "top",
+   "sec": "options",
+   "s": 35.04,
+   "e": 35.28
+  },
+  {
+   "w": "management.",
+   "sec": "options",
+   "s": 35.36,
+   "e": 36.32
+  },
+  {
+   "w": "And",
+   "sec": "options",
+   "s": 36.44,
+   "e": 36.56
+  },
+  {
+   "w": "option",
+   "sec": "options",
+   "s": 36.72,
+   "e": 37.04
+  },
+  {
+   "w": "D.",
+   "sec": "options",
+   "s": 37.12,
+   "e": 37.44
+  },
+  {
+   "w": "Failure",
+   "sec": "options",
+   "s": 37.84,
+   "e": 38.16
+  },
+  {
+   "w": "to",
+   "sec": "options",
+   "s": 38.32,
+   "e": 38.36
+  },
+  {
+   "w": "correctly",
+   "sec": "options",
+   "s": 38.4,
+   "e": 38.88
+  },
+  {
+   "w": "measure",
+   "sec": "options",
+   "s": 38.96,
+   "e": 39.28
+  },
+  {
+   "w": "known",
+   "sec": "options",
+   "s": 39.44,
+   "e": 39.68
+  },
+  {
+   "w": "risks.",
+   "sec": "options",
+   "s": 39.76,
+   "e": 40.24
+  },
+  {
+   "w": "Okay,",
+   "sec": "pause",
+   "s": 40.72,
+   "e": 41.28
+  },
+  {
+   "w": "pause",
+   "sec": "pause",
+   "s": 41.36,
+   "e": 41.52
+  },
+  {
+   "w": "the",
+   "sec": "pause",
+   "s": 41.6,
+   "e": 41.64
+  },
+  {
+   "w": "video",
+   "sec": "pause",
+   "s": 41.68,
+   "e": 42.0
+  },
+  {
+   "w": "and",
+   "sec": "pause",
+   "s": 42.08,
+   "e": 42.24
+  },
+  {
+   "w": "lock",
+   "sec": "pause",
+   "s": 42.32,
+   "e": 42.56
+  },
+  {
+   "w": "in",
+   "sec": "pause",
+   "s": 42.6,
+   "e": 42.64
+  },
+  {
+   "w": "your",
+   "sec": "pause",
+   "s": 42.72,
+   "e": 42.8
+  },
+  {
+   "w": "answer.",
+   "sec": "pause",
+   "s": 42.88,
+   "e": 43.52
+  },
+  {
+   "w": "And",
+   "sec": "answer",
+   "s": 45.253,
+   "e": 45.28
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 45.32,
+   "e": 45.36
+  },
+  {
+   "w": "answer",
+   "sec": "answer",
+   "s": 45.44,
+   "e": 45.68
+  },
+  {
+   "w": "is...",
+   "sec": "answer",
+   "s": 45.84,
+   "e": 46.64
+  },
+  {
+   "w": "B!",
+   "sec": "answer",
+   "s": 46.88,
+   "e": 47.2
+  },
+  {
+   "w": "Here's",
+   "sec": "answer",
+   "s": 47.733,
+   "e": 47.84
+  },
+  {
+   "w": "why.",
+   "sec": "answer",
+   "s": 47.92,
+   "e": 48.24
+  },
+  {
+   "w": "Risk",
+   "sec": "answer",
+   "s": 48.72,
+   "e": 48.96
+  },
+  {
+   "w": "management",
+   "sec": "answer",
+   "s": 49.04,
+   "e": 49.44
+  },
+  {
+   "w": "isn't",
+   "sec": "answer",
+   "s": 49.6,
+   "e": 49.76
+  },
+  {
+   "w": "about",
+   "sec": "answer",
+   "s": 49.84,
+   "e": 50.08
+  },
+  {
+   "w": "avoiding",
+   "sec": "answer",
+   "s": 50.16,
+   "e": 50.64
+  },
+  {
+   "w": "every",
+   "sec": "answer",
+   "s": 50.8,
+   "e": 51.12
+  },
+  {
+   "w": "loss.",
+   "sec": "answer",
+   "s": 51.2,
+   "e": 51.68
+  },
+  {
+   "w": "A",
+   "sec": "answer",
+   "s": 52.0,
+   "e": 52.08
+  },
+  {
+   "w": "firm",
+   "sec": "answer",
+   "s": 52.16,
+   "e": 52.4
+  },
+  {
+   "w": "can",
+   "sec": "answer",
+   "s": 52.48,
+   "e": 52.56
+  },
+  {
+   "w": "manage",
+   "sec": "answer",
+   "s": 52.64,
+   "e": 52.88
+  },
+  {
+   "w": "credit",
+   "sec": "answer",
+   "s": 52.96,
+   "e": 53.2
+  },
+  {
+   "w": "risk",
+   "sec": "answer",
+   "s": 53.28,
+   "e": 53.52
+  },
+  {
+   "w": "prudently",
+   "sec": "answer",
+   "s": 53.6,
+   "e": 54.08
+  },
+  {
+   "w": "and",
+   "sec": "answer",
+   "s": 54.24,
+   "e": 54.32
+  },
+  {
+   "w": "decide",
+   "sec": "answer",
+   "s": 54.44,
+   "e": 54.72
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 54.8,
+   "e": 54.84
+  },
+  {
+   "w": "rewards",
+   "sec": "answer",
+   "s": 54.88,
+   "e": 55.36
+  },
+  {
+   "w": "are",
+   "sec": "answer",
+   "s": 55.44,
+   "e": 55.52
+  },
+  {
+   "w": "worth",
+   "sec": "answer",
+   "s": 55.6,
+   "e": 55.84
+  },
+  {
+   "w": "the",
+   "sec": "answer",
+   "s": 55.88,
+   "e": 55.92
+  },
+  {
+   "w": "risk.",
+   "sec": "answer",
+   "s": 56.0,
+   "e": 56.6
+  },
+  {
+   "w": "Or",
+   "sec": "answer",
+   "s": 56.8,
+   "e": 57.04
+  },
+  {
+   "w": "management",
+   "sec": "answer",
+   "s": 57.28,
+   "e": 57.68
+  },
+  {
+   "w": "may",
+   "sec": "answer",
+   "s": 57.76,
+   "e": 57.84
+  },
+  {
+   "w": "have",
+   "sec": "answer",
+   "s": 57.92,
+   "e": 58.0
+  },
+  {
+   "w": "ignored",
+   "sec": "answer",
+   "s": 58.2,
+   "e": 58.4
+  },
+  {
+   "w": "its",
+   "sec": "answer",
+   "s": 58.48,
+   "e": 58.56
+  },
+  {
+   "w": "risk",
+   "sec": "answer",
+   "s": 58.68,
+   "e": 58.8
+  },
+  {
+   "w": "managers'",
+   "sec": "answer",
+   "s": 58.88,
+   "e": 59.253
+  },
+  {
+   "w": "advice.",
+   "sec": "answer",
+   "s": 59.307,
+   "e": 60.0
+  },
+  {
+   "w": "Either",
+   "sec": "answer",
+   "s": 60.24,
+   "e": 60.4
+  },
+  {
+   "w": "way,",
+   "sec": "answer",
+   "s": 60.48,
+   "e": 60.88
+  },
+  {
+   "w": "a",
+   "sec": "answer",
+   "s": 60.92,
+   "e": 60.96
+  },
+  {
+   "w": "credit",
+   "sec": "answer",
+   "s": 61.04,
+   "e": 61.28
+  },
+  {
+   "w": "loss",
+   "sec": "answer",
+   "s": 61.36,
+   "e": 61.6
+  },
+  {
+   "w": "can",
+   "sec": "answer",
+   "s": 61.72,
+   "e": 61.84
+  },
+  {
+   "w": "follow",
+   "sec": "answer",
+   "s": 61.92,
+   "e": 62.16
+  },
+  {
+   "w": "a",
+   "sec": "answer",
+   "s": 62.24,
+   "e": 62.4
+  },
+  {
+   "w": "sound",
+   "sec": "answer",
+   "s": 62.48,
+   "e": 62.72
+  },
+  {
+   "w": "decision.",
+   "sec": "answer",
+   "s": 63.0,
+   "e": 63.6
+  },
+  {
+   "w": "So",
+   "sec": "answer",
+   "s": 63.72,
+   "e": 63.84
+  },
+  {
+   "w": "it",
+   "sec": "answer",
+   "s": 63.92,
+   "e": 64.0
+  },
+  {
+   "w": "isn't",
+   "sec": "answer",
+   "s": 64.08,
+   "e": 64.32
+  },
+  {
+   "w": "necessarily",
+   "sec": "answer",
+   "s": 64.4,
+   "e": 65.12
+  },
+  {
+   "w": "a",
+   "sec": "answer",
+   "s": 65.16,
+   "e": 65.2
+  },
+  {
+   "w": "risk",
+   "sec": "answer",
+   "s": 65.28,
+   "e": 65.52
+  },
+  {
+   "w": "management",
+   "sec": "answer",
+   "s": 65.6,
+   "e": 65.92
+  },
+  {
+   "w": "failure.",
+   "sec": "answer",
+   "s": 66.08,
+   "e": 66.88
+  },
+  {
+   "w": "Now,",
+   "sec": "wrong",
+   "s": 67.0,
+   "e": 67.36
+  },
+  {
+   "w": "why",
+   "sec": "wrong",
+   "s": 67.44,
+   "e": 67.6
+  },
+  {
+   "w": "not",
+   "sec": "wrong",
+   "s": 67.68,
+   "e": 67.76
+  },
+  {
+   "w": "the",
+   "sec": "wrong",
+   "s": 67.8,
+   "e": 67.84
+  },
+  {
+   "w": "others?",
+   "sec": "wrong",
+   "s": 67.92,
+   "e": 68.72
+  },
+  {
+   "w": "A",
+   "sec": "wrong",
+   "s": 68.88,
+   "e": 69.04
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 69.12,
+   "e": 69.2
+  },
+  {
+   "w": "a",
+   "sec": "wrong",
+   "s": 69.28,
+   "e": 69.36
+  },
+  {
+   "w": "classic",
+   "sec": "wrong",
+   "s": 69.44,
+   "e": 69.92
+  },
+  {
+   "w": "risk",
+   "sec": "wrong",
+   "s": 70.0,
+   "e": 70.16
+  },
+  {
+   "w": "management",
+   "sec": "wrong",
+   "s": 70.24,
+   "e": 70.64
+  },
+  {
+   "w": "failure.",
+   "sec": "wrong",
+   "s": 70.72,
+   "e": 71.44
+  },
+  {
+   "w": "Using",
+   "sec": "wrong",
+   "s": 71.52,
+   "e": 71.76
+  },
+  {
+   "w": "the",
+   "sec": "wrong",
+   "s": 71.84,
+   "e": 71.92
+  },
+  {
+   "w": "wrong",
+   "sec": "wrong",
+   "s": 72.04,
+   "e": 72.16
+  },
+  {
+   "w": "risk",
+   "sec": "wrong",
+   "s": 72.24,
+   "e": 72.48
+  },
+  {
+   "w": "metrics",
+   "sec": "wrong",
+   "s": 72.56,
+   "e": 72.96
+  },
+  {
+   "w": "means",
+   "sec": "wrong",
+   "s": 73.04,
+   "e": 73.2
+  },
+  {
+   "w": "you",
+   "sec": "wrong",
+   "s": 73.28,
+   "e": 73.36
+  },
+  {
+   "w": "can't",
+   "sec": "wrong",
+   "s": 73.44,
+   "e": 73.68
+  },
+  {
+   "w": "see",
+   "sec": "wrong",
+   "s": 73.76,
+   "e": 73.84
+  },
+  {
+   "w": "the",
+   "sec": "wrong",
+   "s": 73.92,
+   "e": 74.0
+  },
+  {
+   "w": "risks",
+   "sec": "wrong",
+   "s": 74.12,
+   "e": 74.32
+  },
+  {
+   "w": "you're",
+   "sec": "wrong",
+   "s": 74.36,
+   "e": 74.48
+  },
+  {
+   "w": "taking.",
+   "sec": "wrong",
+   "s": 74.68,
+   "e": 75.36
+  },
+  {
+   "w": "C,",
+   "sec": "wrong",
+   "s": 75.44,
+   "e": 76.0
+  },
+  {
+   "w": "failing",
+   "sec": "wrong",
+   "s": 76.08,
+   "e": 76.32
+  },
+  {
+   "w": "to",
+   "sec": "wrong",
+   "s": 76.4,
+   "e": 76.48
+  },
+  {
+   "w": "communicate",
+   "sec": "wrong",
+   "s": 76.68,
+   "e": 77.04
+  },
+  {
+   "w": "risks",
+   "sec": "wrong",
+   "s": 77.16,
+   "e": 77.36
+  },
+  {
+   "w": "to",
+   "sec": "wrong",
+   "s": 77.44,
+   "e": 77.52
+  },
+  {
+   "w": "top",
+   "sec": "wrong",
+   "s": 77.64,
+   "e": 77.76
+  },
+  {
+   "w": "management,",
+   "sec": "wrong",
+   "s": 78.0,
+   "e": 78.32
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 78.36,
+   "e": 78.4
+  },
+  {
+   "w": "a",
+   "sec": "wrong",
+   "s": 78.48,
+   "e": 78.56
+  },
+  {
+   "w": "failure",
+   "sec": "wrong",
+   "s": 78.76,
+   "e": 78.96
+  },
+  {
+   "w": "too.",
+   "sec": "wrong",
+   "s": 79.08,
+   "e": 79.6
+  },
+  {
+   "w": "Leaders",
+   "sec": "wrong",
+   "s": 79.68,
+   "e": 80.08
+  },
+  {
+   "w": "can't",
+   "sec": "wrong",
+   "s": 80.16,
+   "e": 80.4
+  },
+  {
+   "w": "act",
+   "sec": "wrong",
+   "s": 80.52,
+   "e": 80.64
+  },
+  {
+   "w": "on",
+   "sec": "wrong",
+   "s": 80.72,
+   "e": 80.8
+  },
+  {
+   "w": "what",
+   "sec": "wrong",
+   "s": 80.88,
+   "e": 80.96
+  },
+  {
+   "w": "they",
+   "sec": "wrong",
+   "s": 81.04,
+   "e": 81.12
+  },
+  {
+   "w": "never",
+   "sec": "wrong",
+   "s": 81.28,
+   "e": 81.44
+  },
+  {
+   "w": "hear.",
+   "sec": "wrong",
+   "s": 81.6,
+   "e": 82.16
+  },
+  {
+   "w": "And",
+   "sec": "wrong",
+   "s": 82.28,
+   "e": 82.4
+  },
+  {
+   "w": "D,",
+   "sec": "wrong",
+   "s": 82.48,
+   "e": 83.04
+  },
+  {
+   "w": "mismeasuring",
+   "sec": "wrong",
+   "s": 83.12,
+   "e": 83.76
+  },
+  {
+   "w": "known",
+   "sec": "wrong",
+   "s": 83.88,
+   "e": 84.0
+  },
+  {
+   "w": "risks,",
+   "sec": "wrong",
+   "s": 84.08,
+   "e": 84.587
+  },
+  {
+   "w": "is",
+   "sec": "wrong",
+   "s": 84.613,
+   "e": 84.64
+  },
+  {
+   "w": "another",
+   "sec": "wrong",
+   "s": 84.72,
+   "e": 85.2
+  },
+  {
+   "w": "core",
+   "sec": "wrong",
+   "s": 85.28,
+   "e": 85.52
+  },
+  {
+   "w": "risk",
+   "sec": "wrong",
+   "s": 85.6,
+   "e": 85.84
+  },
+  {
+   "w": "management",
+   "sec": "wrong",
+   "s": 86.04,
+   "e": 86.24
+  },
+  {
+   "w": "failure.",
+   "sec": "wrong",
+   "s": 86.32,
+   "e": 87.12
+  },
+  {
+   "w": "So,",
+   "sec": "takeaway",
+   "s": 87.2,
+   "e": 87.68
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 87.76,
+   "e": 87.84
+  },
+  {
+   "w": "key",
+   "sec": "takeaway",
+   "s": 87.92,
+   "e": 88.0
+  },
+  {
+   "w": "takeaway.",
+   "sec": "takeaway",
+   "s": 88.08,
+   "e": 89.04
+  },
+  {
+   "w": "A",
+   "sec": "takeaway",
+   "s": 89.08,
+   "e": 89.12
+  },
+  {
+   "w": "loss",
+   "sec": "takeaway",
+   "s": 89.2,
+   "e": 89.52
+  },
+  {
+   "w": "on",
+   "sec": "takeaway",
+   "s": 89.56,
+   "e": 89.6
+  },
+  {
+   "w": "its",
+   "sec": "takeaway",
+   "s": 89.68,
+   "e": 89.84
+  },
+  {
+   "w": "own",
+   "sec": "takeaway",
+   "s": 89.92,
+   "e": 90.16
+  },
+  {
+   "w": "doesn't",
+   "sec": "takeaway",
+   "s": 90.32,
+   "e": 90.64
+  },
+  {
+   "w": "mean",
+   "sec": "takeaway",
+   "s": 90.72,
+   "e": 90.88
+  },
+  {
+   "w": "risk",
+   "sec": "takeaway",
+   "s": 90.96,
+   "e": 91.2
+  },
+  {
+   "w": "management",
+   "sec": "takeaway",
+   "s": 91.28,
+   "e": 91.6
+  },
+  {
+   "w": "failed.",
+   "sec": "takeaway",
+   "s": 91.76,
+   "e": 92.48
+  },
+  {
+   "w": "Taking",
+   "sec": "takeaway",
+   "s": 92.68,
+   "e": 92.88
+  },
+  {
+   "w": "known",
+   "sec": "takeaway",
+   "s": 92.96,
+   "e": 93.2
+  },
+  {
+   "w": "risks",
+   "sec": "takeaway",
+   "s": 93.28,
+   "e": 93.6
+  },
+  {
+   "w": "that",
+   "sec": "takeaway",
+   "s": 93.68,
+   "e": 93.72
+  },
+  {
+   "w": "are",
+   "sec": "takeaway",
+   "s": 93.76,
+   "e": 93.92
+  },
+  {
+   "w": "well",
+   "sec": "takeaway",
+   "s": 94.0,
+   "e": 94.08
+  },
+  {
+   "w": "rewarded",
+   "sec": "takeaway",
+   "s": 94.16,
+   "e": 94.8
+  },
+  {
+   "w": "is",
+   "sec": "takeaway",
+   "s": 94.88,
+   "e": 94.96
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 95.0,
+   "e": 95.04
+  },
+  {
+   "w": "job.",
+   "sec": "takeaway",
+   "s": 95.2,
+   "e": 96.0
+  },
+  {
+   "w": "Real",
+   "sec": "takeaway",
+   "s": 96.08,
+   "e": 96.32
+  },
+  {
+   "w": "failures",
+   "sec": "takeaway",
+   "s": 96.4,
+   "e": 96.88
+  },
+  {
+   "w": "are",
+   "sec": "takeaway",
+   "s": 96.96,
+   "e": 97.12
+  },
+  {
+   "w": "wrong",
+   "sec": "takeaway",
+   "s": 97.24,
+   "e": 97.36
+  },
+  {
+   "w": "metrics,",
+   "sec": "takeaway",
+   "s": 97.44,
+   "e": 98.16
+  },
+  {
+   "w": "mismeasured",
+   "sec": "takeaway",
+   "s": 98.2,
+   "e": 98.72
+  },
+  {
+   "w": "risks,",
+   "sec": "takeaway",
+   "s": 98.84,
+   "e": 99.28
+  },
+  {
+   "w": "and",
+   "sec": "takeaway",
+   "s": 99.4,
+   "e": 99.52
+  },
+  {
+   "w": "poor",
+   "sec": "takeaway",
+   "s": 99.56,
+   "e": 99.76
+  },
+  {
+   "w": "communication.",
+   "sec": "takeaway",
+   "s": 100.12,
+   "e": 100.96
+  },
+  {
+   "w": "If",
+   "sec": "takeaway",
+   "s": 101.0,
+   "e": 101.04
+  },
+  {
+   "w": "this",
+   "sec": "takeaway",
+   "s": 101.12,
+   "e": 101.28
+  },
+  {
+   "w": "helped,",
+   "sec": "takeaway",
+   "s": 101.4,
+   "e": 101.84
+  },
+  {
+   "w": "follow",
+   "sec": "takeaway",
+   "s": 102.0,
+   "e": 102.16
+  },
+  {
+   "w": "Risk",
+   "sec": "takeaway",
+   "s": 102.24,
+   "e": 102.48
+  },
+  {
+   "w": "Hub",
+   "sec": "takeaway",
+   "s": 102.6,
+   "e": 102.72
+  },
+  {
+   "w": "for",
+   "sec": "takeaway",
+   "s": 102.84,
+   "e": 102.96
+  },
+  {
+   "w": "more",
+   "sec": "takeaway",
+   "s": 103.08,
+   "e": 103.2
+  },
+  {
+   "w": "FRM",
+   "sec": "takeaway",
+   "s": 103.36,
+   "e": 103.84
+  },
+  {
+   "w": "practice.",
+   "sec": "takeaway",
+   "s": 104.08,
+   "e": 104.64
+  },
+  {
+   "w": "See",
+   "sec": "takeaway",
+   "s": 104.72,
+   "e": 104.8
+  },
+  {
+   "w": "you",
+   "sec": "takeaway",
+   "s": 104.84,
+   "e": 104.88
+  },
+  {
+   "w": "in",
+   "sec": "takeaway",
+   "s": 104.92,
+   "e": 104.96
+  },
+  {
+   "w": "the",
+   "sec": "takeaway",
+   "s": 105.0,
+   "e": 105.04
+  },
+  {
+   "w": "next",
+   "sec": "takeaway",
+   "s": 105.16,
+   "e": 105.28
+  },
+  {
+   "w": "one!",
+   "sec": "takeaway",
+   "s": 105.36,
+   "e": 105.76
+  }
+ ]
+}
