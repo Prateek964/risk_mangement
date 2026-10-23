@@ -1,0 +1,56 @@
+{
+  "id": "q036",
+  "number": 36,
+  "source": "GARP Mock 2023 · Part 1 · Q42",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 10,
+  "chapter": "Chapter 10. Anatomy of the Great Financial Crisis",
+  "audio": "audio/q036-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 10,", "a practice question."],
+  "stem": "A risk analyst is studying the history of the subprime mortgage crisis that took place in the US between 2007 and 2009. The risk analyst finds that the delinquencies of subprime mortgages rose significantly after mid-2005. Which of the following was a contributing factor for the increase in delinquencies?",
+  "stem_short": "What drove subprime delinquencies up after mid-2005?",
+  "stem_highlights": [
+    {"text": "delinquencies of subprime mortgages rose significantly after mid-2005", "at": "rose sharply after"},
+    {"text": "contributing factor", "at": "contributed to"}
+  ],
+  "options": {
+    "A": "Mortgages became increasingly over-collateralized in 2005.",
+    "B": "Interest rates decreased significantly throughout 2005.",
+    "C": "Many first-time home buyers paid zero down payment in 2005.",
+    "D": "Housing prices began to rise sharply at the end of 2005."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "No down payment, no cushion",
+    "high": {"label": "THE 2005 FACT", "text": "43% of first-time buyers paid zero down", "at": "43 percent", "meter": null},
+    "low": {"label": "WHY IT MATTERED", "chips": [
+      {"text": "No equity cushion", "at": "no equity cushion"},
+      {"text": "Prices fall → loan > house", "at": "When prices fell"},
+      {"text": "Easier to walk away", "at": "walk away"}
+    ], "at": "no equity cushion", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Backward — loans became under-collateralized.", "at": "A is wrong."},
+    "B": {"reason": "Rates rose in 2005, pushing up ARM payments.", "at": "B is wrong too."},
+    "D": {"reason": "Prices fell sharply from 2006 — rising prices would have helped.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Zero down = no equity cushion", "at": "Zero down payments"},
+    {"text": "Rising rates reset ARM payments", "at": "Rising rates"},
+    {"text": "Falling prices broke the model", "at": "And falling house prices"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 10, Anatomy of the Great Financial Crisis. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk analyst studying the subprime mortgage crisis finds that subprime delinquencies rose sharply after mid-2005. Which of these contributed to that increase?"},
+    {"id": "options", "text": "Option A. Mortgages became increasingly over-collateralized in 2005. Option B. Interest rates fell significantly throughout 2005. Option C. Many first-time home buyers paid zero down payment in 2005. And option D. Housing prices began to rise sharply at the end of 2005."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... C! [warmly] Here's why. In 2005, 43 percent of first-time home buyers put zero down. That meant no equity cushion. When prices fell, many owed more than their homes were worth, and it became much easier to walk away from the loan."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. It's backward. Mortgages became under-collateralized, not over-collateralized. B is wrong too. Interest rates rose in 2005. That pushed up payments on adjustable-rate mortgages after the teaser period. And D? House prices started falling sharply in 2006. Rising prices would actually have helped subprime borrowers."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Zero down payments left borrowers with no equity cushion. Rising rates pushed adjustable payments higher. And falling house prices broke the whole model. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["zero down", "43 percent", "equity cushion", "under-collateralized", "rates rose", "falling", "delinquencies", "risk hub"]
+}
