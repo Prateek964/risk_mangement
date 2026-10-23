@@ -1,0 +1,56 @@
+{
+  "id": "q027",
+  "number": 27,
+  "source": "GARP Mock 2023 · Part 2 · Q47",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 7,
+  "chapter": "Chapter 7. Principles for Effective Data Aggregation and Risk Reporting",
+  "audio": "audio/q027-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 7,", "a practice question."],
+  "stem": "A senior risk manager at a US-based bank is working with the chief technology officer (CTO) on implementing a strong set of risk data aggregation and reporting practices that better comply with the Basel principles. The CTO asks about potential challenges given the bank’s current practices. Which observation about the bank’s current practices is most likely to pose a challenge in complying with the Basel principles for risk data aggregation and reporting?",
+  "stem_short": "Which current practice most likely poses a compliance challenge?",
+  "stem_highlights": [
+    {"text": "risk data aggregation and reporting practices", "at": "strengthen risk data"},
+    {"text": "most likely to pose a challenge", "at": "most likely to make"}
+  ],
+  "options": {
+    "A": "The bank has been aggregating its data on its risk exposures at the bank-wide level.",
+    "B": "The bank has been adjusting the frequency of its risk reports to keep pace with changes in financial market volatility.",
+    "C": "The bank has been expanding the use of artificial intelligence techniques to most of its data analysis processes.",
+    "D": "The bank has been including all risk types, including the Basel Pillar 1 and Pillar 2 risk types, in its risk reports."
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "AI raises the compliance bar",
+    "high": {"label": "BCBS 239 CHALLENGE", "text": "AI on large data sets makes risk data aggregation harder", "at": "The rapid growth of AI", "meter": null},
+    "low": {"label": "WHY", "chips": [
+      {"text": "Models hard to explain", "at": "AI models can be"},
+      {"text": "Data lineage hard to trace", "at": "their data lineage"},
+      {"text": "Accuracy harder to guarantee", "at": "harder to guarantee."}
+    ], "at": "AI models can be", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Bank-wide aggregation is a goal of the principles.", "at": "A is wrong."},
+    "B": {"reason": "Frequency should flex with risk type and stress.", "at": "B is wrong too."},
+    "D": {"reason": "All risk types, Pillar 1 and 2, belong in reports.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Heavy AI use makes BCBS 239 harder", "at": "Heavy use of AI"},
+    {"text": "Aggregate risk data bank-wide", "at": "Aggregate risk data at"},
+    {"text": "Complete reports, adaptive frequency", "at": "And keep reports complete"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 7, Principles for Effective Data Aggregation and Risk Reporting. Let's do a practice question."},
+    {"id": "question", "text": "So, a senior risk manager at a US bank is working with the chief technology officer to strengthen risk data aggregation and reporting, in line with the Basel principles. The CTO asks which of the bank's current practices could be a problem. Which observation is most likely to make compliance harder?"},
+    {"id": "options", "text": "Option A. The bank aggregates its risk exposure data at the bank-wide level. Option B. The bank adjusts how often it produces risk reports, to keep pace with market volatility. Option C. The bank is expanding artificial intelligence techniques to most of its data analysis. And option D. The bank includes all risk types, including Pillar 1 and Pillar 2 risks, in its risk reports."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... C! [warmly] Here's why. The rapid growth of AI on large data sets has made the risk data aggregation principles, known as BCBS 239, harder to comply with. AI models can be hard to explain, and their data lineage is hard to trace. So pushing AI into most of the bank's data analysis makes accurate, traceable risk data harder to guarantee."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. Aggregating data bank-wide, instead of by business unit, is exactly what the principles want. B is wrong too. Report frequency should match the risk type and purpose, and it can speed up in times of stress. And D? All risk types, including Pillar 1 and Pillar 2 risks, belong in the risk reports."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Heavy use of AI on big data makes BCBS 239 compliance harder. Aggregate risk data at the bank-wide level. And keep reports complete, with a frequency that adapts to conditions. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["artificial intelligence", "bank-wide", "BCBS 239", "data lineage", "risk type", "stress", "Pillar 1", "Pillar 2", "risk hub"]
+}
