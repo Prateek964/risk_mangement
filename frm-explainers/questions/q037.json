@@ -1,0 +1,56 @@
+{
+  "id": "q037",
+  "number": 37,
+  "source": "GARP Mock 2023 · Part 2 · Q36",
+  "book": "Book 1. Foundations of Risk Management",
+  "chapter_number": 11,
+  "chapter": "Chapter 11. GARP Code of Conduct",
+  "audio": "audio/q037-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 1,", "Chapter 11,", "a practice question."],
+  "stem": "A newly hired financial advisor at a wealth management firm is a certified FRM. The advisor is reviewing the new employee handbook, which describes responsibilities for the position, suggested approaches to use when dealing with clients, and a typical day as a financial advisor. Which of the following actions if taken by the advisor would be a violation of the GARP Code of Conduct?",
+  "stem_short": "Which action would violate the GARP Code of Conduct?",
+  "stem_highlights": [
+    {"text": "certified FRM", "at": "certified FRM"},
+    {"text": "violation of the GARP Code of Conduct", "at": "violate the GARP Code"}
+  ],
+  "options": {
+    "A": "Guaranteeing that clients will not take a loss on an investment",
+    "B": "Assuring clients that wealth managers will perform to the best of their abilities",
+    "C": "Promising clients that they will have access to annual performance reports",
+    "D": "Ensuring that clients’ risk preferences are taken into consideration when selecting investments for their portfolios"
+  },
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "A",
+  "answer_at": "A!",
+  "answer_points": {
+    "title": "Never overstate certainty",
+    "high": {"label": "THE RULE", "text": "Don't overstate the accuracy or certainty of results", "at": "The Code says", "meter": null},
+    "low": {"label": "WHY A FAILS", "chips": [
+      {"text": "Every investment carries risk", "at": "Every investment"},
+      {"text": "\"No loss\" is a promise you can't keep", "at": "can't keep"},
+      {"text": "Overstates certainty → violation", "at": "That's a violation"}
+    ], "at": "Every investment", "meter": null}
+  },
+  "wrong": {
+    "B": {"reason": "The Code encourages the highest level of professional skill.", "at": "B is fine."},
+    "C": {"reason": "Clear, appropriate client communication complies.", "at": "C is fine too."},
+    "D": {"reason": "Considering client needs gives suitable advice — required.", "at": "And D?"}
+  },
+  "takeaway": [
+    {"text": "Never guarantee results", "at": "Never guarantee"},
+    {"text": "Strive for top professional skill", "at": "Strive for"},
+    {"text": "Communicate clearly, advise suitably", "at": "And communicate clearly"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 1, Foundations of Risk Management. Chapter 11, the GARP Code of Conduct. Let's do a practice question."},
+    {"id": "question", "text": "So, a newly hired financial advisor at a wealth management firm is a certified FRM. They're reading the employee handbook on how to work with clients. Which of these actions would violate the GARP Code of Conduct?"},
+    {"id": "options", "text": "Option A. Guaranteeing that clients won't take a loss on an investment. Option B. Assuring clients that wealth managers will perform to the best of their abilities. Option C. Promising clients access to annual performance reports. And option D. Making sure clients' risk preferences are considered when selecting investments."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... A! [warmly] Here's why. The Code says GARP members must not overstate the accuracy or certainty of results. Every investment carries risk. Promising a client they won't lose money is a promise you can't keep. That's a violation."},
+    {"id": "wrong", "text": "Now, why not the others? B is fine. The Code actually asks members to operate at the highest level of professional skill. C is fine too. Clear, appropriate communication with clients, like annual reports, complies with the Code. And D? Understanding client needs and giving suitable advice is exactly what the Code requires."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Never guarantee results or overstate certainty. Strive for the highest professional skill. And communicate clearly, giving advice that suits the client. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["GARP Code of Conduct", "guarantee", "overstate", "certainty", "violation", "suitable", "professional skill", "risk hub"]
+}
