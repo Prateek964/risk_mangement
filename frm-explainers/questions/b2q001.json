@@ -1,0 +1,51 @@
+{
+  "id": "b2q001",
+  "number": 1,
+  "source": "GARP Mock 2023 · Part 2 · Q83",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q001-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 2,", "Chapter 1,", "a practice question."],
+  "stem": "A risk analyst at an investment management firm is monitoring a stablecoin project regulated by a central monetary authority. Event A: the monetary authority distributes the stablecoins. Event B: businesses in the country accept the stablecoins as payment. The analyst estimates P(A) = 70%, P(B) = 40%, and P(B|A) = 20%. What is the probability of either event A or event B occurring?",
+  "stem_short": "What is P(A or B)?",
+  "stem_highlights": [
+    {"text": "P(B|A) = 20%", "at": "given A is 20"},
+    {"text": "either event A or event B", "at": "either A or B"}
+  ],
+  "options": {"A": "0.2", "B": "0.60", "C": "0.84", "D": "0.96"},
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "P(A∪B) = P(A) + P(B) − P(A∩B)",
+    "high": {"label": "ADDITION RULE", "text": "Subtract the overlap so it isn't counted twice", "at": "Use the addition rule.", "meter": null},
+    "low": {"label": "PLUG IN", "chips": [
+      {"text": "P(A∩B) = 0.2 × 0.7 = 0.14", "at": "First, find the joint"},
+      {"text": "0.7 + 0.4 − 0.14", "at": "So the union is"},
+      {"text": "= 0.96", "at": "which is 0.96."}
+    ], "at": "First, find the joint", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "That's just P(B|A), not the union.", "at": "A is wrong."},
+    "B": {"reason": "Adds P(B|A) to P(B): 0.2 + 0.4.", "at": "B is wrong too."},
+    "C": {"reason": "Adds P(A∩B) to P(A) and drops P(B): 0.14 + 0.7.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "P(A∪B) = P(A) + P(B) − P(A∩B)", "at": "The addition rule:"},
+    {"text": "Joint = P(B|A) × P(A)", "at": "Get the joint"},
+    {"text": "Don't add a conditional into a union", "at": "And never add"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."},
+    {"id": "question", "text": "So, a risk analyst is tracking a stablecoin project. Event A: the monetary authority distributes the stablecoins. Event B: businesses accept the stablecoins as payment. The probability of A is 70 percent, the probability of B is 40 percent, and the probability of B given A is 20 percent. What's the probability that either A or B occurs?"},
+    {"id": "options", "text": "Option A. 0.2. Option B. 0.60. Option C. 0.84. And option D. 0.96."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. Use the addition rule. The probability of A or B equals P of A, plus P of B, minus P of A and B. First, find the joint probability. P of A and B equals P of B given A, times P of A. That's 0.2 times 0.7, which is 0.14. So the union is 0.7 plus 0.4, minus 0.14, which is 0.96."},
+    {"id": "wrong", "text": "Now, why not the others? A is wrong. 0.2 is just the conditional probability of B given A. It's not the union. B is wrong too. 0.60 adds P of B given A to P of B, mixing a conditional with a plain probability. And C? 0.84 adds the joint probability to P of A, and leaves out P of B entirely."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. The addition rule: P of A or B equals P of A, plus P of B, minus P of A and B. Get the joint probability from the conditional: P of B given A, times P of A. And never add a conditional probability straight into a union. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["addition rule", "joint probability", "conditional", "0.14", "0.96", "union", "risk hub"]
+}

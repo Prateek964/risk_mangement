@@ -160,10 +160,11 @@ if HOST:
         HM["blinks"].append(round(t, 2)); t += r.uniform(2.6, 4.6)
     HM["brows"] = [round(w["e"] - 0.2, 3) for w in WORDS if w["w"].endswith("?")] + [round(ANS_T, 3)]
 
+BOOK_NO, BOOK_TITLE = re.match(r"Book (\d+)\.\s*(.+)", Q["book"]).groups()
 steps = ["QUESTION", "OPTIONS", "ANSWER", "WHY NOT"]
 header = f'''<div class="hdr h" id="hdr">
     <img class="hlogo" src="assets/riskhub-logo.png" alt="Risk Hub"/>
-    <div class="htx"><div class="h1">FRM PART 1 · BOOK 1 · CH {Q["chapter_number"]}</div><div class="h2">Foundations of Risk Management</div></div>
+    <div class="htx"><div class="h1">FRM PART 1 · BOOK {BOOK_NO} · CH {Q["chapter_number"]}</div><div class="h2">{esc(BOOK_TITLE)}</div></div>
   </div>
   <div class="steps h" id="steps">{"".join(f'<div class="st" id="st{i}">{s}</div>' for i, s in enumerate(steps))}<div class="sbar" id="sbar"></div></div>'''
 
