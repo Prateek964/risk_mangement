@@ -1,0 +1,146 @@
+{
+  "id": "b2q004",
+  "number": 4,
+  "source": "GARP Mock 2023 · Part 1 · Q27",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q004-take1.mp3",
+  "voice": {
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
+    "model": "eleven_v4"
+  },
+  "host": true,
+  "cover_at": [
+    "FRM Part 1,",
+    "Book 2,",
+    "Chapter 1,",
+    "a practice question."
+  ],
+  "stem": "A risk manager at a civil service pension scheme is reviewing the disbursement preferences of 100 retirement plan beneficiaries: 57 have opted to receive monthly disbursements, and 43 have opted to receive a lump-sum payment. In addition, 24 of the beneficiaries that opted for monthly disbursements will also receive a lump-sum payment after a period of time. If a beneficiary selected at random has opted for monthly disbursements, what is the probability that the beneficiary will also receive a lump-sum payment?",
+  "stem_short": "Monthly beneficiary. P(also lump sum)?",
+  "stem_highlights": [
+    {
+      "text": "57 have opted to receive monthly disbursements",
+      "at": "57 chose monthly"
+    },
+    {
+      "text": "24 of the beneficiaries that opted for monthly disbursements",
+      "at": "24 of the monthly"
+    },
+    {
+      "text": "has opted for monthly disbursements",
+      "at": "picked at random"
+    }
+  ],
+  "options": {
+    "A": "24%",
+    "B": "42%",
+    "C": "50%",
+    "D": "56%"
+  },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
+  "answer": "B",
+  "answer_at": "B!",
+  "answer_points": {
+    "title": "P(Lump | Monthly) = 24 ÷ 57",
+    "high": {
+      "label": "CONDITIONAL PROBABILITY",
+      "text": "Only look at the 57 monthly beneficiaries",
+      "at": "We're told",
+      "meter": null
+    },
+    "low": {
+      "label": "COUNT IT",
+      "chips": [
+        {
+          "text": "Monthly: 57",
+          "at": "There are 57"
+        },
+        {
+          "text": "Monthly & lump sum: 24",
+          "at": "Of those,"
+        },
+        {
+          "text": "24 ÷ 57 ≈ 42%",
+          "at": "which is about 42"
+        }
+      ],
+      "at": "There are 57",
+      "meter": null
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "24% is the joint probability P(monthly and lump sum), not conditional.",
+      "at": "A, 24 percent"
+    },
+    "C": {
+      "reason": "Just the average of 57% and 43%.",
+      "at": "C, 50 percent"
+    },
+    "D": {
+      "reason": "24 ÷ 43 — divides by the wrong group (lump sum).",
+      "at": "D, 56 percent"
+    }
+  },
+  "takeaway": [
+    {
+      "text": "Divide by the group you're given",
+      "at": "Divide by the group"
+    },
+    {
+      "text": "P(A|B) = P(A and B) ÷ P(B)",
+      "at": "The formula is"
+    },
+    {
+      "text": "Joint ≠ conditional",
+      "at": "And don't confuse"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."
+    },
+    {
+      "id": "question",
+      "text": "So, a pension scheme reviews 100 retirement plan beneficiaries. 57 chose monthly payments, and 43 chose a lump sum. And 24 of the monthly beneficiaries will also get a lump sum later on. A beneficiary is picked at random, and we know they chose monthly payments. What's the probability they'll also receive a lump sum?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. 24 percent. Option B. 42 percent. Option C. 50 percent. And option D. 56 percent."
+    },
+    {
+      "id": "pause",
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
+    },
+    {
+      "id": "answer",
+      "text": "[excited] And the answer is... B! [warmly] Here's why. We're told the beneficiary chose monthly payments, so we only look at the monthly group. There are 57 of them. Of those, 24 also get a lump sum. So the probability is 24 divided by 57, which is about 42 percent. With the formula, that's 0.24 divided by 0.57."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why not the others? A, 24 percent, is the joint probability: monthly and lump sum together, out of all 100. It ignores what we know. C, 50 percent, is just the average of 57 and 43 percent. That means nothing here. And D, 56 percent, is 24 divided by 43. That divides by the lump-sum group instead of the monthly group."
+    },
+    {
+      "id": "takeaway",
+      "text": "[warmly] So, the key takeaway. Divide by the group you're given, the condition. The formula is: probability of A given B equals probability of A and B, divided by probability of B. And don't confuse a joint probability with a conditional one. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
+    }
+  ],
+  "caption_keywords": [
+    "monthly",
+    "lump sum",
+    "57",
+    "42 percent",
+    "joint",
+    "conditional",
+    "risk hub"
+  ]
+}
