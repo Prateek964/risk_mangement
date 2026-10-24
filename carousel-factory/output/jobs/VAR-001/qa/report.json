@@ -1,0 +1,900 @@
+{
+  "topicId": "VAR-001",
+  "at": "2026-10-24T11:28:54.831Z",
+  "passed": true,
+  "totals": {
+    "checks": 114,
+    "failed": 0,
+    "warnings": 0
+  },
+  "checks": [
+    {
+      "category": "files",
+      "name": "png slide 1",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-01.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 2",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-02.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 3",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-03.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 4",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-04.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 5",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-05.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 6",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-06.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "png slide 7",
+      "ok": true,
+      "severity": "pass",
+      "file": "exports/png/slide-07.png",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "category": "files",
+      "name": "pdf opens with one page per slide",
+      "ok": true,
+      "severity": "pass",
+      "pages": 7,
+      "mediabox": [
+        810,
+        1013.03998
+      ],
+      "method": "pypdf"
+    },
+    {
+      "category": "files",
+      "name": "mp4 is H.264 at configured fps and size",
+      "ok": true,
+      "severity": "pass",
+      "codec": "h264",
+      "size": "1080x1350",
+      "fps": "30/1",
+      "pix_fmt": "yuv420p"
+    },
+    {
+      "category": "files",
+      "name": "mp4 frame count matches timeline",
+      "ok": true,
+      "severity": "pass",
+      "frames": 1050,
+      "expected": 1050,
+      "duration": 35
+    },
+    {
+      "category": "files",
+      "name": "source index.html",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "source slides.json",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "source assets/runtime.js",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "source assets/styles.css",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 1",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 2",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 3",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 4",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 5",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 6",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "files",
+      "name": "svg source slide 7",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 1: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 1: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 1: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "fonts loaded (Inter, Inter Tight, KaTeX)",
+      "ok": true,
+      "severity": "pass",
+      "missing": [],
+      "loaded": [
+        "Inter Tight:700",
+        "Inter Tight:800",
+        "Inter:500",
+        "Inter:600",
+        "Inter:700",
+        "KaTeX_AMS:400",
+        "KaTeX_Caligraphic:400",
+        "KaTeX_Main:400",
+        "KaTeX_Main:700",
+        "KaTeX_Math:400",
+        "KaTeX_Math:700",
+        "KaTeX_Size1:400"
+      ]
+    },
+    {
+      "category": "design",
+      "name": "slide 1: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 1: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 1: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 1: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 1: equations rendered (6)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 6,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 1: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 1: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 1: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 1: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 2: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 2: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 2: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 2: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 2: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 2: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 2: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 2: equations rendered (4)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 4,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 2: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 2: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 2: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 2: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 3: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 3: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 3: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 3: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 3: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 3: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 3: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 3: equations rendered (4)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 4,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 3: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 3: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 3: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 3: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 4: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 4: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 4: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 4: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 4: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 4: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 4: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 4: equations rendered (4)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 4,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 4: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 4: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 4: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 4: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 5: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 5: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 5: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 5: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 5: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 5: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 5: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 5: equations rendered (4)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 4,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 5: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 5: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 5: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 5: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 6: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 6: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 6: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 6: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 6: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 6: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 6: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 6: equations rendered (2)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 2,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 6: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 6: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 6: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 6: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "slide 7: animation guard (no text targets)",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 7: text fits its regions",
+      "ok": true,
+      "severity": "pass",
+      "problems": []
+    },
+    {
+      "category": "design",
+      "name": "slide 7: no runtime errors",
+      "ok": true,
+      "severity": "pass",
+      "errors": []
+    },
+    {
+      "category": "design",
+      "name": "slide 7: text inside safe margins (40px)",
+      "ok": true,
+      "severity": "pass",
+      "outside": []
+    },
+    {
+      "category": "design",
+      "name": "slide 7: no text-on-text overlap",
+      "ok": true,
+      "severity": "pass",
+      "overlaps": []
+    },
+    {
+      "category": "design",
+      "name": "slide 7: body text clear of illustration region",
+      "ok": true,
+      "severity": "pass",
+      "hits": []
+    },
+    {
+      "category": "content",
+      "name": "slide 7: all slide text present",
+      "ok": true,
+      "severity": "pass",
+      "missing": []
+    },
+    {
+      "category": "content",
+      "name": "slide 7: equations rendered (2)",
+      "ok": true,
+      "severity": "pass",
+      "katex": 2,
+      "errors": 0
+    },
+    {
+      "category": "animation",
+      "name": "slide 7: text DOM identical at 6 sampled times",
+      "ok": true,
+      "severity": "pass",
+      "times": [
+        0,
+        0.75,
+        1.75,
+        3,
+        4.25,
+        5
+      ],
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 7: text pixels identical at sampled times (nothing animates over text)",
+      "ok": true,
+      "severity": "pass",
+      "diffs": []
+    },
+    {
+      "category": "animation",
+      "name": "slide 7: illustration animates",
+      "ok": true,
+      "severity": "pass",
+      "duration": 5
+    },
+    {
+      "category": "animation",
+      "name": "slide 7: timeline deterministic (fresh render at t=2s identical)",
+      "ok": true,
+      "severity": "pass"
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 1 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.749,
+      "at": 4.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 2 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.416,
+      "at": 9.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 3 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.397,
+      "at": 14.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 4 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.46,
+      "at": 19.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 5 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.655,
+      "at": 24.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 6 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.671,
+      "at": 29.967
+    },
+    {
+      "category": "animation",
+      "name": "mp4 slide 7 final frame matches PNG",
+      "ok": true,
+      "severity": "pass",
+      "meanAbsDiff": 1.478,
+      "at": 34.967
+    },
+    {
+      "category": "content",
+      "name": "spelling (dictionary check)",
+      "ok": true,
+      "severity": "pass",
+      "unknown": []
+    }
+  ]
+}

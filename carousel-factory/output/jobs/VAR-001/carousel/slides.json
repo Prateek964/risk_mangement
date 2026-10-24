@@ -1,0 +1,637 @@
+{
+  "spec": {
+    "schemaVersion": 1,
+    "topicId": "VAR-001",
+    "title": "Value at Risk: three ways to compute it, and what it misses",
+    "brand": "RISK HUB",
+    "creativeDirection": "Editorial quant notebook at night. Near-black canvas with a faint warm wash and film grain; one heavy, tightly tracked headline per slide; justified bold body copy in a single column; gold labels name the method; real LaTeX equations float in the corners as quiet texture and one hero equation carries the maths. Illustrations are thin-line, data-true diagrams (distributions, sorted P&L, simulated paths, backtest bars) drawn on in under four seconds; text never moves.",
+    "canvas": {
+      "width": 1080,
+      "height": 1350,
+      "aspectRatio": "4:5"
+    },
+    "palette": {
+      "background": "#0B0C0F",
+      "backgroundAlt": "#1A1C22",
+      "surface": "#13213D",
+      "text": "#FFFFFF",
+      "muted": "#9AA1AD",
+      "accent": "#F2C14E",
+      "accent2": "#4FC3F7",
+      "danger": "#FF5C5C",
+      "positive": "#3DDC97",
+      "grid": "#2A2F38"
+    },
+    "provenance": {
+      "source": "claude",
+      "author": "Claude (Claude Code cloud session)",
+      "basis": "Five user-supplied reference carousel images (quant-finance maths series: dark canvas, heavy tight sans headlines, justified bold body, gold resource labels, LaTeX equations as texture, navy Monte Carlo band on the cover).",
+      "note": "Authored directly because the ChatGPT stage cannot run in the cloud session (chatgpt.com blocked, no access to the user's Chrome)."
+    },
+    "slides": [
+      {
+        "index": 1,
+        "layout": "cover",
+        "side": "bottom",
+        "kicker": "The 3 ways to compute",
+        "headline": "VALUE AT RISK",
+        "subheadline": "and what it misses",
+        "label": "",
+        "body": [],
+        "equations": [
+          {
+            "tex": "\\mathrm{VaR}_\\alpha = \\inf\\{\\ell : P(L > \\ell) \\le 1-\\alpha\\}",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "\\sigma_p^2 = \\mathbf{w}^\\top \\Sigma\\, \\mathbf{w}",
+            "role": "decor",
+            "slot": "top-right"
+          },
+          {
+            "tex": "S_T = S_0\\, e^{(\\mu - \\sigma^2/2)T + \\sigma W_T}",
+            "role": "decor",
+            "slot": "mid-left"
+          },
+          {
+            "tex": "\\mathrm{ES}_\\alpha = \\mathbb{E}[L \\mid L \\ge \\mathrm{VaR}_\\alpha]",
+            "role": "decor",
+            "slot": "mid-right"
+          },
+          {
+            "tex": "\\mathrm{VaR}_h = \\mathrm{VaR}_1 \\sqrt{h}",
+            "role": "decor",
+            "slot": "bottom-left"
+          },
+          {
+            "tex": "P(L > \\mathrm{VaR}_\\alpha) = 1-\\alpha",
+            "role": "decor",
+            "slot": "bottom-right"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "gbm-band",
+          "params": {
+            "paths": 120,
+            "steps": 220,
+            "mu": 0.05,
+            "sigma": 0.4,
+            "seed": 11
+          },
+          "labels": [
+            "Monte Carlo · 120 GBM paths · σ = 40%"
+          ],
+          "animate": true,
+          "purpose": "Sets the theme: a portfolio's future is a fan of random paths; VaR summarises its bad tail."
+        }
+      },
+      {
+        "index": 2,
+        "layout": "concept",
+        "side": "right",
+        "kicker": "",
+        "headline": "WHAT VaR SAYS",
+        "subheadline": "",
+        "label": "One number, one confidence level, one horizon",
+        "body": [
+          "VaR answers a single question: over the next day, what loss will we not exceed with 99% confidence? It is a quantile of the P&L distribution, nothing more.",
+          "A 1-day 99% VaR of $279k means losses should exceed $279k on about 1 day in 100. It says nothing about how large those bad days get."
+        ],
+        "equations": [
+          {
+            "tex": "P(L > \\mathrm{VaR}_{\\alpha}) = 1 - \\alpha",
+            "role": "hero",
+            "slot": null
+          },
+          {
+            "tex": "\\alpha = 99\\%",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "h = 1 \\text{ day}",
+            "role": "decor",
+            "slot": "top-right"
+          },
+          {
+            "tex": "L = -\\Delta V",
+            "role": "decor",
+            "slot": "mid-right"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "normal-tail",
+          "params": {
+            "alpha": 0.01
+          },
+          "labels": [
+            "99% VaR",
+            "1% tail",
+            "99% of days"
+          ],
+          "animate": true,
+          "purpose": "Shows VaR as the cut-off point of the left tail of the P&L distribution."
+        }
+      },
+      {
+        "index": 3,
+        "layout": "concept",
+        "side": "right",
+        "kicker": "",
+        "headline": "1. PARAMETRIC",
+        "subheadline": "",
+        "label": "Variance–covariance method",
+        "body": [
+          "Assume returns are normal. VaR is then volatility scaled by a z-score: portfolio σ comes from the covariance matrix and your position weights.",
+          "$10M portfolio, 1.2% daily σ: 2.326 × 1.2% × $10M ≈ $279k. Fast and analytic, but it inherits the normal distribution's thin tails."
+        ],
+        "equations": [
+          {
+            "tex": "\\mathrm{VaR}_{99\\%} = z_{0.99}\\, \\sigma_p\\, V",
+            "role": "hero",
+            "slot": null
+          },
+          {
+            "tex": "\\sigma_p = \\sqrt{\\mathbf{w}^\\top \\Sigma\\, \\mathbf{w}}",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "z_{0.99} = 2.326",
+            "role": "decor",
+            "slot": "top-right"
+          },
+          {
+            "tex": "\\Sigma = \\mathbb{E}[(\\mathbf{r}-\\boldsymbol{\\mu})(\\mathbf{r}-\\boldsymbol{\\mu})^\\top]",
+            "role": "decor",
+            "slot": "mid-right"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "cov-matrix",
+          "params": {
+            "n": 5,
+            "seed": 5
+          },
+          "labels": [],
+          "animate": true,
+          "purpose": "The covariance matrix assembling cell by cell: the single input the parametric method needs beyond weights."
+        }
+      },
+      {
+        "index": 4,
+        "layout": "concept",
+        "side": "left",
+        "kicker": "",
+        "headline": "2. HISTORICAL",
+        "subheadline": "",
+        "label": "Historical simulation",
+        "body": [
+          "No distribution assumed. Replay the last 500 days of market moves on today's portfolio, sort the P&Ls, and read off the loss at the cut-off.",
+          "At 99% with 500 scenarios, VaR is about the 5th-worst loss. Real fat tails are captured, but only the ones in your window: a calm 500 days gives a calm VaR."
+        ],
+        "equations": [
+          {
+            "tex": "\\mathrm{VaR}_{99\\%} \\approx L_{(5)}",
+            "role": "hero",
+            "slot": null
+          },
+          {
+            "tex": "N = 500",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "500 \\times 1\\% = 5",
+            "role": "decor",
+            "slot": "top-right"
+          },
+          {
+            "tex": "\\hat{F}(x) = \\tfrac{1}{N}\\textstyle\\sum_i \\mathbf{1}\\{r_i \\le x\\}",
+            "role": "decor",
+            "slot": "mid-left"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "sorted-returns",
+          "params": {
+            "n": 500,
+            "worst": 5,
+            "seed": 3
+          },
+          "labels": [
+            "5th worst → VaR",
+            "worst day",
+            "best day"
+          ],
+          "animate": true,
+          "purpose": "500 historical P&Ls sorted from worst to best, with the five worst highlighted and the VaR cut-off drawn."
+        }
+      },
+      {
+        "index": 5,
+        "layout": "concept",
+        "side": "right",
+        "kicker": "",
+        "headline": "3. MONTE CARLO",
+        "subheadline": "",
+        "label": "Simulate the future instead of replaying the past",
+        "body": [
+          "Choose a model for every risk factor, simulate thousands of scenarios, reprice the portfolio in each, and take the loss quantile of the simulated P&L.",
+          "It handles options and other non-linear payoffs that the parametric method misses. The price: compute time, and answers only as good as the model."
+        ],
+        "equations": [
+          {
+            "tex": "S_T = S_0\\, e^{(\\mu - \\frac{\\sigma^2}{2})T + \\sigma W_T}",
+            "role": "hero",
+            "slot": null
+          },
+          {
+            "tex": "dS_t = \\mu S_t\\,dt + \\sigma S_t\\,dW_t",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "W_t - W_s \\sim \\mathcal{N}(0,\\, t-s)",
+            "role": "decor",
+            "slot": "top-right"
+          },
+          {
+            "tex": "\\mathrm{VaR} = -\\hat{q}_{1\\%}(\\Delta V)",
+            "role": "decor",
+            "slot": "mid-right"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "mc-paths",
+          "params": {
+            "paths": 40,
+            "steps": 120,
+            "mu": 0.06,
+            "sigma": 0.3,
+            "seed": 21
+          },
+          "labels": [
+            "S₀",
+            "simulated paths",
+            "at horizon"
+          ],
+          "animate": true,
+          "purpose": "Simulated price paths fan out from today's price; the terminal histogram and its low quantile give the VaR."
+        }
+      },
+      {
+        "index": 6,
+        "layout": "concept",
+        "side": "bottom",
+        "kicker": "",
+        "headline": "SCALE & BACKTEST",
+        "subheadline": "",
+        "label": "√time scaling and the Basel traffic light",
+        "body": [
+          "Regulators asked for 10-day VaR, usually scaled from 1-day: $279k × √10 ≈ $883k. That holds only if daily returns are independent and identically distributed.",
+          "Then test the model: over 250 days a 99% VaR should be breached about 2.5 times. Basel counts the exceptions: 0–4 green, 5–9 yellow, 10 or more red."
+        ],
+        "equations": [
+          {
+            "tex": "\\mathbb{E}[\\text{exceptions}] = 250 \\times 1\\% = 2.5",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "\\mathrm{VaR}_{10d} = \\mathrm{VaR}_{1d}\\sqrt{10}",
+            "role": "decor",
+            "slot": "top-right"
+          }
+        ],
+        "cta": "",
+        "footnote": "",
+        "illustration": {
+          "type": "backtest",
+          "params": {
+            "days": 250,
+            "exceptions": 3,
+            "seed": 8
+          },
+          "labels": [
+            "green 0–4",
+            "yellow 5–9",
+            "red 10+"
+          ],
+          "animate": true,
+          "purpose": "A year of daily P&L against the 99% VaR line; three breaches circled, landing in the green zone."
+        }
+      },
+      {
+        "index": 7,
+        "layout": "closing",
+        "side": "bottom",
+        "kicker": "",
+        "headline": "WHAT VaR MISSES",
+        "subheadline": "",
+        "label": "",
+        "body": [
+          "VaR marks where the tail starts, not how deep it goes. Two portfolios can share a VaR while one hides a far worse tail.",
+          "Expected Shortfall averages the losses beyond VaR. Basel's FRTB swapped 99% VaR for 97.5% ES: equal-ish under normality (2.338σ vs 2.326σ), but ES grows when tails get fat."
+        ],
+        "equations": [
+          {
+            "tex": "\\mathrm{ES}_\\alpha = \\frac{1}{1-\\alpha}\\int_\\alpha^1 \\mathrm{VaR}_u\\,du",
+            "role": "decor",
+            "slot": "top-left"
+          },
+          {
+            "tex": "\\mathrm{ES}_{97.5\\%} \\approx \\mathrm{VaR}_{99\\%}",
+            "role": "decor",
+            "slot": "top-right"
+          }
+        ],
+        "cta": "Save this · Follow Risk Hub",
+        "footnote": "Figures assume normally distributed daily P&L; real P&L has fatter tails.",
+        "illustration": {
+          "type": "normal-tail",
+          "params": {
+            "alpha": 0.025,
+            "showES": true
+          },
+          "labels": [
+            "VaR 97.5%",
+            "2.5% tail",
+            "97.5%",
+            "ES"
+          ],
+          "animate": true,
+          "purpose": "Same distribution, with Expected Shortfall marked deeper in the tail than VaR."
+        }
+      }
+    ]
+  },
+  "timelines": [
+    {
+      "index": 1,
+      "layout": "cover",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".paths .p",
+          "preset": "draw",
+          "at": 0,
+          "dur": 1.6,
+          "stagger": {
+            "amount": 1.4
+          },
+          "ease": "power1.inOut"
+        },
+        {
+          "sel": ".drift",
+          "preset": "fade",
+          "at": 1.4,
+          "dur": 0.6
+        },
+        {
+          "sel": ".hl",
+          "preset": "draw",
+          "at": 1,
+          "dur": 2.2,
+          "ease": "power1.inOut"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "layout": "concept",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".axis",
+          "preset": "draw",
+          "at": 0,
+          "dur": 0.6
+        },
+        {
+          "sel": ".curve",
+          "preset": "draw",
+          "at": 0.3,
+          "dur": 1.4,
+          "ease": "power2.inOut"
+        },
+        {
+          "sel": ".body",
+          "preset": "fade",
+          "at": 1.3,
+          "dur": 0.6
+        },
+        {
+          "sel": ".tail",
+          "preset": "scale",
+          "at": 1.6,
+          "dur": 0.8,
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".var",
+          "preset": "draw",
+          "at": 2.2,
+          "dur": 0.7
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "layout": "concept",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".cells .c",
+          "preset": "scale",
+          "at": 0.1,
+          "dur": 0.5,
+          "stagger": {
+            "grid": [
+              5,
+              5
+            ],
+            "from": 0,
+            "amount": 1.6
+          },
+          "ease": "power2.out"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "layout": "concept",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".zero",
+          "preset": "draw",
+          "at": 0,
+          "dur": 0.5
+        },
+        {
+          "sel": ".bars .b",
+          "preset": "scale",
+          "at": 0.3,
+          "dur": 0.5,
+          "stagger": {
+            "amount": 1.6
+          },
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".cut",
+          "preset": "draw",
+          "at": 2.3,
+          "dur": 0.7
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "layout": "concept",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".paths .p",
+          "preset": "draw",
+          "at": 0.2,
+          "dur": 1.8,
+          "stagger": {
+            "amount": 0.8
+          },
+          "ease": "power1.inOut"
+        },
+        {
+          "sel": ".hist .hb",
+          "preset": "scale",
+          "at": 2.2,
+          "dur": 0.5,
+          "stagger": {
+            "amount": 0.5
+          },
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".q",
+          "preset": "draw",
+          "at": 3,
+          "dur": 0.5
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "layout": "concept",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".zero",
+          "preset": "draw",
+          "at": 0,
+          "dur": 0.4
+        },
+        {
+          "sel": ".bars .b",
+          "preset": "scale",
+          "at": 0.2,
+          "dur": 0.3,
+          "stagger": {
+            "amount": 1.6
+          },
+          "ease": "power1.out"
+        },
+        {
+          "sel": ".varline",
+          "preset": "draw",
+          "at": 1,
+          "dur": 1.4,
+          "ease": "none"
+        },
+        {
+          "sel": ".dots .x",
+          "preset": "scale",
+          "at": 2.4,
+          "dur": 0.4,
+          "stagger": {
+            "amount": 0.4
+          },
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".zones .z",
+          "preset": "scale",
+          "at": 2.6,
+          "dur": 0.5,
+          "stagger": {
+            "amount": 0.3
+          },
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".marker",
+          "preset": "scale",
+          "at": 3.3,
+          "dur": 0.4,
+          "ease": "power2.out"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "layout": "closing",
+      "seconds": 5,
+      "timeline": [
+        {
+          "sel": ".axis",
+          "preset": "draw",
+          "at": 0,
+          "dur": 0.6
+        },
+        {
+          "sel": ".curve",
+          "preset": "draw",
+          "at": 0.3,
+          "dur": 1.4,
+          "ease": "power2.inOut"
+        },
+        {
+          "sel": ".body",
+          "preset": "fade",
+          "at": 1.3,
+          "dur": 0.6
+        },
+        {
+          "sel": ".tail",
+          "preset": "scale",
+          "at": 1.6,
+          "dur": 0.8,
+          "ease": "power2.out"
+        },
+        {
+          "sel": ".var",
+          "preset": "draw",
+          "at": 2.2,
+          "dur": 0.7
+        },
+        {
+          "sel": ".es",
+          "preset": "draw",
+          "at": 2.9,
+          "dur": 0.6
+        }
+      ]
+    }
+  ]
+}

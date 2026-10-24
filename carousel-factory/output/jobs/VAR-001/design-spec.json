@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "topicId": "VAR-001",
+  "title": "Value at Risk: three ways to compute it, and what it misses",
+  "brand": "RISK HUB",
+  "provenance": {
+    "source": "claude",
+    "author": "Claude (Claude Code cloud session)",
+    "basis": "Five user-supplied reference carousel images (quant-finance maths series: dark canvas, heavy tight sans headlines, justified bold body, gold resource labels, LaTeX equations as texture, navy Monte Carlo band on the cover).",
+    "note": "Authored directly because the ChatGPT stage cannot run in the cloud session (chatgpt.com blocked, no access to the user's Chrome)."
+  },
+  "creativeDirection": "Editorial quant notebook at night. Near-black canvas with a faint warm wash and film grain; one heavy, tightly tracked headline per slide; justified bold body copy in a single column; gold labels name the method; real LaTeX equations float in the corners as quiet texture and one hero equation carries the maths. Illustrations are thin-line, data-true diagrams (distributions, sorted P&L, simulated paths, backtest bars) drawn on in under four seconds; text never moves.",
+  "palette": {
+    "background": "#0B0C0F",
+    "backgroundAlt": "#1A1C22",
+    "surface": "#13213D",
+    "text": "#FFFFFF",
+    "muted": "#9AA1AD",
+    "accent": "#F2C14E",
+    "accent2": "#4FC3F7",
+    "danger": "#FF5C5C",
+    "positive": "#3DDC97",
+    "grid": "#2A2F38"
+  },
+  "typography": {
+    "headline": "Inter Tight 800, 112px max (auto-fit to one line), tracking -0.035em",
+    "kicker": "Inter Tight 800, 52px",
+    "body": "Inter 700, 31px max (auto-fit to column), line-height 1.17, tracking -0.022em, justified",
+    "label": "Inter Tight 700, 0.95em, gold #F2C14E",
+    "equations": "KaTeX (Computer Modern), 34px decor at 88% opacity, 45px hero",
+    "footer": "Inter Tight 700, 22px, muted, letter-spaced"
+  },
+  "spacing": { "margin": 56, "columnWidth": 488, "gutter": 36, "safeMargin": 40 },
+  "slides": [
+    {
+      "layout": "cover",
+      "kicker": "The 3 ways to compute",
+      "headline": "VALUE AT RISK",
+      "subheadline": "and what it misses",
+      "equations": [
+        { "tex": "\\mathrm{VaR}_\\alpha = \\inf\\{\\ell : P(L > \\ell) \\le 1-\\alpha\\}", "role": "decor", "slot": "top-left" },
+        { "tex": "\\sigma_p^2 = \\mathbf{w}^\\top \\Sigma\\, \\mathbf{w}", "role": "decor", "slot": "top-right" },
+        { "tex": "S_T = S_0\\, e^{(\\mu - \\sigma^2/2)T + \\sigma W_T}", "role": "decor", "slot": "mid-left" },
+        { "tex": "\\mathrm{ES}_\\alpha = \\mathbb{E}[L \\mid L \\ge \\mathrm{VaR}_\\alpha]", "role": "decor", "slot": "mid-right" },
+        { "tex": "\\mathrm{VaR}_h = \\mathrm{VaR}_1 \\sqrt{h}", "role": "decor", "slot": "bottom-left" },
+        { "tex": "P(L > \\mathrm{VaR}_\\alpha) = 1-\\alpha", "role": "decor", "slot": "bottom-right" }
+      ],
+      "illustration": {
+        "type": "gbm-band",
+        "params": { "paths": 120, "steps": 220, "mu": 0.05, "sigma": 0.4, "seed": 11 },
+        "labels": ["Monte Carlo · 120 GBM paths · σ = 40%"],
+        "purpose": "Sets the theme: a portfolio's future is a fan of random paths; VaR summarises its bad tail."
+      }
+    },
+    {
+      "layout": "concept",
+      "side": "right",
+      "headline": "WHAT VaR SAYS",
+      "label": "One number, one confidence level, one horizon",
+      "body": [
+        "VaR answers a single question: over the next day, what loss will we not exceed with 99% confidence? It is a quantile of the P&L distribution, nothing more.",
+        "A 1-day 99% VaR of $279k means losses should exceed $279k on about 1 day in 100. It says nothing about how large those bad days get."
+      ],
+      "equations": [
+        { "tex": "P(L > \\mathrm{VaR}_{\\alpha}) = 1 - \\alpha", "role": "hero" },
+        { "tex": "\\alpha = 99\\%", "role": "decor", "slot": "top-left" },
+        { "tex": "h = 1 \\text{ day}", "role": "decor", "slot": "top-right" },
+        { "tex": "L = -\\Delta V", "role": "decor", "slot": "mid-right" }
+      ],
+      "illustration": {
+        "type": "normal-tail",
+        "params": { "alpha": 0.01 },
+        "labels": ["99% VaR", "1% tail", "99% of days"],
+        "purpose": "Shows VaR as the cut-off point of the left tail of the P&L distribution."
+      }
+    },
+    {
+      "layout": "concept",
+      "side": "right",
+      "headline": "1. PARAMETRIC",
+      "label": "Variance–covariance method",
+      "body": [
+        "Assume returns are normal. VaR is then volatility scaled by a z-score: portfolio σ comes from the covariance matrix and your position weights.",
+        "$10M portfolio, 1.2% daily σ: 2.326 × 1.2% × $10M ≈ $279k. Fast and analytic, but it inherits the normal distribution's thin tails."
+      ],
+      "equations": [
+        { "tex": "\\mathrm{VaR}_{99\\%} = z_{0.99}\\, \\sigma_p\\, V", "role": "hero" },
+        { "tex": "\\sigma_p = \\sqrt{\\mathbf{w}^\\top \\Sigma\\, \\mathbf{w}}", "role": "decor", "slot": "top-left" },
+        { "tex": "z_{0.99} = 2.326", "role": "decor", "slot": "top-right" },
+        { "tex": "\\Sigma = \\mathbb{E}[(\\mathbf{r}-\\boldsymbol{\\mu})(\\mathbf{r}-\\boldsymbol{\\mu})^\\top]", "role": "decor", "slot": "mid-right" }
+      ],
+      "illustration": {
+        "type": "cov-matrix",
+        "params": { "n": 5, "seed": 5 },
+        "labels": [],
+        "purpose": "The covariance matrix assembling cell by cell: the single input the parametric method needs beyond weights."
+      }
+    },
+    {
+      "layout": "concept",
+      "side": "left",
+      "headline": "2. HISTORICAL",
+      "label": "Historical simulation",
+      "body": [
+        "No distribution assumed. Replay the last 500 days of market moves on today's portfolio, sort the P&Ls, and read off the loss at the cut-off.",
+        "At 99% with 500 scenarios, VaR is about the 5th-worst loss. Real fat tails are captured, but only the ones in your window: a calm 500 days gives a calm VaR."
+      ],
+      "equations": [
+        { "tex": "\\mathrm{VaR}_{99\\%} \\approx L_{(5)}", "role": "hero" },
+        { "tex": "N = 500", "role": "decor", "slot": "top-left" },
+        { "tex": "500 \\times 1\\% = 5", "role": "decor", "slot": "top-right" },
+        { "tex": "\\hat{F}(x) = \\tfrac{1}{N}\\textstyle\\sum_i \\mathbf{1}\\{r_i \\le x\\}", "role": "decor", "slot": "mid-left" }
+      ],
+      "illustration": {
+        "type": "sorted-returns",
+        "params": { "n": 500, "worst": 5, "seed": 3 },
+        "labels": ["5th worst → VaR", "worst day", "best day"],
+        "purpose": "500 historical P&Ls sorted from worst to best, with the five worst highlighted and the VaR cut-off drawn."
+      }
+    },
+    {
+      "layout": "concept",
+      "side": "right",
+      "headline": "3. MONTE CARLO",
+      "label": "Simulate the future instead of replaying the past",
+      "body": [
+        "Choose a model for every risk factor, simulate thousands of scenarios, reprice the portfolio in each, and take the loss quantile of the simulated P&L.",
+        "It handles options and other non-linear payoffs that the parametric method misses. The price: compute time, and answers only as good as the model."
+      ],
+      "equations": [
+        { "tex": "S_T = S_0\\, e^{(\\mu - \\frac{\\sigma^2}{2})T + \\sigma W_T}", "role": "hero" },
+        { "tex": "dS_t = \\mu S_t\\,dt + \\sigma S_t\\,dW_t", "role": "decor", "slot": "top-left" },
+        { "tex": "W_t - W_s \\sim \\mathcal{N}(0,\\, t-s)", "role": "decor", "slot": "top-right" },
+        { "tex": "\\mathrm{VaR} = -\\hat{q}_{1\\%}(\\Delta V)", "role": "decor", "slot": "mid-right" }
+      ],
+      "illustration": {
+        "type": "mc-paths",
+        "params": { "paths": 40, "steps": 120, "mu": 0.06, "sigma": 0.3, "seed": 21 },
+        "labels": ["S₀", "simulated paths", "at horizon"],
+        "purpose": "Simulated price paths fan out from today's price; the terminal histogram and its low quantile give the VaR."
+      }
+    },
+    {
+      "layout": "concept",
+      "side": "bottom",
+      "headline": "SCALE & BACKTEST",
+      "label": "√time scaling and the Basel traffic light",
+      "body": [
+        "Regulators asked for 10-day VaR, usually scaled from 1-day: $279k × √10 ≈ $883k. That holds only if daily returns are independent and identically distributed.",
+        "Then test the model: over 250 days a 99% VaR should be breached about 2.5 times. Basel counts the exceptions: 0–4 green, 5–9 yellow, 10 or more red."
+      ],
+      "equations": [
+        { "tex": "\\mathbb{E}[\\text{exceptions}] = 250 \\times 1\\% = 2.5", "role": "decor", "slot": "top-left" },
+        { "tex": "\\mathrm{VaR}_{10d} = \\mathrm{VaR}_{1d}\\sqrt{10}", "role": "decor", "slot": "top-right" }
+      ],
+      "illustration": {
+        "type": "backtest",
+        "params": { "days": 250, "exceptions": 3, "seed": 8 },
+        "labels": ["green 0–4", "yellow 5–9", "red 10+"],
+        "purpose": "A year of daily P&L against the 99% VaR line; three breaches circled, landing in the green zone."
+      }
+    },
+    {
+      "layout": "closing",
+      "headline": "WHAT VaR MISSES",
+      "body": [
+        "VaR marks where the tail starts, not how deep it goes. Two portfolios can share a VaR while one hides a far worse tail.",
+        "Expected Shortfall averages the losses beyond VaR. Basel's FRTB swapped 99% VaR for 97.5% ES: equal-ish under normality (2.338σ vs 2.326σ), but ES grows when tails get fat."
+      ],
+      "equations": [
+        { "tex": "\\mathrm{ES}_\\alpha = \\frac{1}{1-\\alpha}\\int_\\alpha^1 \\mathrm{VaR}_u\\,du", "role": "decor", "slot": "top-left" },
+        { "tex": "\\mathrm{ES}_{97.5\\%} \\approx \\mathrm{VaR}_{99\\%}", "role": "decor", "slot": "top-right" }
+      ],
+      "illustration": {
+        "type": "normal-tail",
+        "params": { "alpha": 0.025, "showES": true },
+        "labels": ["VaR 97.5%", "2.5% tail", "97.5%", "ES"],
+        "purpose": "Same distribution, with Expected Shortfall marked deeper in the tail than VaR."
+      },
+      "cta": "Save this · Follow Risk Hub",
+      "footnote": "Figures assume normally distributed daily P&L; real P&L has fatter tails."
+    }
+  ]
+}

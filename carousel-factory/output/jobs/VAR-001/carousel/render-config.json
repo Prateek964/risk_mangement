@@ -1,0 +1,56 @@
+{
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 18,
+  "canvas": {
+    "width": 1080,
+    "height": 1350,
+    "aspectRatio": "4:5"
+  },
+  "segments": [
+    {
+      "slide": 1,
+      "startFrame": 0,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 2,
+      "startFrame": 150,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 3,
+      "startFrame": 300,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 4,
+      "startFrame": 450,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 5,
+      "startFrame": 600,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 6,
+      "startFrame": 750,
+      "frames": 150,
+      "seconds": 5
+    },
+    {
+      "slide": 7,
+      "startFrame": 900,
+      "frames": 150,
+      "seconds": 5
+    }
+  ],
+  "node": "v22.22.0",
+  "playwright": "1.63.0"
+}

@@ -1,0 +1,94 @@
+/* Risk Hub carousel visual system: dark canvas, heavy tight sans headlines, justified bold
+ * body copy, gold resource labels, LaTeX equations as quiet texture. Layers:
+ *   .bg-layer (static) < .art-layer (animated SVG only) < .text-layer (static text only) */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #000; }
+body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+
+.slide {
+  position: relative;
+  width: var(--w);
+  height: var(--h);
+  overflow: hidden;
+  background: var(--background);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  break-after: page;
+  page-break-after: always;
+}
+.layer { position: absolute; inset: 0; }
+.bg-layer { z-index: 0; }
+.art-layer { z-index: 1; }
+.text-layer { z-index: 2; pointer-events: none; }
+
+.bg-layer .wash {
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(120% 70% at 50% 0%, var(--backgroundAlt) 0%, rgba(0,0,0,0) 60%),
+    radial-gradient(90% 60% at 50% 110%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 70%);
+}
+.bg-layer .grain { position: absolute; inset: 0; opacity: 0.07; }
+
+.illus { position: absolute; overflow: hidden; }
+.illus svg { display: block; width: 100%; height: 100%; }
+
+/* Text blocks: every visible string lives in a .tb element in the text layer. */
+.tb { position: absolute; }
+.headline {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 112px;
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+}
+.kicker {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 52px;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+.subheadline {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: 58px;
+  letter-spacing: -0.035em;
+  line-height: 1.05;
+}
+.column { display: flex; flex-direction: column; gap: 0.8em; font-size: 31px; overflow: visible; }
+.column .label {
+  font-family: 'Inter Tight', 'Inter', sans-serif;
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95em;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+.column p {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 1.17;
+  letter-spacing: -0.022em;
+  text-align: justify;
+  hyphens: manual;
+}
+.column .hero { font-size: 1.45em; text-align: center; color: var(--text); padding: 0.1em 0; }
+.decor { font-size: 34px; color: var(--text); opacity: 0.88; white-space: nowrap; }
+.decor.right { text-align: right; }
+.ill-label { white-space: nowrap; line-height: 1.1; letter-spacing: -0.01em; font-family: 'Inter', sans-serif; }
+.cta {
+  display: flex; align-items: center; justify-content: center;
+  border: 2px solid var(--accent); border-radius: 18px;
+  color: var(--accent);
+  font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 800; font-size: 40px; letter-spacing: -0.02em;
+}
+.footer { font-family: 'Inter Tight', 'Inter', sans-serif; font-weight: 700; font-size: 22px; color: var(--muted); letter-spacing: 0.08em; white-space: nowrap; }
+.footnote { font-size: 18px; color: var(--muted); font-weight: 500; text-align: center; }
+.katex { font-size: 1em; }
+.katex-display { margin: 0; }
+
+@page { size: var(--w) var(--h); margin: 0; }
+@media print { html, body { background: none; } .bg-layer .grain { display: none; } }
