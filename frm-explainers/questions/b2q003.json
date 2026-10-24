@@ -1,0 +1,146 @@
+{
+  "id": "b2q003",
+  "number": 3,
+  "source": "GARP Mock 2023 · Part 1 · Q97",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q003-take1.mp3",
+  "voice": {
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
+    "model": "eleven_v4"
+  },
+  "host": true,
+  "cover_at": [
+    "FRM Part 1,",
+    "Book 2,",
+    "Chapter 1,",
+    "a practice question."
+  ],
+  "stem": "An insurance company estimates that 40% of policyholders who have only an auto policy will renew next year, and 70% of policyholders who have only a homeowner policy will renew next year. The company estimates that 80% of policyholders who have both an auto and a homeowner policy will renew at least one of those policies next year. Company records show that 70% of policyholders have an auto policy, 50% of policyholders have a homeowner policy, and 20% of policyholders have both an auto and a homeowner policy. Using the company's estimates, what is the percentage of policyholders that will renew at least one policy next year?",
+  "stem_short": "What % renew at least one policy?",
+  "stem_highlights": [
+    {
+      "text": "only an auto policy",
+      "at": "auto-only"
+    },
+    {
+      "text": "only a homeowner policy",
+      "at": "homeowner-only"
+    },
+    {
+      "text": "20% of policyholders have both",
+      "at": "20 percent have both"
+    }
+  ],
+  "options": {
+    "A": "29%",
+    "B": "41%",
+    "C": "53%",
+    "D": "57%"
+  },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "20% + 21% + 16% = 57%",
+    "high": {
+      "label": "SPLIT THE GROUPS",
+      "text": "Auto only 50% · Home only 30% · Both 20%",
+      "at": "First, split",
+      "meter": null
+    },
+    "low": {
+      "label": "WEIGHT EACH",
+      "chips": [
+        {
+          "text": "Auto only: 50% × 40% = 20%",
+          "at": "50 percent times"
+        },
+        {
+          "text": "Home only: 30% × 70% = 21%",
+          "at": "30 percent times"
+        },
+        {
+          "text": "Both: 20% × 80% = 16%",
+          "at": "20 percent times"
+        }
+      ],
+      "at": "50 percent times",
+      "meter": null
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "Too low — not a correct weighting of the three groups.",
+      "at": "A, 29 percent"
+    },
+    "B": {
+      "reason": "Forgets the 'both' group: 20% + 21% = 41%.",
+      "at": "B, 41 percent"
+    },
+    "C": {
+      "reason": "Too low — not a correct weighting of the three groups.",
+      "at": "A, 29 percent"
+    }
+  },
+  "takeaway": [
+    {
+      "text": "Split into non-overlapping groups",
+      "at": "Split overlapping"
+    },
+    {
+      "text": "Weight each group by its rate, then add",
+      "at": "Weight each piece"
+    },
+    {
+      "text": "Remove the overlap first",
+      "at": "And watch out"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."
+    },
+    {
+      "id": "question",
+      "text": "So, an insurance company estimates that 40 percent of auto-only policyholders will renew next year, and 70 percent of homeowner-only policyholders will renew. For customers with both an auto and a homeowner policy, 80 percent will renew at least one. Records show 70 percent of policyholders have auto, 50 percent have homeowner, and 20 percent have both. What percentage will renew at least one policy next year?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. 29 percent. Option B. 41 percent. Option C. 53 percent. And option D. 57 percent."
+    },
+    {
+      "id": "pause",
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
+    },
+    {
+      "id": "answer",
+      "text": "[excited] And the answer is... D! [warmly] Here's why. First, split the policyholders into groups that don't overlap. Auto only is 70 minus 20, or 50 percent. Home only is 50 minus 20, or 30 percent. And 20 percent have both. Now weight each group by its renewal rate. Auto only: 50 percent times 40 percent is 20 percent. Home only: 30 percent times 70 percent is 21 percent. Both: 20 percent times 80 percent is 16 percent. Add them up: 20 plus 21 plus 16 is 57 percent."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why not the others? B, 41 percent, is what you get if you forget the 20 percent who hold both policies: just 20 plus 21. A, 29 percent, and C, 53 percent, don't come from a correct weighting of the three groups. They're both too low."
+    },
+    {
+      "id": "takeaway",
+      "text": "[warmly] So, the key takeaway. Split overlapping groups into pieces that don't overlap. Weight each piece by its own probability, then add them up. That's the law of total probability. And watch out for the overlap: take it out before you weight. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
+    }
+  ],
+  "caption_keywords": [
+    "renew",
+    "57 percent",
+    "overlap",
+    "both",
+    "weight",
+    "total probability",
+    "risk hub"
+  ]
+}
