@@ -165,7 +165,7 @@
       show(params.get('all') ? 'all' : slideParam ? +slideParam : 'all');
       var state = params.get('state') || 'final';
       DATA.slides.forEach(function (s) { window.__seek(s.index, state === 'start' ? 0 : 'end'); });
-      window.__fonts = Array.prototype.slice.call(document.fonts).filter(function (f) { return f.status === 'loaded'; }).map(function (f) { return f.family.replace(/"/g, '') + ':' + f.weight; });
+      window.__fonts = Array.from(document.fonts).filter(function (f) { return f.status === 'loaded'; }).map(function (f) { return f.family.replace(/"/g, '') + ':' + f.weight; });
       window.__guardErrors = guardErrors;
       window.__fitErrors = fitErrors;
       window.__ready = true;

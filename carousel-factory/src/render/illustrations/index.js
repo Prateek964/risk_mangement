@@ -70,7 +70,7 @@ function gbmBand({ w, h, palette: P, params, labels }) {
       { sel: '.drift', preset: 'fade', at: 1.4, dur: 0.6 },
       { sel: '.hl', preset: 'draw', at: 1.0, dur: 2.2, ease: 'power1.inOut' },
     ],
-    labels: labels.length ? [label(labels[0], 14, 14, { anchor: 'start', valign: 'top', size: 16, color: 'muted', weight: 600 })] : [],
+    labels: labels.length ? [label(labels[0], 56, 14, { anchor: 'start', valign: 'top', size: 16, color: 'muted', weight: 600 })] : [],
   };
 }
 
