@@ -1,0 +1,95 @@
+{
+  "$comment": "Risk Hub carousel factory configuration. Secrets never live here: see .env.example.",
+  "queue": {
+    "adapter": "sheets",
+    "sheets": {
+      "spreadsheetIdEnv": "FACTORY_SHEET_ID",
+      "tab": "Topics",
+      "headerRow": 1
+    },
+    "local": {
+      "file": "queue.local.csv"
+    },
+    "columns": {
+      "topicId": "Topic ID",
+      "topic": "Topic",
+      "category": "Category",
+      "targetAudience": "Target Audience",
+      "designReferenceUrl": "Design Reference URL",
+      "brandReferenceUrl": "Brand Reference URL",
+      "slideCount": "Slide Count",
+      "aspectRatio": "Aspect Ratio",
+      "specialInstructions": "Special Instructions",
+      "status": "Status",
+      "moodBoardUrl": "Mood Board URL",
+      "finalOutputUrl": "Final Output URL",
+      "errorLog": "Error Log",
+      "lockedBy": "Locked By"
+    },
+    "statuses": {
+      "ready": "READY",
+      "processing": "PROCESSING",
+      "moodboardReview": "MOODBOARD_REVIEW",
+      "approved": "APPROVED",
+      "rendering": "RENDERING",
+      "qualityCheck": "QUALITY_CHECK",
+      "completed": "COMPLETED",
+      "needsReview": "NEEDS_REVIEW",
+      "failed": "FAILED"
+    }
+  },
+  "approval": {
+    "mode": "manual"
+  },
+  "defaults": {
+    "slideCount": 7,
+    "aspectRatio": "4:5",
+    "width": 1080,
+    "height": 1350,
+    "brand": "RISK HUB"
+  },
+  "chatgpt": {
+    "cdpUrl": "http://127.0.0.1:9222",
+    "baseUrl": "https://chatgpt.com/",
+    "temporaryChat": false,
+    "responseTimeoutMs": 600000,
+    "imageTimeoutMs": 900000,
+    "pollIntervalMs": 2000,
+    "stableForMs": 8000,
+    "maxAttempts": 2,
+    "manualActionTimeoutMs": 900000,
+    "selectors": {
+      "promptInput": "#prompt-textarea",
+      "sendButton": "[data-testid=\"send-button\"]",
+      "stopButton": "[data-testid=\"stop-button\"]",
+      "fileInput": "input[type=\"file\"]",
+      "assistantTurn": "[data-message-author-role=\"assistant\"]",
+      "loginIndicators": ["[data-testid=\"login-button\"]", "a[href*=\"/auth/login\"]", "button:has-text(\"Log in\")"],
+      "challengeIndicators": ["iframe[src*=\"challenges.cloudflare.com\"]", "iframe[src*=\"arkoselabs\"]", "#challenge-stage"],
+      "generatedImage": "img[alt*=\"enerated\"], img[src*=\"oaiusercontent\"], img[src*=\"/backend-api/estuary/content\"]"
+    }
+  },
+  "render": {
+    "fps": 30,
+    "slideSeconds": 5,
+    "coverSeconds": 5,
+    "videoCodec": "libx264",
+    "crf": 18,
+    "pixelFormat": "yuv420p",
+    "deviceScaleFactor": 1
+  },
+  "storage": {
+    "adapter": "git",
+    "git": {
+      "remote": "origin",
+      "branchEnv": "FACTORY_GIT_BRANCH",
+      "publicBaseUrl": "https://github.com/prateek964/risk_mangement/tree/{branch}/carousel-factory/output/jobs/{topicId}"
+    }
+  },
+  "qa": {
+    "sampleFractions": [0, 0.15, 0.35, 0.6, 0.85, 1],
+    "safeMargin": 40,
+    "maxVideoFrameDiff": 6,
+    "maxRenderAttempts": 2
+  }
+}

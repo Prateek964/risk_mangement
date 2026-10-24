@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.local.csv
+!queue.example.csv
+references/*
+!references/README.md
+output/jobs/*/build/frames/
+output/locks/
+output/logs/
+.cache/
