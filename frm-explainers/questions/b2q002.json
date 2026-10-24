@@ -1,0 +1,52 @@
+{
+  "id": "b2q002",
+  "number": 2,
+  "source": "GARP Mock 2023 · Part 2 · Q7",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q002-take1.mp3",
+  "voice": {"id": "69SAlwj2jajrSXUGnYAA", "name": "TrevorT - Natural Conversational Authentic", "model": "eleven_v4"},
+  "host": true,
+  "cover_at": ["FRM Part 1,", "Book 2,", "Chapter 1,", "a practice question."],
+  "stem": "An analyst is examining a portfolio that consists of 2,500 subprime mortgages and 800 prime mortgages. Of the subprime mortgages, 500 are late on their payments. Of the prime mortgages, 64 are late on their payments. If the analyst randomly selects a mortgage from the portfolio and it is currently late on its payments, what is the probability that it is a subprime mortgage?",
+  "stem_short": "A late mortgage is picked. P(subprime)?",
+  "stem_highlights": [
+    {"text": "500 are late", "at": "500 are late"},
+    {"text": "64 are late", "at": "64 are late"},
+    {"text": "currently late on its payments", "at": "turns out to be late"}
+  ],
+  "options": {"A": "60%", "B": "67%", "C": "75%", "D": "89%"},
+  "option_at": {"A": "Option A.", "B": "Option B.", "C": "Option C.", "D": "option D."},
+  "answer": "D",
+  "answer_at": "D!",
+  "answer_points": {
+    "title": "P(Subprime | Late) = 500 ÷ 564",
+    "high": {"label": "CONDITIONAL PROBABILITY", "text": "Only look at the late loans", "at": "We already know", "meter": null},
+    "low": {"label": "COUNT IT", "chips": [
+      {"text": "Late loans: 500 + 64 = 564", "at": "500 plus 64"},
+      {"text": "Late & subprime: 500", "at": "Of those,"},
+      {"text": "500 ÷ 564 ≈ 89%", "at": "which is about 89"}
+    ], "at": "500 plus 64", "meter": null}
+  },
+  "wrong": {
+    "A": {"reason": "Too low — doesn't match 500 of 564 late loans.", "at": "A and B"},
+    "B": {"reason": "Too low — doesn't match 500 of 564 late loans.", "at": "A and B"},
+    "C": {"reason": "≈ subprime share of all loans (2,500 ÷ 3,300) — ignores lateness.", "at": "And C?"}
+  },
+  "takeaway": [
+    {"text": "Condition shrinks the sample", "at": "Conditioning shrinks"},
+    {"text": "P(A|B) = P(A and B) ÷ P(B)", "at": "The formula is"},
+    {"text": "Don't use the unconditional share", "at": "And don't fall back"}
+  ],
+  "sections": [
+    {"id": "intro", "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."},
+    {"id": "question", "text": "So, an analyst has a portfolio of 2,500 subprime mortgages and 800 prime mortgages. Of the subprime mortgages, 500 are late on their payments. Of the prime mortgages, 64 are late. The analyst picks a mortgage at random, and it turns out to be late. What's the probability that it's subprime?"},
+    {"id": "options", "text": "Option A. 60 percent. Option B. 67 percent. Option C. 75 percent. And option D. 89 percent."},
+    {"id": "pause", "text": "Okay, pause the video and lock in your answer. [long pause]"},
+    {"id": "answer", "text": "[excited] And the answer is... D! [warmly] Here's why. We already know the mortgage is late, so we only look at late loans. There are 500 plus 64, or 564 late loans in total. Of those, 500 are subprime. So the probability is 500 divided by 564, which is about 89 percent. Same thing with the formula: 15.2 percent, divided by 17.1 percent."},
+    {"id": "wrong", "text": "Now, why not the others? A and B are too low. They don't match the share of late loans that are subprime, which is 500 out of 564. And C? 75 percent is roughly the subprime share of the whole portfolio, 2,500 out of 3,300. That ignores the fact that we know the loan is late."},
+    {"id": "takeaway", "text": "[warmly] So, the key takeaway. Conditioning shrinks the sample to the cases you know happened. The formula is: probability of A given B equals probability of A and B, divided by probability of B. And don't fall back on the unconditional share. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"}
+  ],
+  "caption_keywords": ["late", "subprime", "564", "89 percent", "conditioning", "conditional", "risk hub"]
+}
