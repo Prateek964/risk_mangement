@@ -1,0 +1,146 @@
+{
+  "id": "b2q006",
+  "number": 6,
+  "source": "GARP Mock 2023 · Part 2 · Q93",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q006-take1.mp3",
+  "voice": {
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
+    "model": "eleven_v4"
+  },
+  "host": true,
+  "cover_at": [
+    "FRM Part 1,",
+    "Book 2,",
+    "Chapter 1,",
+    "a practice question."
+  ],
+  "stem": "A credit risk analyst at a mortgage lender assesses how a borrower's access to government-sponsored mortgage agencies (such as Fannie Mae, Freddie Mac, and Ginnie Mae) affects default risk. The probability of a borrower having an agency secure their mortgage loan is 62%. 32% of borrowers are millennials. 17% of borrowers with agency-secured mortgage loans are millennials. What is the probability that a borrower has an agency-secured mortgage loan given that the borrower is a millennial?",
+  "stem_short": "Millennial borrower. P(agency loan)?",
+  "stem_highlights": [
+    {
+      "text": "secure their mortgage loan is 62%",
+      "at": "62 percent"
+    },
+    {
+      "text": "32% of borrowers are millennials",
+      "at": "32 percent"
+    },
+    {
+      "text": "17% of borrowers with agency-secured mortgage loans are millennials",
+      "at": "17 percent"
+    }
+  ],
+  "options": {
+    "A": "17%",
+    "B": "20%",
+    "C": "33%",
+    "D": "52%"
+  },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "P(Agency | Millennial) = 0.17 × 0.62 ÷ 0.32",
+    "high": {
+      "label": "BAYES' RULE",
+      "text": "Flip P(Millennial | Agency) around",
+      "at": "We're given",
+      "meter": null
+    },
+    "low": {
+      "label": "PLUG IN",
+      "chips": [
+        {
+          "text": "Joint: 0.17 × 0.62 ≈ 0.105",
+          "at": "the joint probability"
+        },
+        {
+          "text": "Divide by P(Millennial) = 0.32",
+          "at": "divide by"
+        },
+        {
+          "text": "≈ 0.33 → 33%",
+          "at": "which is about 33"
+        }
+      ],
+      "at": "the joint probability",
+      "meter": null
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "17% is P(millennial | agency) — the wrong direction.",
+      "at": "A, 17 percent"
+    },
+    "B": {
+      "reason": "62% × 32% ≈ 20% — multiplies as if independent.",
+      "at": "B, 20 percent"
+    },
+    "D": {
+      "reason": "32% ÷ 62% ≈ 52% — formula miscalculated.",
+      "at": "D, 52 percent"
+    }
+  },
+  "takeaway": [
+    {
+      "text": "P(A|B) ≠ P(B|A)",
+      "at": "Conditional probability isn't"
+    },
+    {
+      "text": "Bayes: P(A|B) = P(B|A) × P(A) ÷ P(B)",
+      "at": "rule says"
+    },
+    {
+      "text": "Joint first, then divide",
+      "at": "Find the joint"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."
+    },
+    {
+      "id": "question",
+      "text": "So, a mortgage lender looks at government agency loans, like Fannie Mae and Freddie Mac. 62 percent of borrowers have an agency-secured loan. 32 percent of borrowers are millennials. And 17 percent of agency borrowers are millennials. What's the probability a borrower has an agency loan, given that they're a millennial?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. 17 percent. Option B. 20 percent. Option C. 33 percent. And option D. 52 percent."
+    },
+    {
+      "id": "pause",
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
+    },
+    {
+      "id": "answer",
+      "text": "[excited] And the answer is... C! [warmly] Here's why. We're given the probability of being a millennial given an agency loan, but we want the reverse. That's a job for Bayes' rule. First, the joint probability: 0.17 times 0.62, which is about 0.105. Then divide by the chance of being a millennial, 0.32. That gives 0.329, which is about 33 percent."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why not the others? A, 17 percent, is the probability the other way round: millennial given agency. B, 20 percent, is 62 percent times 32 percent. That treats the two as independent. And D, 52 percent, is 32 divided by 62. That's the formula miscalculated."
+    },
+    {
+      "id": "takeaway",
+      "text": "[warmly] So, the key takeaway. Conditional probability isn't symmetric: A given B is not B given A. Bayes' rule says: probability of A given B equals probability of B given A, times probability of A, divided by probability of B. Find the joint first, then divide. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
+    }
+  ],
+  "caption_keywords": [
+    "agency",
+    "millennial",
+    "bayes",
+    "33 percent",
+    "joint",
+    "conditional",
+    "risk hub"
+  ]
+}
