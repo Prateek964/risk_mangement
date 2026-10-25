@@ -1,0 +1,146 @@
+{
+  "id": "b2q005",
+  "number": 5,
+  "source": "GARP Mock 2023 · Part 1 · Q8",
+  "book": "Book 2. Quantitative Analysis",
+  "chapter_number": 1,
+  "chapter": "Chapter 1. Fundamentals of Probability",
+  "audio": "audio/b2q005-take1.mp3",
+  "voice": {
+    "id": "69SAlwj2jajrSXUGnYAA",
+    "name": "TrevorT - Natural Conversational Authentic",
+    "model": "eleven_v4"
+  },
+  "host": true,
+  "cover_at": [
+    "FRM Part 1,",
+    "Book 2,",
+    "Chapter 1,",
+    "a practice question."
+  ],
+  "stem": "A portfolio manager is assessing whether the 1-year probability of default of a longevity bond is uncorrelated with equity market returns. The probability matrix is: market up 20% and no default, 61%; market up 20% and default, 1%; market down 20% and no default, 35%; market down 20% and default, 3%. What is the probability that the bond defaults in 1 year given that the market decreases by 20% over 1 year?",
+  "stem_short": "Market falls 20%. P(bond defaults)?",
+  "stem_highlights": [
+    {
+      "text": "market down 20% and no default, 35%",
+      "at": "35 percent"
+    },
+    {
+      "text": "market down 20% and default, 3%",
+      "at": "3 percent"
+    },
+    {
+      "text": "given that the market decreases by 20%",
+      "at": "given that the market"
+    }
+  ],
+  "options": {
+    "A": "3.00%",
+    "B": "4.00%",
+    "C": "7.89%",
+    "D": "10.53%"
+  },
+  "option_at": {
+    "A": "Option A.",
+    "B": "Option B.",
+    "C": "Option C.",
+    "D": "option D."
+  },
+  "answer": "C",
+  "answer_at": "C!",
+  "answer_points": {
+    "title": "P(Default | Down) = 3% ÷ 38%",
+    "high": {
+      "label": "CONDITIONAL PROBABILITY",
+      "text": "Only look at the market-down row",
+      "at": "We're told",
+      "meter": null
+    },
+    "low": {
+      "label": "FROM THE TABLE",
+      "chips": [
+        {
+          "text": "P(Down) = 35% + 3% = 38%",
+          "at": "35 plus 3"
+        },
+        {
+          "text": "P(Default & Down) = 3%",
+          "at": "Default and down"
+        },
+        {
+          "text": "3 ÷ 38 ≈ 7.89%",
+          "at": "which is about 7.89"
+        }
+      ],
+      "at": "35 plus 3",
+      "meter": null
+    }
+  },
+  "wrong": {
+    "A": {
+      "reason": "3% is the joint probability: default AND market down.",
+      "at": "A, 3 percent"
+    },
+    "B": {
+      "reason": "4% is the unconditional default probability (1% + 3%).",
+      "at": "B, 4 percent"
+    },
+    "D": {
+      "reason": "4% ÷ 38% — puts the unconditional default in the numerator.",
+      "at": "D, 10.53"
+    }
+  },
+  "takeaway": [
+    {
+      "text": "Condition = pick the row",
+      "at": "Conditioning means"
+    },
+    {
+      "text": "P(A|B) = P(A and B) ÷ P(B)",
+      "at": "The formula is"
+    },
+    {
+      "text": "Numerator must be the joint cell",
+      "at": "And the numerator"
+    }
+  ],
+  "sections": [
+    {
+      "id": "intro",
+      "text": "[warmly] Hey, welcome back to Risk Hub! FRM Part 1, Book 2, Quantitative Analysis. Chapter 1, Fundamentals of Probability. Let's do a practice question."
+    },
+    {
+      "id": "question",
+      "text": "So, a portfolio manager wants to know if a longevity bond's default risk is linked to the equity market. Here's the probability table. Market up 20 percent: no default, 61 percent. Default, 1 percent. Market down 20 percent: no default, 35 percent. Default, 3 percent. What's the probability the bond defaults, given that the market falls 20 percent?"
+    },
+    {
+      "id": "options",
+      "text": "Option A. 3 percent. Option B. 4 percent. Option C. 7.89 percent. And option D. 10.53 percent."
+    },
+    {
+      "id": "pause",
+      "text": "Okay, pause the video and lock in your answer. [long pause]"
+    },
+    {
+      "id": "answer",
+      "text": "[excited] And the answer is... C! [warmly] Here's why. We're told the market fell, so we only look at the market-down row. The chance the market falls is 35 plus 3, or 38 percent. Default and down together is 3 percent. So the probability is 3 divided by 38, which is about 7.89 percent."
+    },
+    {
+      "id": "wrong",
+      "text": "Now, why not the others? A, 3 percent, is the joint probability: default and market down together. It's not conditional. B, 4 percent, is the unconditional chance of default: 1 plus 3. It ignores the market. And D, 10.53 percent, is 4 divided by 38. That puts the unconditional default probability on top, instead of the joint cell."
+    },
+    {
+      "id": "takeaway",
+      "text": "[warmly] So, the key takeaway. Conditioning means picking the row you're given. The formula is: probability of A given B equals probability of A and B, divided by probability of B. And the numerator must be the joint cell, not the column total. If this helped, follow Risk Hub for more FRM practice. See you in the next one!"
+    }
+  ],
+  "caption_keywords": [
+    "default",
+    "market",
+    "38 percent",
+    "7.89 percent",
+    "joint",
+    "conditional",
+    "risk hub"
+  ]
+}
